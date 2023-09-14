@@ -17,3 +17,10 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+
+tasks.register<Copy>("deployToMODFolder") {
+    dependsOn(tasks.jar)
+    from(layout.buildDirectory.dir("libs"))
+    include("*.jar")
+    into(layout.buildDirectory.dir("E:\\Steam Games\\steamapps\\common\\SlayTheSpire\\mods"))
+}
