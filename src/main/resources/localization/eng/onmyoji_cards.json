@@ -1,0 +1,10 @@
+{
+  "Onmyoji:Menreiki": {
+    "NAME": "Onmyoji:Menreiki",
+    "DESCRIPTION": "Kami HP !M!. On enter change to one of 4 side. Each side is treated as a different kami."
+  },
+  "Onmyoji:Seven Sides": {
+    "NAME": "Onmyoji:Seven Sides",
+    "DESCRIPTION": "Deal !D! damage. Increase !M! damage for each different kami in this battle."
+  }
+}

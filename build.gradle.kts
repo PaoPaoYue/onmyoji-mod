@@ -12,6 +12,11 @@ repositories {
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+
+    implementation(files("C:\\Users\\LENOVO\\Desktop\\mtsLib\\BaseMod.jar"))
+    implementation(files("C:\\Users\\LENOVO\\Desktop\\mtsLib\\desktop-1.0.jar"))
+    implementation(files("C:\\Users\\LENOVO\\Desktop\\mtsLib\\ModTheSpire.jar"))
+    implementation(files("C:\\Users\\LENOVO\\Desktop\\mtsLib\\StSLib.jar"))
 }
 
 tasks.test {

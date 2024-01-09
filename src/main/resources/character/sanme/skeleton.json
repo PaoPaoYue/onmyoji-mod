@@ -1,0 +1,58 @@
+{
+  "skeleton": {
+    "width": 512,
+    "height": 512,
+    "fps": 24,
+    "hash": " ",
+    "name": "Armature"
+  },
+  "bones": [
+    {
+      "name": "root"
+    },
+    {
+      "length": 79,
+      "rotation": 90,
+      "name": "bone",
+      "parent": "root"
+    }
+  ],
+  "slots": [
+    {
+      "name": "sanme",
+      "bone": "root",
+      "attachment": "sanme"
+    }
+  ],
+  "skins": {
+    "default": {
+      "sanme": {
+        "sanme": {
+          "name": "sanme",
+          "width": 506,
+          "height": 512,
+          "y": 150,
+          "scaleX": 0.5859,
+          "scaleY": 0.5859
+        }
+      }
+    }
+  },
+  "animations": {
+    "animation": {
+      "bones": {
+        "bone": {
+          "translate": [
+            {
+              "time": 0,
+              "x": -1
+            },
+            {
+              "time": 0.0417
+            }
+          ]
+        }
+      }
+    }
+  }
+}

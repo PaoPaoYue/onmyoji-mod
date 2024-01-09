@@ -5,11 +5,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a66948c5-5f94-452d-af22-4e9eb5a1d32c" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/OnmyojiMod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/SwitchKamiAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/AbstractKamiCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/Menreiki.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/SevenSides.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/character/OnmyojiCharacter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/effect/KamiDeadEffect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/kami/AbstractKami.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/kami/Faction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/kami/Menreiki.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/AbstractCardEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/KamiCardGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/KamiPatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/LibraryTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/PlayerClassEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/BattleEnd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/CardUse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/KamiManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/KamiManagerField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/PlayerDamage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/RenderHealthBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/RenderHealthBarOutline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/RenderTips.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/SwitchAnime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/TurnEnd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/utility/Inject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/utility/Reflect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/character/menreiki/skeleton.atlas" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/character/menreiki/skeleton.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/character/menreiki/skeleton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/card/menreiki_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/character/corpse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/character/shoulder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/eng/onmyoji_cards.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/eng/onmyoji_characters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/eng/onmyoji_kami.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/eng/onmyoji_keywords.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_cards.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_characters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_kami.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_keywords.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +90,7 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="onmyoji-mod" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -63,6 +104,14 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -72,34 +121,94 @@
   <component name="ProjectId" id="2VNbN0VZnG1qUP6LXdDaNu0skDD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/LENOVO/Desktop/mtsLib/StSLib.jar",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/LENOVO/Desktop/onmyoji-mod/src/main/resources/localization/eng",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
+    "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.22643678",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "settings.editor.selected.configurable": "settings.saveactions",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources" />
+      <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\localization\eng" />
+      <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\localization\zhs" />
+      <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\image\card" />
+      <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\character" />
+      <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\java\com\github\paopaoyue\onmyojimod\patch\kami" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\image\512" />
+      <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\image\1024" />
+      <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\image" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.github.paopaoyue.onmyojimod.card" />
+      <recent name="com.github.paopaoyue.onmyojimod.patch.kami" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.onmyoji-mod [jar]">
+  <component name="RunManager" selected="Gradle.onmyoji-mod [deployToMODFolder]">
+    <configuration name="onmyoji-mod [classes] (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="classes" />
+            <option value="-Xlint:unchecked" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="onmyoji-mod [classes]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="classes" />
+            <option value="-Xlint:unchecked" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <configuration name="onmyoji-mod [deployToMODFolder]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -146,8 +255,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.onmyoji-mod [jar]" />
         <item itemvalue="Gradle.onmyoji-mod [deployToMODFolder]" />
+        <item itemvalue="Gradle.onmyoji-mod [classes] (1)" />
+        <item itemvalue="Gradle.onmyoji-mod [jar]" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +270,25 @@
       <option name="presentableId" value="Default" />
       <updated>1694679443117</updated>
       <workItem from="1694679443977" duration="3490000" />
-      <workItem from="1694684255282" duration="1914000" />
+      <workItem from="1694684255282" duration="2793000" />
+      <workItem from="1694687129977" duration="1975000" />
+      <workItem from="1695111118354" duration="1234000" />
+      <workItem from="1695311784013" duration="4468000" />
+      <workItem from="1695316282507" duration="12276000" />
+      <workItem from="1695542641793" duration="5278000" />
+      <workItem from="1695652708464" duration="2417000" />
+      <workItem from="1695836116247" duration="3580000" />
+      <workItem from="1695982715334" duration="9890000" />
+      <workItem from="1696322647619" duration="3533000" />
+      <workItem from="1696490977280" duration="10494000" />
+      <workItem from="1697122033379" duration="678000" />
+      <workItem from="1699284527731" duration="594000" />
+      <workItem from="1701364687154" duration="1646000" />
+      <workItem from="1701675404073" duration="16757000" />
+      <workItem from="1704025381284" duration="15146000" />
+      <workItem from="1704381578371" duration="3262000" />
+      <workItem from="1704552844166" duration="25955000" />
+      <workItem from="1704708472707" duration="28381000" />
     </task>
     <servers />
   </component>
@@ -177,5 +305,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$PROJECT_DIR$/../mtsLib/desktop-1.0.jar!/com/megacrit/cardcrawl/stances/NeutralStance.class</url>
+          <line>29</line>
+          <properties class="com.megacrit.cardcrawl.stances.NeutralStance" method="render">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

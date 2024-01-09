@@ -1,8 +1,8 @@
 {
-  "modid": "OnmyojiMod",
+  "modid": "Onmyoji",
   "name": "Onmyoji:The Card Game Mod",
   "author_list": ["PaoPaoYue"],
-  "description": "Adds a new character: The ShenQiLou.",
+  "description": "Adds a new character: Sanme.",
   "version": "1.0.0",
   "sts_version": "12-12-2020",
   "mts_version": "3.10.1",
