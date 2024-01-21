@@ -13,19 +13,21 @@ import java.util.function.Predicate;
 
 public class RandomAttachSpiritAction extends AbstractGameAction {
     private AbstractSpirit spirit;
-
     private Predicate<AbstractCard> predicate;
+    private boolean isFast;
 
-    public RandomAttachSpiritAction(AbstractSpirit spirit, int amount, Predicate<AbstractCard> predicate) {
+    public RandomAttachSpiritAction(AbstractSpirit spirit, int amount, Predicate<AbstractCard> predicate, boolean isFast) {
         this.spirit = spirit;
         this.predicate = predicate;
         this.amount = amount;
-        this.duration = Settings.ACTION_DUR_FAST;
+        this.duration = isFast ? Settings.ACTION_DUR_FAST : Settings.ACTION_DUR_LONG;
         this.actionType = ActionType.SPECIAL;
+        this.isFast = isFast;
     }
 
     public void update() {
-        if (this.duration == Settings.ACTION_DUR_FAST) {
+        if (this.duration == (this.isFast ? Settings.ACTION_DUR_FAST : Settings.ACTION_DUR_LONG)) {
+            System.out.println(AbstractDungeon.player.drawPile.group.size());
             ArrayList<AbstractCard> rngPool = new ArrayList<>();
             for (AbstractCard card : AbstractDungeon.player.drawPile.group) {
                 if (predicate.test(card) && SpiritField.spirit.get(card) == null) {
@@ -38,17 +40,9 @@ public class RandomAttachSpiritAction extends AbstractGameAction {
                 AbstractDungeon.effectList.add(new SpiritAttachedEffect(card));
                 rngPool.remove((card));
             }
-
-            if (Settings.FAST_MODE) {
-                this.isDone = true;
-                return;
-            }
         }
 
         this.tickDuration();
     }
 
-    public static class Qualifier {
-
-    }
 }

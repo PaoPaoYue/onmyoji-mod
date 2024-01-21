@@ -1,0 +1,15 @@
+{
+  "Onmyoji:Penetrated": {
+    "NAME": "破甲",
+    "DESCRIPTIONS": [
+      "受到的攻击伤害增加 #b",
+      " ，生效后将会减少 #b1 层。"
+    ]
+  },
+  "Onmyoji:Encouraged": {
+    "NAME": "鼓舞",
+    "DESCRIPTIONS": [
+      "下次攻击造成的最终伤害翻倍，生效后将会减少 #b1 层。"
+    ]
+  }
+}

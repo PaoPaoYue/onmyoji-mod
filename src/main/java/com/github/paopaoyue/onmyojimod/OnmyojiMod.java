@@ -14,9 +14,7 @@ import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.github.paopaoyue.onmyojimod.patch.PlayerClassEnum;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.localization.CardStrings;
-import com.megacrit.cardcrawl.localization.CharacterStrings;
-import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
@@ -97,11 +95,11 @@ public class OnmyojiMod implements EditCharactersSubscriber, EditStringsSubscrib
         }
         BaseMod.loadCustomStringsFile(CharacterStrings.class, "localization/" + language + "/onmyoji_characters.json");
         BaseMod.loadCustomStringsFile(CardStrings.class, "localization/" + language + "/onmyoji_cards.json");
+        BaseMod.loadCustomStringsFile(PowerStrings.class, "localization/" + language + "/onmyoji_powers.json");
         BaseMod.loadCustomStringsFile(RelicStrings.class, "localization/" + language + "/onmyoji_relics.json");
+        BaseMod.loadCustomStringsFile(UIStrings.class, "localization/" + language + "/onmyoji_ui.json");
 
-//        BaseMod.loadCustomStringsFile(PowerStrings.class, "localization/" + language + "/Power-Strings.json");
 //        BaseMod.loadCustomStringsFile(OrbStrings.class, "localization/" + language + "/Orb-Strings.json");
-//        BaseMod.loadCustomStringsFile(UIStrings.class, "localization/" + language + "/UI-Strings.json");
 //        BaseMod.loadCustomStringsFile(EventStrings.class, "localization/" + language + "/Event-Strings.json");
 
         Gson gson = new Gson();

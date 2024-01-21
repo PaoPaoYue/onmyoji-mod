@@ -1,12 +1,12 @@
 package com.github.paopaoyue.onmyojimod.card;
 
 import basemod.abstracts.CustomCard;
-import com.github.paopaoyue.onmyojimod.action.RandomAttachSpiritAction;
 import com.github.paopaoyue.onmyojimod.object.kami.KamiManager;
-import com.github.paopaoyue.onmyojimod.object.spirit.Enhancement;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.github.paopaoyue.onmyojimod.patch.kami.KamiManagerField;
+import com.github.paopaoyue.onmyojimod.power.PenetratedPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -38,7 +38,7 @@ public class SevenSides extends CustomCard {
         KamiManager kamiManager = (KamiManager) KamiManagerField.kamiManager.get(AbstractDungeon.player);
         int kamiNum = kamiManager.getDiffKamiSwitchCountInBattle();
         this.addToBot(new DamageAction(m, new DamageInfo(p, 0, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        this.addToBot(new RandomAttachSpiritAction(new Enhancement(), 3, c -> true));
+        this.addToBot(new ApplyPowerAction(m, p, new PenetratedPower(m, 1), 1, true));
     }
 
     public void applyPowers() {

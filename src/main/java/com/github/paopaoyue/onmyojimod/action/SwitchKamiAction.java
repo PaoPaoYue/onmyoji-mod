@@ -17,21 +17,17 @@ public class SwitchKamiAction extends AbstractGameAction {
         this.card = card;
         this.newKami = kami;
         this.amount = kamiHp;
-        this.duration = Settings.ACTION_DUR_FAST;
+        this.duration = Settings.ACTION_DUR_MED;
         this.actionType = ActionType.SPECIAL;
     }
 
     public void update() {
-        if (this.duration == Settings.ACTION_DUR_FAST) {
+        if (this.duration == Settings.ACTION_DUR_MED) {
             KamiManager kamiManager = (KamiManager) KamiManagerField.kamiManager.get(AbstractDungeon.player);
             kamiManager.setHp(amount + kamiManager.getHp());
             kamiManager.onSwitch(card, newKami);
             if (this.amount > 0) {
                 this.target.healthBarUpdatedEvent();
-            }
-            if (Settings.FAST_MODE) {
-                this.isDone = true;
-                return;
             }
         }
 
