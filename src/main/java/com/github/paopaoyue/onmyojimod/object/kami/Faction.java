@@ -1,4 +1,4 @@
-package com.github.paopaoyue.onmyojimod.kami;
+package com.github.paopaoyue.onmyojimod.object.kami;
 
 public enum Faction {
 

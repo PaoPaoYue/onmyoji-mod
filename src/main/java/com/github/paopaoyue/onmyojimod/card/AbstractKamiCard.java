@@ -1,7 +1,10 @@
 package com.github.paopaoyue.onmyojimod.card;
 
 import basemod.abstracts.CustomCard;
-import com.github.paopaoyue.onmyojimod.kami.AbstractKami;
+import com.github.paopaoyue.onmyojimod.object.kami.AbstractKami;
+import com.github.paopaoyue.onmyojimod.object.spirit.AbstractSpirit;
+import com.github.paopaoyue.onmyojimod.object.spirit.Enhancement;
+import com.github.paopaoyue.onmyojimod.patch.spirit.SpiritField;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,35 +14,64 @@ public abstract class AbstractKamiCard extends CustomCard {
 
     private AbstractKami kami;
 
+    private int baseHp;
+
+    private int hp;
+
+    private boolean hpUpgraded;
+
+    private boolean hpModified;
+
+
     public AbstractKamiCard(String id, String name, String img, int cost, String rawDescription, CardType type, CardColor color, CardRarity rarity, CardTarget target, AbstractKami kami, int baseKamiHp) {
         super(id, name, img, cost, rawDescription, type, color, rarity, target);
         this.kami = kami;
-        this.baseMagicNumber = baseKamiHp;
-        this.magicNumber = this.baseMagicNumber;
+        this.baseHp = baseKamiHp;
+        this.hp = this.baseHp;
     }
 
     public AbstractKami getKami() {
         return kami;
     }
 
-    public void setKami(AbstractKami kami) {
-        this.kami = kami;
+    public int getBaseHp() {
+        return baseHp;
     }
 
-    public int getBaseKamiHp() {
-        return this.magicNumber;
+    public int getHp() {
+        return hp;
     }
 
-    public void setBaseKamiHp(int baseKamiHp) {
-        this.magicNumber = baseKamiHp;
+    public boolean isHpUpgraded() {
+        return hpUpgraded;
     }
 
-    protected void upgradeKami() {
+    public boolean isHpModified() {
+        return hpModified;
+    }
+
+    public void setHpModified(boolean v) {
+        this.hpModified = v;
+    }
+
+    public void upgradeKami() {
         this.kami.upgrade();
     }
 
-    protected void upgradeBaseKamiHp(int amount) {
-        this.upgradeMagicNumber(amount);
+    public void upgradeHp(int amount) {
+        this.baseHp += amount;
+        this.hp = this.baseHp;
+        this.hpUpgraded = true;
+    }
+
+    @Override
+    public void applyPowers() {
+        AbstractSpirit spirit = (AbstractSpirit) SpiritField.spirit.get(this);
+        if (spirit instanceof Enhancement) {
+            this.hp = this.baseHp + 2;
+            this.hpModified = true;
+        }
+        super.applyPowers();
     }
 
 }

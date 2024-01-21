@@ -64,11 +64,13 @@ public class OnmyojiCharacter extends CustomPlayer {
         retVal.add("Defend_R");
         retVal.add("Defend_R");
         retVal.add("Onmyoji:Menreiki");
+        retVal.add("Onmyoji:Seven Sides");
         return retVal;
     }
 
     public ArrayList<String> getStartingRelics() { // starting relics - also simple
         ArrayList<String> retVal = new ArrayList<>();
+        retVal.add("Onmyoji:Sachet");
         return retVal;
     }
 

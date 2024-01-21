@@ -1,4 +1,4 @@
-package com.github.paopaoyue.onmyojimod.kami;
+package com.github.paopaoyue.onmyojimod.object.kami;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;

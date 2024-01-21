@@ -1,9 +1,7 @@
-package com.github.paopaoyue.onmyojimod.patch.kami;
+package com.github.paopaoyue.onmyojimod.object.kami;
 
 import com.github.paopaoyue.onmyojimod.character.OnmyojiCharacter;
 import com.github.paopaoyue.onmyojimod.effect.KamiDeadEffect;
-import com.github.paopaoyue.onmyojimod.kami.AbstractKami;
-import com.github.paopaoyue.onmyojimod.kami.Faction;
 import com.github.paopaoyue.onmyojimod.patch.KamiCardGroup;
 import com.megacrit.cardcrawl.actions.common.DiscardSpecificCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;

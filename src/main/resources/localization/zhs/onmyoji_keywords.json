@@ -1,8 +1,79 @@
 [
   {
+    "ID": "Onmyoji:Kami",
     "NAMES": [
       "式神"
     ],
     "DESCRIPTION": "式神拥有一定的临时生命且可能有特殊能力。对应式神的卡牌在使用时会化作式神保护你，在式神离场时会进入弃牌堆。 NL 临时生命耗尽与切换式神都会触发式神离场，但切换式神时临时生命可以叠加。"
+  },
+  {
+    "ID": "Onmyoji:Menreiki",
+    "NAMES": [
+      "面灵气"
+    ],
+    "DESCRIPTION": "无特殊能力。"
+  },
+  {
+    "ID": "Onmyoji:Menreiki Red",
+    "NAMES": [
+      "面灵气·红莲"
+    ],
+    "DESCRIPTION": "无特殊能力。"
+  },
+  {
+    "ID": "Onmyoji:Menreiki Green",
+    "NAMES": [
+      "面灵气·苍叶"
+    ],
+    "DESCRIPTION": "无特殊能力。"
+  },
+  {
+    "ID": "Onmyoji:Menreiki Blue",
+    "NAMES": [
+      "面灵气·青岚"
+    ],
+    "DESCRIPTION": "无特殊能力。"
+  },
+  {
+    "ID": "Onmyoji:Menreiki Purple",
+    "NAMES": [
+      "面灵气·紫岩"
+    ],
+    "DESCRIPTION": "无特殊能力。"
+  },
+  {
+    "ID": "Onmyoji:Knot",
+    "NAMES": [
+      "缘结"
+    ],
+    "DESCRIPTION": "抽到此牌时额外恢复本场战斗中损失的2点生命值。"
+  },
+  {
+    "ID": "Onmyoji:Enhancement",
+    "NAMES": [
+      "加护"
+    ],
+    "DESCRIPTION": "使用此牌时额外使此牌的式神生命值增加2点。"
+  },
+  {
+    "ID": "Onmyoji:Dream",
+    "NAMES": [
+      "梦魇"
+    ],
+    "DESCRIPTION": "抽到此牌时额外对随机敌人造成6点伤害。"
+  },
+  {
+    "ID": "Onmyoji:Eye",
+    "NAMES": [
+      "诅咒之眼"
+    ],
+    "DESCRIPTION": "抽到此牌时额外选择并丢弃一张牌。"
+  },
+  {
+    "ID": "Onmyoji:Curse",
+    "NAMES": [
+      "蚀印"
+    ],
+    "DESCRIPTION": "使用此牌时额外受到3点伤害。"
   }
 ]

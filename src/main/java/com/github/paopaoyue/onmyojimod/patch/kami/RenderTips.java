@@ -2,7 +2,8 @@ package com.github.paopaoyue.onmyojimod.patch.kami;
 
 import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
-import com.github.paopaoyue.onmyojimod.kami.AbstractKami;
+import com.github.paopaoyue.onmyojimod.object.kami.AbstractKami;
+import com.github.paopaoyue.onmyojimod.object.kami.KamiManager;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 

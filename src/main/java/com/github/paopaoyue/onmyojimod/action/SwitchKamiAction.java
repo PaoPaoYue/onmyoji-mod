@@ -1,7 +1,7 @@
 package com.github.paopaoyue.onmyojimod.action;
 
-import com.github.paopaoyue.onmyojimod.kami.AbstractKami;
-import com.github.paopaoyue.onmyojimod.patch.kami.KamiManager;
+import com.github.paopaoyue.onmyojimod.object.kami.AbstractKami;
+import com.github.paopaoyue.onmyojimod.object.kami.KamiManager;
 import com.github.paopaoyue.onmyojimod.patch.kami.KamiManagerField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
