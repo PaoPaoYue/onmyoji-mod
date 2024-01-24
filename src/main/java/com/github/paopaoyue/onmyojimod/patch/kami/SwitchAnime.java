@@ -24,7 +24,7 @@ public class SwitchAnime {
     public static void Insert(Soul __instance) {
         if (__instance.card instanceof AbstractKamiCard) {
             OnmyojiCharacter player = (OnmyojiCharacter) AbstractDungeon.player;
-            player.SwitchCharacterAnimation(((AbstractKamiCard) __instance.card).getKami().getClass().getSimpleName().toLowerCase());
+            player.SwitchCharacterImage(((AbstractKamiCard) __instance.card).getKami().getCharacterImage());
         }
     }
 

@@ -5,19 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a66948c5-5f94-452d-af22-4e9eb5a1d32c" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/power/EncouragedPower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/power/PenetratedPower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_powers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_ui.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/OnmyojiMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/OnmyojiMod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/RandomAttachSpiritAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/RandomAttachSpiritAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/SwitchKamiAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/SwitchKamiAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/divineAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/DivineAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/Menreiki.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/Menreiki.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/SevenSides.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/SevenSides.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/Sachet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/Sachet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_relics.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_relics.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/character/OnmyojiCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/character/OnmyojiCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/effect/KamiDeadEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/effect/KamiDeadEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/object/kami/AbstractKami.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/object/kami/AbstractKami.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/object/kami/KamiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/object/kami/KamiManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/object/kami/Menreiki.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/object/kami/Menreiki.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/KamiPatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/PlayerDamage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/PlayerDamage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/RenderHealthBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/RenderHealthBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/SwitchAnime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/SwitchAnime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/spirit/RenderSpirit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/spirit/RenderSpirit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +85,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2VNbN0VZnG1qUP6LXdDaNu0skDD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -104,10 +107,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
+    "project.structure.last.edited": "SDK",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3264368",
-    "settings.editor.selected.configurable": "settings.saveactions",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.packagesearch.PackageSearchGeneralConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -120,6 +124,7 @@
       <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\character" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\character\sanme" />
       <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\image\512" />
       <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\image\1024" />
       <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\image" />
@@ -259,7 +264,8 @@
       <workItem from="1704552844166" duration="25955000" />
       <workItem from="1704708472707" duration="39129000" />
       <workItem from="1705658503825" duration="2164000" />
-      <workItem from="1705742323641" duration="49730000" />
+      <workItem from="1705742323641" duration="55740000" />
+      <workItem from="1706093680889" duration="6870000" />
     </task>
     <servers />
   </component>
@@ -291,5 +297,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

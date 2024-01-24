@@ -80,7 +80,7 @@ public class PlayerDamage {
 
         public int[] Locate(CtBehavior ctMethodToPatch) throws Exception {
             Matcher finalMatcher = new Matcher.MethodCallMatcher(AbstractPlayer.class, "decrementBlock");
-            return Inject.insertAfter(LineFinder.findInOrder(ctMethodToPatch, new ArrayList(), finalMatcher));
+            return Inject.insertAfter(LineFinder.findInOrder(ctMethodToPatch, new ArrayList<>(), finalMatcher));
         }
     }
 
@@ -90,7 +90,7 @@ public class PlayerDamage {
 
         public int[] Locate(CtBehavior ctMethodToPatch) throws Exception {
             Matcher finalMatcher = new Matcher.NewExprMatcher(StrikeEffect.class);
-            int[] all = LineFinder.findAllInOrder(ctMethodToPatch, new ArrayList(), finalMatcher);
+            int[] all = LineFinder.findAllInOrder(ctMethodToPatch, new ArrayList<>(), finalMatcher);
             return new int[]{all[all.length - 1]};
         }
     }

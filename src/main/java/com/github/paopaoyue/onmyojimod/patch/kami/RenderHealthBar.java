@@ -90,7 +90,7 @@ public class RenderHealthBar {
 
         public int[] Locate(CtBehavior ctBehavior) throws Exception {
             Matcher finalMatcher = new Matcher.FieldAccessMatcher(AbstractCreature.class, "currentBlock");
-            ArrayList<Matcher> matchers = new ArrayList();
+            ArrayList<Matcher> matchers = new ArrayList<>();
             matchers.add(finalMatcher);
             return LineFinder.findInOrder(ctBehavior, matchers, finalMatcher);
         }

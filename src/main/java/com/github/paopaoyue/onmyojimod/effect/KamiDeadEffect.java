@@ -18,7 +18,7 @@ public class KamiDeadEffect extends AbstractGameEffect {
         }
 
         OnmyojiCharacter player = (OnmyojiCharacter) AbstractDungeon.player;
-        player.SwitchCharacterAnimation(OnmyojiCharacter.CHARACTER_ID);
+        player.SwitchCharacterImage(OnmyojiCharacter.CHARACTER_IMG);
 
         CardCrawlGame.screenShake.rumble(SHAKE_DURATION);
     }

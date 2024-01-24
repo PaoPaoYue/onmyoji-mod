@@ -27,7 +27,6 @@ public class RandomAttachSpiritAction extends AbstractGameAction {
 
     public void update() {
         if (this.duration == (this.isFast ? Settings.ACTION_DUR_FAST : Settings.ACTION_DUR_LONG)) {
-            System.out.println(AbstractDungeon.player.drawPile.group.size());
             ArrayList<AbstractCard> rngPool = new ArrayList<>();
             for (AbstractCard card : AbstractDungeon.player.drawPile.group) {
                 if (predicate.test(card) && SpiritField.spirit.get(card) == null) {

@@ -5,6 +5,7 @@ import com.github.paopaoyue.onmyojimod.OnmyojiMod;
 
 public class Menreiki extends AbstractKami {
 
+    public static final String CHARACTER_IMG = "image/character/menreiki.png";
     private static final Keyword kamiString = OnmyojiMod.MOD_DICTIONARY.get("Onmyoji:Menreiki");
 
     public Menreiki() {
@@ -12,6 +13,11 @@ public class Menreiki extends AbstractKami {
         this.name = kamiString.NAMES[0];
         this.faction = Faction.BLUE;
         this.updateDescription();
+    }
+
+    @Override
+    public String getCharacterImage() {
+        return CHARACTER_IMG;
     }
 
     @Override

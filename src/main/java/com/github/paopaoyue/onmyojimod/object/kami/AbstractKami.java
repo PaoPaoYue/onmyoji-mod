@@ -56,6 +56,8 @@ public abstract class AbstractKami {
     public void onPlayCard(AbstractCard card) {
     }
 
+    public abstract String getCharacterImage();
+
     public abstract void updateDescription();
 
     public abstract void upgrade();

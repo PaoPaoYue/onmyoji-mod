@@ -112,6 +112,7 @@ public class OnmyojiMod implements EditCharactersSubscriber, EditStringsSubscrib
 
     @Override
     public void receiveOnBattleStart(AbstractRoom abstractRoom) {
+
     }
 
     @Override

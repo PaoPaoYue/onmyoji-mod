@@ -173,7 +173,7 @@ public class KamiManager {
         hp = 0;
 
         OnmyojiCharacter player = (OnmyojiCharacter) AbstractDungeon.player;
-        player.SwitchCharacterAnimation(OnmyojiCharacter.CHARACTER_ID);
+        player.SwitchCharacterImage(OnmyojiCharacter.CHARACTER_IMG);
     }
 
 

@@ -1,10 +1,11 @@
 package com.github.paopaoyue.onmyojimod.character;
 
 import basemod.abstracts.CustomPlayer;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
-import com.esotericsoftware.spine.AnimationState;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.github.paopaoyue.onmyojimod.patch.PlayerClassEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -14,10 +15,16 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.rooms.MonsterRoom;
+import com.megacrit.cardcrawl.rooms.RestRoom;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
 import java.util.ArrayList;
@@ -28,14 +35,15 @@ public class OnmyojiCharacter extends CustomPlayer {
     public static final String CHARACTER_SHOULDER_2 = "image/character/shoulder.png"; // campfire pose
     public static final String CHARACTER_SHOULDER_1 = "image/character/shoulder.png"; // another campfire pose
     public static final String CHARACTER_CORPSE = "image/character/corpse.png"; // dead corpse
-    public static final String CHARACTER_SKELETON_ATLAS = "character/sanme/skeleton.atlas"; // spine animation atlas
-    public static final String CHARACTER_SKELETON_JSON = "character/sanme/skeleton.json"; // spine animation json
     public static final int STARTING_HP = 75;
     public static final int MAX_HP = 75;
     public static final int MAX_ORB_SLOT = 0;
     public static final int STARTING_GOLD = 99;
     public static final int HAND_SIZE = 5;
+    private static final float CHARACTER_IMAG_SWITCH_MAX_DURATION = 0.2f;
+    public static String CHARACTER_IMG = "image/character/sanme.png";
     public static CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString("Onmyoji:Sanme");
+    private float characterImgSwitchDuration = 0f;
 
     public OnmyojiCharacter() {
         super(CHARACTER_ID, PlayerClassEnum.ONMYOJI, null, null, (String) null, null);
@@ -43,12 +51,13 @@ public class OnmyojiCharacter extends CustomPlayer {
         this.dialogX = (this.drawX + 0.0F * Settings.scale); // set location for text bubbles
         this.dialogY = (this.drawY + 220.0F * Settings.scale); // you can just copy these values
 
-        initializeClass(null, CHARACTER_SHOULDER_2, // required call to load textures and setup energy/loadout
+        initializeClass(CHARACTER_IMG, CHARACTER_SHOULDER_2, // required call to load textures and setup energy/loadout
                 CHARACTER_SHOULDER_1,
                 CHARACTER_CORPSE,
                 getLoadout(), 0F, 0F, 300.0F, 300.0F, new EnergyManager(ENERGY_PER_TURN));
 
-        this.SwitchCharacterAnimation(name);
+//        this.SwitchCharacterAnimation(name);
+
 
     }
 
@@ -156,12 +165,42 @@ public class OnmyojiCharacter extends CustomPlayer {
         return Vampires.DESCRIPTIONS[1];
     }
 
-    public void SwitchCharacterAnimation(String characterID) {
-        String atlasPath = "character/" + characterID + "/skeleton.atlas";
-        String jsonPath = "character/" + characterID + "/skeleton.json";
-        loadAnimation(atlasPath, jsonPath, 1.0F);
-        AnimationState.TrackEntry e = this.state.setAnimation(0, "animation", true);
-        e.setTime(e.getEndTime() * MathUtils.random());
+    @Override
+    public void render(SpriteBatch sb) {
+        this.stance.render(sb);
+        if ((AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT || AbstractDungeon.getCurrRoom() instanceof MonsterRoom) && !this.isDead) {
+            this.renderHealth(sb);
+            if (!this.orbs.isEmpty()) {
+                for (AbstractOrb o : this.orbs) {
+                    o.render(sb);
+                }
+            }
+        }
+
+        if (!(AbstractDungeon.getCurrRoom() instanceof RestRoom)) {
+            float opacity = 1;
+            if (this.characterImgSwitchDuration > 0) {
+                opacity = MathUtils.lerp(0F, 1F, 1 - this.characterImgSwitchDuration / CHARACTER_IMAG_SWITCH_MAX_DURATION);
+                this.characterImgSwitchDuration -= Gdx.graphics.getDeltaTime();
+                if (this.characterImgSwitchDuration < 0.01F) {
+                    this.characterImgSwitchDuration = 0;
+                }
+            }
+            sb.setColor(1, 1, 1, opacity);
+            sb.draw(this.img, this.drawX - (float) this.img.getWidth() * Settings.scale / 2.0F + this.animX, this.drawY, (float) this.img.getWidth() * Settings.scale, (float) this.img.getHeight() * Settings.scale, 0, 0, this.img.getWidth(), this.img.getHeight(), this.flipHorizontal, this.flipVertical);
+            sb.setColor(Color.WHITE);
+            this.hb.render(sb);
+            this.healthHb.render(sb);
+        } else {
+            sb.setColor(Color.WHITE);
+            this.renderShoulderImg(sb);
+        }
     }
+
+    public void SwitchCharacterImage(String img) {
+        this.img = ImageMaster.loadImage(img);
+        this.characterImgSwitchDuration = CHARACTER_IMAG_SWITCH_MAX_DURATION;
+    }
+
 
 }
