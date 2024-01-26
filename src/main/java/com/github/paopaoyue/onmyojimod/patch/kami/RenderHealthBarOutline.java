@@ -2,8 +2,11 @@ package com.github.paopaoyue.onmyojimod.patch.kami;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.modthespire.lib.*;
+import com.github.paopaoyue.onmyojimod.character.OnmyojiCharacter;
+import com.github.paopaoyue.onmyojimod.object.kami.KamiManager;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
@@ -30,19 +33,22 @@ public class RenderHealthBarOutline {
             HEALTH_BAR_OFFSET_Y = -28.0F * Settings.scale;
         }
 
-        if (!Gdx.input.isKeyPressed(36) && KamiManagerField.kamiManager.get(__instance).getHp() > 0 && __instance.hbAlpha > 0.0F) {
-            renderHealthBarOutline(__instance, sb, x, y);
+        if (!Gdx.input.isKeyPressed(36) && (__instance instanceof OnmyojiCharacter) && __instance.hbAlpha > 0.0F) {
+            KamiManager kamiManager = ((OnmyojiCharacter) __instance).getKamiManager();
+            if (kamiManager.isHasKami()) {
+                sb.setColor(Color.WHITE);
+                sb.setBlendFunction(GL20.GL_SRC_ALPHA, GL20.GL_ONE);
+                sb.draw(ImageMaster.BLOCK_BAR_L, x - HEALTH_BAR_HEIGHT, y + HEALTH_BAR_OFFSET_Y, HEALTH_BAR_HEIGHT, HEALTH_BAR_HEIGHT);
+                sb.draw(ImageMaster.BLOCK_BAR_B, x, y + HEALTH_BAR_OFFSET_Y, __instance.hb.width, HEALTH_BAR_HEIGHT);
+                sb.draw(ImageMaster.BLOCK_BAR_R, x + __instance.hb.width, y + HEALTH_BAR_OFFSET_Y, HEALTH_BAR_HEIGHT, HEALTH_BAR_HEIGHT);
+                sb.setBlendFunction(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
+            }
         }
 
     }
 
     private static void renderHealthBarOutline(AbstractCreature creature, SpriteBatch sb, float x, float y) {
-        sb.setColor(Color.WHITE);
-        sb.setBlendFunction(770, 1);
-        sb.draw(ImageMaster.BLOCK_BAR_L, x - HEALTH_BAR_HEIGHT, y + HEALTH_BAR_OFFSET_Y, HEALTH_BAR_HEIGHT, HEALTH_BAR_HEIGHT);
-        sb.draw(ImageMaster.BLOCK_BAR_B, x, y + HEALTH_BAR_OFFSET_Y, creature.hb.width, HEALTH_BAR_HEIGHT);
-        sb.draw(ImageMaster.BLOCK_BAR_R, x + creature.hb.width, y + HEALTH_BAR_OFFSET_Y, HEALTH_BAR_HEIGHT, HEALTH_BAR_HEIGHT);
-        sb.setBlendFunction(770, 771);
+
     }
 
     private static class Locator extends SpireInsertLocator {

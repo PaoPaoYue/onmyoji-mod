@@ -5,19 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a66948c5-5f94-452d-af22-4e9eb5a1d32c" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/effect/CountdownActivateEffect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/orb/AbstractCountdownOrb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/orb/StormOrb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_orbs.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/OnmyojiMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/OnmyojiMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/RandomAttachSpiritAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/RandomAttachSpiritAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/SwitchKamiAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/SwitchKamiAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/SevenSides.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/SevenSides.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/character/OnmyojiCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/character/OnmyojiCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/effect/KamiDeadEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/effect/KamiDeadEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/object/kami/AbstractKami.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/object/kami/AbstractKami.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/object/kami/KamiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/object/kami/KamiManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/object/kami/Menreiki.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/object/kami/Menreiki.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/KamiPatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/BattleEnd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/KamiManagerField.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/PlayerDamage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/PlayerDamage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/RenderHealthBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/RenderHealthBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/SwitchAnime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/SwitchAnime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/spirit/RenderSpirit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/spirit/RenderSpirit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/RenderHealthBarOutline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/RenderHealthBarOutline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/RenderTips.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/kami/TurnEnd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/spirit/CardDraw.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/spirit/CardUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/image/character/corpse.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/image/character/corpse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/image/character/shoulder.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/image/character/shoulder.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_keywords.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_keywords.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_ui.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_ui.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +91,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="360a8b8f-0baa-478c-992d-7b82508c7521" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -111,7 +123,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3264368",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.packagesearch.PackageSearchGeneralConfigurable",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -124,10 +136,11 @@
       <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\character" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\image\character" />
+      <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\image\sanme" />
       <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\character\sanme" />
       <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\image\512" />
       <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\image\1024" />
-      <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\image" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.github.paopaoyue.onmyojimod.power" />
@@ -265,7 +278,7 @@
       <workItem from="1704708472707" duration="39129000" />
       <workItem from="1705658503825" duration="2164000" />
       <workItem from="1705742323641" duration="55740000" />
-      <workItem from="1706093680889" duration="6870000" />
+      <workItem from="1706093680889" duration="41431000" />
     </task>
     <servers />
   </component>

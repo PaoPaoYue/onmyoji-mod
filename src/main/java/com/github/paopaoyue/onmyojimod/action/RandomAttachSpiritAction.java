@@ -12,21 +12,23 @@ import java.util.ArrayList;
 import java.util.function.Predicate;
 
 public class RandomAttachSpiritAction extends AbstractGameAction {
+    private final boolean hideVisual;
     private AbstractSpirit spirit;
     private Predicate<AbstractCard> predicate;
-    private boolean isFast;
+    private boolean fast;
 
-    public RandomAttachSpiritAction(AbstractSpirit spirit, int amount, Predicate<AbstractCard> predicate, boolean isFast) {
+    public RandomAttachSpiritAction(AbstractSpirit spirit, int amount, Predicate<AbstractCard> predicate, boolean hideVisual, boolean fast) {
         this.spirit = spirit;
         this.predicate = predicate;
         this.amount = amount;
-        this.duration = isFast ? Settings.ACTION_DUR_FAST : Settings.ACTION_DUR_LONG;
+        this.duration = fast ? Settings.ACTION_DUR_FAST : Settings.ACTION_DUR_LONG;
         this.actionType = ActionType.SPECIAL;
-        this.isFast = isFast;
+        this.hideVisual = hideVisual;
+        this.fast = fast;
     }
 
     public void update() {
-        if (this.duration == (this.isFast ? Settings.ACTION_DUR_FAST : Settings.ACTION_DUR_LONG)) {
+        if (this.duration == (fast ? Settings.ACTION_DUR_FAST : Settings.ACTION_DUR_LONG)) {
             ArrayList<AbstractCard> rngPool = new ArrayList<>();
             for (AbstractCard card : AbstractDungeon.player.drawPile.group) {
                 if (predicate.test(card) && SpiritField.spirit.get(card) == null) {
@@ -36,7 +38,9 @@ public class RandomAttachSpiritAction extends AbstractGameAction {
             for (int i = 0; i < amount && rngPool.size() > 0; i++) {
                 AbstractCard card = rngPool.get(AbstractDungeon.cardRandomRng.random(rngPool.size() - 1));
                 spirit.attachToCard(card);
-                AbstractDungeon.effectList.add(new SpiritAttachedEffect(card));
+                if (!hideVisual) {
+                    AbstractDungeon.effectList.add(new SpiritAttachedEffect(card));
+                }
                 rngPool.remove((card));
             }
         }

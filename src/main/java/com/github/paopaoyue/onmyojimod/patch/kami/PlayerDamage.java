@@ -1,9 +1,8 @@
 package com.github.paopaoyue.onmyojimod.patch.kami;
 
-import com.evacipated.cardcrawl.mod.stslib.damagemods.AbstractDamageModifier;
-import com.evacipated.cardcrawl.mod.stslib.damagemods.DamageModifierManager;
 import com.evacipated.cardcrawl.mod.stslib.vfx.combat.TempDamageNumberEffect;
 import com.evacipated.cardcrawl.modthespire.lib.*;
+import com.github.paopaoyue.onmyojimod.character.OnmyojiCharacter;
 import com.github.paopaoyue.onmyojimod.object.kami.KamiManager;
 import com.github.paopaoyue.onmyojimod.utility.Inject;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -32,16 +31,10 @@ public class PlayerDamage {
             locator = Locator.class,
             localvars = {"damageAmount", "hadBlock"}
     )
-    public static void Insert(AbstractCreature __instance, DamageInfo info, @ByRef int[] damageAmount, @ByRef boolean[] hadBlock) {
-        if (damageAmount[0] > 0) {
+    public static void Insert(AbstractCreature __instance, DamageInfo info, int damageAmount, boolean hadBlock) {
+        if (damageAmount > 0 && AbstractDungeon.player instanceof OnmyojiCharacter) {
 
-            for (AbstractDamageModifier modifier : DamageModifierManager.getDamageMods(info)) {
-                if (modifier.ignoresTempHP(__instance)) {
-                    return;
-                }
-            }
-
-            KamiManager kamiManager = (KamiManager) KamiManagerField.kamiManager.get(__instance);
+            KamiManager kamiManager = ((OnmyojiCharacter) AbstractDungeon.player).getKamiManager();
             int tempHp = kamiManager.getHp();
             if (tempHp > 0) {
 
@@ -50,19 +43,18 @@ public class PlayerDamage {
                 }
 
                 CardCrawlGame.screenShake.shake(ShakeIntensity.MED, ShakeDur.SHORT, false);
-                if (tempHp > damageAmount[0]) {
-                    AbstractDungeon.effectsQueue.add(new TempDamageNumberEffect(__instance, __instance.hb.cX, __instance.hb.cY, damageAmount[0]));
-                    kamiManager.setHp(tempHp - damageAmount[0]);
-                    damageAmount[0] = 0;
+                if (tempHp > damageAmount) {
+                    AbstractDungeon.effectsQueue.add(new TempDamageNumberEffect(__instance, __instance.hb.cX, __instance.hb.cY, damageAmount));
+                    kamiManager.setHp(tempHp - damageAmount);
+                    damageAmount = 0;
                 } else {
                     AbstractDungeon.effectsQueue.add(new TempDamageNumberEffect(__instance, __instance.hb.cX, __instance.hb.cY, tempHp));
                     kamiManager.setHp(0);
                     kamiManager.onDead();
-                    damageAmount[0] -= tempHp;
+                    damageAmount -= tempHp;
                 }
 
             }
-
         }
     }
 
@@ -70,8 +62,11 @@ public class PlayerDamage {
             locator = StrikeEffectLocator.class
     )
     public static SpireReturn<Void> Insert(AbstractCreature __instance, DamageInfo info) {
-        KamiManager kamiManager = (KamiManager) KamiManagerField.kamiManager.get(__instance);
-        return kamiManager.getHp() > 0 ? SpireReturn.Return((Void) null) : SpireReturn.Continue();
+        if (AbstractDungeon.player instanceof OnmyojiCharacter) {
+            KamiManager kamiManager = ((OnmyojiCharacter) AbstractDungeon.player).getKamiManager();
+            return kamiManager.getHp() > 0 ? SpireReturn.Return((Void) null) : SpireReturn.Continue();
+        }
+        return SpireReturn.Continue();
     }
 
     private static class Locator extends SpireInsertLocator {

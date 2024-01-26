@@ -1,8 +1,8 @@
 package com.github.paopaoyue.onmyojimod.action;
 
+import com.github.paopaoyue.onmyojimod.character.OnmyojiCharacter;
 import com.github.paopaoyue.onmyojimod.object.kami.AbstractKami;
 import com.github.paopaoyue.onmyojimod.object.kami.KamiManager;
-import com.github.paopaoyue.onmyojimod.patch.kami.KamiManagerField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
@@ -23,7 +23,7 @@ public class SwitchKamiAction extends AbstractGameAction {
 
     public void update() {
         if (this.duration == Settings.ACTION_DUR_MED) {
-            KamiManager kamiManager = (KamiManager) KamiManagerField.kamiManager.get(AbstractDungeon.player);
+            KamiManager kamiManager = ((OnmyojiCharacter) AbstractDungeon.player).getKamiManager();
             kamiManager.setHp(amount + kamiManager.getHp());
             kamiManager.onSwitch(card, newKami);
             if (this.amount > 0) {

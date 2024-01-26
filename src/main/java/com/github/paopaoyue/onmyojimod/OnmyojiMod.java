@@ -98,8 +98,8 @@ public class OnmyojiMod implements EditCharactersSubscriber, EditStringsSubscrib
         BaseMod.loadCustomStringsFile(PowerStrings.class, "localization/" + language + "/onmyoji_powers.json");
         BaseMod.loadCustomStringsFile(RelicStrings.class, "localization/" + language + "/onmyoji_relics.json");
         BaseMod.loadCustomStringsFile(UIStrings.class, "localization/" + language + "/onmyoji_ui.json");
+        BaseMod.loadCustomStringsFile(OrbStrings.class, "localization/" + language + "/onmyoji_orbs.json");
 
-//        BaseMod.loadCustomStringsFile(OrbStrings.class, "localization/" + language + "/Orb-Strings.json");
 //        BaseMod.loadCustomStringsFile(EventStrings.class, "localization/" + language + "/Event-Strings.json");
 
         Gson gson = new Gson();
