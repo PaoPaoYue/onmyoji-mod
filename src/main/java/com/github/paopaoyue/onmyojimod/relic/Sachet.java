@@ -26,6 +26,6 @@ public class Sachet extends CustomRelic {
 
     public void atBattleStartPreDraw() {
         this.flash();
-        AbstractDungeon.actionManager.addToTop(new RandomAttachSpiritAction(new Enhancement(), 1, c -> c instanceof AbstractKamiCard, false, false));
+        AbstractDungeon.actionManager.addToTop(new RandomAttachSpiritAction(new Enhancement(), 1, c -> c instanceof AbstractKamiCard, true, false));
     }
 }

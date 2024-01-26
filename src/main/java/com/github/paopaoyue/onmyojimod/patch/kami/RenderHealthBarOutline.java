@@ -36,7 +36,7 @@ public class RenderHealthBarOutline {
         if (!Gdx.input.isKeyPressed(36) && (__instance instanceof OnmyojiCharacter) && __instance.hbAlpha > 0.0F) {
             KamiManager kamiManager = ((OnmyojiCharacter) __instance).getKamiManager();
             if (kamiManager.isHasKami()) {
-                sb.setColor(Color.WHITE);
+                sb.setColor(Color.WHITE.cpy());
                 sb.setBlendFunction(GL20.GL_SRC_ALPHA, GL20.GL_ONE);
                 sb.draw(ImageMaster.BLOCK_BAR_L, x - HEALTH_BAR_HEIGHT, y + HEALTH_BAR_OFFSET_Y, HEALTH_BAR_HEIGHT, HEALTH_BAR_HEIGHT);
                 sb.draw(ImageMaster.BLOCK_BAR_B, x, y + HEALTH_BAR_OFFSET_Y, __instance.hb.width, HEALTH_BAR_HEIGHT);

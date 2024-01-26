@@ -25,7 +25,7 @@ import java.util.HashMap;
 
 @SpireInitializer
 @SuppressWarnings("unused")
-public class OnmyojiMod implements EditCharactersSubscriber, EditStringsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditCardsSubscriber, OnStartBattleSubscriber, PostBattleSubscriber {
+public class OnmyojiMod implements EditCharactersSubscriber, EditStringsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditCardsSubscriber, OnStartBattleSubscriber, PostBattleSubscriber, AddAudioSubscriber {
 
 
     public static final String MOD_ID = "Onmyoji";
@@ -110,6 +110,7 @@ public class OnmyojiMod implements EditCharactersSubscriber, EditStringsSubscrib
         }
     }
 
+
     @Override
     public void receiveOnBattleStart(AbstractRoom abstractRoom) {
 
@@ -120,4 +121,8 @@ public class OnmyojiMod implements EditCharactersSubscriber, EditStringsSubscrib
 
     }
 
+    @Override
+    public void receiveAddAudio() {
+        BaseMod.addAudio("ONMYOJI:ROLL_DICE", "audio/roll_dice.mp3");
+    }
 }

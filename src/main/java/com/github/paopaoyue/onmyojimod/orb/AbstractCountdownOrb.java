@@ -19,7 +19,6 @@ public abstract class AbstractCountdownOrb extends AbstractOrb {
 
     private static final Texture MASK_1 = ImageMaster.loadImage("image/vfx/orb/mask1.png");
     private static final Texture MASK_2 = ImageMaster.loadImage("image/vfx/orb/mask2.png");
-    private static final Texture MASK_3 = ImageMaster.loadImage("image/vfx/orb/mask3.png");
     private static final Texture TIMER = ImageMaster.loadImage("image/vfx/orb/timer.png");
 
     private static float stableTimer = 5.0F;
@@ -49,7 +48,7 @@ public abstract class AbstractCountdownOrb extends AbstractOrb {
         stableTimer -= Gdx.graphics.getDeltaTime();
         if (stableTimer <= 0.0F) {
             stableTimer = 5.0F;
-            actionTimer = 0.2F;
+            actionTimer = 0.5F;
         }
         actionTimer -= Gdx.graphics.getDeltaTime();
         if (actionTimer <= 0.0F) {
@@ -61,9 +60,9 @@ public abstract class AbstractCountdownOrb extends AbstractOrb {
             }
         } else {
             if (timerAngle >= 0.0F && timerAngle < 180.0F) {
-                timerAngle = Interpolation.pow2Out.apply(0.0F, 180.0F, 1 - actionTimer / 0.2F);
+                timerAngle = Interpolation.pow2Out.apply(0.0F, 180.0F, 1 - actionTimer / 0.5F);
             } else {
-                timerAngle = Interpolation.pow2Out.apply(180.0F, 360.0F, 1 - actionTimer / 0.2F);
+                timerAngle = Interpolation.pow2Out.apply(180.0F, 360.0F, 1 - actionTimer / 0.5F);
             }
         }
     }
@@ -112,7 +111,7 @@ public abstract class AbstractCountdownOrb extends AbstractOrb {
         sb.draw(MASK_1, this.cX - 48.0F, this.cY - 48.0F + this.bobEffect.y, 48.0F, 48.0F, 96.0F, 96.0F, this.scale, this.scale, this.vfxAngle1, 0, 0, MASK_1.getWidth(), MASK_1.getHeight(), false, false);
         sb.draw(MASK_2, this.cX - 48.0F, this.cY - 48.0F + this.bobEffect.y, 48.0F, 48.0F, 96.0F, 96.0F, this.scale, this.scale, -this.vfxAngle2, 0, 0, MASK_2.getWidth(), MASK_2.getHeight(), false, false);
         sb.setBlendFunction(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
-        sb.draw(TIMER, this.cX + NUM_X_OFFSET - 20.0F, this.cY + NUM_Y_OFFSET - 18.0F + this.bobEffect.y / 2.0F, 18.0F, 18.0F, 36.0F, 36.0F, this.scale, this.scale, this.timerAngle, 0, 0, TIMER.getWidth(), TIMER.getHeight(), false, false);
+        sb.draw(TIMER, this.cX + NUM_X_OFFSET - 20.0F, this.cY + NUM_Y_OFFSET - 18.0F + this.bobEffect.y / 2.0F, 18.0F, 18.0F, 36.0F, 36.0F, this.scale, this.scale, timerAngle, 0, 0, TIMER.getWidth(), TIMER.getHeight(), false, false);
         sb.setBlendFunction(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
         this.renderText(sb);
         this.hb.render(sb);

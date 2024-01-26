@@ -61,7 +61,7 @@ public class RenderHealthBar {
                         icon = FACTION_PURPLE_ICON;
                         break;
                 }
-                sb.setColor(Color.WHITE);
+                sb.setColor(Color.WHITE.cpy());
                 sb.draw(icon, x + getStaticPrivate(AbstractCreature.class, "BLOCK_ICON_X", Float.class) - 16.0F + __instance.hb.width, y + getStaticPrivate(AbstractCreature.class, "BLOCK_ICON_Y", Float.class) - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, Settings.scale, Settings.scale, 0.0F, 0, 0, 64, 64, false, false);
                 FontHelper.renderFontCentered(sb, FontHelper.blockInfoFont, String.valueOf(kamiManager.getHp()), x + getStaticPrivate(AbstractCreature.class, "BLOCK_ICON_X", Float.class) + 16.0F + __instance.hb.width, y - 16.0F * Settings.scale, Settings.CREAM_COLOR, 1.0F);
             }

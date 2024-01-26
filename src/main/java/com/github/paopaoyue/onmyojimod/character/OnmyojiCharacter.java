@@ -214,11 +214,11 @@ public class OnmyojiCharacter extends CustomPlayer {
             }
             sb.setColor(1, 1, 1, opacity);
             sb.draw(this.img, this.drawX - (float) this.img.getWidth() * Settings.scale / 2.0F + this.animX, this.drawY, (float) this.img.getWidth() * Settings.scale, (float) this.img.getHeight() * Settings.scale, 0, 0, this.img.getWidth(), this.img.getHeight(), this.flipHorizontal, this.flipVertical);
-            sb.setColor(Color.WHITE);
+            sb.setColor(Color.WHITE.cpy());
             this.hb.render(sb);
             this.healthHb.render(sb);
         } else {
-            sb.setColor(Color.WHITE);
+            sb.setColor(Color.WHITE.cpy());
             this.renderShoulderImg(sb);
         }
     }

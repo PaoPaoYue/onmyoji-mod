@@ -25,7 +25,7 @@ public class RenderSpirit {
         AbstractSpirit spirit = (AbstractSpirit) SpiritField.spirit.get(__instance);
         if (spirit != null) {
             Texture img = spirit.getTexture();
-            sb.setColor(Color.WHITE);
+            sb.setColor(Color.WHITE.cpy());
             sb.draw(img, __instance.current_x - 256.0F, __instance.current_y - 256.0F, 256.0F, 256.0F, 512.0F, 512.0F, __instance.drawScale * Settings.scale, __instance.drawScale * Settings.scale, __instance.angle, 0, 0, 512, 512, false, false);
         }
     }

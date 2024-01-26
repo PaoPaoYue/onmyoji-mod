@@ -1,7 +1,9 @@
 package com.github.paopaoyue.onmyojimod.card;
 
 import basemod.abstracts.CustomCard;
+import com.badlogic.gdx.math.MathUtils;
 import com.github.paopaoyue.onmyojimod.character.OnmyojiCharacter;
+import com.github.paopaoyue.onmyojimod.effect.RollDiceEffect;
 import com.github.paopaoyue.onmyojimod.object.kami.KamiManager;
 import com.github.paopaoyue.onmyojimod.orb.StormOrb;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
@@ -35,6 +37,7 @@ public class SevenSides extends CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
+        AbstractDungeon.effectList.add(new RollDiceEffect(MathUtils.random(1, 6)));
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         for (int i = 0; i < 3; i++) {
 
