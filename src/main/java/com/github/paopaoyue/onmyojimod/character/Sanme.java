@@ -40,33 +40,35 @@ import com.megacrit.cardcrawl.rooms.RestRoom;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.ThoughtBubble;
+import com.megacrit.cardcrawl.vfx.combat.HealEffect;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class OnmyojiCharacter extends CustomPlayer {
+public class Sanme extends CustomPlayer {
 
     public static final String CHARACTER_ID = "sanme";
     public static final int ENERGY_PER_TURN = 3; // how much energy you get every turn
     public static final String CHARACTER_SHOULDER_2 = "image/character/shoulder.png"; // campfire pose
     public static final String CHARACTER_SHOULDER_1 = "image/character/shoulder.png"; // another campfire pose
     public static final String CHARACTER_CORPSE = "image/character/corpse.png"; // dead corpse
-    public static final int STARTING_HP = 75;
-    public static final int MAX_HP = 75;
+    public static final int STARTING_HP = 66;
+    public static final int MAX_HP = 66;
     public static final int MAX_ORB_SLOT = 0;
     public static final int STARTING_GOLD = 99;
     public static final int HAND_SIZE = 5;
-    private static final Logger logger = LogManager.getLogger(OnmyojiCharacter.class.getName());
+    private static final Logger logger = LogManager.getLogger(Sanme.class.getName());
     private static final float CHARACTER_IMAG_SWITCH_MAX_DURATION = 0.2f;
     public static String CHARACTER_IMG = "image/character/sanme.png";
     public static CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString("Onmyoji:Sanme");
     public static UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("Countdown");
     private final KamiManager kamiManager;
+    private int preBattleHP = 0;
     private float characterImgSwitchDuration = 0f;
 
-    public OnmyojiCharacter() {
+    public Sanme() {
         super(CHARACTER_ID, PlayerClassEnum.ONMYOJI, null, null, (String) null, null);
 
         this.dialogX = (this.drawX + 0.0F * Settings.scale); // set location for text bubbles
@@ -165,7 +167,7 @@ public class OnmyojiCharacter extends CustomPlayer {
 
     @Override
     public AbstractPlayer newInstance() {
-        return new OnmyojiCharacter();
+        return new Sanme();
     }
 
     @Override
@@ -274,7 +276,7 @@ public class OnmyojiCharacter extends CustomPlayer {
             spirit.onUse();
         }
 
-        this.countdown();
+        this.countdownOrb();
 
         c.use(this, monster);
         AbstractDungeon.actionManager.addToBottom(new UseCardAction(c, monster));
@@ -327,15 +329,65 @@ public class OnmyojiCharacter extends CustomPlayer {
         }
     }
 
-    public void applyEndOfTurnTriggers() {
-        this.kamiManager.onTurnEnd();
-        super.applyEndOfTurnTriggers();
+    public void heal(int healAmount, boolean showEffect) {
+        if (Settings.isEndless && this.isPlayer && AbstractDungeon.player.hasBlight("FullBelly")) {
+            healAmount /= 2;
+            if (healAmount < 1) {
+                healAmount = 1;
+            }
+        }
+        if (this.isDying) {
+            return;
+        }
+        for (final AbstractRelic r : AbstractDungeon.player.relics) {
+            if (this.isPlayer) {
+                healAmount = r.onPlayerHeal(healAmount);
+            }
+        }
+        for (final AbstractPower p : this.powers) {
+            healAmount = p.onHeal(healAmount);
+        }
+        if (kamiManager.isHasKami()) {
+            kamiManager.getCurrentKami().onHeal(healAmount);
+        }
+        this.currentHealth += healAmount;
+        if (this.currentHealth > this.maxHealth) {
+            this.currentHealth = this.maxHealth;
+        }
+        if (this.currentHealth > this.maxHealth / 2.0f && this.isBloodied) {
+            this.isBloodied = false;
+            for (final AbstractRelic r2 : AbstractDungeon.player.relics) {
+                r2.onNotBloodied();
+            }
+        }
+        if (showEffect && healAmount > 0 && this.isPlayer) {
+            AbstractDungeon.topPanel.panelHealEffect();
+            AbstractDungeon.effectsQueue.add(new HealEffect(this.hb.cX - this.animX, this.hb.cY, healAmount));
+        }
+        this.healthBarUpdatedEvent();
     }
 
-    public void onVictory() {
-        this.kamiManager.onBattleEnd();
-        super.onVictory();
+    public void healLossHP(int healAmount, boolean showEffect) {
+        int lossHp = Math.max(this.preBattleHP - this.currentHealth, 0);
+        healAmount = Math.min(healAmount, lossHp);
+        this.heal(healAmount, showEffect);
     }
+
+    public void countdownOrb() {
+        int orbToEvoke = 0;
+        for (AbstractOrb orb : this.orbs) {
+            orb.onStartOfTurn();
+            if (orb instanceof AbstractCountdownOrb) {
+                ((AbstractCountdownOrb) orb).countdown();
+                orbToEvoke += ((AbstractCountdownOrb) orb).isTimeout() ? 1 : 0;
+            }
+        }
+        if (orbToEvoke > 0) {
+            AbstractDungeon.actionManager.addToBottom(new AnimateOrbAction(orbToEvoke));
+            AbstractDungeon.actionManager.addToBottom(new EvokeOrbAction(orbToEvoke));
+        }
+    }
+
 
     public void evokeOrb() {
         if (!this.orbs.isEmpty() && !(this.orbs.get(0) instanceof EmptyOrbSlot)) {
@@ -389,24 +441,23 @@ public class OnmyojiCharacter extends CustomPlayer {
         orbToSet.applyFocus();
     }
 
+    public void applyPreCombatLogic() {
+        this.preBattleHP = this.currentHealth;
+        super.applyPreCombatLogic();
+    }
+
     public void applyStartOfTurnOrbs() {
-        this.countdown();
+        this.countdownOrb();
     }
 
-    public void countdown() {
-        int orbToEvoke = 0;
-        for (AbstractOrb orb : this.orbs) {
-            orb.onStartOfTurn();
-            if (orb instanceof AbstractCountdownOrb) {
-                ((AbstractCountdownOrb) orb).countdown();
-                orbToEvoke += ((AbstractCountdownOrb) orb).isTimeout() ? 1 : 0;
-            }
-        }
-        if (orbToEvoke > 0) {
-            AbstractDungeon.actionManager.addToBottom(new AnimateOrbAction(orbToEvoke));
-            AbstractDungeon.actionManager.addToBottom(new EvokeOrbAction(orbToEvoke));
-        }
+    public void applyEndOfTurnTriggers() {
+        this.kamiManager.onTurnEnd();
+        super.applyEndOfTurnTriggers();
     }
 
+    public void onVictory() {
+        this.kamiManager.onBattleEnd();
+        super.onVictory();
+    }
 
 }

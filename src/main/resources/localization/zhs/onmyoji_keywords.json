@@ -21,6 +21,13 @@
     "DESCRIPTION": "投掷一枚色子，若点数大于要求触发对应效果。"
   },
   {
+    "ID": "Onmyoji:Projectile",
+    "NAMES": [
+      "投射"
+    ],
+    "DESCRIPTION": "对最近的敌人造成伤害。"
+  },
+  {
     "ID": "Onmyoji:Menreiki",
     "NAMES": [
       "面灵气"
@@ -56,25 +63,144 @@
     "DESCRIPTION": "无特殊能力。"
   },
   {
+    "ID": "Onmyoji:Kiyohime",
+    "NAMES": [
+      "清姬"
+    ],
+    "DESCRIPTION": "攻击无法造成伤害，但会使敌人获得伤害一半的 破甲 。"
+  },
+  {
+    "ID": "Onmyoji:Hitotsume",
+    "NAMES": [
+      "独眼小僧"
+    ],
+    "DESCRIPTION": "无特殊能力。"
+  },
+  {
+    "ID": "Onmyoji:Akaname",
+    "NAMES": [
+      "垢尝"
+    ],
+    "DESCRIPTION": "受到伤害时会获得等量的 #y格挡 。"
+  },
+  {
+    "ID": "Onmyoji:Enmusubi",
+    "NAMES": [
+      "缘结神"
+    ],
+    "DESCRIPTION": "回合结束时随机使抽牌堆1张牌附加 缘结 。|进场与回合结束时随机使抽牌堆1张牌附加 缘结 。"
+  },
+  {
+    "ID": "Onmyoji:Yamausagi",
+    "NAMES": [
+      "山兔"
+    ],
+    "DESCRIPTION": " 运势 始终为 #b6 。"
+  },
+  {
+    "ID": "Onmyoji:Kusa",
+    "NAMES": [
+      "萤草"
+    ],
+    "DESCRIPTION": "离场时获得 [E] 并抽 #b2 张牌。|离场时获得 [E] 并抽 #b3 张牌。"
+  },
+  {
+    "ID": "Onmyoji:Komatsu",
+    "NAMES": [
+      "小松丸"
+    ],
+    "DESCRIPTION": "离场时 倒计时 #b1 ：将式神卡牌从弃牌堆置入手牌。"
+  },
+  {
+    "ID": "Onmyoji:Itsumade",
+    "NAMES": [
+      "以津真天"
+    ],
+    "DESCRIPTION": "进场时 倒计时 #b4 ：将2张 #y黄金羽 置入手牌。|进场与离场时 倒计时 #b4 ：将2张 #y黄金羽 置入手牌。"
+  },
+  {
+    "ID": "Onmyoji:Shuten Doji",
+    "NAMES": [
+      "酒吞童子"
+    ],
+    "DESCRIPTION": "进场时获得 不屈 ，每次式神受到 #b3 点或以上未被格挡的伤害获得 #b1 力量。|进场时获得 不屈 ，每次式神受到 #b3 点或以上未被格挡的伤害获得 #b2 力量。"
+  },
+  {
+    "ID": "Onmyoji:Yoto Hime",
+    "NAMES": [
+      "妖刀姬"
+    ],
+    "DESCRIPTION": "进场时造成伤害，且本回合每切换一次式神额外重复一次。"
+  },
+  {
+    "ID": "Onmyoji:Momo",
+    "NAMES": [
+      "桃花妖"
+    ],
+    "DESCRIPTION": "进场时恢复本场战斗中损失的 #2 点生命值，每当你恢复生命时获得 #b1 #y力量 。|进场时恢复本场战斗中损失的 #3 点生命值，每当你恢复生命时获得 #b1 #y力量 。"
+  },
+  {
+    "ID": "Onmyoji:Shiranui",
+    "NAMES": [
+      "不知火"
+    ],
+    "DESCRIPTION": "离场时获得 #b1 鼓舞 。|离场时获得 #b2 鼓舞 。"
+  },
+  {
+    "ID": "Onmyoji:Yamata",
+    "NAMES": [
+      "八岐大蛇"
+    ],
+    "DESCRIPTION": "无特殊能力。"
+  },
+  {
+    "ID": "Onmyoji:Bokku",
+    "NAMES": [
+      "书翁"
+    ],
+    "DESCRIPTION": "进场时将1张 #y金晴明 置入抽牌堆底部。|进场时将1张 #y金晴明+ 置入抽牌堆底部。"
+  },
+  {
+    "ID": "Onmyoji:Onikiri",
+    "NAMES": [
+      "鬼切"
+    ],
+    "DESCRIPTION": "离场时若是敌方回合，使所有敌人获得2层 #y脆弱 和 #y易伤 。|离场时若是敌方回合，使所有敌人获得3层 #y脆弱 和 #y易伤 。"
+  },
+  {
+    "ID": "Onmyoji:Hangan",
+    "NAMES": [
+      "判官"
+    ],
+    "DESCRIPTION": "进场时消灭一个生命值低于当前式神生命的敌人。"
+  },
+  {
+    "ID": "Onmyoji:Dodomeki",
+    "NAMES": [
+      "百目鬼"
+    ],
+    "DESCRIPTION": " 占卜 时额外多展示 #b2 张牌。| 占卜 时额外多展示 #b3 张牌。"
+  },
+  {
     "ID": "Onmyoji:Knot",
     "NAMES": [
       "缘结"
     ],
-    "DESCRIPTION": "抽到此牌时额外恢复本场战斗中损失的2点生命值。"
+    "DESCRIPTION": "抽到此牌时额外恢复本场战斗中损失的 #b2 点生命值。"
   },
   {
     "ID": "Onmyoji:Enhancement",
     "NAMES": [
       "加护"
     ],
-    "DESCRIPTION": "使用此牌时额外使此牌的式神生命值增加2点。"
+    "DESCRIPTION": "使用此牌时额外使此牌的式神生命值增加 #b2 点。"
   },
   {
     "ID": "Onmyoji:Dream",
     "NAMES": [
       "梦魇"
     ],
-    "DESCRIPTION": "抽到此牌时额外对随机敌人造成6点伤害。"
+    "DESCRIPTION": "抽到此牌时额外对随机敌人造成 #b6 点伤害。"
   },
   {
     "ID": "Onmyoji:Eye",
@@ -88,6 +214,6 @@
     "NAMES": [
       "蚀印"
     ],
-    "DESCRIPTION": "使用此牌时额外受到3点伤害。"
+    "DESCRIPTION": "使用此牌时额外受到 #b3 点伤害。"
   }
 ]

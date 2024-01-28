@@ -33,7 +33,7 @@ public class StormOrb extends AbstractCountdownOrb {
 
     @Override
     public void onEvoke() {
-        AbstractDungeon.actionManager.addToTop(new LightningOrbEvokeAction(new DamageInfo(AbstractDungeon.player, this.damage, DamageInfo.DamageType.THORNS), true));
+        AbstractDungeon.actionManager.addToTop(new LightningOrbEvokeAction(new DamageInfo(AbstractDungeon.player, this.damage, DamageInfo.DamageType.NORMAL), true));
     }
 
     @Override

@@ -6,5 +6,88 @@
   "Onmyoji:Seven Sides": {
     "NAME": "心生七面",
     "DESCRIPTION": "造成 !D! 点伤害，本场战斗切换的每个不同 式神 使伤害增加 !M! 。"
+  },
+  "Onmyoji:Kiyohime": {
+    "NAME": "式神·清姬",
+    "DESCRIPTION": "式神 拥有 !K! 点生命，攻击无法造成伤害，但会使敌人获得伤害一半的 破甲 。"
+  },
+  "Onmyoji:Hitotsume": {
+    "NAME": "式神·独眼小僧",
+    "DESCRIPTION": "式神 拥有 !K! 点生命。"
+  },
+  "Onmyoji:Akaname": {
+    "NAME": "式神·垢尝",
+    "DESCRIPTION": "式神 拥有 !K! 点生命，受到伤害时会获得等量的 格挡 。"
+  },
+  "Onmyoji:Enmusubi": {
+    "NAME": "式神·缘结神",
+    "DESCRIPTION": "式神 拥有 !K! 点生命，回合结束时随机使抽牌堆1张牌附加 缘结 。",
+    "UPGRADE_DESCRIPTION": "式神 拥有 !K! 点生命，进场与回合结束时随机使抽牌堆1张牌附加 缘结 。"
+  },
+  "Onmyoji:Yamausagi": {
+    "NAME": "式神·山兔",
+    "DESCRIPTION": "式神 拥有 !K! 点生命， 运势 始终为6，每次投出6此牌生命值加 !M! 。"
+  },
+  "Onmyoji:Kusa": {
+    "NAME": "式神·萤草",
+    "DESCRIPTION": "式神 拥有 !K! 点生命，离场时获得 [E] 并抽 !M! 张牌。"
+  },
+  "Onmyoji:Komatsu": {
+    "NAME": "式神·小松丸",
+    "DESCRIPTION": "式神 拥有 !K! 点生命，离场时 倒计时 1：将式神卡牌从弃牌堆置入手牌。"
+  },
+  "Onmyoji:Itsumade": {
+    "NAME": "式神·以津真天",
+    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时 倒计时 4：将2张 *黄金羽 置入手牌。",
+    "UPGRADE_DESCRIPTION": "式神 拥有 !K! 点生命，进场与离场时 倒计时 4：将2张 *黄金羽 置入手牌。"
+  },
+  "Onmyoji:Shuten Doji": {
+    "NAME": "式神·酒吞童子",
+    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时获得 不屈 ，每次受到 3 点或以上未被格挡的伤害获得 !M! 力量。"
+  },
+  "Onmyoji:Yoto Hime": {
+    "NAME": "式神·妖刀姬",
+    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时造成 !D! 伤害，且本回合每切换一次式神额外重复一次。",
+    "EXTENDED_DESCRIPTION": [
+      "（额外重复",
+      "次）"
+    ]
+  },
+  "Onmyoji:Momo": {
+    "NAME": "式神·桃花妖",
+    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时恢复本场战斗中损失的 !M! 点生命值，每当你恢复生命时获得1 力量 。"
+  },
+  "Onmyoji:Shiranui": {
+    "NAME": "式神·不知火",
+    "DESCRIPTION": "式神 拥有 !K! 点生命，离场时获得 !M! 鼓舞 。"
+  },
+  "Onmyoji:Yamata": {
+    "NAME": "式神·八岐大蛇",
+    "DESCRIPTION": "式神 拥有 !K! 点生命。消耗。"
+  },
+  "Onmyoji:Bokku": {
+    "NAME": "式神·书翁",
+    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时将1张 *金晴明 置入抽牌堆底部。",
+    "UPGRADE_DESCRIPTION": "式神 拥有 !K! 点生命，进场时将1张 *金晴明+ 置入抽牌堆底部。"
+  },
+  "Onmyoji:Onikiri": {
+    "NAME": "式神·鬼切",
+    "DESCRIPTION": "式神 拥有 !K! 点生命，离场时若是敌方回合，使所有敌人获得 !M! 层 脆弱 和 易伤 。"
+  },
+  "Onmyoji:Hangan": {
+    "NAME": "式神·判官",
+    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时消灭一个生命值低于当前式神生命的敌人。"
+  },
+  "Onmyoji:Dodomeki": {
+    "NAME": "式神·百目鬼",
+    "DESCRIPTION": "式神 拥有 !K! 点生命， 占卜 时额外多展示 !M! 张牌。"
+  },
+  "Onmyoji:Golden Feather": {
+    "NAME": "黄金羽",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗 。"
+  },
+  "Onmyoji:Golden Seimei": {
+    "NAME": "金晴明",
+    "DESCRIPTION": " 不能被打出 。 NL 当你抽到这张牌时， 投射 !D! 伤害，然后 消耗 。"
   }
 }

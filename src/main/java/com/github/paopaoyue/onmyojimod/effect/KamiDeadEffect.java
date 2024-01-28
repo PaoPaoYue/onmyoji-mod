@@ -1,7 +1,7 @@
 package com.github.paopaoyue.onmyojimod.effect;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.github.paopaoyue.onmyojimod.character.OnmyojiCharacter;
+import com.github.paopaoyue.onmyojimod.character.Sanme;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
@@ -17,8 +17,8 @@ public class KamiDeadEffect extends AbstractGameEffect {
             AbstractDungeon.effectList.add(new EmpowerCircleEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY));
         }
 
-        OnmyojiCharacter player = (OnmyojiCharacter) AbstractDungeon.player;
-        player.SwitchCharacterImage(OnmyojiCharacter.CHARACTER_IMG);
+        Sanme player = (Sanme) AbstractDungeon.player;
+        player.SwitchCharacterImage(Sanme.CHARACTER_IMG);
 
         CardCrawlGame.screenShake.rumble(SHAKE_DURATION);
     }

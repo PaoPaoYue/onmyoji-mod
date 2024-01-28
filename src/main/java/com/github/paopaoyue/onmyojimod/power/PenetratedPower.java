@@ -23,6 +23,7 @@ public class PenetratedPower extends AbstractPower {
         this.type = PowerType.DEBUFF;
         this.amount = amount;
         this.priority = 2;
+        this.isTurnBased = true;
         this.canGoNegative = false;
         updateDescription();
     }
@@ -39,12 +40,9 @@ public class PenetratedPower extends AbstractPower {
         return damage;
     }
 
-
-    public int onAttacked(DamageInfo info, int damageAmount) {
-        if (this.owner != null && info.type == DamageInfo.DamageType.NORMAL) {
-            this.flash();
-            this.addToBot(new ReducePowerAction(this.owner, this.owner, this.ID, 1));
-        }
-        return damageAmount;
+    @Override
+    public void atStartOfTurn() {
+        this.addToBot(new ReducePowerAction(this.owner, this.owner, this.ID, this.amount));
     }
+
 }

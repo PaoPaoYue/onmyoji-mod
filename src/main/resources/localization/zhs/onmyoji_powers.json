@@ -3,13 +3,25 @@
     "NAME": "破甲",
     "DESCRIPTIONS": [
       "受到的攻击伤害增加 #b",
-      " ，生效后将会减少 #b1 层。"
+      " ，回合开始时移除。"
     ]
   },
   "Onmyoji:Encouraged": {
     "NAME": "鼓舞",
     "DESCRIPTIONS": [
-      "下次攻击造成的最终伤害翻倍，生效后将会减少 #b1 层。"
+      "下次攻击的最终伤害翻倍，造成伤害后减少 #b1 层。"
+    ]
+  },
+  "Onmyoji:Unyielding": {
+    "NAME": "不屈",
+    "DESCRIPTIONS": [
+      "下次式神受到致命伤害时减少 #b1 层，若式神生命值大于1则将伤害减少为式神生命值-1。"
+    ]
+  },
+  "Onmyoji:Breakthrough": {
+    "NAME": "贯通",
+    "DESCRIPTIONS": [
+      "下次式神受到伤害时减少 #b1 层，此伤害改为由角色承担。"
     ]
   }
 }

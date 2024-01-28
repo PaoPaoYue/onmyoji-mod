@@ -8,7 +8,6 @@ import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 
@@ -37,7 +36,7 @@ public class RollDiceEffect extends AbstractGameEffect {
 
     private boolean soundPlayed;
 
-    public RollDiceEffect(int dice) {
+    public RollDiceEffect(float x, float y, int dice) {
         if (dice <= 0 || dice > 6) {
             throw new RuntimeException("dice value invalid");
         }
@@ -47,14 +46,14 @@ public class RollDiceEffect extends AbstractGameEffect {
         this.img = DICE_IMG[dice - 1];
         this.color = Color.WHITE.cpy();
         this.scale = Settings.scale;
-        this.x = AbstractDungeon.player.hb.cX;
-        this.y = AbstractDungeon.player.hb.cY;
+        this.x = x;
+        this.y = y;
         this.rotation = -90.0F;
         float distX = MathUtils.random(50.0F, 100.0F) * scale;
         float distY = MathUtils.random(150.0F, 200.0F) * scale;
         this.sx = x - distX;
         this.sy = y + distY;
-        this.tx = sx + distX;
+        this.tx = x;
         this.ty = y;
         this.rotationSpeed = INITIAL_ANGULAR_VELOCITY;
     }

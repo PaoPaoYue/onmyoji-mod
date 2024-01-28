@@ -18,9 +18,9 @@ public class RandomAttachSpiritAction extends AbstractGameAction {
     private boolean fast;
 
     public RandomAttachSpiritAction(AbstractSpirit spirit, int amount, Predicate<AbstractCard> predicate, boolean hideVisual, boolean fast) {
+        setValues(AbstractDungeon.player, AbstractDungeon.player, amount);
         this.spirit = spirit;
         this.predicate = predicate;
-        this.amount = amount;
         this.duration = fast ? Settings.ACTION_DUR_FAST : Settings.ACTION_DUR_LONG;
         this.actionType = ActionType.SPECIAL;
         this.hideVisual = hideVisual;

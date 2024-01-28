@@ -1,5 +1,6 @@
 package com.github.paopaoyue.onmyojimod.action;
 
+import com.github.paopaoyue.onmyojimod.character.Sanme;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
@@ -12,9 +13,14 @@ public class DivineAction extends AbstractGameAction {
     private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("DivineAction");
 
     public DivineAction(int numCards) {
+        this.setValues(AbstractDungeon.player, AbstractDungeon.player, amount);
         this.amount = numCards;
         this.actionType = ActionType.CARD_MANIPULATION;
         this.duration = Settings.ACTION_DUR_FAST;
+
+        if (this.target instanceof Sanme && ((Sanme) this.target).getKamiManager().isHasKami()) {
+            this.amount = ((Sanme) this.target).getKamiManager().getCurrentKami().onDivine(amount);
+        }
     }
 
     public void update() {

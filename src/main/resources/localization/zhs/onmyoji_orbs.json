@@ -6,5 +6,19 @@
       " 点伤害。"
     ],
     "NAME": "羽刃暴风"
+  },
+  "Onmyoji:Feather": {
+    "DESCRIPTION": [
+      "#y倒计时 #b",
+      " ：将2张 #y黄金羽 置入手牌。"
+    ],
+    "NAME": "黄金羽"
+  },
+  "Onmyoji:Pinecone": {
+    "DESCRIPTION": [
+      "#y倒计时 #b",
+      " ：从弃牌堆将生成此倒计时的 #y小松丸 置入手牌。"
+    ],
+    "NAME": "小松丸"
   }
 }

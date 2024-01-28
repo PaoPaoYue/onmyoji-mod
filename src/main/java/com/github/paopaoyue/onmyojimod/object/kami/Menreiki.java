@@ -5,8 +5,10 @@ import com.github.paopaoyue.onmyojimod.OnmyojiMod;
 
 public class Menreiki extends AbstractKami {
 
+    public static final String ID = "Onmyoji:Menreiki";
+
     public static final String CHARACTER_IMG = "image/character/menreiki.png";
-    private static final Keyword kamiString = OnmyojiMod.MOD_DICTIONARY.get("Onmyoji:Menreiki");
+    private static final Keyword kamiString = OnmyojiMod.MOD_DICTIONARY.get(ID);
 
     public Menreiki() {
         this.id = kamiString.ID;
@@ -25,13 +27,10 @@ public class Menreiki extends AbstractKami {
         this.description = kamiString.DESCRIPTION;
     }
 
-    @Override
-    public void upgrade() {
-
-    }
-
     public static class Red extends Menreiki {
-        private static final Keyword kamiString = OnmyojiMod.MOD_DICTIONARY.get("Onmyoji:Menreiki Red");
+
+        public static final String ID = "Onmyoji:Menreiki Red";
+        private static final Keyword kamiString = OnmyojiMod.MOD_DICTIONARY.get(ID);
 
         public Red() {
             this.id = kamiString.ID;
@@ -42,7 +41,9 @@ public class Menreiki extends AbstractKami {
     }
 
     public static class Green extends Menreiki {
-        private static final Keyword kamiString = OnmyojiMod.MOD_DICTIONARY.get("Onmyoji:Menreiki Green");
+
+        public static final String ID = "Onmyoji:Menreiki Green";
+        private static final Keyword kamiString = OnmyojiMod.MOD_DICTIONARY.get(ID);
 
         public Green() {
             this.id = kamiString.ID;
@@ -53,7 +54,9 @@ public class Menreiki extends AbstractKami {
     }
 
     public static class Blue extends Menreiki {
-        private static final Keyword kamiString = OnmyojiMod.MOD_DICTIONARY.get("Onmyoji:Menreiki Blue");
+
+        public static final String ID = "Onmyoji:Menreiki Blue";
+        private static final Keyword kamiString = OnmyojiMod.MOD_DICTIONARY.get(ID);
 
         public Blue() {
             this.id = kamiString.ID;
@@ -64,7 +67,9 @@ public class Menreiki extends AbstractKami {
     }
 
     public static class Purple extends Menreiki {
-        private static final Keyword kamiString = OnmyojiMod.MOD_DICTIONARY.get("Onmyoji:Menreiki Purple");
+
+        public static final String ID = "Onmyoji:Menreiki Purple";
+        private static final Keyword kamiString = OnmyojiMod.MOD_DICTIONARY.get(ID);
 
         public Purple() {
             this.id = kamiString.ID;

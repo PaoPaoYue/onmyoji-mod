@@ -1,6 +1,6 @@
 package com.github.paopaoyue.onmyojimod.object.kami;
 
-import com.github.paopaoyue.onmyojimod.character.OnmyojiCharacter;
+import com.github.paopaoyue.onmyojimod.character.Sanme;
 import com.github.paopaoyue.onmyojimod.effect.KamiDeadEffect;
 import com.github.paopaoyue.onmyojimod.patch.KamiCardGroup;
 import com.megacrit.cardcrawl.actions.common.DiscardSpecificCardAction;
@@ -129,8 +129,6 @@ public class KamiManager {
         kamiSequenceInBattle.add(kami);
         kamiSequenceInTurn.add(kami);
 
-        kami.onEnter();
-
         if (!kamiCardGroup.isEmpty()) {
             AbstractCard discardCard = kamiCardGroup.getTopCard();
             kamiCardGroup.moveToDiscardPile(discardCard);
@@ -139,6 +137,8 @@ public class KamiManager {
             kamiCardGroup.addToBottom(card);
             AbstractDungeon.player.hand.empower(card);
         }
+
+        kami.onEnter();
 
     }
 
@@ -172,8 +172,8 @@ public class KamiManager {
         hasKami = false;
         hp = 0;
 
-        OnmyojiCharacter player = (OnmyojiCharacter) AbstractDungeon.player;
-        player.SwitchCharacterImage(OnmyojiCharacter.CHARACTER_IMG);
+        Sanme player = (Sanme) AbstractDungeon.player;
+        player.SwitchCharacterImage(Sanme.CHARACTER_IMG);
     }
 
 

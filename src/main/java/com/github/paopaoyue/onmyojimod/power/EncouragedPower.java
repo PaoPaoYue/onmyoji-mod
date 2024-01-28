@@ -42,7 +42,7 @@ public class EncouragedPower extends AbstractPower {
 
 
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        if (this.owner != null && info.type == DamageInfo.DamageType.NORMAL) {
+        if (this.owner != null && info.type == DamageInfo.DamageType.NORMAL && damageAmount > 0) {
             this.flash();
             this.addToBot(new ReducePowerAction(this.owner, this.owner, this.ID, 1));
         }

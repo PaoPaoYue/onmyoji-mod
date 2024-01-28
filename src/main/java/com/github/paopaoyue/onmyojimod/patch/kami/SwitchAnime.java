@@ -2,7 +2,7 @@ package com.github.paopaoyue.onmyojimod.patch.kami;
 
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.github.paopaoyue.onmyojimod.card.AbstractKamiCard;
-import com.github.paopaoyue.onmyojimod.character.OnmyojiCharacter;
+import com.github.paopaoyue.onmyojimod.character.Sanme;
 import com.megacrit.cardcrawl.cards.Soul;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import javassist.CtBehavior;
@@ -23,7 +23,7 @@ public class SwitchAnime {
     )
     public static void Insert(Soul __instance) {
         if (__instance.card instanceof AbstractKamiCard) {
-            OnmyojiCharacter player = (OnmyojiCharacter) AbstractDungeon.player;
+            Sanme player = (Sanme) AbstractDungeon.player;
             player.SwitchCharacterImage(((AbstractKamiCard) __instance.card).getKami().getCharacterImage());
         }
     }

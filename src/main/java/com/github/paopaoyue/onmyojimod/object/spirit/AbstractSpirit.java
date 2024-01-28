@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 
 public abstract class AbstractSpirit {
     public static final AbstractSpirit SPIRIT_NONE = null;
-    protected static Texture texture = null;
     protected String id;
     protected String name;
     private AbstractCard attachedCard;
@@ -19,9 +18,6 @@ public abstract class AbstractSpirit {
         return name;
     }
 
-    public Texture getTexture() {
-        return texture;
-    }
 
     public AbstractCard getAttachedCard() {
         return attachedCard;
@@ -31,6 +27,8 @@ public abstract class AbstractSpirit {
         SpiritField.spirit.set(card, this);
         this.attachedCard = card;
     }
+
+    public abstract Texture getTexture();
 
     public abstract void onDraw();
 

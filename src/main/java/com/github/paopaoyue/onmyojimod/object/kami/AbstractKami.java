@@ -1,7 +1,7 @@
 package com.github.paopaoyue.onmyojimod.object.kami;
 
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 
 public abstract class AbstractKami {
 
@@ -12,6 +12,8 @@ public abstract class AbstractKami {
     protected Faction faction;
 
     protected String description;
+
+    protected boolean upgraded = false;
 
     public String getId() {
         return id;
@@ -29,7 +31,8 @@ public abstract class AbstractKami {
         return description;
     }
 
-    public void atStartOfTurn() {
+    public boolean isUpgraded() {
+        return upgraded;
     }
 
     public void onEndOfTurn() {
@@ -41,26 +44,36 @@ public abstract class AbstractKami {
     public void onExit() {
     }
 
-    public float atDamageGive(float damage, DamageInfo.DamageType type) {
+    public int onRollDice(int dice) {
+        return dice;
+    }
+
+    public int onDivine(int amount) {
+        return amount;
+    }
+
+    public float atDamageFinalGive(float damage, DamageInfo.DamageType type) {
         return damage;
     }
 
-    public float atDamageGive(float damage, DamageInfo.DamageType type, AbstractCard card) {
-        return this.atDamageGive(damage, type);
+    public void onDamaged(int damage, DamageInfo.DamageType damageType) {
     }
 
-    public float atDamageReceive(float damage, DamageInfo.DamageType damageType) {
-        return damage;
+    public void onHeal(int amount) {
     }
 
-    public void onPlayCard(AbstractCard card) {
+    public int onAttackPreDecrementBlock(DamageInfo info, int damageAmount, AbstractCreature target) {
+        return damageAmount;
     }
 
     public abstract String getCharacterImage();
 
     public abstract void updateDescription();
 
-    public abstract void upgrade();
+    public void upgrade() {
+        this.upgraded = true;
+        updateDescription();
+    }
 
     @Override
     public String toString() {

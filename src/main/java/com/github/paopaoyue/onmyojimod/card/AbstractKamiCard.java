@@ -54,6 +54,17 @@ public abstract class AbstractKamiCard extends CustomCard {
         this.hpModified = v;
     }
 
+    public void modifyBaseHp(int amount) {
+        this.baseHp = this.baseHp + amount;
+        this.hp = this.baseHp;
+        this.hpModified = true;
+    }
+
+    public void modifyHp(int amount) {
+        this.hp = this.baseHp + amount;
+        this.hpModified = true;
+    }
+
     public void upgradeKami() {
         this.kami.upgrade();
     }
@@ -66,10 +77,9 @@ public abstract class AbstractKamiCard extends CustomCard {
 
     @Override
     public void applyPowers() {
-        AbstractSpirit spirit = (AbstractSpirit) SpiritField.spirit.get(this);
+        AbstractSpirit spirit = SpiritField.spirit.get(this);
         if (spirit instanceof Enhancement) {
-            this.hp = this.baseHp + 2;
-            this.hpModified = true;
+            modifyHp(Enhancement.HP_BUFF_AMOUNT);
         }
         super.applyPowers();
     }

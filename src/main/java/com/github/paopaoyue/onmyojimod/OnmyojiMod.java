@@ -9,7 +9,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.github.paopaoyue.onmyojimod.card.KamiHp;
-import com.github.paopaoyue.onmyojimod.character.OnmyojiCharacter;
+import com.github.paopaoyue.onmyojimod.character.Sanme;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.github.paopaoyue.onmyojimod.patch.PlayerClassEnum;
 import com.google.gson.Gson;
@@ -57,7 +57,7 @@ public class OnmyojiMod implements EditCharactersSubscriber, EditStringsSubscrib
 
     @Override
     public void receiveEditCharacters() {
-        BaseMod.addCharacter(new OnmyojiCharacter(),
+        BaseMod.addCharacter(new Sanme(),
                 "image/character_select/button.png",
                 "image/character_select/portrait.png", PlayerClassEnum.ONMYOJI);
     }

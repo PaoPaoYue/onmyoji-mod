@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.modthespire.lib.*;
-import com.github.paopaoyue.onmyojimod.character.OnmyojiCharacter;
+import com.github.paopaoyue.onmyojimod.character.Sanme;
 import com.github.paopaoyue.onmyojimod.object.kami.KamiManager;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
@@ -43,8 +43,8 @@ public class RenderHealthBar {
             HEALTH_BAR_OFFSET_Y = -28.0F * Settings.scale;
         }
 
-        if (!Gdx.input.isKeyPressed(36) && (__instance instanceof OnmyojiCharacter) && __instance.hbAlpha > 0.0F) {
-            KamiManager kamiManager = ((OnmyojiCharacter) __instance).getKamiManager();
+        if (!Gdx.input.isKeyPressed(36) && (__instance instanceof Sanme) && __instance.hbAlpha > 0.0F) {
+            KamiManager kamiManager = ((Sanme) __instance).getKamiManager();
             if (kamiManager.isHasKami()) {
                 Texture icon = null;
                 switch (kamiManager.getCurrentFaction()) {

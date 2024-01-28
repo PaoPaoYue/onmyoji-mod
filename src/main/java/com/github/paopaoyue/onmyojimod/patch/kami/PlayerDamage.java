@@ -2,9 +2,12 @@ package com.github.paopaoyue.onmyojimod.patch.kami;
 
 import com.evacipated.cardcrawl.mod.stslib.vfx.combat.TempDamageNumberEffect;
 import com.evacipated.cardcrawl.modthespire.lib.*;
-import com.github.paopaoyue.onmyojimod.character.OnmyojiCharacter;
+import com.github.paopaoyue.onmyojimod.character.Sanme;
 import com.github.paopaoyue.onmyojimod.object.kami.KamiManager;
+import com.github.paopaoyue.onmyojimod.power.BreakthroughPower;
+import com.github.paopaoyue.onmyojimod.power.UnyieldingPower;
 import com.github.paopaoyue.onmyojimod.utility.Inject;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -12,6 +15,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ScreenShake.ShakeDur;
 import com.megacrit.cardcrawl.helpers.ScreenShake.ShakeIntensity;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.combat.DamageImpactLineEffect;
 import com.megacrit.cardcrawl.vfx.combat.StrikeEffect;
 import javassist.CtBehavior;
@@ -31,29 +35,57 @@ public class PlayerDamage {
             locator = Locator.class,
             localvars = {"damageAmount", "hadBlock"}
     )
-    public static void Insert(AbstractCreature __instance, DamageInfo info, int damageAmount, boolean hadBlock) {
-        if (damageAmount > 0 && AbstractDungeon.player instanceof OnmyojiCharacter) {
+    public static void Insert(AbstractCreature __instance, DamageInfo info, @ByRef int[] damageAmount, boolean hadBlock) {
+        if (damageAmount[0] > 0 && AbstractDungeon.player instanceof Sanme) {
 
-            KamiManager kamiManager = ((OnmyojiCharacter) AbstractDungeon.player).getKamiManager();
+            KamiManager kamiManager = ((Sanme) AbstractDungeon.player).getKamiManager();
             int tempHp = kamiManager.getHp();
             if (tempHp > 0) {
+
+                for (AbstractPower power : __instance.powers) {
+                    if (power instanceof BreakthroughPower) {
+                        AbstractDungeon.actionManager.addToTop(new ReducePowerAction(__instance, __instance, power.ID, 1));
+                        return;
+                    }
+                }
 
                 for (int i = 0; i < 18; ++i) {
                     AbstractDungeon.effectsQueue.add(new DamageImpactLineEffect(__instance.hb.cX, __instance.hb.cY));
                 }
 
-                CardCrawlGame.screenShake.shake(ShakeIntensity.MED, ShakeDur.SHORT, false);
-                if (tempHp > damageAmount) {
-                    AbstractDungeon.effectsQueue.add(new TempDamageNumberEffect(__instance, __instance.hb.cX, __instance.hb.cY, damageAmount));
-                    kamiManager.setHp(tempHp - damageAmount);
-                    damageAmount = 0;
-                } else {
-                    AbstractDungeon.effectsQueue.add(new TempDamageNumberEffect(__instance, __instance.hb.cX, __instance.hb.cY, tempHp));
-                    kamiManager.setHp(0);
-                    kamiManager.onDead();
-                    damageAmount -= tempHp;
+                for (AbstractPower power : __instance.powers) {
+                    if (power instanceof UnyieldingPower) {
+                        damageAmount[0] = ((UnyieldingPower) power).onKamiDamaged(damageAmount[0], info.type);
+                    }
                 }
 
+                CardCrawlGame.screenShake.shake(ShakeIntensity.MED, ShakeDur.SHORT, false);
+                if (tempHp > damageAmount[0]) {
+                    AbstractDungeon.effectsQueue.add(new TempDamageNumberEffect(__instance, __instance.hb.cX, __instance.hb.cY, damageAmount[0]));
+                    kamiManager.setHp(tempHp - damageAmount[0]);
+                    kamiManager.getCurrentKami().onDamaged(damageAmount[0], info.type);
+                    damageAmount[0] = 0;
+                } else {
+                    int damage = tempHp;
+                    for (AbstractPower power : __instance.powers) {
+                        if (power instanceof UnyieldingPower) {
+                            if (tempHp > 1) {
+                                damage = tempHp - 1;
+                                damageAmount[0] = 0;
+                            }
+                            AbstractDungeon.actionManager.addToTop(new ReducePowerAction(__instance, __instance, power.ID, 1));
+                            break;
+                        }
+                    }
+
+                    AbstractDungeon.effectsQueue.add(new TempDamageNumberEffect(__instance, __instance.hb.cX, __instance.hb.cY, damage));
+                    kamiManager.setHp(tempHp - damage);
+                    kamiManager.getCurrentKami().onDamaged(damage, info.type);
+                    if (tempHp == damage) {
+                        kamiManager.onDead();
+                        damageAmount[0] -= damage;
+                    }
+                }
             }
         }
     }
@@ -62,8 +94,8 @@ public class PlayerDamage {
             locator = StrikeEffectLocator.class
     )
     public static SpireReturn<Void> Insert(AbstractCreature __instance, DamageInfo info) {
-        if (AbstractDungeon.player instanceof OnmyojiCharacter) {
-            KamiManager kamiManager = ((OnmyojiCharacter) AbstractDungeon.player).getKamiManager();
+        if (AbstractDungeon.player instanceof Sanme) {
+            KamiManager kamiManager = ((Sanme) AbstractDungeon.player).getKamiManager();
             return kamiManager.getHp() > 0 ? SpireReturn.Return((Void) null) : SpireReturn.Continue();
         }
         return SpireReturn.Continue();
@@ -75,7 +107,7 @@ public class PlayerDamage {
 
         public int[] Locate(CtBehavior ctMethodToPatch) throws Exception {
             Matcher finalMatcher = new Matcher.MethodCallMatcher(AbstractPlayer.class, "decrementBlock");
-            return Inject.insertAfter(LineFinder.findInOrder(ctMethodToPatch, new ArrayList<>(), finalMatcher));
+            return Inject.insertAfter(LineFinder.findInOrder(ctMethodToPatch, new ArrayList<>(), finalMatcher), 1);
         }
     }
 
