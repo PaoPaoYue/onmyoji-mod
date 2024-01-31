@@ -37,7 +37,7 @@ public class RandomAttachSpiritAction extends AbstractGameAction {
             }
             for (int i = 0; i < amount && rngPool.size() > 0; i++) {
                 AbstractCard card = rngPool.get(AbstractDungeon.cardRandomRng.random(rngPool.size() - 1));
-                spirit.attachToCard(card);
+                spirit.makeCopy().attachToCard(card);
                 if (!hideVisual) {
                     AbstractDungeon.effectList.add(new SpiritAttachedEffect(card));
                 }

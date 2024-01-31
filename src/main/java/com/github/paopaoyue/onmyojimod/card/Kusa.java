@@ -20,7 +20,7 @@ public class Kusa extends AbstractKamiCard {
         super(ID, cardStrings.NAME, null, 1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.SELF,
                 new com.github.paopaoyue.onmyojimod.object.kami.Kusa(), 1);
-        this.baseMagicNumber = 2;
+        this.baseMagicNumber = 3;
         this.magicNumber = baseMagicNumber;
     }
 

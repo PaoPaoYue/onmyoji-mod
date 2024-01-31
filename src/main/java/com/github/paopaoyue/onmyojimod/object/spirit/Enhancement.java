@@ -30,4 +30,9 @@ public class Enhancement extends AbstractSpirit {
     @Override
     public void onUse() {
     }
+
+    @Override
+    public AbstractSpirit makeCopy() {
+        return new Enhancement();
+    }
 }

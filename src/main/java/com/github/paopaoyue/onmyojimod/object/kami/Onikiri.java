@@ -2,7 +2,6 @@ package com.github.paopaoyue.onmyojimod.object.kami;
 
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.github.paopaoyue.onmyojimod.OnmyojiMod;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -27,8 +26,9 @@ public class Onikiri extends AbstractKami {
     public void onExit() {
         if (AbstractDungeon.actionManager.turnHasEnded) {
             for (final AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, AbstractDungeon.player, new WeakPower(mo, upgraded ? 3 : 2, false), upgraded ? 3 : 2, true, AbstractGameAction.AttackEffect.NONE));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, AbstractDungeon.player, new VulnerablePower(mo, upgraded ? 3 : 2, false), upgraded ? 3 : 2, true, AbstractGameAction.AttackEffect.NONE));
+                if (mo.isDead) continue;
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, AbstractDungeon.player, new WeakPower(mo, upgraded ? 3 : 2, false)));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, AbstractDungeon.player, new VulnerablePower(mo, upgraded ? 3 : 2, false)));
             }
         }
     }

@@ -34,6 +34,8 @@ public abstract class AbstractSpirit {
 
     public abstract void onUse();
 
+    public abstract AbstractSpirit makeCopy();
+
     @Override
     public String toString() {
         return "AbstractSpirit{" +

@@ -37,12 +37,14 @@ public class SevenSides extends CustomCard {
     }
 
     public void applyPowers() {
-        KamiManager kamiManager = ((Sanme) AbstractDungeon.player).getKamiManager();
-        int kamiNum = kamiManager.getDiffKamiSwitchCountInBattle();
-        if (this.upgraded) {
-            this.baseDamage = BASE_DAMAGE + (BASE_DAMAGE_ADD_ON + 1) * kamiNum;
-        } else {
-            this.baseDamage = BASE_DAMAGE + BASE_DAMAGE_ADD_ON * kamiNum;
+        if (AbstractDungeon.player instanceof Sanme) {
+            KamiManager kamiManager = ((Sanme) AbstractDungeon.player).getKamiManager();
+            int kamiNum = Math.min(4, kamiManager.getDiffKamiSwitchCountInBattle());
+            if (this.upgraded) {
+                this.baseDamage = BASE_DAMAGE + (BASE_DAMAGE_ADD_ON + 1) * kamiNum;
+            } else {
+                this.baseDamage = BASE_DAMAGE + BASE_DAMAGE_ADD_ON * kamiNum;
+            }
         }
         super.applyPowers();
     }

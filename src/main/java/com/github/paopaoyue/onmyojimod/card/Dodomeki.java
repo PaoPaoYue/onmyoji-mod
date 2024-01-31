@@ -20,8 +20,6 @@ public class Dodomeki extends AbstractKamiCard {
         super(ID, cardStrings.NAME, null, 1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.COMMON, CardTarget.SELF,
                 new com.github.paopaoyue.onmyojimod.object.kami.Dodomeki(), 5);
-        this.baseMagicNumber = 2;
-        this.magicNumber = baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -33,7 +31,8 @@ public class Dodomeki extends AbstractKamiCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeKami();
-            this.upgradeMagicNumber(1);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 

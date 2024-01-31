@@ -2,6 +2,10 @@ package com.github.paopaoyue.onmyojimod.object.kami;
 
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.github.paopaoyue.onmyojimod.OnmyojiMod;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 public class Yamata extends AbstractKami {
 
@@ -15,6 +19,12 @@ public class Yamata extends AbstractKami {
         this.name = kamiString.NAMES[0];
         this.faction = Faction.RED;
         this.updateDescription();
+    }
+
+    @Override
+    public void onEnter() {
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, new DamageInfo(AbstractDungeon.player, 1, DamageInfo.DamageType.HP_LOSS)));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(1));
     }
 
     @Override

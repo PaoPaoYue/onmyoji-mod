@@ -48,8 +48,7 @@ public abstract class AbstractKami {
         return dice;
     }
 
-    public int onDivine(int amount) {
-        return amount;
+    public void onDivine(int amount) {
     }
 
     public float atDamageFinalGive(float damage, DamageInfo.DamageType type) {

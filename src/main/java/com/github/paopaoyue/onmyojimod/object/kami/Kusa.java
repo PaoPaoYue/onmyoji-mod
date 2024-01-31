@@ -23,7 +23,7 @@ public class Kusa extends AbstractKami {
     @Override
     public void onExit() {
         AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(upgraded ? 2 : 3));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(upgraded ? 3 : 4));
     }
 
     @Override

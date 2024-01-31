@@ -25,6 +25,12 @@ public class PenetratedPower extends AbstractPower {
         this.priority = 2;
         this.isTurnBased = true;
         this.canGoNegative = false;
+
+        for (AbstractPower power : owner.powers) {
+            if (power instanceof FragileSoundPower)
+                this.amount = ((FragileSoundPower) power).onApplyPenetratedPower(this.amount);
+        }
+
         updateDescription();
     }
 

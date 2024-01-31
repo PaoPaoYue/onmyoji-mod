@@ -32,4 +32,10 @@ public class Knot extends AbstractSpirit {
     @Override
     public void onUse() {
     }
+
+    @Override
+    public AbstractSpirit makeCopy() {
+        return new Knot();
+    }
+
 }

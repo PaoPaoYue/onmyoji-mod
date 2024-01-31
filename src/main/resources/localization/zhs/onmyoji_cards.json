@@ -1,11 +1,249 @@
 {
+  "Onmyoji:Strike": {
+    "NAME": "攻击",
+    "DESCRIPTION": "造成 !D! 伤害。"
+  },
+  "Onmyoji:Defend": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 格挡 。"
+  },
   "Onmyoji:Menreiki": {
     "NAME": "式神·面灵气",
     "DESCRIPTION": " 式神 拥有 !K! 点生命，进场时随机变换为四面之一，各面均视为不同的式神。"
   },
   "Onmyoji:Seven Sides": {
     "NAME": "心生七面",
-    "DESCRIPTION": "造成 !D! 点伤害，本场战斗切换的每个不同 式神 使伤害增加 !M! 。"
+    "DESCRIPTION": "造成 !D! 伤害，本场战斗切换的每个不同 式神 使伤害增加 !M! (至多4次)。"
+  },
+  "Onmyoji:Reborn of Phoenix": {
+    "NAME": "炎舞",
+    "DESCRIPTION": "对所有敌人造成 !D! 伤害，若本场战斗有式神死亡伤害翻倍 。"
+  },
+  "Onmyoji:Righteousness": {
+    "NAME": "义道",
+    "DESCRIPTION": "造成 !D! 伤害，计算 破甲 时翻倍。"
+  },
+  "Onmyoji:The World": {
+    "NAME": "迢迢尘间",
+    "DESCRIPTION": "占卜 !M! 张牌 ，每有一张额外效果的牌造成 !D! 伤害。NL 保留 消耗 。"
+  },
+  "Onmyoji:Snake Fire": {
+    "NAME": "焚身之火",
+    "DESCRIPTION": "使所有敌人获得 !M! 破甲 并造成 !D! 伤害，重复X次。"
+  },
+  "Onmyoji:Madness": {
+    "NAME": "狂气",
+    "DESCRIPTION": "造成 !D! 伤害， 消灭敌人时获得1层 不屈 。"
+  },
+  "Onmyoji:luck": {
+    "NAME": "转运",
+    "DESCRIPTION": "造成 !D! 伤害。 运势 4：随机弃掉1张牌，再次使用一张此牌的复制并 消耗 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 伤害。 运势 4：弃掉1张牌，再次使用一张此牌的复制并 消耗 。"
+  },
+  "Onmyoji:Poison Feather": {
+    "NAME": "鸩羽",
+    "DESCRIPTION": "造成 !D! 伤害，若敌人有 破甲 ，恢复本场战斗中损失的等同于破甲层数的生命值。"
+  },
+  "Onmyoji:Storm": {
+    "NAME": "羽刃暴风",
+    "DESCRIPTION": "造成 !D! 伤害。 倒计时 3：对所有敌人造成 !M! 伤害。"
+  },
+  "Onmyoji:Snow Slash": {
+    "NAME": "胧月雪华斩",
+    "DESCRIPTION": "施加 !M! 层 脆弱 ，对所有有 脆弱 的敌人造成 !D! 伤害。"
+  },
+  "Onmyoji:Scary Dream": {
+    "NAME": "惊梦",
+    "DESCRIPTION": "造成 !D! 伤害，每造成 !M! 未被 格挡 的伤害随机使一张抽牌堆内的牌附加 梦魇 。"
+  },
+  "Onmyoji:Butterfly": {
+    "NAME": "一夜梦",
+    "DESCRIPTION": "使用手牌中一张费用小于等于1费攻击牌的复制并 消耗 ，造成 !D! 伤害。"
+  },
+  "Onmyoji:Corrupted Punch": {
+    "NAME": "腐败直拳",
+    "DESCRIPTION": "获得 !M! 破甲 ，使敌人获得等同于自身的 破甲 ，然后造成 !D! 伤害。"
+  },
+  "Onmyoji:Tai Ji": {
+    "NAME": "斗转",
+    "DESCRIPTION": "造成 !D! 伤害，若敌方意图为攻击，交换基础攻击伤害。消耗。"
+  },
+  "Onmyoji:Ghost Attack": {
+    "NAME": "离魂灯",
+    "DESCRIPTION": "造成 !D! 伤害，获得 *明灯 。"
+  },
+  "Onmyoji:Phoenix Fire": {
+    "NAME": "凤火",
+    "DESCRIPTION": "造成 !D! 伤害， 投射 !M! 伤害。"
+  },
+  "Onmyoji:Double Shoot": {
+    "NAME": "文射",
+    "DESCRIPTION": "造成 !D! 伤害，然后不消耗费用自动使用一张此牌的复制并 消耗 。"
+  },
+  "Onmyoji:Trick": {
+    "NAME": "恶戏",
+    "DESCRIPTION": "造成 !D! 伤害。使用攻击牌后若位于牌库顶，则不消耗费用自动使用。"
+  },
+  "Onmyoji:Reckless": {
+    "NAME": "鲁莽",
+    "DESCRIPTION": "受到 !M! 伤害，造成 !D! 伤害。"
+  },
+  "Onmyoji:Ghost Hand": {
+    "NAME": "鬼之手",
+    "DESCRIPTION": "造成 !D! 伤害，使攻击的敌人与最前方的敌人交换位置。"
+  },
+  "Onmyoji:Exorcism": {
+    "NAME": "驱邪祸",
+    "DESCRIPTION": "造成 !D! 伤害， 占卜 中置入牌库底时 投射 等量伤害。"
+  },
+  "Onmyoji:Cheat": {
+    "NAME": "出千",
+    "DESCRIPTION": "造成 !D! 伤害， NL 运势 4：回到手牌; 运势 6：获得 [E] 。"
+  },
+  "Onmyoji:Dice Boom": {
+    "NAME": "色子炸弹",
+    "DESCRIPTION": "造成 !D! 伤害， 运势 1：额外增加等同于色子的点数的伤害。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 伤害， 运势 1：额外增加等同于2倍色子的点数的伤害。"
+  },
+  "Onmyoji:Nature": {
+    "NAME": "造化时流",
+    "DESCRIPTION": "占卜 !M! 张牌 ，对所有敌人造成 !D! 伤害。"
+  },
+  "Onmyoji:Cuteness": {
+    "NAME": "萌即正义",
+    "DESCRIPTION": "回合开始时获得1张式神牌。运势 !M! ：该牌本局对战费用变为0"
+  },
+  "Onmyoji:Moonlight Night": {
+    "NAME": "胧月夜",
+    "DESCRIPTION": "回合开始时根据当前式神获得1张强大的派系之力，每种限一次。",
+    "UPGRADE_DESCRIPTION": "回合开始时根据当前式神获得1张强大的派系之力，每种限一次。 NL 固有 。"
+  },
+  "Onmyoji:Cursed Eye": {
+    "NAME": "诅咒之眼",
+    "DESCRIPTION": "随机使牌库中 !M! 张牌附加 诅咒之眼 ，当抽到附加额外效果的牌时，多抽1张牌。"
+  },
+  "Onmyoji:Maze of Mind": {
+    "NAME": "心灵迷宫",
+    "DESCRIPTION": "式神牌需要额外消耗 [E] ，使用时随机使另1张手牌本回合费用变为0。NL 虚无 ",
+    "UPGRADE_DESCRIPTION": "式神牌需要额外消耗 [E] ，使用时随机使另1张手牌本回合费用变为0。"
+  },
+  "Onmyoji:Cat Wuwan": {
+    "NAME": "猫咪日和",
+    "DESCRIPTION": " 消耗 1张衍生牌，回合开始时获得 !M! 张其复制。"
+  },
+  "Onmyoji:Wind of Dragon": {
+    "NAME": "风符·龙",
+    "DESCRIPTION": " 倒计时 进场时也会触发效果。"
+  },
+  "Onmyoji:Goldfish": {
+    "NAME": "荒川的金鱼姬",
+    "DESCRIPTION": "回合开始时随机使用 !M! 张普通牌并 消耗 。 NL （不会使用式神牌和能力牌）"
+  },
+  "Onmyoji:Divined Eye": {
+    "NAME": "洞察之眼",
+    "DESCRIPTION": " 占卜 时多展示 !M! 张牌。"
+  },
+  "Onmyoji:Fragile Sound": {
+    "NAME": "破碎之音",
+    "DESCRIPTION": "施加 破甲 时额外增加 !M! 。"
+  },
+  "Onmyoji:Chef": {
+    "NAME": "热血主厨",
+    "DESCRIPTION": "每回合 !M! 次，使用衍生牌时获得1 鼓舞 。"
+  },
+  "Onmyoji:Chord": {
+    "NAME": "神乐歌",
+    "DESCRIPTION": "回合开始时获得 倒计时 5 ：获得1 力量 与 1 敏捷。",
+    "UPGRADE_DESCRIPTION": "使用与回合开始时获得 倒计时 5 ：获得1 力量 与 1 敏捷。"
+  },
+  "Onmyoji:Dark Dream": {
+    "NAME": "永眠之梦",
+    "DESCRIPTION": " 回合结束时随机使抽牌堆中 !M! 张牌附加 梦魇。"
+  },
+  "Onmyoji:Good and Evil": {
+    "NAME": "善恶无则",
+    "DESCRIPTION": "消灭当前式神，用 *八岐大蛇 填满手牌。"
+  },
+  "Onmyoji:God's Hand": {
+    "NAME": "神之一手",
+    "DESCRIPTION": "从牌库将 !M! 张式神牌置入手牌。 NL 消耗 。"
+  },
+  "Onmyoji:Netherworld": {
+    "NAME": "花开彼岸",
+    "DESCRIPTION": "获得 !M! 鼓舞 ，下次式神受到伤害时改为由角色承担。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 鼓舞 ，下次式神受到伤害时改为由角色承担。"
+  },
+  "Onmyoji:Contemplate": {
+    "NAME": "长考",
+    "DESCRIPTION": "将1张牌洗入牌库， 占卜 !M! 张牌 ，抽2张牌。"
+  },
+  "Onmyoji:All Together": {
+    "NAME": "都要在一起",
+    "DESCRIPTION": "随机将 !M！张牌附加 缘结 并洗入牌库，抽 !M！张牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "选择 !M！张牌附加 缘结 并洗入牌库，抽 !M！张牌。 NL 消耗 。"
+  },
+  "Onmyoji:Book": {
+    "NAME": "万卷书",
+    "DESCRIPTION": "从3张式神牌中选择并获得1张。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "从3张式神牌中选择并获得1张，本回合此牌费用为0。 NL 消耗 。"
+  },
+  "Onmyoji:Moon": {
+    "NAME": "清辉月华",
+    "DESCRIPTION": "占卜 !M! 张牌 ，使牌库顶的牌本回合费用为0。"
+  },
+  "Onmyoji:Puppet": {
+    "NAME": "木偶商人",
+    "DESCRIPTION": "占卜 !M! 张牌 ，抽1张牌，若此牌有附加额外效果获得 [E] [E] 。",
+    "UPGRADE_DESCRIPTION": "占卜 !M! 张牌 ，抽1张牌，若此牌有附加额外效果获得 [E] [E] [E] 。"
+  },
+  "Onmyoji:Lethe Water": {
+    "NAME": "孟婆汤",
+    "DESCRIPTION": " 占卜 3 张牌,  消耗 抽牌堆底部 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": " 占卜 3 张牌,  消耗 抽牌堆底部 !M! 张牌。 NL 消耗 。"
+  },
+  "Onmyoji:Ghost Fire": {
+    "NAME": "百物语之火",
+    "DESCRIPTION": "将x张 *明灯 置入手牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "将x+1张 *明灯 置入手牌。 NL 消耗 。"
+  },
+  "Onmyoji:Peach blossom": {
+    "NAME": "桃花灼灼",
+    "DESCRIPTION": "从弃牌堆选择1张式神牌置入手牌，其费用本回合-1。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "从弃牌堆选择1张式神牌置入手牌，其费用本回合-1。"
+  },
+  "Onmyoji:Buddhist": {
+    "NAME": "佛光",
+    "DESCRIPTION": "恢复所有角色 !M！点生命值，每个过量治疗使角色获得1点生命上限。 NL 消耗 。"
+  },
+  "Onmyoji:Ensemble": {
+    "NAME": "大合奏",
+    "DESCRIPTION": "生成 !M! 个生成过的倒计时。"
+  },
+  "Onmyoji:Lotus": {
+    "NAME": "诸善奉行",
+    "DESCRIPTION": "使一个敌人本回合获得 !M! 力量 。每一次使用所有同名卡效果+2。"
+  },
+  "Onmyoji:Ice Shield": {
+    "NAME": "寒冰之盾",
+    "DESCRIPTION": "获得 !B! 格挡 ，下个回合开始前每格挡1次攻击给予伤害来源1 虚弱 。"
+  },
+  "Onmyoji:Snake Attack": {
+    "NAME": "蛇形击",
+    "DESCRIPTION": "使一个敌人获得 !M! 破甲 ，当切换式神时返回手牌。"
+  },
+  "Onmyoji:Wind Shield": {
+    "NAME": "风符·护",
+    "DESCRIPTION": "获得 !B! 格挡 ， 倒计时 2 ：获得 !M! 格挡 。"
+  },
+  "Onmyoji:Knowledge": {
+    "NAME": "达知",
+    "DESCRIPTION": " 占卜 !M! 张牌 ，抽1张牌，使用后将一张复制加入弃牌堆。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": " 占卜 !M! 张牌 ，抽1张牌，使用后将一张复制加入弃牌堆。"
+  },
+  "Onmyoji:Bird": {
+    "NAME": "鸩羽苏生",
+    "DESCRIPTION": "获得 !B! 格挡 ， 倒计时 3 ：获得最近的敌人获得 !M! 破甲 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 格挡 ， 倒计时 2 ：获得最近的敌人获得 !M! 破甲 。"
   },
   "Onmyoji:Kiyohime": {
     "NAME": "式神·清姬",
@@ -43,7 +281,7 @@
   },
   "Onmyoji:Shuten Doji": {
     "NAME": "式神·酒吞童子",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时获得 不屈 ，每次受到 3 点或以上未被格挡的伤害获得 !M! 力量。"
+    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时获得1层 不屈 ，每次受到3点或以上未被格挡的伤害获得 !M! 力量。"
   },
   "Onmyoji:Yoto Hime": {
     "NAME": "式神·妖刀姬",
@@ -63,7 +301,7 @@
   },
   "Onmyoji:Yamata": {
     "NAME": "式神·八岐大蛇",
-    "DESCRIPTION": "式神 拥有 !K! 点生命。消耗。"
+    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时损失1点生命，抽1张牌。消耗 。"
   },
   "Onmyoji:Bokku": {
     "NAME": "式神·书翁",
@@ -80,14 +318,40 @@
   },
   "Onmyoji:Dodomeki": {
     "NAME": "式神·百目鬼",
-    "DESCRIPTION": "式神 拥有 !K! 点生命， 占卜 时额外多展示 !M! 张牌。"
+    "DESCRIPTION": "式神 拥有 !K! 点生命， 占卜 时 投射 等同于占卜牌数量的伤害。",
+    "UPGRADE_DESCRIPTION": "式神 拥有 !K! 点生命， 占卜 时 投射 等同于占卜牌数量2倍的伤害。"
+  },
+  "Onmyoji:Food": {
+    "NAME": "食材",
+    "DESCRIPTION": "本回合获得 !M! 力量 。"
+  },
+  "Onmyoji:Light": {
+    "NAME": "明灯",
+    "DESCRIPTION": "获得 [E] 。 NL 保留 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得 [E] [E] 。 NL 保留 消耗 。"
   },
   "Onmyoji:Golden Feather": {
     "NAME": "黄金羽",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗 。"
+    "DESCRIPTION": "造成 !D! 伤害。 NL 消耗 。"
   },
   "Onmyoji:Golden Seimei": {
     "NAME": "金晴明",
     "DESCRIPTION": " 不能被打出 。 NL 当你抽到这张牌时， 投射 !D! 伤害，然后 消耗 。"
+  },
+  "Onmyoji:Red Force": {
+    "NAME": "红莲之力",
+    "DESCRIPTION": "获得 !M! 力量和 1 不屈。 NL 消耗 。"
+  },
+  "Onmyoji:Green Force": {
+    "NAME": "苍叶之力",
+    "DESCRIPTION": "造成 !D! 伤害 !M! 次。 NL 消耗 。"
+  },
+  "Onmyoji:Blue Force": {
+    "NAME": "青岚之力",
+    "DESCRIPTION": "获得一个额外的回合。 NL 消耗 。"
+  },
+  "Onmyoji:Purple Force": {
+    "NAME": "紫岩之力",
+    "DESCRIPTION": "将生命值变为上限的一半。 NL 消耗 。"
   }
 }

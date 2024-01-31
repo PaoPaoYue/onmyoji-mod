@@ -19,9 +19,101 @@
     ]
   },
   "Onmyoji:Breakthrough": {
-    "NAME": "贯通",
+    "NAME": "花开彼岸",
     "DESCRIPTIONS": [
       "下次式神受到伤害时减少 #b1 层，此伤害改为由角色承担。"
+    ]
+  },
+  "Onmyoji:Ice Shield": {
+    "NAME": "寒冰之盾",
+    "DESCRIPTIONS": [
+      "每 #y格挡 一次攻击，给予攻击来源 #b",
+      "层 #y虚弱, 回合开始时移除。"
+    ]
+  },
+  "Onmyoji:Divined Eye": {
+    "NAME": "洞察之眼",
+    "DESCRIPTIONS": [
+      " #y占卜 时额外多展示 #b",
+      " 张牌。"
+    ]
+  },
+  "Onmyoji:Fragile Sound": {
+    "NAME": "破碎之音",
+    "DESCRIPTIONS": [
+      "施加 #y破甲 时额外增加 #b",
+      " 。"
+    ]
+  },
+  "Onmyoji:Chef": {
+    "NAME": "热血主厨",
+    "DESCRIPTIONS": [
+      "每回合 #b",
+      " 次，使用衍生牌同时获得 #b1 #y鼓舞。",
+      "(本回合剩余 #b",
+      " 次)"
+    ]
+  },
+  "Onmyoji:Dark Dream": {
+    "NAME": "永眠之梦",
+    "DESCRIPTIONS": [
+      "回合结束时随机使抽牌堆中 #b",
+      " 张牌附加梦魇"
+    ]
+  },
+  "Onmyoji:Chord": {
+    "NAME": "神乐歌",
+    "DESCRIPTIONS": [
+      "回合开始时获得 #b",
+      " 个 #y倒计时 #b5 :获得 #b1 #y力量与 #b1 #y鼓舞 。"
+    ]
+  },
+  "Onmyoji:Cuteness": {
+    "NAME": "萌即正义",
+    "DESCRIPTIONS": [
+      "回合开始时获得 #b",
+      " 张随机式神牌。 #y运势 #b6 ：获得的牌本局对战费用变为0。"
+    ]
+  },
+  "Onmyoji:Moonlight Night": {
+    "NAME": "胧月夜",
+    "DESCRIPTIONS": [
+      "回合开始时，根据当前式神获得一种强大的派系之力，每种限一次。"
+    ]
+  },
+  "Onmyoji:Cursed Eye": {
+    "NAME": "诅咒之眼",
+    "DESCRIPTIONS": [
+      "当抽到附加额外效果的牌时，额外多抽 #b",
+      " 张牌。"
+    ]
+  },
+  "Onmyoji:Maze of Mind": {
+    "NAME": "心灵迷宫",
+    "DESCRIPTIONS": [
+      "式神牌需要额外消耗 [E] ，使用时随机使另1张手牌本回合费用变为0。"
+    ]
+  },
+  "Onmyoji:Cat Wuwan": {
+    "NAME": "猫咪日和",
+    "DESCRIPTIONS": [
+      "回合开始时获得 #b",
+      " 张",
+      "选定衍生牌",
+      "的复制。"
+    ]
+  },
+  "Onmyoji:Wind of Dragon": {
+    "NAME": "风符·龙",
+    "DESCRIPTIONS": [
+      " #y倒计时 进场时也会触发效果。"
+    ]
+  },
+  "Onmyoji:Goldfish": {
+    "NAME": "荒川的金鱼姬",
+    "DESCRIPTIONS": [
+      " 回合开始时随机使用 #b",
+      " 张普通牌并 #y消耗 。（不会使用式神牌和能力牌）"
     ]
   }
 }

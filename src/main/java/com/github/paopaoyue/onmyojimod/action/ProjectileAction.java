@@ -32,7 +32,7 @@ public class ProjectileAction extends AbstractGameAction {
             }
             if (target != null) {
                 this.addToBot(new VFXAction(new PressurePointEffect(target.hb.cX, target.hb.cY)));
-                this.addToBot(new DamageAction(this.target, new DamageInfo(this.source, this.amount, DamageInfo.DamageType.NORMAL), AttackEffect.FIRE));
+                this.addToBot(new DamageAction(this.target, new DamageInfo(this.source, this.amount, DamageInfo.DamageType.NORMAL), AttackEffect.FIRE, true));
             }
         }
         this.tickDuration();

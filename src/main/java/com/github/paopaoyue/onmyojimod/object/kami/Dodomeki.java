@@ -2,6 +2,8 @@ package com.github.paopaoyue.onmyojimod.object.kami;
 
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.github.paopaoyue.onmyojimod.OnmyojiMod;
+import com.github.paopaoyue.onmyojimod.action.ProjectileAction;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 public class Dodomeki extends AbstractKami {
 
@@ -18,8 +20,8 @@ public class Dodomeki extends AbstractKami {
     }
 
     @Override
-    public int onDivine(int amount) {
-        return amount + (upgraded ? 3 : 2);
+    public void onDivine(int amount) {
+        AbstractDungeon.actionManager.addToBottom(new ProjectileAction(upgraded ? amount * 2 : amount));
     }
 
     @Override

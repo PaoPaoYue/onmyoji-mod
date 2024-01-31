@@ -14,6 +14,13 @@
     "DESCRIPTION": "在回合开始与使用卡牌时计数减1，计数为0时触发对应效果。"
   },
   {
+    "ID": "Onmyoji:Divine",
+    "NAMES": [
+      "占卜"
+    ],
+    "DESCRIPTION": "查看抽牌堆顶若干张牌，选择其中任意张置入抽牌堆底部。"
+  },
+  {
     "ID": "Onmyoji:Roll",
     "NAMES": [
       "运势"
@@ -102,7 +109,7 @@
     "NAMES": [
       "萤草"
     ],
-    "DESCRIPTION": "离场时获得 [E] 并抽 #b2 张牌。|离场时获得 [E] 并抽 #b3 张牌。"
+    "DESCRIPTION": "离场时获得 [E] 并抽 #b3 张牌。|离场时获得 [E] 并抽 #b4 张牌。"
   },
   {
     "ID": "Onmyoji:Komatsu",
@@ -151,7 +158,7 @@
     "NAMES": [
       "八岐大蛇"
     ],
-    "DESCRIPTION": "无特殊能力。"
+    "DESCRIPTION": "进场时损失 #b1 生命，抽 #1 张牌。"
   },
   {
     "ID": "Onmyoji:Bokku",
@@ -179,7 +186,7 @@
     "NAMES": [
       "百目鬼"
     ],
-    "DESCRIPTION": " 占卜 时额外多展示 #b2 张牌。| 占卜 时额外多展示 #b3 张牌。"
+    "DESCRIPTION": " 占卜 时 投射 等同于占卜牌数量的伤害。| 占卜 时 投射 等同于占卜牌数量2倍的伤害。"
   },
   {
     "ID": "Onmyoji:Knot",

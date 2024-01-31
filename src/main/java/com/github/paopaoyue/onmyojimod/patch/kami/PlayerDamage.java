@@ -5,6 +5,7 @@ import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.github.paopaoyue.onmyojimod.character.Sanme;
 import com.github.paopaoyue.onmyojimod.object.kami.KamiManager;
 import com.github.paopaoyue.onmyojimod.power.BreakthroughPower;
+import com.github.paopaoyue.onmyojimod.power.IceShieldPower;
 import com.github.paopaoyue.onmyojimod.power.UnyieldingPower;
 import com.github.paopaoyue.onmyojimod.utility.Inject;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
@@ -46,6 +47,9 @@ public class PlayerDamage {
                     if (power instanceof BreakthroughPower) {
                         AbstractDungeon.actionManager.addToTop(new ReducePowerAction(__instance, __instance, power.ID, 1));
                         return;
+                    }
+                    if (power instanceof IceShieldPower) {
+                        ((IceShieldPower) power).onAttacked(damageAmount[0], info);
                     }
                 }
 
