@@ -35,14 +35,14 @@
     "NAME": "狂气",
     "DESCRIPTION": "造成 !D! 伤害， 消灭敌人时获得1层 不屈 。"
   },
-  "Onmyoji:luck": {
+  "Onmyoji:Luck": {
     "NAME": "转运",
     "DESCRIPTION": "造成 !D! 伤害。 运势 4：随机弃掉1张牌，再次使用一张此牌的复制并 消耗 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 伤害。 运势 4：弃掉1张牌，再次使用一张此牌的复制并 消耗 。"
   },
   "Onmyoji:Poison Feather": {
     "NAME": "鸩羽",
-    "DESCRIPTION": "造成 !D! 伤害，若敌人有 破甲 ，恢复本场战斗中损失的等同于破甲层数的生命值。"
+    "DESCRIPTION": "造成 !D! 伤害，若敌人有 破甲 ，恢复等同于造成未被 格挡 伤害的本场战斗中损失的的生命值。"
   },
   "Onmyoji:Storm": {
     "NAME": "羽刃暴风",
@@ -58,7 +58,7 @@
   },
   "Onmyoji:Butterfly": {
     "NAME": "一夜梦",
-    "DESCRIPTION": "使用手牌中一张费用小于等于1费攻击牌的复制并 消耗 ，造成 !D! 伤害。"
+    "DESCRIPTION": "造成 !D! 伤害, 使用手牌中一张费用小于等于1费牌的复制并 消耗 。"
   },
   "Onmyoji:Corrupted Punch": {
     "NAME": "腐败直拳",
@@ -66,7 +66,7 @@
   },
   "Onmyoji:Tai Ji": {
     "NAME": "斗转",
-    "DESCRIPTION": "造成 !D! 伤害，若敌方意图为攻击，交换基础攻击伤害。消耗。"
+    "DESCRIPTION": "造成 !D! 伤害，若敌方意图为攻击，交换基础攻击伤害。 消耗 。"
   },
   "Onmyoji:Ghost Attack": {
     "NAME": "离魂灯",
@@ -82,7 +82,7 @@
   },
   "Onmyoji:Trick": {
     "NAME": "恶戏",
-    "DESCRIPTION": "造成 !D! 伤害。使用攻击牌后若位于牌库顶，则不消耗费用自动使用。"
+    "DESCRIPTION": "造成 !D! 伤害。使用攻击牌后若位于牌库顶，则不消耗费用对相同目标自动使用。"
   },
   "Onmyoji:Reckless": {
     "NAME": "鲁莽",
@@ -100,14 +100,14 @@
     "NAME": "出千",
     "DESCRIPTION": "造成 !D! 伤害， NL 运势 4：回到手牌; 运势 6：获得 [E] 。"
   },
-  "Onmyoji:Dice Boom": {
+  "Onmyoji:Dice Bomb": {
     "NAME": "色子炸弹",
     "DESCRIPTION": "造成 !D! 伤害， 运势 1：额外增加等同于色子的点数的伤害。",
     "UPGRADE_DESCRIPTION": "造成 !D! 伤害， 运势 1：额外增加等同于2倍色子的点数的伤害。"
   },
   "Onmyoji:Nature": {
     "NAME": "造化时流",
-    "DESCRIPTION": "占卜 !M! 张牌 ，对所有敌人造成 !D! 伤害。"
+    "DESCRIPTION": "对所有敌人造成 !D! 伤害, 占卜 !M! 张牌。"
   },
   "Onmyoji:Cuteness": {
     "NAME": "萌即正义",

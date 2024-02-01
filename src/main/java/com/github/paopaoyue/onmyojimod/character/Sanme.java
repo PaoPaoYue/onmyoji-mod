@@ -88,15 +88,15 @@ public class Sanme extends CustomPlayer {
 
     public ArrayList<String> getStartingDeck() { // starting deck 'nuff said
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add("Strike_R");
-        retVal.add("Strike_R");
-        retVal.add("Strike_R");
-        retVal.add("Strike_R");
-        retVal.add("Strike_R");
-        retVal.add("Defend_R");
-        retVal.add("Defend_R");
-        retVal.add("Defend_R");
-        retVal.add("Defend_R");
+        retVal.add("Onmyoji:Strike");
+        retVal.add("Onmyoji:Strike");
+        retVal.add("Onmyoji:Strike");
+        retVal.add("Onmyoji:Strike");
+        retVal.add("Onmyoji:Strike");
+        retVal.add("Onmyoji:Defend");
+        retVal.add("Onmyoji:Defend");
+        retVal.add("Onmyoji:Defend");
+        retVal.add("Onmyoji:Defend");
         retVal.add("Onmyoji:Menreiki");
         retVal.add("Onmyoji:Seven Sides");
         return retVal;

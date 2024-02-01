@@ -10,27 +10,33 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
-public class Sachet extends CustomRelic {
-    private static final String ID = "Onmyoji:Sachet";
+public class SachetPlus extends CustomRelic {
+    private static final String ID = "Onmyoji:Sachet Plus";
     private static final RelicStrings strings = CardCrawlGame.languagePack.getRelicStrings(ID);
-    private static final AbstractRelic.RelicTier TIER = AbstractRelic.RelicTier.STARTER;
-    private static final AbstractRelic.LandingSound SOUND = AbstractRelic.LandingSound.FLAT;
+    private static final RelicTier TIER = RelicTier.BOSS;
+    private static final LandingSound SOUND = LandingSound.FLAT;
 
-    public Sachet() {
-        super(ID, ImageMaster.loadImage("image/icon/sachet.png"), TIER, SOUND);
+    public SachetPlus() {
+        super(ID, ImageMaster.loadImage("image/icon/sachet_plus.png"), TIER, SOUND);
     }
 
     public String getUpdatedDescription() {
         return strings.DESCRIPTIONS[0];
     }
 
-    public void atBattleStartPreDraw() {
+    public void onPlayerEndTurn() {
         this.flash();
         AbstractDungeon.actionManager.addToTop(new RandomAttachSpiritAction(new Enhancement(), 1, c -> c instanceof AbstractKamiCard, true, true));
     }
 
     @Override
-    public AbstractRelic makeCopy() {
-        return new Sachet();
+    public boolean canSpawn() {
+        return AbstractDungeon.player.hasRelic("Burning Blood");
     }
+
+    @Override
+    public AbstractRelic makeCopy() {
+        return new SachetPlus();
+    }
+
 }

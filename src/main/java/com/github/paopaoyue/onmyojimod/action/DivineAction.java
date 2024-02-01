@@ -1,5 +1,6 @@
 package com.github.paopaoyue.onmyojimod.action;
 
+import com.github.paopaoyue.onmyojimod.card.Exorcism;
 import com.github.paopaoyue.onmyojimod.character.Sanme;
 import com.github.paopaoyue.onmyojimod.power.DivinedEyePower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -72,6 +73,7 @@ public class DivineAction extends AbstractGameAction {
                     for (AbstractCard card : AbstractDungeon.gridSelectScreen.selectedCards) {
                         AbstractDungeon.player.drawPile.removeCard(card);
                         AbstractDungeon.player.drawPile.addToBottom(card);
+                        if (card instanceof Exorcism) ((Exorcism) card).onDivine();
                         card.stopGlowing();
                     }
                     AbstractDungeon.gridSelectScreen.selectedCards.clear();

@@ -21,6 +21,10 @@ public class SwitchKamiAction extends AbstractGameAction {
     }
 
     public void update() {
+        if (!(this.target instanceof Sanme)) {
+            this.isDone = true;
+            return;
+        }
         if (this.duration == Settings.ACTION_DUR_MED) {
             KamiManager kamiManager = ((Sanme) AbstractDungeon.player).getKamiManager();
             kamiManager.setHp(amount + kamiManager.getHp());

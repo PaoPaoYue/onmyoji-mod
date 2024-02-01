@@ -31,6 +31,7 @@ public class SnakeFire extends CustomCard {
         this.baseDamage = BASE_DAMAGE;
         this.baseMagicNumber = 3;
         this.magicNumber = baseMagicNumber;
+        this.isMultiDamage = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
