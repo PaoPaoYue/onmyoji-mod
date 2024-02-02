@@ -22,6 +22,7 @@ public class DivineAction extends AbstractGameAction {
     private Consumer<DivineAction> callback;
     private List<AbstractCard> divinedCards;
     private List<AbstractCard> selectedCards;
+    private boolean callbackDone;
 
     public DivineAction(int numCards) {
         this.setValues(AbstractDungeon.player, AbstractDungeon.player, amount);
@@ -30,6 +31,7 @@ public class DivineAction extends AbstractGameAction {
         this.duration = Settings.ACTION_DUR_FAST;
         this.divinedCards = new ArrayList<>();
         this.selectedCards = new ArrayList<>();
+        this.callbackDone = false;
 
         for (AbstractPower power : this.target.powers) {
             if (power instanceof DivinedEyePower) {
@@ -78,9 +80,14 @@ public class DivineAction extends AbstractGameAction {
                     }
                     AbstractDungeon.gridSelectScreen.selectedCards.clear();
                 }
-                if (this.callback != null) this.callback.accept(this);
-                if (target instanceof Sanme) {
-                    ((Sanme) this.target).getKamiManager().getCurrentKami().onDivine(amount);
+                if (!callbackDone) {
+                    if (this.callback != null) {
+                        this.callback.accept(this);
+                    }
+                    if (target instanceof Sanme && ((Sanme) this.target).getKamiManager().isHasKami()) {
+                        ((Sanme) this.target).getKamiManager().getCurrentKami().onDivine(amount);
+                    }
+                    callbackDone = true;
                 }
             }
 

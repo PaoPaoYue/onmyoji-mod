@@ -3,6 +3,7 @@ package com.github.paopaoyue.onmyojimod.action;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -21,9 +22,10 @@ public class ButterflyAction extends AbstractGameAction {
 
     private Predicate<AbstractCard> predicate;
 
-    public ButterflyAction(Predicate<AbstractCard> predicate) {
-        this.target = AbstractDungeon.player;
+
+    public ButterflyAction(Predicate<AbstractCard> predicate, AbstractCreature target) {
         this.source = AbstractDungeon.player;
+        this.target = target;
         this.amount = 1;
         this.duration = this.startDuration = Settings.ACTION_DUR_FAST;
         this.actionType = ActionType.EXHAUST;
@@ -47,19 +49,18 @@ public class ButterflyAction extends AbstractGameAction {
 
             if (tmpGroup.group.size() == 1) {
                 AbstractCard card = tmpGroup.getTopCard();
-                this.addToTop(new PlayTmpCardAction(card.makeStatEquivalentCopy(), true, true));
+                this.addToTop(new PlayTmpCardAction(card.makeStatEquivalentCopy(), target, true));
                 return;
             }
 
             AbstractDungeon.gridSelectScreen.open(tmpGroup, this.amount, TEXT[0], false, false);
             this.tickDuration();
         }
-
-        if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
-            for (AbstractCard card : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
-                this.addToTop(new PlayTmpCardAction(card.makeStatEquivalentCopy(), true, true));
+        if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
+            for (AbstractCard card : AbstractDungeon.gridSelectScreen.selectedCards) {
+                this.addToTop(new PlayTmpCardAction(card.makeStatEquivalentCopy(), target, true));
             }
-            AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
+            AbstractDungeon.gridSelectScreen.selectedCards.clear();
         }
 
         this.tickDuration();

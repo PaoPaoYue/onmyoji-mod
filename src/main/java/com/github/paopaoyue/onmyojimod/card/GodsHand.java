@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class GodsHand extends CustomCard {
-    public static final String ID = "Onmyoji:Good and Evil";
+    public static final String ID = "Onmyoji:God's Hand";
     private static final CardStrings cardStrings;
 
     static {

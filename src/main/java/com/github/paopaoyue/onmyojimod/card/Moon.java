@@ -25,7 +25,9 @@ public class Moon extends CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new DivineAction(this.magicNumber, x -> p.drawPile.getTopCard().setCostForTurn(0)));
+        this.addToBot(new DivineAction(this.magicNumber, x -> {
+            if (!p.drawPile.isEmpty()) p.drawPile.getTopCard().setCostForTurn(0);
+        }));
     }
 
     public void upgrade() {

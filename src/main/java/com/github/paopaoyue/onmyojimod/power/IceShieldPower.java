@@ -23,7 +23,7 @@ public class IceShieldPower extends AbstractPower {
         this.owner = owner;
 
         this.img = IMG;
-        this.type = PowerType.DEBUFF;
+        this.type = PowerType.BUFF;
         this.amount = amount;
         this.isTurnBased = true;
         this.canGoNegative = false;
@@ -36,9 +36,9 @@ public class IceShieldPower extends AbstractPower {
         this.description = strings.DESCRIPTIONS[0] + this.amount + strings.DESCRIPTIONS[1];
     }
 
-    public void onAttacked(float damage, DamageInfo info) {
-        if (this.owner != null && info.type == DamageInfo.DamageType.NORMAL) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(info.owner, this.owner, new WeakPower(info.owner, this.amount, false)));
+    public void onAttacked(float damage, DamageInfo info, boolean hadBlock) {
+        if (this.owner != null && info.type == DamageInfo.DamageType.NORMAL && hadBlock) {
+            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(info.owner, this.owner, new WeakPower(info.owner, this.amount, false)));
         }
     }
 

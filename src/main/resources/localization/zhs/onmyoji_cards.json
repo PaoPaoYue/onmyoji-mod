@@ -21,15 +21,16 @@
   },
   "Onmyoji:Righteousness": {
     "NAME": "义道",
-    "DESCRIPTION": "造成 !D! 伤害，计算 破甲 时翻倍。"
+    "DESCRIPTION": "造成 !D! 伤害，计算 破甲 时翻倍。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 伤害，计算 破甲 时翻3倍。"
   },
   "Onmyoji:The World": {
     "NAME": "迢迢尘间",
-    "DESCRIPTION": "占卜 !M! 张牌 ，每有一张额外效果的牌造成 !D! 伤害。NL 保留 消耗 。"
+    "DESCRIPTION": "占卜 !M! 张牌 ，每有一张额外效果的牌造成 !D! 伤害。 NL 保留 消耗 。"
   },
   "Onmyoji:Snake Fire": {
     "NAME": "焚身之火",
-    "DESCRIPTION": "使所有敌人获得 !M! 破甲 并造成 !D! 伤害，重复X次。"
+    "DESCRIPTION": "使所有敌人获得 !M! 层 破甲 并造成 !D! 伤害，重复X次。"
   },
   "Onmyoji:Madness": {
     "NAME": "狂气",
@@ -62,7 +63,7 @@
   },
   "Onmyoji:Corrupted Punch": {
     "NAME": "腐败直拳",
-    "DESCRIPTION": "获得 !M! 破甲 ，使敌人获得等同于自身的 破甲 ，然后造成 !D! 伤害。"
+    "DESCRIPTION": "获得 !M! 层 破甲 ，使敌人获得等同于自身的 破甲 ，然后造成 !D! 伤害。"
   },
   "Onmyoji:Tai Ji": {
     "NAME": "斗转",
@@ -111,7 +112,7 @@
   },
   "Onmyoji:Cuteness": {
     "NAME": "萌即正义",
-    "DESCRIPTION": "回合开始时获得1张式神牌。运势 !M! ：该牌本局对战费用变为0"
+    "DESCRIPTION": "回合开始时获得1张式神牌。运势 !M! ：该牌本局对战费用变为0。"
   },
   "Onmyoji:Moonlight Night": {
     "NAME": "胧月夜",
@@ -124,8 +125,8 @@
   },
   "Onmyoji:Maze of Mind": {
     "NAME": "心灵迷宫",
-    "DESCRIPTION": "式神牌需要额外消耗 [E] ，使用时随机使另1张手牌本回合费用变为0。NL 虚无 ",
-    "UPGRADE_DESCRIPTION": "式神牌需要额外消耗 [E] ，使用时随机使另1张手牌本回合费用变为0。"
+    "DESCRIPTION": "式神牌费用随机 ，且使用时随机使另1张手牌本回合费用变为0。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "式神牌费用随机 ，且使用时随机使另1张手牌本回合费用变为0。"
   },
   "Onmyoji:Cat Wuwan": {
     "NAME": "猫咪日和",
@@ -153,12 +154,12 @@
   },
   "Onmyoji:Chord": {
     "NAME": "神乐歌",
-    "DESCRIPTION": "回合开始时获得 倒计时 5 ：获得1 力量 与 1 敏捷。",
-    "UPGRADE_DESCRIPTION": "使用与回合开始时获得 倒计时 5 ：获得1 力量 与 1 敏捷。"
+    "DESCRIPTION": "使用与开始时获得 倒计时 5 ：获得1 力量 与 1 敏捷。",
+    "UPGRADE_DESCRIPTION": "使用与回合开始时获得 倒计时 5 ：获得1 力量 与 1 敏捷。 固有 。"
   },
   "Onmyoji:Dark Dream": {
     "NAME": "永眠之梦",
-    "DESCRIPTION": " 回合结束时随机使抽牌堆中 !M! 张牌附加 梦魇。"
+    "DESCRIPTION": " 回合结束时随机使抽牌堆中 !M! 张牌附加 梦魇 。"
   },
   "Onmyoji:Good and Evil": {
     "NAME": "善恶无则",
@@ -179,8 +180,8 @@
   },
   "Onmyoji:All Together": {
     "NAME": "都要在一起",
-    "DESCRIPTION": "随机将 !M！张牌附加 缘结 并洗入牌库，抽 !M！张牌。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "选择 !M！张牌附加 缘结 并洗入牌库，抽 !M！张牌。 NL 消耗 。"
+    "DESCRIPTION": "随机将 !M! 张牌附加 缘结 并洗入牌库，抽 !M! 张牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "选择 !M! 张牌附加 缘结 并洗入牌库，抽 !M! 张牌。 NL 消耗 。"
   },
   "Onmyoji:Book": {
     "NAME": "万卷书",
@@ -193,13 +194,13 @@
   },
   "Onmyoji:Puppet": {
     "NAME": "木偶商人",
-    "DESCRIPTION": "占卜 !M! 张牌 ，抽1张牌，若此牌有附加额外效果获得 [E] [E] 。",
-    "UPGRADE_DESCRIPTION": "占卜 !M! 张牌 ，抽1张牌，若此牌有附加额外效果获得 [E] [E] [E] 。"
+    "DESCRIPTION": "占卜 2 张牌 ，抽1张牌，若此牌有附加额外效果获得 [E] [E] 。",
+    "UPGRADE_DESCRIPTION": "占卜 2 张牌 ，抽1张牌，若此牌有附加额外效果获得 [E] [E] [E] 。"
   },
   "Onmyoji:Lethe Water": {
     "NAME": "孟婆汤",
-    "DESCRIPTION": " 占卜 3 张牌,  消耗 抽牌堆底部 !M! 张牌。",
-    "UPGRADE_DESCRIPTION": " 占卜 3 张牌,  消耗 抽牌堆底部 !M! 张牌。 NL 消耗 。"
+    "DESCRIPTION": " 占卜 3 张牌,  消耗 NL 抽牌堆底部3张牌。",
+    "UPGRADE_DESCRIPTION": " 占卜 3 张牌,  消耗 NL 抽牌堆底部3张牌。 NL 消耗 。"
   },
   "Onmyoji:Ghost Fire": {
     "NAME": "百物语之火",
@@ -213,11 +214,11 @@
   },
   "Onmyoji:Buddhist": {
     "NAME": "佛光",
-    "DESCRIPTION": "恢复所有角色 !M！点生命值，每个过量治疗使角色获得1点生命上限。 NL 消耗 。"
+    "DESCRIPTION": "恢复所有角色 !M! 点生命， NL 每个过量治疗使角色获得1点生命上限。 NL 消耗 。"
   },
   "Onmyoji:Ensemble": {
     "NAME": "大合奏",
-    "DESCRIPTION": "生成 !M! 个生成过的倒计时。"
+    "DESCRIPTION": "生成 !M! 个生成过的 倒计时 。"
   },
   "Onmyoji:Lotus": {
     "NAME": "诸善奉行",
@@ -229,7 +230,7 @@
   },
   "Onmyoji:Snake Attack": {
     "NAME": "蛇形击",
-    "DESCRIPTION": "使一个敌人获得 !M! 破甲 ，当切换式神时返回手牌。"
+    "DESCRIPTION": "使一个敌人获得 !M! 层 破甲 。当切换式神时返回手牌。"
   },
   "Onmyoji:Wind Shield": {
     "NAME": "风符·护",
@@ -237,13 +238,13 @@
   },
   "Onmyoji:Knowledge": {
     "NAME": "达知",
-    "DESCRIPTION": " 占卜 !M! 张牌 ，抽1张牌，使用后将一张复制加入弃牌堆。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": " 占卜 !M! 张牌 ，抽1张牌，使用后将一张复制加入弃牌堆。"
+    "DESCRIPTION": " 占卜 !M! 张牌 ，抽1张牌。将一张此牌的复制加入弃牌堆。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": " 占卜 !M! 张牌 ，抽1张牌。将一张此牌的复制加入弃牌堆。"
   },
   "Onmyoji:Bird": {
     "NAME": "鸩羽苏生",
-    "DESCRIPTION": "获得 !B! 格挡 ， 倒计时 3 ：获得最近的敌人获得 !M! 破甲 。",
-    "UPGRADE_DESCRIPTION": "获得 !B! 格挡 ， 倒计时 2 ：获得最近的敌人获得 !M! 破甲 。"
+    "DESCRIPTION": "获得 !B! 格挡 ， 倒计时 3 ：获得最近的敌人获得 !M! 层 破甲 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 格挡 ， 倒计时 2 ：获得最近的敌人获得 !M! 层 破甲 。"
   },
   "Onmyoji:Kiyohime": {
     "NAME": "式神·清姬",
@@ -301,7 +302,7 @@
   },
   "Onmyoji:Yamata": {
     "NAME": "式神·八岐大蛇",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时损失1点生命，抽1张牌。消耗 。"
+    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时损失1点生命，抽1张牌。 消耗 。"
   },
   "Onmyoji:Bokku": {
     "NAME": "式神·书翁",
@@ -314,7 +315,7 @@
   },
   "Onmyoji:Hangan": {
     "NAME": "式神·判官",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时消灭一个生命值低于当前式神生命的敌人。"
+    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时消灭一个生命值小于等于当前式神生命的敌人。"
   },
   "Onmyoji:Dodomeki": {
     "NAME": "式神·百目鬼",
@@ -327,8 +328,8 @@
   },
   "Onmyoji:Light": {
     "NAME": "明灯",
-    "DESCRIPTION": "获得 [E] 。 NL 保留 消耗 。",
-    "UPGRADE_DESCRIPTION": "获得 [E] [E] 。 NL 保留 消耗 。"
+    "DESCRIPTION": "获得 [E] 。 NL 保留 , 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得 [E] [E] 。 NL 保留 , 消耗 。"
   },
   "Onmyoji:Golden Feather": {
     "NAME": "黄金羽",

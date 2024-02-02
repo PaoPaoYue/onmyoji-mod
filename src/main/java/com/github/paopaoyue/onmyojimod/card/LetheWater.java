@@ -21,7 +21,8 @@ public class LetheWater extends CustomCard {
     public LetheWater() {
         super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.SELF);
-
+        this.baseMagicNumber = 3;
+        this.magicNumber = baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

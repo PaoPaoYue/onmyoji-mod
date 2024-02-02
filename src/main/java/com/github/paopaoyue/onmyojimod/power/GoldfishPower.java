@@ -38,7 +38,7 @@ public class GoldfishPower extends AbstractPower {
                 do {
                     card = AbstractDungeon.getCard(AbstractCard.CardRarity.COMMON, AbstractDungeon.cardRandomRng).makeCopy();
                 } while ((card instanceof AbstractKamiCard) || card.type == AbstractCard.CardType.POWER);
-                this.addToBot(new PlayTmpCardAction(card, false, true));
+                this.addToBot(new PlayTmpCardAction(card, true));
             }
         }
     }

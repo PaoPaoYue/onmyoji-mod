@@ -4,14 +4,17 @@ import basemod.abstracts.CustomCard;
 import com.github.paopaoyue.onmyojimod.character.Sanme;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 
 public class GoodAndEvil extends CustomCard {
     public static final String ID = "Onmyoji:Good and Evil";
@@ -28,9 +31,11 @@ public class GoodAndEvil extends CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (p instanceof Sanme) {
-            this.addToBot(new DamageAction(p, new DamageInfo(p, ((Sanme) p).getKamiManager().getHp(), DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.LIGHTNING));
-            int amount = 10 - p.hand.size();
+        if (p instanceof Sanme && ((Sanme) p).getKamiManager().isHasKami()) {
+            this.addToTop(new SFXAction("ORB_LIGHTNING_EVOKE"));
+            this.addToBot(new VFXAction(new LightningEffect(p.hb.cX, p.hb.cY)));
+            this.addToBot(new DamageAction(p, new DamageInfo(p, ((Sanme) p).getKamiManager().getHp(), DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.NONE));
+            int amount = 11 - p.hand.size();
             if (amount > 0) {
                 this.addToBot(new MakeTempCardInHandAction(new Yamata(), amount));
             }

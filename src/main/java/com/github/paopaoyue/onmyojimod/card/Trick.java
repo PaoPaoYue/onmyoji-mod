@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.actions.common.PlayTopCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -32,10 +33,15 @@ public class Trick extends CustomCard {
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
     }
 
-    @Override
-    public void onPlayCard(AbstractCard c, AbstractMonster m) {
-        if (c.type == CardType.ATTACK && AbstractDungeon.player.drawPile.getTopCard() == this) {
-            this.addToTop(new PlayTopCardAction(m, false));
+    public void onAfterCardUse(AbstractCard c, AbstractCreature target) {
+        if (c.type == CardType.ATTACK && !AbstractDungeon.player.drawPile.isEmpty() && AbstractDungeon.player.drawPile.getTopCard() == this) {
+            if (AbstractDungeon.getCurrRoom().monsters.areMonstersBasicallyDead()) {
+                return;
+            }
+            if (target == null) {
+                target = AbstractDungeon.getRandomMonster();
+            }
+            this.addToTop(new PlayTopCardAction(target, false));
         }
     }
 

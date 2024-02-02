@@ -25,21 +25,21 @@ public class Lotus extends CustomCard {
     public Lotus() {
         super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.COMMON, CardTarget.ENEMY);
-        this.baseMagicNumber = 6;
+        this.baseMagicNumber = -6;
         this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, -this.magicNumber), -this.magicNumber));
+        this.addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, this.magicNumber), this.magicNumber));
         if (m != null && !m.hasPower("Artifact")) {
-            this.addToBot(new ApplyPowerAction(m, p, new GainStrengthPower(m, this.magicNumber), this.magicNumber));
+            this.addToBot(new ApplyPowerAction(m, p, new GainStrengthPower(m, -this.magicNumber), -this.magicNumber));
         }
     }
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
         if (Objects.equals(c.cardID, this.cardID)) {
-            this.baseMagicNumber += MAGIC_NUMBER_ADD_ON;
+            this.baseMagicNumber += -MAGIC_NUMBER_ADD_ON;
             this.magicNumber = this.baseMagicNumber;
         }
         super.onPlayCard(c, m);

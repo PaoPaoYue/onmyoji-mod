@@ -22,6 +22,7 @@ public class GhostFire extends CustomCard {
         super(ID, cardStrings.NAME, (String) null, -1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.SELF);
         this.exhaust = true;
+        this.cardsToPreview = new Light();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -38,6 +39,9 @@ public class GhostFire extends CustomCard {
         }
         if (effect > 0) {
             this.addToBot(new MakeTempCardInHandAction(new Light(), effect));
+        }
+        if (!this.freeToPlayOnce) {
+            p.energy.use(EnergyPanel.totalCount);
         }
     }
 

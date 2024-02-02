@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class Chord extends CustomCard {
-    public static final String ID = "Onmyoji:Divined Eye";
+    public static final String ID = "Onmyoji:Chord";
     private static final CardStrings cardStrings;
 
     static {
@@ -38,6 +38,7 @@ public class Chord extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.isInnate = true;
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

@@ -9,5 +9,15 @@
       "我无法拥有更多的倒计时。",
       "我无法拥有机煲的能量球。"
     ]
+  },
+  "AllTogetherAction": {
+    "TEXT": [
+      "结附缘结并洗入抽牌堆"
+    ]
+  },
+  "PutOnRandomDeckAction": {
+    "TEXT": [
+      "洗入抽牌堆"
+    ]
   }
 }

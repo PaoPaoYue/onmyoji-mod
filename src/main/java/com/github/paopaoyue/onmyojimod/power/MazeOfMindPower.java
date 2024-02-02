@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class MazeOfMindPower extends AbstractPower {
     public static final String POWER_ID = "Onmyoji:Maze of Mind";
     private static final PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
-    private static final Texture IMG = ImageMaster.loadImage("image/icon/maze_of_mid.png");
+    private static final Texture IMG = ImageMaster.loadImage("image/icon/maze_of_mind.png");
 
 
     public MazeOfMindPower(AbstractCreature owner) {
@@ -41,7 +41,7 @@ public class MazeOfMindPower extends AbstractPower {
     @Override
     public void onCardDraw(final AbstractCard card) {
         if (card instanceof AbstractKamiCard) {
-            card.cost += 1;
+            card.cost = AbstractDungeon.cardRandomRng.random(0, 3);
             card.costForTurn = card.cost;
             card.isCostModified = true;
             card.freeToPlayOnce = false;

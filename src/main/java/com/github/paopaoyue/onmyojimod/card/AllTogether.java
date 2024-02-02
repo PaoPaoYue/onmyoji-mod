@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class AllTogether extends CustomCard {
-    public static final String ID = "Onmyoji:Contemplate";
+    public static final String ID = "Onmyoji:All Together";
     private static final CardStrings cardStrings;
 
     static {

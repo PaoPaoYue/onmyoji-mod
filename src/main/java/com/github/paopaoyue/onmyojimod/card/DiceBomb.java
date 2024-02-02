@@ -3,7 +3,7 @@ package com.github.paopaoyue.onmyojimod.card;
 import basemod.abstracts.CustomCard;
 import com.github.paopaoyue.onmyojimod.action.RollDiceAction;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
-import com.github.paopaoyue.onmyojimod.power.PenetratedPower;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.vfx.combat.FlickCoinEffect;
 
 public class DiceBomb extends CustomCard {
     public static final String ID = "Onmyoji:Dice Bomb";
@@ -36,6 +36,7 @@ public class DiceBomb extends CustomCard {
         this.baseDamage += (upgraded ? 2 : 1) * action.amount;
         super.calculateCardDamage(m);
         this.baseDamage = realBaseDamage;
+        this.addToBot(new VFXAction(new FlickCoinEffect(p.hb.cX, p.hb.cY, m.hb.cX, m.hb.cY), 0.3f));
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn)));
     }
 

@@ -19,7 +19,7 @@ import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 public class Righteousness extends CustomCard {
     public static final String ID = "Onmyoji:Righteousness";
     private static final CardStrings cardStrings;
-    private static final int BASE_DAMAGE = 10;
+    private static final int BASE_DAMAGE = 11;
 
     static {
         cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -50,7 +50,7 @@ public class Righteousness extends CustomCard {
         }
         if (penetratedAmount > 0) {
             int realBaseDamage = this.baseDamage;
-            this.baseDamage += penetratedAmount;
+            this.baseDamage += penetratedAmount * (upgraded ? 2 : 1);
             super.calculateCardDamage(mo);
             this.baseDamage = realBaseDamage;
             this.isDamageModified = (this.damage != this.baseDamage);
@@ -61,7 +61,8 @@ public class Righteousness extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(2);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 

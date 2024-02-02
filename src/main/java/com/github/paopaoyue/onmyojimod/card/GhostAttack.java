@@ -24,6 +24,7 @@ public class GhostAttack extends CustomCard {
         super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.COMMON, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
+        this.cardsToPreview = new Light();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

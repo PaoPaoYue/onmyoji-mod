@@ -31,11 +31,13 @@ public class Luck extends CustomCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-        RollDiceAction action = new RollDiceAction();
-        this.addToBot(action);
-        if (action.amount >= 4) {
-            this.addToBot(new ExhaustAction(1, !upgraded, false, false));
-            this.addToBot(new PlayTmpCardAction(this.makeStatEquivalentCopy(), false, true));
+        if (!p.hand.isEmpty()) {
+            RollDiceAction action = new RollDiceAction();
+            this.addToBot(action);
+            if (action.amount >= 4) {
+                this.addToBot(new ExhaustAction(1, !upgraded, false, false));
+                this.addToBot(new PlayTmpCardAction(this.makeStatEquivalentCopy(), m, true));
+            }
         }
     }
 

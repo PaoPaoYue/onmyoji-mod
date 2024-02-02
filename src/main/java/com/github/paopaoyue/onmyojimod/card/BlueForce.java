@@ -28,7 +28,7 @@ public class BlueForce extends CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new VFXAction(new WhirlwindEffect(new Color(1.0f, 0.9f, 0.4f, 1.0f), true)));
+        this.addToBot(new VFXAction(new WhirlwindEffect(Color.SKY, true)));
         this.addToBot(new SkipEnemiesTurnAction());
         this.addToBot(new PressEndTurnButtonAction());
     }

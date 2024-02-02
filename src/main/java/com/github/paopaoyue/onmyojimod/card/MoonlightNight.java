@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class MoonlightNight extends CustomCard {
-    public static final String ID = "Onmyoji:Cuteness";
+    public static final String ID = "Onmyoji:Moonlight Night";
     private static final CardStrings cardStrings;
 
     static {

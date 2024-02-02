@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -27,7 +28,7 @@ public class MazeOfMind extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (final AbstractCard card : p.hand.group) {
             if (card instanceof AbstractKamiCard) {
-                card.cost += 1;
+                card.cost = AbstractDungeon.cardRandomRng.random(0, 3);
                 card.costForTurn = card.cost;
                 card.isCostModified = true;
                 card.freeToPlayOnce = false;

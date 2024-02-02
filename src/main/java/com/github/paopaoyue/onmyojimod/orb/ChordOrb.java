@@ -12,9 +12,9 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 public class ChordOrb extends AbstractCountdownOrb {
 
-    public static final String ORB_ID = "Onmyoji:Bird";
+    public static final String ORB_ID = "Onmyoji:Chord";
     private static final OrbStrings orbString = CardCrawlGame.languagePack.getOrbString(ORB_ID);
-    private static final Texture IMG = ImageMaster.loadImage("image/vfx/orb/bird.png");
+    private static final Texture IMG = ImageMaster.loadImage("image/vfx/orb/chord.png");
 
     private int powerAmount;
 

@@ -70,14 +70,14 @@ public class ExhaustOneCardAndCallbackAction extends AbstractGameAction {
             this.tickDuration();
         }
 
-        if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
+        if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
 
-            for (AbstractCard card : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
+            for (AbstractCard card : AbstractDungeon.gridSelectScreen.selectedCards) {
                 AbstractDungeon.player.hand.moveToExhaustPile(card);
                 this.callback.accept(card);
             }
             CardCrawlGame.dungeon.checkForPactAchievement();
-            AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
+            AbstractDungeon.gridSelectScreen.selectedCards.clear();
         }
 
         this.tickDuration();

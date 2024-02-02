@@ -7,6 +7,27 @@
     "DESCRIPTION": "式神拥有一定的临时生命且可能有特殊能力。对应式神的卡牌在使用时会化作式神保护你，在式神离场时会进入弃牌堆。 NL 临时生命耗尽与切换式神都会触发式神离场，但切换式神时临时生命可以叠加。"
   },
   {
+    "ID": "Onmyoji:Penetrated",
+    "NAMES": [
+      "破甲"
+    ],
+    "DESCRIPTION": "受到的攻击伤害增加等同于层数的伤害，回合开始时移除。"
+  },
+  {
+    "ID": "Onmyoji:Encouraged",
+    "NAMES": [
+      "鼓舞"
+    ],
+    "DESCRIPTION": "下次攻击的最终伤害翻倍，造成伤害后减少1层。"
+  },
+  {
+    "ID": "Onmyoji:Unyielding",
+    "NAMES": [
+      "不屈"
+    ],
+    "DESCRIPTION": "下次式神受到致命伤害时减少1层，若式神生命值大于1则将伤害减少为式神生命值-1。"
+  },
+  {
     "ID": "Onmyoji:Countdown",
     "NAMES": [
       "倒计时"

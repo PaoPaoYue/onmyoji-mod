@@ -32,7 +32,13 @@ public class SwitchKamiAction extends AbstractGameAction {
             if (this.amount > 0) {
                 this.target.healthBarUpdatedEvent();
             }
+        } else if (this.duration <= 0.1F) {
+            if (card.exhaust) {
+                Sanme player = (Sanme) AbstractDungeon.player;
+                player.SwitchCharacterImage(newKami.getCharacterImage());
+            }
         }
+
 
         this.tickDuration();
     }

@@ -62,21 +62,25 @@ public class KamiManager {
     }
 
     public int getKamiSwitchCountInBattle() {
-        return kamiSequenceInBattle.size();
+        return (int) kamiSequenceInBattle.stream().filter(x -> x != AbstractKami.ONMYOJI_NONE).count();
     }
 
     public int getKamiSwitchCountInTurn() {
-        return kamiSequenceInTurn.size();
+        return (int) kamiSequenceInTurn.stream().filter(x -> x != AbstractKami.ONMYOJI_NONE).count();
     }
 
     public int getDiffKamiSwitchCountInBattle() {
-        Set<String> kamiSet = kamiSequenceInBattle.stream().map(AbstractKami::getId).collect(Collectors.toSet());
+        Set<String> kamiSet = kamiSequenceInBattle.stream().filter(x -> x != AbstractKami.ONMYOJI_NONE).map(AbstractKami::getId).collect(Collectors.toSet());
         return kamiSet.size();
     }
 
     public int getDiffKamiSwitchCountInTurn() {
-        Set<String> kamiSet = kamiSequenceInTurn.stream().map(AbstractKami::getId).collect(Collectors.toSet());
+        Set<String> kamiSet = kamiSequenceInTurn.stream().filter(x -> x != AbstractKami.ONMYOJI_NONE).map(AbstractKami::getId).collect(Collectors.toSet());
         return kamiSet.size();
+    }
+
+    public boolean hasDeadInBattle() {
+        return getKamiSequenceInBattle().contains(AbstractKami.ONMYOJI_NONE);
     }
 
     public List<AbstractKami> getKamiSequenceInBattle() {
@@ -88,35 +92,10 @@ public class KamiManager {
     }
 
     public Faction getCurrentFaction() {
-        if (!hasKami) {
+        if (!hasKami || getCurrentKami() == AbstractKami.ONMYOJI_NONE) {
             return Faction.NONE;
         }
         return kamiSequenceInBattle.get(kamiSequenceInBattle.size() - 1).getFaction();
-    }
-
-    public Faction getPreviousFaction() {
-        if (kamiSequenceInBattle.size() <= 1) {
-            return Faction.NONE;
-        }
-        return kamiSequenceInBattle.get(kamiSequenceInBattle.size() - 2).getFaction();
-    }
-
-    public int getFactionSwitchCountInBattle() {
-        return kamiSequenceInBattle.size();
-    }
-
-    public int getFactionSwitchCountInTurn() {
-        return kamiSequenceInTurn.size();
-    }
-
-    public int getDiffFactionSwitchCountInBattle() {
-        Set<Faction> factionSet = kamiSequenceInBattle.stream().map(AbstractKami::getFaction).collect(Collectors.toSet());
-        return factionSet.size();
-    }
-
-    public int getDiffFactionSwitchCountInTurn() {
-        Set<Faction> factionSet = kamiSequenceInTurn.stream().map(AbstractKami::getFaction).collect(Collectors.toSet());
-        return factionSet.size();
     }
 
     public void onSwitch(AbstractCard card, AbstractKami kami) {
@@ -148,6 +127,9 @@ public class KamiManager {
         }
 
         hasKami = false;
+
+        kamiSequenceInBattle.add(AbstractKami.ONMYOJI_NONE);
+        kamiSequenceInTurn.add(AbstractKami.ONMYOJI_NONE);
 
         if (!kamiCardGroup.isEmpty()) {
             AbstractCard discardCard = kamiCardGroup.getTopCard();

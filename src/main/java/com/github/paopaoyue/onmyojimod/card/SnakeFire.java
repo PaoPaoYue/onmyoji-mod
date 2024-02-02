@@ -47,11 +47,14 @@ public class SnakeFire extends CustomCard {
             this.addToBot(new VFXAction(p, new ScreenOnFireEffect(), 1.0f));
             for (int i = 0; i < effect; ++i) {
                 for (final AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-                    if (m.isDead) continue;
-                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new PenetratedPower(mo, this.magicNumber)));
+                    if (mo.isDead) continue;
+                    this.addToBot(new ApplyPowerAction(mo, p, new PenetratedPower(mo, this.magicNumber)));
                 }
-                this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
+                this.addToBot(new DamageAllEnemiesAction(p, this.baseDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
             }
+        }
+        if (!this.freeToPlayOnce) {
+            p.energy.use(EnergyPanel.totalCount);
         }
     }
 

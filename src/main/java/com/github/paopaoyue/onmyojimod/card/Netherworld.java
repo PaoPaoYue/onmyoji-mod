@@ -5,14 +5,13 @@ import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.github.paopaoyue.onmyojimod.power.BreakthroughPower;
 import com.github.paopaoyue.onmyojimod.power.EncouragedPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class Breakthrough extends CustomCard {
+public class Netherworld extends CustomCard {
     public static final String ID = "Onmyoji:Netherworld";
     private static final CardStrings cardStrings;
 
@@ -20,7 +19,7 @@ public class Breakthrough extends CustomCard {
         cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     }
 
-    public Breakthrough() {
+    public Netherworld() {
         super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseMagicNumber = 1;
@@ -43,6 +42,6 @@ public class Breakthrough extends CustomCard {
     }
 
     public AbstractCard makeCopy() {
-        return new Breakthrough();
+        return new Netherworld();
     }
 }

@@ -1,8 +1,8 @@
 package com.github.paopaoyue.onmyojimod.card;
 
 import basemod.abstracts.CustomCard;
+import com.github.paopaoyue.onmyojimod.action.PeachBlossomAction;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
-import com.megacrit.cardcrawl.actions.common.BetterDiscardPileToHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -24,7 +24,7 @@ public class PeachBlossom extends CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new BetterDiscardPileToHandAction(1));
+        this.addToBot(new PeachBlossomAction(1, 1));
     }
 
     public void upgrade() {

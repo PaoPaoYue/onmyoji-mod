@@ -2,7 +2,6 @@ package com.github.paopaoyue.onmyojimod.card;
 
 import basemod.abstracts.CustomCard;
 import com.github.paopaoyue.onmyojimod.character.Sanme;
-import com.github.paopaoyue.onmyojimod.object.kami.AbstractKami;
 import com.github.paopaoyue.onmyojimod.object.kami.KamiManager;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -31,24 +30,29 @@ public class RebornOfPhoenix extends CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
+        this.calculateCardDamage(m);
         this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
     }
 
-    public void applyPowers() {
+    @Override
+    public void calculateCardDamage(final AbstractMonster mo) {
+        int realBaseDamage = this.baseDamage;
         if (AbstractDungeon.player instanceof Sanme) {
             KamiManager kamiManager = ((Sanme) AbstractDungeon.player).getKamiManager();
-            if (kamiManager.getKamiSequenceInBattle().contains(AbstractKami.ONMYOJI_NONE)) {
+            if (kamiManager.hasDeadInBattle()) {
                 this.baseDamage *= 2;
             }
         }
-        super.applyPowers();
+        super.calculateCardDamage(mo);
+        this.baseDamage = realBaseDamage;
     }
 
     public void triggerOnGlowCheck() {
         if (AbstractDungeon.player instanceof Sanme) {
             KamiManager kamiManager = ((Sanme) AbstractDungeon.player).getKamiManager();
-            if (kamiManager.getKamiSequenceInBattle().contains(AbstractKami.ONMYOJI_NONE)) {
+            if (kamiManager.hasDeadInBattle()) {
                 this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+                return;
             }
         }
         this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();

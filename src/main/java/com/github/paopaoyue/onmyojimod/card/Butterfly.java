@@ -2,7 +2,6 @@ package com.github.paopaoyue.onmyojimod.card;
 
 import basemod.abstracts.CustomCard;
 import com.github.paopaoyue.onmyojimod.action.ButterflyAction;
-import com.github.paopaoyue.onmyojimod.action.CorruptedPunchAction;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -14,7 +13,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class Butterfly extends CustomCard {
-    public static final String ID = "Onmyoji:Corrupted Punch";
+    public static final String ID = "Onmyoji:Butterfly";
     private static final CardStrings cardStrings;
     private static final int BASE_DAMAGE = 3;
 
@@ -30,10 +29,10 @@ public class Butterfly extends CustomCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        this.addToBot(new ButterflyAction(card -> card.costForTurn <= 1));
+        this.addToBot(new ButterflyAction(card -> card.costForTurn <= 1, m));
     }
 
-        public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         for (AbstractCard card : p.hand.group) {
             if (card.costForTurn <= 1) {
                 return true;

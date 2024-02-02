@@ -37,7 +37,12 @@ public class PlayerDamage {
             localvars = {"damageAmount", "hadBlock"}
     )
     public static void Insert(AbstractCreature __instance, DamageInfo info, @ByRef int[] damageAmount, boolean hadBlock) {
-        if (damageAmount[0] > 0 && AbstractDungeon.player instanceof Sanme) {
+        for (AbstractPower power : __instance.powers) {
+            if (power instanceof IceShieldPower) {
+                ((IceShieldPower) power).onAttacked(damageAmount[0], info, hadBlock);
+            }
+        }
+        if (damageAmount[0] > 0 && info.type != DamageInfo.DamageType.HP_LOSS && AbstractDungeon.player instanceof Sanme) {
 
             KamiManager kamiManager = ((Sanme) AbstractDungeon.player).getKamiManager();
             int tempHp = kamiManager.getHp();
@@ -49,7 +54,7 @@ public class PlayerDamage {
                         return;
                     }
                     if (power instanceof IceShieldPower) {
-                        ((IceShieldPower) power).onAttacked(damageAmount[0], info);
+                        ((IceShieldPower) power).onAttacked(damageAmount[0], info, hadBlock);
                     }
                 }
 

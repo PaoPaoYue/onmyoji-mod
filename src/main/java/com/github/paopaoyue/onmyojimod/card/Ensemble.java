@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import java.util.List;
 
 public class Ensemble extends CustomCard {
-    public static final String ID = "Onmyoji:Buddhist";
+    public static final String ID = "Onmyoji:Ensemble";
     private static final CardStrings cardStrings;
 
     static {
@@ -24,15 +24,14 @@ public class Ensemble extends CustomCard {
     public Ensemble() {
         super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.SELF);
-        this.exhaust = true;
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         List<AbstractOrb> list = AbstractDungeon.actionManager.orbsChanneledThisCombat;
-        for (int i = 0; i < this.magicNumber; i++) {
-            this.addToBot(new ChannelAction(list.get(AbstractDungeon.cardRandomRng.random(list.size() - 1))));
+        for (int i = 0; i < this.magicNumber && list.size() > 0; i++) {
+            this.addToBot(new ChannelAction(list.get(AbstractDungeon.cardRandomRng.random(list.size() - 1)).makeCopy()));
         }
     }
 

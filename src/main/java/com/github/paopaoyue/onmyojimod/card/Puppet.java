@@ -12,8 +12,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import java.util.concurrent.atomic.AtomicReference;
-
 public class Puppet extends CustomCard {
     public static final String ID = "Onmyoji:Puppet";
     private static final CardStrings cardStrings;
@@ -30,11 +28,13 @@ public class Puppet extends CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AtomicReference<Boolean> gainEnergy = new AtomicReference<>(false);
-        this.addToBot(new DivineAction(2, x -> gainEnergy.set(SpiritField.spirit.get(p.drawPile.getTopCard()) != null)));
+        this.addToBot(new DivineAction(2, x -> {
+            if (!p.drawPile.isEmpty() && SpiritField.spirit.get(p.drawPile.getTopCard()) != null)
+                this.addToBot(new GainEnergyAction(this.magicNumber));
+        }));
         this.addToBot(new DrawCardAction(1));
-        if (gainEnergy.get())
-            this.addToBot(new GainEnergyAction(this.magicNumber));
+
+
     }
 
     public void upgrade() {

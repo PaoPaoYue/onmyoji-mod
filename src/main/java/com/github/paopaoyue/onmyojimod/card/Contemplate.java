@@ -2,9 +2,9 @@ package com.github.paopaoyue.onmyojimod.card;
 
 import basemod.abstracts.CustomCard;
 import com.github.paopaoyue.onmyojimod.action.DivineAction;
+import com.github.paopaoyue.onmyojimod.action.PutOnRandomDeckAction;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.PutOnDeckAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -27,7 +27,7 @@ public class Contemplate extends CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new PutOnDeckAction(p, p, 1, false));
+        this.addToBot(new PutOnRandomDeckAction(1));
         this.addToBot(new DivineAction(this.magicNumber));
         this.addToBot(new DrawCardAction(2));
     }

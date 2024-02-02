@@ -2,7 +2,6 @@ package com.github.paopaoyue.onmyojimod.card;
 
 import basemod.abstracts.CustomCard;
 import com.github.paopaoyue.onmyojimod.action.RollDiceAction;
-import com.github.paopaoyue.onmyojimod.action.SpecificCardToHandAction;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
@@ -35,8 +34,13 @@ public class Cheat extends CustomCard {
         if (action.amount == 6) {
             this.addToBot(new GainEnergyAction(1));
         } else if (action.amount >= 4) {
-            this.addToBot(new SpecificCardToHandAction(p.discardPile, this));
+            this.returnToHand = true;
         }
+    }
+
+    public void applyPowers() {
+        this.returnToHand = false;
+        super.applyPowers();
     }
 
 

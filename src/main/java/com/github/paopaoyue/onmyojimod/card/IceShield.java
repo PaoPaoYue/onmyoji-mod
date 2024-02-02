@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class IceShield extends CustomCard {
-    public static final String ID = "Onmyoji:Light";
+    public static final String ID = "Onmyoji:Ice Shield";
     private static final CardStrings cardStrings;
 
     static {
@@ -29,13 +29,13 @@ public class IceShield extends CustomCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new GainBlockAction(p, this.block));
-        this.addToBot(new ApplyPowerAction(p, p, new IceShieldPower(p, 1)));
+        this.addToBot(new ApplyPowerAction(p, p, new IceShieldPower(p, this.magicNumber)));
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBlock(3);
+            this.upgradeMagicNumber(1);
         }
     }
 

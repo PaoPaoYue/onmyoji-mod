@@ -15,21 +15,27 @@ import java.lang.reflect.Method;
 
 public class GhostHandAction extends AbstractGameAction {
     private static final float DURATION = Settings.ACTION_DUR_MED;
+    private static Method refreshLocationMethod;
+
+    static {
+        try {
+            refreshLocationMethod = AbstractCreature.class.getDeclaredMethod("refreshHitboxLocation");
+            refreshLocationMethod.setAccessible(true);
+        } catch (NoSuchMethodException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     private DamageInfo info;
-
     private AbstractMonster swapTarget;
-
     private float a_draw_X;
     private float b_draw_X;
     private float a_draw_Y;
     private float b_draw_Y;
-
     private float a_draw_tX;
     private float b_draw_tX;
     private float a_draw_tY;
     private float b_draw_tY;
-
-    private Method refreshLocationMethod;
 
     public GhostHandAction(AbstractCreature target, AbstractCreature source, DamageInfo info) {
         this.setValues(target, this.info = info);
@@ -72,12 +78,7 @@ public class GhostHandAction extends AbstractGameAction {
                 a_draw_tY = swapTarget.hb.cY - target.hb_h / 2.0F - target.hb_y;
                 b_draw_tX = target.hb.cX - swapTarget.animX - swapTarget.hb_x;
                 b_draw_tY = target.hb.cY - swapTarget.hb_h / 2.0F - swapTarget.hb_y;
-                try {
-                    refreshLocationMethod = AbstractCreature.class.getDeclaredMethod("refreshHitboxLocation");
-                    refreshLocationMethod.setAccessible(true);
-                } catch (NoSuchMethodException e) {
-                    throw new RuntimeException(e);
-                }
+
 
             }
         }

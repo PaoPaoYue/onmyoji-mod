@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class PurpleForce extends CustomCard {
-    public static final String ID = "Onmyoji:Blue Force";
+    public static final String ID = "Onmyoji:Purple Force";
     private static final CardStrings cardStrings;
 
     static {

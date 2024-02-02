@@ -20,7 +20,6 @@ public class PeachBlossomAction extends AbstractGameAction {
     private AbstractPlayer player;
     private int numberOfCards;
     private int reducedCost;
-    private boolean setCost;
 
     public PeachBlossomAction(int numberOfCards, int reducedCost) {
         this.reducedCost = reducedCost;
@@ -79,9 +78,7 @@ public class PeachBlossomAction extends AbstractGameAction {
     private void cardToHand(AbstractCard card) {
         if (this.player.hand.size() < 10) {
             this.player.hand.addToHand(card);
-            if (this.setCost) {
-                card.setCostForTurn(card.cost - reducedCost);
-            }
+            card.setCostForTurn(card.cost - reducedCost);
             this.player.discardPile.removeCard(card);
         }
         card.lighten(false);

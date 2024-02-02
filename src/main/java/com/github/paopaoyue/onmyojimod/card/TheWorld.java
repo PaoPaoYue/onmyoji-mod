@@ -36,7 +36,7 @@ public class TheWorld extends CustomCard {
         this.addToBot(new DivineAction(this.magicNumber, divineAction -> {
             for (AbstractCard card : divineAction.getDivinedCards()) {
                 if (SpiritField.spirit.get(card) != null) {
-                    this.addToTop(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE, true));
+                    this.addToTop(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH, true));
                 }
             }
         }));
