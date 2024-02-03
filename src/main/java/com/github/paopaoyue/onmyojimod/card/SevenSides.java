@@ -2,6 +2,7 @@ package com.github.paopaoyue.onmyojimod.card;
 
 import basemod.abstracts.CustomCard;
 import com.github.paopaoyue.onmyojimod.character.Sanme;
+import com.github.paopaoyue.onmyojimod.object.kami.AbstractKami;
 import com.github.paopaoyue.onmyojimod.object.kami.KamiManager;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -14,10 +15,12 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import java.util.stream.Collectors;
+
 public class SevenSides extends CustomCard {
     public static final String ID = "Onmyoji:Seven Sides";
     private static final CardStrings cardStrings;
-    private static final int BASE_DAMAGE = 8;
+    private static final int BASE_DAMAGE = 9;
     private static final int BASE_DAMAGE_ADD_ON = 3;
 
     static {
@@ -39,7 +42,7 @@ public class SevenSides extends CustomCard {
     public void applyPowers() {
         if (AbstractDungeon.player instanceof Sanme) {
             KamiManager kamiManager = ((Sanme) AbstractDungeon.player).getKamiManager();
-            int kamiNum = Math.min(4, kamiManager.getDiffKamiSwitchCountInBattle());
+            int kamiNum = kamiManager.getKamiSequenceInBattle().stream().filter(x -> x != AbstractKami.ONMYOJI_NONE && x.getId().startsWith(Menreiki.ID)).collect(Collectors.toSet()).size();
             if (this.upgraded) {
                 this.baseDamage = BASE_DAMAGE + (BASE_DAMAGE_ADD_ON + 1) * kamiNum;
             } else {
@@ -53,6 +56,7 @@ public class SevenSides extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.upgradeDamage(1);
             this.upgradeMagicNumber(1);
         }
     }
