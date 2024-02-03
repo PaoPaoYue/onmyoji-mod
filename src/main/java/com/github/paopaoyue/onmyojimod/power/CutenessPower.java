@@ -34,7 +34,6 @@ public class CutenessPower extends AbstractPower {
         cardList.add(new YotoHime());
         cardList.add(new Momo());
         cardList.add(new Shiranui());
-        cardList.add(new Yamata());
         cardList.add(new Bokku());
         cardList.add(new Onikiri());
         cardList.add(new Hangan());

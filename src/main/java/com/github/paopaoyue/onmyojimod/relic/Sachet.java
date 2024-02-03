@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class Sachet extends CustomRelic {
-    private static final String ID = "Onmyoji:Sachet";
+    public static final String ID = "Onmyoji:Sachet";
     private static final RelicStrings strings = CardCrawlGame.languagePack.getRelicStrings(ID);
     private static final AbstractRelic.RelicTier TIER = AbstractRelic.RelicTier.STARTER;
     private static final AbstractRelic.LandingSound SOUND = AbstractRelic.LandingSound.FLAT;

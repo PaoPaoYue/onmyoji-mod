@@ -38,7 +38,7 @@ public class IceShieldPower extends AbstractPower {
 
     public void onAttacked(float damage, DamageInfo info, boolean hadBlock) {
         if (this.owner != null && info.type == DamageInfo.DamageType.NORMAL && hadBlock) {
-            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(info.owner, this.owner, new WeakPower(info.owner, this.amount, false)));
+            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(info.owner, this.owner, new WeakPower(info.owner, this.amount, false), this.amount, true));
         }
     }
 

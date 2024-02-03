@@ -2,6 +2,7 @@ package com.github.paopaoyue.onmyojimod.action;
 
 import com.github.paopaoyue.onmyojimod.character.Sanme;
 import com.github.paopaoyue.onmyojimod.effect.RollDiceEffect;
+import com.github.paopaoyue.onmyojimod.relic.Dice;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
@@ -17,6 +18,9 @@ public class RollDiceAction extends AbstractGameAction {
         amount = AbstractDungeon.cardRng.random(1, 6);
         if (this.target instanceof Sanme && ((Sanme) this.target).getKamiManager().isHasKami()) {
             amount = ((Sanme) this.target).getKamiManager().getCurrentKami().onRollDice(amount);
+        }
+        if (AbstractDungeon.player.hasRelic(Dice.ID)) {
+            amount = ((Dice) AbstractDungeon.player.getRelic(Dice.ID)).onRollDice(amount);
         }
 
         if (amount == 6) {

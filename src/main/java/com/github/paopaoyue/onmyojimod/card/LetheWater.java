@@ -5,6 +5,7 @@ import com.github.paopaoyue.onmyojimod.action.DivineAction;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -28,6 +29,13 @@ public class LetheWater extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new DivineAction(3, x -> {
             for (int i = 0; i < this.magicNumber && i < p.drawPile.group.size(); i++) {
+                AbstractCard card = p.drawPile.group.get(i);
+                card.current_x = CardGroup.DRAW_PILE_X;
+                card.current_y = CardGroup.DRAW_PILE_Y;
+                card.target_x = card.current_x;
+                card.target_y = card.current_y;
+                card.drawScale = 0.01F;
+                card.targetDrawScale = 0.01F;
                 this.addToTop(new ExhaustSpecificCardAction(p.drawPile.group.get(i), p.drawPile));
             }
         }));

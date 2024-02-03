@@ -3,21 +3,84 @@
     "NAME": "御守·元气",
     "FLAVOR": "上面写着“元气”的御守，或许能在战斗中带来好运。",
     "DESCRIPTIONS": [
-      "战斗开始时，随机使抽牌堆1张 #y式神 牌附加 #y加护 。"
+      "战斗开始时，随机使抽牌堆 #b1 张 式神牌附加 #y加护 。"
     ]
   },
   "Onmyoji:Sachet Plus": {
     "NAME": "御守·胜",
     "FLAVOR": "上面写着“胜”的御守，这次爬塔一定能够碎心！",
     "DESCRIPTIONS": [
-      "替换 #r御守·元气 ，回合开始时，随机使抽牌堆1张 #y式神 牌附加 #y加护 。"
+      "替换 #r御守·元气 ，回合开始时，随机使抽牌堆 #b1 张 #y式神 牌附加 #y加护 。"
     ]
   },
   "Onmyoji:Cursed Hand": {
-    "NAME": "鬼手",
+    "NAME": "茨木鬼手",
     "FLAVOR": "似乎是茨木大哥的力量，但是代价是什么呢？",
     "DESCRIPTIONS": [
-      "战斗开始时，随机使2张牌附加 #y蚀印 。"
+      "战斗开始时，随机使 #b2 张牌附加 #y蚀印 。"
+    ]
+  },
+  "Onmyoji:Yuza": {
+    "NAME": "御札",
+    "FLAVOR": "感受这4800尘的力量吧！",
+    "DESCRIPTIONS": [
+      "拾起时，从所有式神牌中选择并获取 #b1 张，额外附送 #b",
+      " 金币。",
+      "选择并获取一张牌。"
+    ]
+  },
+  "Onmyoji:Dice": {
+    "NAME": "遥控色子",
+    "FLAVOR": "意~义~不~明的那位大人。",
+    "DESCRIPTIONS": [
+      "每次战斗前 #b",
+      " 次 #y运势 一定为6。"
+    ]
+  },
+  "Onmyoji:Tisane": {
+    "NAME": "孟婆的汤药",
+    "FLAVOR": "和孟婆汤的作用不一样，我保证。",
+    "DESCRIPTIONS": [
+      "每次 #y消耗 牌 恢复 #b",
+      " 在本场战斗中损失的生命值。"
+    ]
+  },
+  "Onmyoji:Talisman": {
+    "NAME": "除恶符咒",
+    "FLAVOR": "必杀技~盛盐之拳！",
+    "DESCRIPTIONS": [
+      "#y消耗 在 #y占卜 中置于牌库底的状态牌和诅咒牌。"
+    ]
+  },
+  "Onmyoji:Sushi": {
+    "NAME": "鱼子寿司",
+    "FLAVOR": "我更喜欢八爪鱼寿司。",
+    "DESCRIPTIONS": [
+      "回合结束时，获得等同于所有 #y倒计时 计数之和的 #y格挡 。"
+    ]
+  },
+  "Onmyoji:Big Drum": {
+    "NAME": "太郎大鼓",
+    "FLAVOR": "这个谱面太没有挑战性了。",
+    "DESCRIPTIONS": [
+      "战斗开始时，获得 #b",
+      " 层 #y鼓舞 。"
+    ]
+  },
+  "Onmyoji:Poison Feather": {
+    "NAME": "鸩羽",
+    "FLAVOR": "等我回调，狼鸩全杀了。",
+    "DESCRIPTIONS": [
+      "战斗开始时，使所有敌人获得 #b",
+      " 层 #y破甲 。"
+    ]
+  },
+  "Onmyoji:Golden Feather": {
+    "NAME": "黄金羽",
+    "FLAVOR": "以津真天永远的queen。",
+    "DESCRIPTIONS": [
+      "每个回合开始时，获得 #b",
+      " 张 #y黄金羽 。"
     ]
   }
 }

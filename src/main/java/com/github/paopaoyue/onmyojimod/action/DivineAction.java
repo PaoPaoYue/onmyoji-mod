@@ -3,6 +3,7 @@ package com.github.paopaoyue.onmyojimod.action;
 import com.github.paopaoyue.onmyojimod.card.Exorcism;
 import com.github.paopaoyue.onmyojimod.character.Sanme;
 import com.github.paopaoyue.onmyojimod.power.DivinedEyePower;
+import com.github.paopaoyue.onmyojimod.relic.Talisman;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
@@ -71,7 +72,7 @@ public class DivineAction extends AbstractGameAction {
                 AbstractDungeon.gridSelectScreen.open(tmpGroup, this.amount, true, uiStrings.TEXT[0]);
             } else {
                 if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
-                    this.divinedCards.addAll(AbstractDungeon.gridSelectScreen.selectedCards);
+                    this.selectedCards.addAll(AbstractDungeon.gridSelectScreen.selectedCards);
                     for (AbstractCard card : AbstractDungeon.gridSelectScreen.selectedCards) {
                         AbstractDungeon.player.drawPile.removeCard(card);
                         AbstractDungeon.player.drawPile.addToBottom(card);
@@ -83,6 +84,9 @@ public class DivineAction extends AbstractGameAction {
                 if (!callbackDone) {
                     if (this.callback != null) {
                         this.callback.accept(this);
+                    }
+                    if (AbstractDungeon.player.hasRelic(Talisman.ID)) {
+                        ((Talisman) AbstractDungeon.player.getRelic(Talisman.ID)).onDivine(this);
                     }
                     if (target instanceof Sanme && ((Sanme) this.target).getKamiManager().isHasKami()) {
                         ((Sanme) this.target).getKamiManager().getCurrentKami().onDivine(amount);

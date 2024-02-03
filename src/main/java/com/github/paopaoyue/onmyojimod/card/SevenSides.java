@@ -20,8 +20,8 @@ import java.util.stream.Collectors;
 public class SevenSides extends CustomCard {
     public static final String ID = "Onmyoji:Seven Sides";
     private static final CardStrings cardStrings;
-    private static final int BASE_DAMAGE = 9;
-    private static final int BASE_DAMAGE_ADD_ON = 3;
+    private static final int BASE_DAMAGE = 8;
+    private static final int BASE_DAMAGE_ADD_ON = 4;
 
     static {
         cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);

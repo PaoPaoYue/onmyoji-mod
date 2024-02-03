@@ -1,7 +1,6 @@
 package com.github.paopaoyue.onmyojimod.card;
 
 import basemod.abstracts.CustomCard;
-import com.github.paopaoyue.onmyojimod.action.ButterflyAction;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -12,44 +11,36 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class Butterfly extends CustomCard {
-    public static final String ID = "Onmyoji:Butterfly";
+public class Hardworking extends CustomCard {
+    public static final String ID = "Onmyoji:Hardworking";
     private static final CardStrings cardStrings;
-    private static final int BASE_DAMAGE = 3;
+    private static final int BASE_DAMAGE = 6;
 
     static {
         cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     }
 
-    public Butterfly() {
+    public Hardworking() {
         super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        this.addToBot(new ButterflyAction(card -> card.costForTurn <= 1 && !(card instanceof AbstractKamiCard) && card.type != CardType.POWER, m));
-    }
-
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        for (AbstractCard card : p.hand.group) {
-            if (card.costForTurn <= 1 && !(card instanceof AbstractKamiCard) && card.type != CardType.POWER) {
-                return true;
-            }
-        }
-        return false;
+        this.calculateCardDamage(m);
+        this.baseDamage = damage;
+        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), (this.damage > 20 ? AbstractGameAction.AttackEffect.BLUNT_HEAVY : AbstractGameAction.AttackEffect.BLUNT_LIGHT)));
     }
 
 
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(2);
+            this.upgradeDamage(3);
         }
     }
 
     public AbstractCard makeCopy() {
-        return new Butterfly();
+        return new Hardworking();
     }
 }

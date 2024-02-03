@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class CursedHand extends CustomRelic {
-    private static final String ID = "Onmyoji:Cursed Hand";
+    public static final String ID = "Onmyoji:Cursed Hand";
     private static final RelicStrings strings = CardCrawlGame.languagePack.getRelicStrings(ID);
     private static final RelicTier TIER = RelicTier.BOSS;
     private static final LandingSound SOUND = LandingSound.MAGICAL;

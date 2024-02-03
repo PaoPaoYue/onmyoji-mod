@@ -24,6 +24,7 @@ public class GoldenFeather extends CustomCard {
         super(ID, cardStrings.NAME, (String) null, 0, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.SPECIAL, CardTarget.ENEMY);
         this.baseDamage = 3;
+        this.exhaust = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

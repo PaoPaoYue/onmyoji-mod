@@ -27,8 +27,8 @@ public class Onikiri extends AbstractKami {
         if (AbstractDungeon.actionManager.turnHasEnded) {
             for (final AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
                 if (mo.isDead) continue;
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, AbstractDungeon.player, new WeakPower(mo, upgraded ? 3 : 2, false)));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, AbstractDungeon.player, new VulnerablePower(mo, upgraded ? 3 : 2, false)));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, AbstractDungeon.player, new WeakPower(mo, upgraded ? 3 : 2, false), upgraded ? 3 : 2, true));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, AbstractDungeon.player, new VulnerablePower(mo, upgraded ? 3 : 2, false), upgraded ? 3 : 2, true));
             }
         }
     }
