@@ -5,31 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a66948c5-5f94-452d-af22-4e9eb5a1d32c" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/Hardworking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/BigDrum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/Dice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/GoldenFeather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/PoisonFeather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/Sushi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/Talisman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/Tisane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/Yuza.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/DivineAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/DivineAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/RollDiceAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/RollDiceAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/Bird.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/Butterfly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/Butterfly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/GoldenFeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/GoldenFeather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/LetheWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/LetheWater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/SevenSides.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/SevenSides.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/object/kami/Onikiri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/object/kami/Onikiri.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/power/CutenessPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/power/CutenessPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/power/IceShieldPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/power/IceShieldPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/CursedHand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/CursedHand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/Sachet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/Sachet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/SachetPlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/SachetPlus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_cards.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_cards.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_relics.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_relics.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +272,7 @@
       <workItem from="1705742323641" duration="55740000" />
       <workItem from="1706093680889" duration="99263000" />
       <workItem from="1706528806901" duration="64234000" />
-      <workItem from="1706798424013" duration="47341000" />
+      <workItem from="1706798424013" duration="49036000" />
     </task>
     <servers />
   </component>

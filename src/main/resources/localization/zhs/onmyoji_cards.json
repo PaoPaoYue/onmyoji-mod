@@ -203,8 +203,8 @@
   },
   "Onmyoji:Lethe Water": {
     "NAME": "孟婆汤",
-    "DESCRIPTION": " 占卜 3张牌,  消耗 抽牌堆 NL 底部3张牌。",
-    "UPGRADE_DESCRIPTION": " 占卜 3张牌,  消耗 抽牌堆 NL 底部3张牌。 NL 消耗 。"
+    "DESCRIPTION": "占卜 3张牌,  消耗 抽牌堆 NL 底部3张牌。",
+    "UPGRADE_DESCRIPTION": "占卜 3张牌,  消耗 抽牌堆 NL 底部3张牌。 NL 消耗 。"
   },
   "Onmyoji:Ghost Fire": {
     "NAME": "百物语之火",

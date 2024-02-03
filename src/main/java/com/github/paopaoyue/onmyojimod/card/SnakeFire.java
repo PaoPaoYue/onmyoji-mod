@@ -62,7 +62,7 @@ public class SnakeFire extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(1);
+            this.upgradeDamage(2);
         }
     }
 
