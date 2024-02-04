@@ -28,10 +28,7 @@ public class Chord extends CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (upgraded) {
-            this.addToBot(new ChannelAction(new ChordOrb(5, 1)));
-        }
-
+        this.addToBot(new ChannelAction(new ChordOrb(5, 1)));
         this.addToBot(new ApplyPowerAction(p, p, new ChordPower(p, this.magicNumber)));
     }
 

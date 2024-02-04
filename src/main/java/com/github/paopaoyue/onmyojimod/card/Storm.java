@@ -26,7 +26,7 @@ public class Storm extends CustomCard {
         super(ID, cardStrings.NAME, Util.getImagePath(ID), 2, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
-        this.baseMagicNumber = 10;
+        this.baseMagicNumber = 12;
         this.magicNumber = baseMagicNumber;
     }
 
@@ -39,7 +39,7 @@ public class Storm extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(5);
+            this.upgradeDamage(6);
         }
     }
 

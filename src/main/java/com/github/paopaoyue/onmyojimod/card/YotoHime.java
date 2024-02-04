@@ -3,10 +3,7 @@ package com.github.paopaoyue.onmyojimod.card;
 import com.github.paopaoyue.onmyojimod.action.SwitchKamiAction;
 import com.github.paopaoyue.onmyojimod.character.Sanme;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -31,14 +28,11 @@ public class YotoHime extends AbstractKamiCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
+        this.calculateCardDamage(m);
+        com.github.paopaoyue.onmyojimod.object.kami.YotoHime kami = (com.github.paopaoyue.onmyojimod.object.kami.YotoHime) getKami();
+        kami.setTarget(m);
+        kami.setCard(this);
         this.addToBot(new SwitchKamiAction(this, getKami(), getHp()));
-        int count = 1;
-        if (AbstractDungeon.player instanceof Sanme) {
-            count += ((Sanme) AbstractDungeon.player).getKamiManager().getKamiSwitchCountInTurn();
-        }
-        for (int i = 0; i < count; i++) {
-            this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        }
     }
 
     public void applyPowers() {

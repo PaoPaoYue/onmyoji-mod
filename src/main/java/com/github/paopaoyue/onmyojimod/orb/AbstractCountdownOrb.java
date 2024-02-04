@@ -8,13 +8,11 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.math.MathUtils;
 import com.github.paopaoyue.onmyojimod.effect.CountdownActivateEffect;
-import com.github.paopaoyue.onmyojimod.power.WindOfDragonPower;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.Hitbox;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.BobEffect;
 
 public abstract class AbstractCountdownOrb extends AbstractOrb {
@@ -44,13 +42,6 @@ public abstract class AbstractCountdownOrb extends AbstractOrb {
         this.baseEvokeAmount = countdown;
         this.passiveAmount = this.basePassiveAmount;
         this.evokeAmount = this.baseEvokeAmount;
-
-        for (AbstractPower power : AbstractDungeon.player.powers) {
-            if (power instanceof WindOfDragonPower) {
-                power.flash();
-                this.onEvoke();
-            }
-        }
     }
 
     public static void updateTimerAnimation() {

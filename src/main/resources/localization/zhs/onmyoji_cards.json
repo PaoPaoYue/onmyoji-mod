@@ -21,8 +21,7 @@
   },
   "Onmyoji:Righteousness": {
     "NAME": "义道",
-    "DESCRIPTION": "造成 !D! 伤害，计算 破甲 时翻3倍。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 伤害，计算 破甲 时翻5倍。"
+    "DESCRIPTION": "造成 !D! 伤害，计算 破甲 时翻 !M! 倍。"
   },
   "Onmyoji:The World": {
     "NAME": "迢迢尘间",
@@ -204,8 +203,8 @@
   },
   "Onmyoji:Lethe Water": {
     "NAME": "孟婆汤",
-    "DESCRIPTION": "占卜 3张牌,  消耗 抽牌堆 NL 底部3张牌。",
-    "UPGRADE_DESCRIPTION": "占卜 3张牌,  消耗 抽牌堆 NL 底部3张牌。 NL 消耗 。"
+    "DESCRIPTION": "占卜 3张牌， 消耗 抽牌堆底部3张牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "占卜 3张牌， 消耗 抽牌堆底部3张牌。"
   },
   "Onmyoji:Ghost Fire": {
     "NAME": "百物语之火",

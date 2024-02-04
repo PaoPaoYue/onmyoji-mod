@@ -1,10 +1,12 @@
 package com.github.paopaoyue.onmyojimod.power;
 
 import com.badlogic.gdx.graphics.Texture;
+import com.github.paopaoyue.onmyojimod.orb.AbstractCountdownOrb;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class WindOfDragonPower extends AbstractPower {
@@ -22,6 +24,14 @@ public class WindOfDragonPower extends AbstractPower {
         this.amount = -1;
         this.canGoNegative = false;
         updateDescription();
+    }
+
+    @Override
+    public void onChannel(AbstractOrb orb) {
+        if (orb instanceof AbstractCountdownOrb) {
+            this.flash();
+            orb.onEvoke();
+        }
     }
 
     public void updateDescription() {

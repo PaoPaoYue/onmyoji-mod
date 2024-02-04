@@ -443,6 +443,7 @@ public class Sanme extends CustomPlayer {
 
     public void applyPreCombatLogic() {
         this.preBattleHP = this.currentHealth;
+        orbs.removeIf(abstractOrb -> abstractOrb instanceof EmptyOrbSlot);
         super.applyPreCombatLogic();
     }
 

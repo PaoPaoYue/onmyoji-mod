@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 public class PoisonFeather extends CustomCard {
     public static final String ID = "Onmyoji:Poison Feather";
     private static final CardStrings cardStrings;
-    private static final int BASE_DAMAGE = 9;
+    private static final int BASE_DAMAGE = 7;
 
     static {
         cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -33,7 +33,7 @@ public class PoisonFeather extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(3);
+            this.upgradeDamage(2);
         }
     }
 
