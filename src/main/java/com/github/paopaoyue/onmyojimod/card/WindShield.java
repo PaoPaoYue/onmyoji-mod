@@ -20,7 +20,7 @@ public class WindShield extends CustomCard {
     }
 
     public WindShield() {
-        super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.SKILL,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.COMMON, CardTarget.SELF);
         this.baseBlock = 5;
         this.baseMagicNumber = 5;

@@ -4,7 +4,6 @@ import basemod.abstracts.CustomCard;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.github.paopaoyue.onmyojimod.power.UnyieldingPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -21,7 +20,7 @@ public class RedForce extends CustomCard {
     }
 
     public RedForce() {
-        super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.SKILL,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.SPECIAL, CardTarget.SELF);
         this.baseMagicNumber = 5;
         this.magicNumber = baseMagicNumber;

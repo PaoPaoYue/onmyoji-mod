@@ -1,13 +1,8 @@
 package com.github.paopaoyue.onmyojimod.card;
 
 import basemod.abstracts.CustomCard;
-import com.github.paopaoyue.onmyojimod.action.PlayTmpCardAction;
 import com.github.paopaoyue.onmyojimod.action.PosionFeatherAction;
-import com.github.paopaoyue.onmyojimod.action.RollDiceAction;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -25,7 +20,7 @@ public class PoisonFeather extends CustomCard {
     }
 
     public PoisonFeather() {
-        super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.ATTACK,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
     }

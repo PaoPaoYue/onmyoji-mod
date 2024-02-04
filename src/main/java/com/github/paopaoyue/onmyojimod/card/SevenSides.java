@@ -28,7 +28,7 @@ public class SevenSides extends CustomCard {
     }
 
     public SevenSides() {
-        super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.ATTACK,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.BASIC, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
         this.baseMagicNumber = BASE_DAMAGE_ADD_ON;

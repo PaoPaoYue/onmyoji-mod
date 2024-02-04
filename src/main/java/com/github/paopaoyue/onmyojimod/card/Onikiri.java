@@ -17,7 +17,7 @@ public class Onikiri extends AbstractKamiCard {
     }
 
     public Onikiri() {
-        super(ID, cardStrings.NAME, null, 1, cardStrings.DESCRIPTION, CardType.SKILL,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.SELF,
                 new com.github.paopaoyue.onmyojimod.object.kami.Onikiri(), 3);
         this.baseMagicNumber = 2;

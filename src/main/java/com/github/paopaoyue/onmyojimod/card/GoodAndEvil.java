@@ -17,7 +17,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 
 public class GoodAndEvil extends CustomCard {
-    public static final String ID = "Onmyoji:Good and Evil";
+    public static final String ID = "Onmyoji:Good And Evil";
     private static final CardStrings cardStrings;
 
     static {
@@ -25,7 +25,7 @@ public class GoodAndEvil extends CustomCard {
     }
 
     public GoodAndEvil() {
-        super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.SKILL,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.RARE, CardTarget.SELF);
         this.cardsToPreview = new Yamata();
     }

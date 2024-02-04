@@ -20,7 +20,7 @@ public class Knowledge extends CustomCard {
     }
 
     public Knowledge() {
-        super(ID, cardStrings.NAME, (String) null, 0, cardStrings.DESCRIPTION, CardType.SKILL,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 0, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.COMMON, CardTarget.SELF);
         this.exhaust = true;
         this.baseMagicNumber = 2;

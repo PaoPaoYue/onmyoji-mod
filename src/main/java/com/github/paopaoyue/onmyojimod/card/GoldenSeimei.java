@@ -21,7 +21,7 @@ public class GoldenSeimei extends CustomCard {
     }
 
     public GoldenSeimei() {
-        super(ID, cardStrings.NAME, (String) null, -2, cardStrings.DESCRIPTION, CardType.SKILL,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), -2, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.SPECIAL, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
     }

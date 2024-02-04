@@ -22,7 +22,7 @@ public class CorruptedPunch extends CustomCard {
     }
 
     public CorruptedPunch() {
-        super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.ATTACK,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
         this.baseMagicNumber = 2;

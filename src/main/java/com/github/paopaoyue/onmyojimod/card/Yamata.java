@@ -17,7 +17,7 @@ public class Yamata extends AbstractKamiCard {
     }
 
     public Yamata() {
-        super(ID, cardStrings.NAME, null, 0, cardStrings.DESCRIPTION, CardType.SKILL,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 0, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.SPECIAL, CardTarget.SELF,
                 new com.github.paopaoyue.onmyojimod.object.kami.Yamata(), 3);
         this.exhaust = true;

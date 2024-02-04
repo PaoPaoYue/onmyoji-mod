@@ -17,7 +17,7 @@ public class Dodomeki extends AbstractKamiCard {
     }
 
     public Dodomeki() {
-        super(ID, cardStrings.NAME, null, 1, cardStrings.DESCRIPTION, CardType.SKILL,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.COMMON, CardTarget.SELF,
                 new com.github.paopaoyue.onmyojimod.object.kami.Dodomeki(), 5);
     }

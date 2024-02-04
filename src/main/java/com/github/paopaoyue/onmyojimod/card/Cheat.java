@@ -22,7 +22,7 @@ public class Cheat extends CustomCard {
     }
 
     public Cheat() {
-        super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.ATTACK,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.COMMON, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
     }
@@ -33,7 +33,7 @@ public class Cheat extends CustomCard {
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn)));
         if (action.amount == 6) {
             this.addToBot(new GainEnergyAction(1));
-        } else if (action.amount >= 4) {
+        } else if (action.amount >= (upgraded ? 3 : 4)) {
             this.returnToHand = true;
         }
     }
@@ -48,6 +48,8 @@ public class Cheat extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeDamage(2);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 

@@ -23,7 +23,7 @@ public class TheWorld extends CustomCard {
     }
 
     public TheWorld() {
-        super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.ATTACK,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
         this.baseMagicNumber = 8;

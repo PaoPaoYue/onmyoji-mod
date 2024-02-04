@@ -15,14 +15,14 @@
     "NAME": "心生七面",
     "DESCRIPTION": "造成 !D! 伤害，本场战斗面灵气切换的每个面使伤害增加 !M! 。"
   },
-  "Onmyoji:Reborn of Phoenix": {
+  "Onmyoji:Reborn Of Phoenix": {
     "NAME": "炎舞",
     "DESCRIPTION": "对所有敌人造成 !D! 伤害，若本场战斗有式神死亡伤害翻倍 。"
   },
   "Onmyoji:Righteousness": {
     "NAME": "义道",
-    "DESCRIPTION": "造成 !D! 伤害，计算 破甲 时翻倍。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 伤害，计算 破甲 时翻3倍。"
+    "DESCRIPTION": "造成 !D! 伤害，计算 破甲 时翻3倍。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 伤害，计算 破甲 时翻5倍。"
   },
   "Onmyoji:The World": {
     "NAME": "迢迢尘间",
@@ -103,7 +103,8 @@
   },
   "Onmyoji:Cheat": {
     "NAME": "出千",
-    "DESCRIPTION": "造成 !D! 伤害， NL 运势 4：回到手牌; 运势 6：获得 [E] 。"
+    "DESCRIPTION": "造成 !D! 伤害， NL 运势 6：获得 [E] ; 运势 4：回到手牌。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 伤害， NL 运势 6：获得 [E] ; 运势 3：回到手牌。"
   },
   "Onmyoji:Dice Bomb": {
     "NAME": "色子炸弹",
@@ -111,7 +112,7 @@
     "UPGRADE_DESCRIPTION": "造成 !D! 伤害， 运势 1：额外增加等同于2倍色子的点数的伤害。"
   },
   "Onmyoji:Nature": {
-    "NAME": "造化时流",
+    "NAME": "晓万物",
     "DESCRIPTION": "对所有敌人造成 !D! 伤害, 占卜 !M! 张牌。"
   },
   "Onmyoji:Cuteness": {
@@ -127,7 +128,7 @@
     "NAME": "诅咒之眼",
     "DESCRIPTION": "随机使牌库中 !M! 张牌附加 诅咒之眼 ，当抽到附加额外效果的牌时，多抽1张牌。"
   },
-  "Onmyoji:Maze of Mind": {
+  "Onmyoji:Maze Of Mind": {
     "NAME": "心灵迷宫",
     "DESCRIPTION": "式神牌费用随机 ，且使用时随机使另1张手牌本回合费用变为0。 NL 虚无 。",
     "UPGRADE_DESCRIPTION": "式神牌费用随机 ，且使用时随机使另1张手牌本回合费用变为0。"
@@ -136,7 +137,7 @@
     "NAME": "猫咪日和",
     "DESCRIPTION": " 消耗 1张衍生牌，回合开始时获得 !M! 张其复制。"
   },
-  "Onmyoji:Wind of Dragon": {
+  "Onmyoji:Wind Of Dragon": {
     "NAME": "风符·龙",
     "DESCRIPTION": " 倒计时 进场时也会触发效果。"
   },
@@ -165,7 +166,7 @@
     "NAME": "永眠之梦",
     "DESCRIPTION": " 回合结束时随机使抽牌堆中 !M! 张牌附加 梦魇 。"
   },
-  "Onmyoji:Good and Evil": {
+  "Onmyoji:Good And Evil": {
     "NAME": "善恶无则",
     "DESCRIPTION": "消灭当前式神，用 *八岐大蛇 填满手牌。"
   },
@@ -211,7 +212,7 @@
     "DESCRIPTION": "将x张 *明灯 置入手牌。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "将x+1张 *明灯 置入手牌。 NL 消耗 。"
   },
-  "Onmyoji:Peach blossom": {
+  "Onmyoji:Peach Blossom": {
     "NAME": "桃花灼灼",
     "DESCRIPTION": "从弃牌堆选择1张式神牌置入手牌，其费用本回合-1。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "从弃牌堆选择1张式神牌置入手牌，其费用本回合-1。"
@@ -302,7 +303,7 @@
   },
   "Onmyoji:Shiranui": {
     "NAME": "式神·不知火",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，离场时获得 !M! 鼓舞 。"
+    "DESCRIPTION": "式神 拥有 !K! 点生命，离场时获得 !M! 层鼓舞 。"
   },
   "Onmyoji:Yamata": {
     "NAME": "式神·八岐大蛇",

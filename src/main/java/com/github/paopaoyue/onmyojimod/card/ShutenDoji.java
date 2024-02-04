@@ -17,7 +17,7 @@ public class ShutenDoji extends AbstractKamiCard {
     }
 
     public ShutenDoji() {
-        super(ID, cardStrings.NAME, null, 3, cardStrings.DESCRIPTION, CardType.SKILL,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 3, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.RARE, CardTarget.SELF,
                 new com.github.paopaoyue.onmyojimod.object.kami.ShutenDoji(), 10);
         this.baseMagicNumber = 1;

@@ -25,7 +25,7 @@ public class DoubleShoot extends CustomCard {
     private boolean once;
 
     public DoubleShoot() {
-        super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.ATTACK,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.COMMON, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
         this.baseMagicNumber = 5;

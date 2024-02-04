@@ -26,7 +26,7 @@ public class Righteousness extends CustomCard {
     }
 
     public Righteousness() {
-        super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.ATTACK,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
     }
@@ -50,7 +50,7 @@ public class Righteousness extends CustomCard {
         }
         if (penetratedAmount > 0) {
             int realBaseDamage = this.baseDamage;
-            this.baseDamage += penetratedAmount * (upgraded ? 2 : 1);
+            this.baseDamage += penetratedAmount * (upgraded ? 4 : 2);
             super.calculateCardDamage(mo);
             this.baseDamage = realBaseDamage;
             this.isDamageModified = (this.damage != this.baseDamage);

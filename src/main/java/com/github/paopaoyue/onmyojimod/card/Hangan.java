@@ -22,7 +22,7 @@ public class Hangan extends AbstractKamiCard {
     }
 
     public Hangan() {
-        super(ID, cardStrings.NAME, null, 1, cardStrings.DESCRIPTION, CardType.SKILL,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.SELF_AND_ENEMY,
                 new com.github.paopaoyue.onmyojimod.object.kami.Hangan(), 6);
     }

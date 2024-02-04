@@ -2,7 +2,6 @@ package com.github.paopaoyue.onmyojimod.card;
 
 import basemod.abstracts.CustomCard;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
-import com.github.paopaoyue.onmyojimod.power.CutenessPower;
 import com.github.paopaoyue.onmyojimod.power.DivinedEyePower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -20,7 +19,7 @@ public class DivinedEye extends CustomCard {
     }
 
     public DivinedEye() {
-        super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.POWER,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.POWER,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseMagicNumber = 2;
         this.magicNumber = baseMagicNumber;

@@ -3,7 +3,6 @@ package com.github.paopaoyue.onmyojimod.card;
 import basemod.abstracts.CustomCard;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.github.paopaoyue.onmyojimod.power.ChefPower;
-import com.github.paopaoyue.onmyojimod.power.FragileSoundPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -20,7 +19,7 @@ public class Chef extends CustomCard {
     }
 
     public Chef() {
-        super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.POWER,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.POWER,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseMagicNumber = 1;
         this.magicNumber = baseMagicNumber;

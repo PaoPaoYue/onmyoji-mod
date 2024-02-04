@@ -19,7 +19,7 @@ public class DarkDream extends CustomCard {
     }
 
     public DarkDream() {
-        super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.POWER,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.POWER,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.COMMON, CardTarget.SELF);
         this.baseMagicNumber = 1;
         this.magicNumber = baseMagicNumber;

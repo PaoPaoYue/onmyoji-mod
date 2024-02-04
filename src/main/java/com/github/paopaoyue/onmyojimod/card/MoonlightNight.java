@@ -19,7 +19,7 @@ public class MoonlightNight extends CustomCard {
     }
 
     public MoonlightNight() {
-        super(ID, cardStrings.NAME, (String) null, 2, cardStrings.DESCRIPTION, CardType.POWER,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 2, cardStrings.DESCRIPTION, CardType.POWER,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.RARE, CardTarget.SELF);
     }
 

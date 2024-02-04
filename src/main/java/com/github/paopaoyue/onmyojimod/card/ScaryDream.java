@@ -20,7 +20,7 @@ public class ScaryDream extends CustomCard {
     }
 
     public ScaryDream() {
-        super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.ATTACK,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
         this.baseMagicNumber = 6;

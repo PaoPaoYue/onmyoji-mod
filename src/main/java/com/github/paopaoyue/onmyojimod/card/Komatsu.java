@@ -17,7 +17,7 @@ public class Komatsu extends AbstractKamiCard {
     }
 
     public Komatsu() {
-        super(ID, cardStrings.NAME, null, 0, cardStrings.DESCRIPTION, CardType.SKILL,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 0, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.COMMON, CardTarget.SELF,
                 new com.github.paopaoyue.onmyojimod.object.kami.Komatsu(), 3);
     }

@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class WindOfDragon extends CustomCard {
-    public static final String ID = "Onmyoji:Wind of Dragon";
+    public static final String ID = "Onmyoji:Wind Of Dragon";
     private static final CardStrings cardStrings;
 
     static {
@@ -19,7 +19,7 @@ public class WindOfDragon extends CustomCard {
     }
 
     public WindOfDragon() {
-        super(ID, cardStrings.NAME, (String) null, 3, cardStrings.DESCRIPTION, CardType.POWER,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 3, cardStrings.DESCRIPTION, CardType.POWER,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.RARE, CardTarget.SELF);
     }
 

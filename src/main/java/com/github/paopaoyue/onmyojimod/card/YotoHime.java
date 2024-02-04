@@ -23,7 +23,7 @@ public class YotoHime extends AbstractKamiCard {
     }
 
     public YotoHime() {
-        super(ID, cardStrings.NAME, null, 1, cardStrings.DESCRIPTION, CardType.ATTACK,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.SELF_AND_ENEMY,
                 new com.github.paopaoyue.onmyojimod.object.kami.YotoHime(), 2);
         this.baseDamage = 4;

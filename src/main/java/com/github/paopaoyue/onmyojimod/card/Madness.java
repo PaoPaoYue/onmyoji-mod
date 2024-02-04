@@ -20,7 +20,7 @@ public class Madness extends CustomCard {
     }
 
     public Madness() {
-        super(ID, cardStrings.NAME, (String) null, 2, cardStrings.DESCRIPTION, CardType.ATTACK,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 2, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
     }

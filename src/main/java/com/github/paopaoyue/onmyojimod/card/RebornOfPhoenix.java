@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class RebornOfPhoenix extends CustomCard {
-    public static final String ID = "Onmyoji:Reborn of Phoenix";
+    public static final String ID = "Onmyoji:Reborn Of Phoenix";
     private static final CardStrings cardStrings;
     private static final int BASE_DAMAGE = 16;
 
@@ -23,7 +23,7 @@ public class RebornOfPhoenix extends CustomCard {
     }
 
     public RebornOfPhoenix() {
-        super(ID, cardStrings.NAME, (String) null, 3, cardStrings.DESCRIPTION, CardType.ATTACK,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 3, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.RARE, CardTarget.ALL_ENEMY);
         this.baseDamage = BASE_DAMAGE;
         this.isMultiDamage = true;

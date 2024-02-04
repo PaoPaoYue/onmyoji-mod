@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class MazeOfMind extends CustomCard {
-    public static final String ID = "Onmyoji:Maze of Mind";
+    public static final String ID = "Onmyoji:Maze Of Mind";
     private static final CardStrings cardStrings;
 
     static {
@@ -20,7 +20,7 @@ public class MazeOfMind extends CustomCard {
     }
 
     public MazeOfMind() {
-        super(ID, cardStrings.NAME, (String) null, 0, cardStrings.DESCRIPTION, CardType.POWER,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 0, cardStrings.DESCRIPTION, CardType.POWER,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.RARE, CardTarget.SELF);
         this.isEthereal = true;
     }

@@ -46,7 +46,7 @@
     "NAMES": [
       "运势"
     ],
-    "DESCRIPTION": "投掷一枚色子，若点数大于要求触发对应效果。"
+    "DESCRIPTION": "投掷一枚色子，若点数大于等于要求触发对应效果。"
   },
   {
     "ID": "Onmyoji:Projectile",
@@ -172,7 +172,7 @@
     "NAMES": [
       "不知火"
     ],
-    "DESCRIPTION": "离场时获得 #b1 鼓舞 。|离场时获得 #b2 鼓舞 。"
+    "DESCRIPTION": "离场时获得 #b1 层鼓舞 。|离场时获得 #b2 层鼓舞 。"
   },
   {
     "ID": "Onmyoji:Yamata",

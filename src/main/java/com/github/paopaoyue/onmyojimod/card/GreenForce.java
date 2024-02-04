@@ -2,9 +2,7 @@ package com.github.paopaoyue.onmyojimod.card;
 
 import basemod.abstracts.CustomCard;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
-import com.github.paopaoyue.onmyojimod.power.UnyieldingPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -12,7 +10,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.StrengthPower;
 
 public class GreenForce extends CustomCard {
     public static final String ID = "Onmyoji:Green Force";
@@ -23,7 +20,7 @@ public class GreenForce extends CustomCard {
     }
 
     public GreenForce() {
-        super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.SKILL,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.SPECIAL, CardTarget.SELF);
         this.baseDamage = 5;
         this.baseMagicNumber = 5;
@@ -33,7 +30,7 @@ public class GreenForce extends CustomCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (int i = 0; i < this.magicNumber; i++) {
-            this.addToBot(new DamageRandomEnemyAction(new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+            this.addToBot(new DamageRandomEnemyAction(new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         }
     }
 

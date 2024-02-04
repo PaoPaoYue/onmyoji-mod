@@ -19,7 +19,7 @@ public class Buddhist extends CustomCard {
     }
 
     public Buddhist() {
-        super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.SKILL,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.SELF);
         this.exhaust = true;
         this.baseMagicNumber = 5;

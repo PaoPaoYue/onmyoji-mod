@@ -17,7 +17,7 @@ public class Hitotsume extends AbstractKamiCard {
     }
 
     public Hitotsume() {
-        super(ID, cardStrings.NAME, null, 2, cardStrings.DESCRIPTION, CardType.SKILL,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 2, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.SELF,
                 new com.github.paopaoyue.onmyojimod.object.kami.Hitotsume(), 12);
     }

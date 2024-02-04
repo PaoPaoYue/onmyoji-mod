@@ -17,7 +17,7 @@ public class Yamausagi extends AbstractKamiCard {
     }
 
     public Yamausagi() {
-        super(ID, cardStrings.NAME, null, 1, cardStrings.DESCRIPTION, CardType.SKILL,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.RARE, CardTarget.SELF,
                 new com.github.paopaoyue.onmyojimod.object.kami.Yamausagi(), 6);
         this.baseMagicNumber = 1;

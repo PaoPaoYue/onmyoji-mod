@@ -21,7 +21,7 @@ public class Chord extends CustomCard {
     }
 
     public Chord() {
-        super(ID, cardStrings.NAME, (String) null, 2, cardStrings.DESCRIPTION, CardType.POWER,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 2, cardStrings.DESCRIPTION, CardType.POWER,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseMagicNumber = 1;
         this.magicNumber = baseMagicNumber;

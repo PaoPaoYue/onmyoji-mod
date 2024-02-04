@@ -19,7 +19,7 @@ public class FragileSound extends CustomCard {
     }
 
     public FragileSound() {
-        super(ID, cardStrings.NAME, (String) null, 1, cardStrings.DESCRIPTION, CardType.POWER,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.POWER,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseMagicNumber = 1;
         this.magicNumber = baseMagicNumber;

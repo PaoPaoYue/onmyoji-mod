@@ -23,7 +23,7 @@ public class Reckless extends CustomCard {
     }
 
     public Reckless() {
-        super(ID, cardStrings.NAME, (String) null, 0, cardStrings.DESCRIPTION, CardType.ATTACK,
+        super(ID, cardStrings.NAME, Util.getImagePath(ID), 0, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.COMMON, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
         this.baseMagicNumber = 3;
