@@ -41,7 +41,7 @@ public class CatWuwanPower extends AbstractPower {
     public void atStartOfTurn() {
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead() && card != null) {
             this.flash();
-            this.addToBot(new MakeTempCardInHandAction(card.makeCopy(), this.amount));
+            this.addToBot(new MakeTempCardInHandAction(card.makeStatEquivalentCopy(), this.amount));
         }
     }
 
