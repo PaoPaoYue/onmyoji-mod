@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.vfx.combat.ThrowDaggerEffect;
 public class DoubleShoot extends CustomCard {
     public static final String ID = "Onmyoji:Double Shoot";
     private static final CardStrings cardStrings;
-    private static final int BASE_DAMAGE = 4;
+    private static final int BASE_DAMAGE = 5;
 
     static {
         cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -28,8 +28,6 @@ public class DoubleShoot extends CustomCard {
         super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.COMMON, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
-        this.baseMagicNumber = 5;
-        this.magicNumber = baseMagicNumber;
         this.once = false;
     }
 

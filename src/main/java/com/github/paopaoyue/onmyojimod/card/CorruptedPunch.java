@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 public class CorruptedPunch extends CustomCard {
     public static final String ID = "Onmyoji:Corrupted Punch";
     private static final CardStrings cardStrings;
-    private static final int BASE_DAMAGE = 7;
+    private static final int BASE_DAMAGE = 9;
 
     static {
         cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -25,7 +25,7 @@ public class CorruptedPunch extends CustomCard {
         super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
-        this.baseMagicNumber = 2;
+        this.baseMagicNumber = 3;
         this.magicNumber = baseMagicNumber;
     }
 
@@ -38,7 +38,7 @@ public class CorruptedPunch extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(2);
+            this.upgradeMagicNumber(3);
         }
     }
 

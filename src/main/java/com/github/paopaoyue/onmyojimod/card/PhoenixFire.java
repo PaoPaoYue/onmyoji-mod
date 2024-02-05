@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 public class PhoenixFire extends CustomCard {
     public static final String ID = "Onmyoji:Phoenix Fire";
     private static final CardStrings cardStrings;
-    private static final int BASE_DAMAGE = 5;
+    private static final int BASE_DAMAGE = 6;
 
     static {
         cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -25,7 +25,7 @@ public class PhoenixFire extends CustomCard {
         super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.COMMON, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
-        this.baseMagicNumber = 5;
+        this.baseMagicNumber = 6;
         this.magicNumber = baseMagicNumber;
     }
 
@@ -38,7 +38,7 @@ public class PhoenixFire extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(2);
+            this.upgradeDamage(1);
             this.upgradeMagicNumber(2);
         }
     }

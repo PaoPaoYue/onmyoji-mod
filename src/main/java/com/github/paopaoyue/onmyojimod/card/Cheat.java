@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 public class Cheat extends CustomCard {
     public static final String ID = "Onmyoji:Cheat";
     private static final CardStrings cardStrings;
-    private static final int BASE_DAMAGE = 9;
+    private static final int BASE_DAMAGE = 10;
 
     static {
         cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);

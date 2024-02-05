@@ -103,8 +103,7 @@
   },
   "Onmyoji:Dice Bomb": {
     "NAME": "色子炸弹",
-    "DESCRIPTION": "造成 !D! 伤害， 运势 1：额外增加等同于色子的点数的伤害。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 伤害， 运势 1：额外增加等同于2倍色子的点数的伤害。"
+    "DESCRIPTION": "运势 1：造成等同于色子的点数 !M! 倍的伤害。"
   },
   "Onmyoji:Nature": {
     "NAME": "晓万物",

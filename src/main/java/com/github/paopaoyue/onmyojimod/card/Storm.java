@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 public class Storm extends CustomCard {
     public static final String ID = "Onmyoji:Storm";
     private static final CardStrings cardStrings;
-    private static final int BASE_DAMAGE = 10;
+    private static final int BASE_DAMAGE = 12;
 
     static {
         cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -39,7 +39,7 @@ public class Storm extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(6);
+            this.upgradeDamage(5);
         }
     }
 

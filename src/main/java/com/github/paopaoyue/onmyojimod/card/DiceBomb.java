@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.vfx.combat.FlickCoinEffect;
 public class DiceBomb extends CustomCard {
     public static final String ID = "Onmyoji:Dice Bomb";
     private static final CardStrings cardStrings;
-    private static final int BASE_DAMAGE = 6;
+    private static final int BASE_DAMAGE = 0;
 
     static {
         cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -26,6 +26,8 @@ public class DiceBomb extends CustomCard {
         super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.COMMON, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
+        this.baseMagicNumber = 3;
+        this.magicNumber = baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -33,7 +35,7 @@ public class DiceBomb extends CustomCard {
         this.addToBot(action);
 
         int realBaseDamage = this.baseDamage;
-        this.baseDamage += (upgraded ? 2 : 1) * action.amount;
+        this.baseDamage += this.magicNumber * action.amount;
         super.calculateCardDamage(m);
         this.baseDamage = realBaseDamage;
         this.addToBot(new VFXAction(new FlickCoinEffect(p.hb.cX, p.hb.cY, m.hb.cX, m.hb.cY), 0.3f));
@@ -44,8 +46,7 @@ public class DiceBomb extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
+            this.upgradeMagicNumber(1);
         }
     }
 
