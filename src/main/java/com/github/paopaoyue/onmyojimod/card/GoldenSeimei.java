@@ -27,7 +27,7 @@ public class GoldenSeimei extends CustomCard {
     }
 
     public void triggerWhenDrawn() {
-        this.addToBot(new ProjectileAction(this.damage));
+        this.addToBot(new ProjectileAction(this.baseDamage));
         this.addToTop(new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand));
     }
 

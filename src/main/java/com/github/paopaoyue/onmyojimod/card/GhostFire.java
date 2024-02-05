@@ -42,7 +42,7 @@ public class GhostFire extends CustomCard {
         }
         if (effect > 0) {
             for (int i = 0; i < effect; i++) {
-                this.addToBot(new ProjectileAction(this.damage));
+                this.addToBot(new ProjectileAction(this.baseDamage));
             }
             this.addToBot(new MakeTempCardInHandAction(new Light(), effect));
         }
