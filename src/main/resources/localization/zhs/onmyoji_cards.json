@@ -184,8 +184,7 @@
   },
   "Onmyoji:All Together": {
     "NAME": "都要在一起",
-    "DESCRIPTION": "随机将 !M! 张牌附加 缘结 并洗入牌库，抽 !M! 张牌。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "选择 !M! 张牌附加 缘结 并洗入牌库，抽 !M! 张牌。 NL 消耗 。"
+    "DESCRIPTION": "随机将 !M! 张牌附加 缘结 并洗入牌库，抽 !M! 张牌。 NL 消耗 。"
   },
   "Onmyoji:Book": {
     "NAME": "万卷书",

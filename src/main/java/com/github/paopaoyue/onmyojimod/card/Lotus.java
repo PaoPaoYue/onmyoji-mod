@@ -48,7 +48,7 @@ public class Lotus extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(2);
+            this.upgradeMagicNumber(-2);
         }
     }
 

@@ -27,15 +27,14 @@ public class AllTogether extends CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new AllTogetherAction(p, p, this.magicNumber, !upgraded));
+        this.addToBot(new AllTogetherAction(p, p, this.magicNumber, true));
         this.addToBot(new DrawCardAction(this.magicNumber));
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
+            this.upgradeBaseCost(0);
         }
     }
 
