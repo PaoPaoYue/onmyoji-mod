@@ -60,9 +60,10 @@ public class ExhaustOneCardAndCallbackAction extends AbstractGameAction {
 
             if (tmpGroup.group.size() == 1) {
                 AbstractCard card = tmpGroup.getTopCard();
-                AbstractDungeon.player.hand.moveToExhaustPile(AbstractDungeon.player.hand.getTopCard());
+                AbstractDungeon.player.hand.moveToExhaustPile(card);
                 this.callback.accept(card);
                 CardCrawlGame.dungeon.checkForPactAchievement();
+                this.isDone = true;
                 return;
             }
 
