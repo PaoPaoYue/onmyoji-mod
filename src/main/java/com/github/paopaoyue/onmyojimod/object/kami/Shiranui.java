@@ -21,7 +21,7 @@ public class Shiranui extends AbstractKami {
     }
 
     @Override
-    public void onExit() {
+    public void onExit(AbstractKami nextKami) {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new EncouragedPower(AbstractDungeon.player, upgraded ? 2 : 1)));
     }
 

@@ -9,11 +9,11 @@
   },
   "Onmyoji:Menreiki": {
     "NAME": "式神·面灵气",
-    "DESCRIPTION": " 式神 拥有 !K! 点生命，进场时随机变换为四面之一。"
+    "DESCRIPTION": " 式神 拥有 !K! 点生命，进场时随机变换为四种 派系 之一。"
   },
   "Onmyoji:Seven Sides": {
     "NAME": "心生七面",
-    "DESCRIPTION": "造成 !D! 伤害，本场战斗面灵气切换的每个面使伤害增加 !M! 。"
+    "DESCRIPTION": "造成 !D! 伤害，本场战斗切换的每个 派系 使伤害增加 !M! 。"
   },
   "Onmyoji:Reborn Of Phoenix": {
     "NAME": "炎舞",
@@ -33,7 +33,7 @@
   },
   "Onmyoji:Hardworking": {
     "NAME": "勤勉修行",
-    "DESCRIPTION": "造成 !D! 伤害，攻击后基础数值变为该次伤害最终值。"
+    "DESCRIPTION": "造成 !D! 伤害，攻击后数值变为该次伤害最终值。"
   },
   "Onmyoji:Madness": {
     "NAME": "狂气",
@@ -72,10 +72,6 @@
     "NAME": "斗转",
     "DESCRIPTION": "造成 !D! 伤害，若敌方意图为攻击，交换基础攻击伤害。 消耗 。"
   },
-  "Onmyoji:Ghost Attack": {
-    "NAME": "离魂灯",
-    "DESCRIPTION": "造成 !D! 伤害，获得 *明灯 。"
-  },
   "Onmyoji:Phoenix Fire": {
     "NAME": "凤火",
     "DESCRIPTION": "造成 !D! 伤害， 投射 !M! 伤害。"
@@ -102,8 +98,8 @@
   },
   "Onmyoji:Cheat": {
     "NAME": "出千",
-    "DESCRIPTION": "造成 !D! 伤害， NL 运势 6：获得 [E] ; 运势 4：回到手牌。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 伤害， NL 运势 6：获得 [E] ; 运势 3：回到手牌。"
+    "DESCRIPTION": "造成 !D! 伤害， NL 运势 6：获得 [E] ; 否则运势 4：回到手牌。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 伤害， NL 运势 6：获得 [E] ; 否则运势 2：回到手牌。"
   },
   "Onmyoji:Dice Bomb": {
     "NAME": "色子炸弹",
@@ -116,12 +112,12 @@
   },
   "Onmyoji:Cuteness": {
     "NAME": "萌即正义",
-    "DESCRIPTION": "回合开始时获得1张式神牌。运势 !M! ：该牌本局对战费用变为0。"
+    "DESCRIPTION": "回合开始时获得 !M! 张随机式神牌，此牌本回合费用为0, 且 运势 6 ：此牌式神生命值翻倍。"
   },
   "Onmyoji:Moonlight Night": {
     "NAME": "胧月夜",
-    "DESCRIPTION": "回合开始时根据当前式神获得1张强大的派系之力，每种限一次。",
-    "UPGRADE_DESCRIPTION": "回合开始时根据当前式神获得1张强大的派系之力，每种限一次。 NL 固有 。"
+    "DESCRIPTION": "回合开始时根据当前式神的 派系 获得1张强大的派系之力，每种限一次。",
+    "UPGRADE_DESCRIPTION": "回合开始时根据当前式神的 派系 获得1张强大的派系之力，每种限一次。 NL 固有 。"
   },
   "Onmyoji:Cursed Eye": {
     "NAME": "诅咒之眼",
@@ -155,6 +151,10 @@
   "Onmyoji:Chef": {
     "NAME": "热血主厨",
     "DESCRIPTION": "每回合 !M! 次，使用衍生牌时获得1 鼓舞 。"
+  },
+  "Onmyoji:News": {
+    "NAME": "百闻一得",
+    "DESCRIPTION": "获得 !M! 张 *明灯 。使用 *明灯 时，升级所有手牌。"
   },
   "Onmyoji:Chord": {
     "NAME": "神乐歌",
@@ -206,9 +206,9 @@
     "UPGRADE_DESCRIPTION": "占卜 3张牌， 消耗 抽牌堆底部3张牌。"
   },
   "Onmyoji:Ghost Fire": {
-    "NAME": "百物语之火",
-    "DESCRIPTION": "将x张 *明灯 置入手牌。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "将x+1张 *明灯 置入手牌。 NL 消耗 。"
+    "NAME": "吸魂灯",
+    "DESCRIPTION": "投射 !D! 点伤害 x 次，将x张 *明灯 置入手牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "投射 !D! 点伤害x+1次，将x+1张 *明灯 置入手牌。 NL 消耗 。"
   },
   "Onmyoji:Peach Blossom": {
     "NAME": "桃花灼灼",
@@ -217,7 +217,7 @@
   },
   "Onmyoji:Buddhist": {
     "NAME": "佛光",
-    "DESCRIPTION": "恢复所有角色 !M! 点生命， NL 每个过量治疗使角色获得1点生命上限。 NL 消耗 。"
+    "DESCRIPTION": "恢复所有角色5生命， NL 每个过量治疗使角色获得 !M! 点生命上限。 NL 消耗 。"
   },
   "Onmyoji:Ensemble": {
     "NAME": "大合奏",
@@ -229,7 +229,7 @@
   },
   "Onmyoji:Ice Shield": {
     "NAME": "寒冰之盾",
-    "DESCRIPTION": "获得 !B! 格挡 ，下个回合开始前每格挡1次攻击给予伤害来源1 虚弱 。"
+    "DESCRIPTION": "获得 !B! 格挡 ，下个回合开始前每格挡1次攻击给予伤害来源 !M! 层 虚弱 。"
   },
   "Onmyoji:Snake Attack": {
     "NAME": "蛇形击",
@@ -251,7 +251,7 @@
   },
   "Onmyoji:Kiyohime": {
     "NAME": "式神·清姬",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，攻击无法造成伤害，但会使敌人获得伤害一半的 破甲 。"
+    "DESCRIPTION": "式神 拥有 !K! 点生命，攻击无法造成伤害，但会使敌人获得伤害数量的 破甲 。"
   },
   "Onmyoji:Hitotsume": {
     "NAME": "式神·独眼小僧",
@@ -276,7 +276,7 @@
   },
   "Onmyoji:Komatsu": {
     "NAME": "式神·小松丸",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，离场时 倒计时 1：将式神卡牌从弃牌堆置入手牌。"
+    "DESCRIPTION": "式神 拥有 !K! 点生命，被不同式神替换离场时 倒计时 1：将式神卡牌从弃牌堆置入手牌。"
   },
   "Onmyoji:Itsumade": {
     "NAME": "式神·以津真天",
@@ -314,7 +314,7 @@
   },
   "Onmyoji:Onikiri": {
     "NAME": "式神·鬼切",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，离场时若是敌方回合，使所有敌人获得 !M! 层 脆弱 和 易伤 。"
+    "DESCRIPTION": "式神 拥有 !K! 点生命，离场时使所有敌人获得 !M! 层 虚弱 , 若是敌方回合，额外使所有敌人获得 !M! 层 易伤 。"
   },
   "Onmyoji:Hangan": {
     "NAME": "式神·判官",
@@ -356,6 +356,6 @@
   },
   "Onmyoji:Purple Force": {
     "NAME": "紫岩之力",
-    "DESCRIPTION": "将生命值变为上限的一半。 NL 消耗 。"
+    "DESCRIPTION": "将生命值变为上限的70%。 NL 消耗 。"
   }
 }

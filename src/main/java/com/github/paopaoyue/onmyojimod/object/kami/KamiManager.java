@@ -79,6 +79,16 @@ public class KamiManager {
         return kamiSet.size();
     }
 
+    public int getDiffFactionSwitchCountInBattle() {
+        Set<Faction> factionSet = kamiSequenceInBattle.stream().filter(x -> x != AbstractKami.ONMYOJI_NONE).map(AbstractKami::getFaction).collect(Collectors.toSet());
+        return factionSet.size();
+    }
+
+    public int getDiffFationSwitchCountInTurn() {
+        Set<Faction> factionSet = kamiSequenceInTurn.stream().filter(x -> x != AbstractKami.ONMYOJI_NONE).map(AbstractKami::getFaction).collect(Collectors.toSet());
+        return factionSet.size();
+    }
+
     public boolean hasDeadInBattle() {
         return getKamiSequenceInBattle().contains(AbstractKami.ONMYOJI_NONE);
     }
@@ -100,7 +110,7 @@ public class KamiManager {
 
     public void onSwitch(AbstractCard card, AbstractKami kami) {
         if (hasKami) {
-            this.getCurrentKami().onExit();
+            this.getCurrentKami().onExit(kami);
         }
 
         hasKami = true;
@@ -123,7 +133,7 @@ public class KamiManager {
 
     public void onDead() {
         if (hasKami) {
-            this.getCurrentKami().onExit();
+            this.getCurrentKami().onExit(AbstractKami.ONMYOJI_NONE);
         }
 
         hasKami = false;

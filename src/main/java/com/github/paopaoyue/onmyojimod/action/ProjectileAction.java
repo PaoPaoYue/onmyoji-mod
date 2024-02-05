@@ -1,5 +1,6 @@
 package com.github.paopaoyue.onmyojimod.action;
 
+import com.github.paopaoyue.onmyojimod.power.PenetratedPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -31,8 +32,9 @@ public class ProjectileAction extends AbstractGameAction {
                 }
             }
             if (target != null) {
+                int damageAddon = target.hasPower(PenetratedPower.POWER_ID) ? target.getPower(PenetratedPower.POWER_ID).amount : 0;
                 this.addToBot(new VFXAction(new PressurePointEffect(target.hb.cX, target.hb.cY)));
-                this.addToBot(new DamageAction(this.target, new DamageInfo(this.source, this.amount, DamageInfo.DamageType.NORMAL), AttackEffect.FIRE, true));
+                this.addToBot(new DamageAction(this.target, new DamageInfo(this.source, this.amount + damageAddon, DamageInfo.DamageType.THORNS), AttackEffect.FIRE, true));
             }
         }
         this.tickDuration();

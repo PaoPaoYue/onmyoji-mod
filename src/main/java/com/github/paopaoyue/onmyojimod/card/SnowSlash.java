@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 public class SnowSlash extends CustomCard {
     public static final String ID = "Onmyoji:Snow Slash";
     private static final CardStrings cardStrings;
-    private static final int BASE_DAMAGE = 11;
+    private static final int BASE_DAMAGE = 12;
 
     static {
         cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -38,7 +38,7 @@ public class SnowSlash extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+            this.upgradeDamage(4);
         }
     }
 

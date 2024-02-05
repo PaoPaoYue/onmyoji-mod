@@ -1,35 +1,30 @@
 package com.github.paopaoyue.onmyojimod.card;
 
+import basemod.Pair;
 import basemod.abstracts.CustomCard;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.monsters.EnemyMoveInfo;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
+import java.util.HashMap;
+
+import static com.github.paopaoyue.onmyojimod.utility.Reflect.getPrivate;
 
 public class Taiji extends CustomCard {
     public static final String ID = "Onmyoji:Tai Ji";
     private static final CardStrings cardStrings;
     private static final int BASE_DAMAGE = 6;
-    private static Method refreshDamageMethod;
+    private static final HashMap<Pair<AbstractCreature, Integer>, Integer> damageReplacement = new HashMap<>();
 
     static {
         cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    }
-
-    static {
-        try {
-            refreshDamageMethod = AbstractMonster.class.getDeclaredMethod("calculateDamage", int.class);
-            refreshDamageMethod.setAccessible(true);
-        } catch (NoSuchMethodException e) {
-            throw new RuntimeException(e);
-        }
     }
 
     public Taiji() {
@@ -39,15 +34,24 @@ public class Taiji extends CustomCard {
         this.exhaust = true;
     }
 
+    public static void putDamageReplacement(AbstractCreature mo, int baseAmount, int targetAmount) {
+        damageReplacement.put(new Pair<>(mo, baseAmount), targetAmount);
+    }
+
+    public static HashMap<Pair<AbstractCreature, Integer>, Integer> getDamageReplacement() {
+        return damageReplacement;
+    }
+
     public void use(AbstractPlayer p, AbstractMonster mo) {
         this.calculateCardDamage(mo);
         this.addToBot(new DamageAction(mo, new DamageInfo(p, this.damage, this.damageTypeForTurn)));
         if (mo != null && (mo.intent == AbstractMonster.Intent.ATTACK || mo.intent == AbstractMonster.Intent.ATTACK_BUFF || mo.intent == AbstractMonster.Intent.ATTACK_DEBUFF || mo.intent == AbstractMonster.Intent.ATTACK_DEFEND)) {
-            mo.setIntentBaseDmg(this.baseDamage);
-            try {
-                refreshDamageMethod.invoke(mo, this.baseDamage);
-            } catch (IllegalAccessException | InvocationTargetException e) {
-                throw new RuntimeException(e);
+            EnemyMoveInfo move = getPrivate(AbstractMonster.class, mo, "move", EnemyMoveInfo.class);
+            if (move != null) {
+                int realBaseDamage = move.baseDamage;
+                move.baseDamage = this.baseDamage;
+                mo.createIntent();
+                putDamageReplacement(mo, realBaseDamage, mo.getIntentDmg());
             }
         }
     }

@@ -41,7 +41,7 @@ public abstract class AbstractKami {
     public void onEnter() {
     }
 
-    public void onExit() {
+    public void onExit(AbstractKami nextKami) {
     }
 
     public int onRollDice(int dice) {

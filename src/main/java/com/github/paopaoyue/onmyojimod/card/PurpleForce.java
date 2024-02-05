@@ -25,10 +25,11 @@ public class PurpleForce extends CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (p.currentHealth < (p.maxHealth + 1) / 2) {
-            this.addToBot(new HealAction(p, p, (p.maxHealth + 1) / 2 - p.currentHealth));
-        } else if (p.currentHealth > (p.maxHealth + 1) / 2) {
-            this.addToBot(new LoseHPAction(p, p, p.currentHealth - (p.maxHealth + 1) / 2));
+        int targetHealth = (int) Math.round((float) p.maxHealth * 0.7);
+        if (p.currentHealth < targetHealth) {
+            this.addToBot(new HealAction(p, p, targetHealth - p.currentHealth));
+        } else if (p.currentHealth > targetHealth) {
+            this.addToBot(new LoseHPAction(p, p, p.currentHealth - targetHealth));
         }
     }
 

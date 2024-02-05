@@ -28,7 +28,7 @@ public class Netherworld extends CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(p, p, new EncouragedPower(p, 1)));
+        this.addToBot(new ApplyPowerAction(p, p, new EncouragedPower(p, this.magicNumber)));
         this.addToBot(new ApplyPowerAction(p, p, new BreakthroughPower(p, 1)));
     }
 

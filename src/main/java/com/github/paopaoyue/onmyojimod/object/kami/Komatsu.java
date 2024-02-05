@@ -8,6 +8,8 @@ import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
+import java.util.Objects;
+
 public class Komatsu extends AbstractKami {
 
     public static final String ID = "Onmyoji:Komatsu";
@@ -23,7 +25,10 @@ public class Komatsu extends AbstractKami {
     }
 
     @Override
-    public void onExit() {
+    public void onExit(AbstractKami nextKami) {
+        if (nextKami == AbstractKami.ONMYOJI_NONE || Objects.equals(nextKami.id, ID)) {
+            return;
+        }
         AbstractCard kamiCard = null;
         if (!((Sanme) AbstractDungeon.player).getKamiManager().getKamiCardGroup().isEmpty()) {
             kamiCard = ((Sanme) AbstractDungeon.player).getKamiManager().getKamiCardGroup().group.get(0);

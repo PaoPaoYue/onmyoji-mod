@@ -28,7 +28,7 @@ public class TheWorld extends CustomCard {
         this.baseDamage = BASE_DAMAGE;
         this.baseMagicNumber = 8;
         this.magicNumber = baseMagicNumber;
-        this.retain = true;
+        this.selfRetain = true;
         this.exhaust = true;
     }
 

@@ -21,7 +21,7 @@ public class Kusa extends AbstractKami {
     }
 
     @Override
-    public void onExit() {
+    public void onExit(AbstractKami nextKami) {
         AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(upgraded ? 3 : 4));
     }

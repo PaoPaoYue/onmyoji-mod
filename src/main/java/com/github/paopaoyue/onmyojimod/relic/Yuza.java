@@ -1,7 +1,6 @@
 package com.github.paopaoyue.onmyojimod.relic;
 
 import basemod.abstracts.CustomRelic;
-import com.github.paopaoyue.onmyojimod.card.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -14,6 +13,10 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.RainingGoldEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 
+import java.util.ArrayList;
+
+import static com.github.paopaoyue.onmyojimod.card.Util.kamiCardList;
+
 public class Yuza extends CustomRelic {
     public static final String ID = "Onmyoji:Yuza";
     private static final RelicStrings strings = CardCrawlGame.languagePack.getRelicStrings(ID);
@@ -24,22 +27,7 @@ public class Yuza extends CustomRelic {
     private static final CardGroup cardGroup = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
 
     static {
-        cardGroup.group.add(new Kiyohime());
-        cardGroup.group.add(new Hitotsume());
-        cardGroup.group.add(new Akaname());
-        cardGroup.group.add(new Enmusubi());
-        cardGroup.group.add(new Yamausagi());
-        cardGroup.group.add(new Kusa());
-        cardGroup.group.add(new Komatsu());
-        cardGroup.group.add(new Itsumade());
-        cardGroup.group.add(new ShutenDoji());
-        cardGroup.group.add(new YotoHime());
-        cardGroup.group.add(new Momo());
-        cardGroup.group.add(new Shiranui());
-        cardGroup.group.add(new Bokku());
-        cardGroup.group.add(new Onikiri());
-        cardGroup.group.add(new Hangan());
-        cardGroup.group.add(new Dodomeki());
+        cardGroup.group = (ArrayList<AbstractCard>) kamiCardList;
     }
 
     private boolean cardSelected = true;

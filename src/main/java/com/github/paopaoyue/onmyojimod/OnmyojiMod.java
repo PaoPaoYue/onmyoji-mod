@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.github.paopaoyue.onmyojimod.card.KamiHp;
+import com.github.paopaoyue.onmyojimod.card.Taiji;
 import com.github.paopaoyue.onmyojimod.character.Sanme;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.github.paopaoyue.onmyojimod.patch.PlayerClassEnum;
@@ -25,13 +26,13 @@ import java.util.HashMap;
 
 @SpireInitializer
 @SuppressWarnings("unused")
-public class OnmyojiMod implements EditCharactersSubscriber, EditStringsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditCardsSubscriber, OnStartBattleSubscriber, PostBattleSubscriber, AddAudioSubscriber {
+public class OnmyojiMod implements EditCharactersSubscriber, EditStringsSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber, EditCardsSubscriber, OnStartBattleSubscriber, OnPlayerTurnStartSubscriber, AddAudioSubscriber {
 
 
     public static final String MOD_ID = "Onmyoji";
     public static final HashMap<String, Keyword> MOD_DICTIONARY = new HashMap<>();
-
     private static final Logger logger = LogManager.getLogger(OnmyojiMod.class);
+
 
     public OnmyojiMod() {
         logger.info("instantiating OnmyojiMod");
@@ -46,6 +47,7 @@ public class OnmyojiMod implements EditCharactersSubscriber, EditStringsSubscrib
     public static void initialize() {
         new OnmyojiMod();
     }
+
 
     @Override
     public void receiveEditCards() {
@@ -110,6 +112,10 @@ public class OnmyojiMod implements EditCharactersSubscriber, EditStringsSubscrib
         }
     }
 
+    @Override
+    public void receiveAddAudio() {
+        BaseMod.addAudio("ONMYOJI:ROLL_DICE", "audio/roll_dice.mp3");
+    }
 
     @Override
     public void receiveOnBattleStart(AbstractRoom abstractRoom) {
@@ -117,12 +123,7 @@ public class OnmyojiMod implements EditCharactersSubscriber, EditStringsSubscrib
     }
 
     @Override
-    public void receivePostBattle(AbstractRoom abstractRoom) {
-
-    }
-
-    @Override
-    public void receiveAddAudio() {
-        BaseMod.addAudio("ONMYOJI:ROLL_DICE", "audio/roll_dice.mp3");
+    public void receiveOnPlayerTurnStart() {
+        Taiji.getDamageReplacement().clear();
     }
 }

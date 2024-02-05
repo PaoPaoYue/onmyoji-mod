@@ -1,7 +1,9 @@
 package com.github.paopaoyue.onmyojimod.patch.kami;
 
+import basemod.Pair;
 import com.evacipated.cardcrawl.mod.stslib.vfx.combat.TempDamageNumberEffect;
 import com.evacipated.cardcrawl.modthespire.lib.*;
+import com.github.paopaoyue.onmyojimod.card.Taiji;
 import com.github.paopaoyue.onmyojimod.character.Sanme;
 import com.github.paopaoyue.onmyojimod.object.kami.KamiManager;
 import com.github.paopaoyue.onmyojimod.power.BreakthroughPower;
@@ -33,7 +35,21 @@ public class PlayerDamage {
     }
 
     @SpireInsertPatch(
-            locator = Locator.class,
+            locator = BeforeDecrementBlockLocator.class,
+            localvars = {"damageAmount"}
+    )
+    public static void Insert(AbstractCreature __instance, DamageInfo info, @ByRef int[] damageAmount) {
+        Integer replacedDamage = Taiji.getDamageReplacement().get(new Pair<>(info.owner, info.base));
+        if (replacedDamage != null) {
+            damageAmount[0] = replacedDamage;
+        }
+        if (damageAmount[0] > 0 && __instance.hasPower("IntangiblePlayer")) {
+            damageAmount[0] = 1;
+        }
+    }
+
+    @SpireInsertPatch(
+            locator = AfterDecrementLocator.class,
             localvars = {"damageAmount", "hadBlock"}
     )
     public static void Insert(AbstractCreature __instance, DamageInfo info, @ByRef int[] damageAmount, boolean hadBlock) {
@@ -110,12 +126,22 @@ public class PlayerDamage {
         return SpireReturn.Continue();
     }
 
-    private static class Locator extends SpireInsertLocator {
-        private Locator() {
+    private static class AfterDecrementLocator extends SpireInsertLocator {
+        private AfterDecrementLocator() {
         }
 
         public int[] Locate(CtBehavior ctMethodToPatch) throws Exception {
             Matcher finalMatcher = new Matcher.MethodCallMatcher(AbstractPlayer.class, "decrementBlock");
+            return Inject.insertAfter(LineFinder.findInOrder(ctMethodToPatch, new ArrayList<>(), finalMatcher), 1);
+        }
+    }
+
+    private static class BeforeDecrementBlockLocator extends SpireInsertLocator {
+        private BeforeDecrementBlockLocator() {
+        }
+
+        public int[] Locate(CtBehavior ctMethodToPatch) throws Exception {
+            Matcher finalMatcher = new Matcher.FieldAccessMatcher(DamageInfo.class, "output");
             return Inject.insertAfter(LineFinder.findInOrder(ctMethodToPatch, new ArrayList<>(), finalMatcher), 1);
         }
     }

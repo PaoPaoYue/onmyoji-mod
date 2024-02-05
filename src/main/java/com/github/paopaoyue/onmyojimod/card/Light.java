@@ -23,7 +23,7 @@ public class Light extends CustomCard {
         this.baseMagicNumber = 1;
         this.magicNumber = baseMagicNumber;
         this.exhaust = true;
-        this.retain = true;
+        this.selfRetain = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

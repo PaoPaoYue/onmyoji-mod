@@ -26,7 +26,7 @@ public class Itsumade extends AbstractKami {
     }
 
     @Override
-    public void onExit() {
+    public void onExit(AbstractKami nextKami) {
         if (!upgraded) {
             return;
         }

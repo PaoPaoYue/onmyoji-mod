@@ -91,9 +91,7 @@ public class GhostHandAction extends AbstractGameAction {
     private void swapDraw(AbstractMonster a, AbstractMonster b, float duration, float maxDuration) {
 
         a.drawX = Interpolation.pow3.apply(a_draw_X, a_draw_tX, 1 - duration / maxDuration);
-        a.drawY = Interpolation.pow3.apply(a_draw_Y, a_draw_tY, 1 - duration / maxDuration);
         b.drawX = Interpolation.pow3.apply(b_draw_X, b_draw_tX, 1 - duration / maxDuration);
-        b.drawY = Interpolation.pow3.apply(b_draw_Y, b_draw_tY, 1 - duration / maxDuration);
 
         try {
             refreshLocationMethod.invoke(a);

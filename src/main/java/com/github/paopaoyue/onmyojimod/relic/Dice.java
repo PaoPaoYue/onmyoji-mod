@@ -26,7 +26,7 @@ public class Dice extends CustomRelic {
     }
 
     public int onRollDice(int dice) {
-        if (dice != 6 && amount > 0) {
+        if (amount > 0) {
             this.amount--;
             this.flash();
             return 6;

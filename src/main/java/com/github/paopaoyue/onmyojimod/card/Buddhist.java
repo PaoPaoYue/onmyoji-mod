@@ -22,12 +22,12 @@ public class Buddhist extends CustomCard {
         super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.SELF);
         this.exhaust = true;
-        this.baseMagicNumber = 5;
+        this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new BuddhistAction(this.magicNumber, 1));
+        this.addToBot(new BuddhistAction(5, this.magicNumber));
     }
 
     @Override
@@ -47,7 +47,7 @@ public class Buddhist extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(2);
+            this.upgradeMagicNumber(1);
         }
     }
 

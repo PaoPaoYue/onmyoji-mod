@@ -1,6 +1,7 @@
 package com.github.paopaoyue.onmyojimod.card;
 
 import basemod.abstracts.CustomCard;
+import com.github.paopaoyue.onmyojimod.action.ProjectileAction;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -13,6 +14,7 @@ import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 public class GhostFire extends CustomCard {
     public static final String ID = "Onmyoji:Ghost Fire";
     private static final CardStrings cardStrings;
+    private static final int BASE_DAMAGE = 3;
 
     static {
         cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -21,6 +23,7 @@ public class GhostFire extends CustomCard {
     public GhostFire() {
         super(ID, cardStrings.NAME, Util.getImagePath(ID), -1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.SELF);
+        this.baseDamage = BASE_DAMAGE;
         this.exhaust = true;
         this.cardsToPreview = new Light();
     }
@@ -38,6 +41,9 @@ public class GhostFire extends CustomCard {
             p.getRelic("Chemical X").flash();
         }
         if (effect > 0) {
+            for (int i = 0; i < effect; i++) {
+                this.addToBot(new ProjectileAction(this.damage));
+            }
             this.addToBot(new MakeTempCardInHandAction(new Light(), effect));
         }
         if (!this.freeToPlayOnce) {

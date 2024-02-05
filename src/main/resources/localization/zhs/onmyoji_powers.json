@@ -2,7 +2,7 @@
   "Onmyoji:Penetrated": {
     "NAME": "破甲",
     "DESCRIPTIONS": [
-      "受到的攻击伤害增加 #b",
+      "受到的攻击或 #y投射 伤害增加 #b",
       " ，回合开始时移除。"
     ]
   },
@@ -61,6 +61,12 @@
       " 张牌附加梦魇"
     ]
   },
+  "Onmyoji:News": {
+    "NAME": "百闻一得",
+    "DESCRIPTIONS": [
+      "使用 #y明灯 时，升级所有手牌。"
+    ]
+  },
   "Onmyoji:Chord": {
     "NAME": "神乐歌",
     "DESCRIPTIONS": [
@@ -72,7 +78,7 @@
     "NAME": "萌即正义",
     "DESCRIPTIONS": [
       "回合开始时获得 #b",
-      " 张随机式神牌。 #y运势 #b6 ：获得的牌本局对战费用变为0。"
+      " 张随机式神牌，此牌本回合费用为0, 且 #y运势 #b6 ：此牌式神生命值翻倍。"
     ]
   },
   "Onmyoji:Moonlight Night": {

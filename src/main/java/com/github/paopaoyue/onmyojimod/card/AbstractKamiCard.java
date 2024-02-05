@@ -13,15 +13,10 @@ public abstract class AbstractKamiCard extends CustomCard {
     private static final Logger logger = LogManager.getLogger(AbstractKamiCard.class.getName());
 
     private AbstractKami kami;
-
     private int baseHp;
-
     private int hp;
-
     private boolean hpUpgraded;
-
     private boolean hpModified;
-
 
     public AbstractKamiCard(String id, String name, String img, int cost, String rawDescription, CardType type, CardColor color, CardRarity rarity, CardTarget target, AbstractKami kami, int baseKamiHp) {
         super(id, name, img, cost, rawDescription, type, color, rarity, target);
@@ -38,12 +33,24 @@ public abstract class AbstractKamiCard extends CustomCard {
         return baseHp;
     }
 
+    public void setBaseHp(int baseHp) {
+        this.baseHp = baseHp;
+    }
+
     public int getHp() {
         return hp;
     }
 
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
     public boolean isHpUpgraded() {
         return hpUpgraded;
+    }
+
+    public void setHpUpgraded(boolean hpUpgraded) {
+        this.hpUpgraded = hpUpgraded;
     }
 
     public boolean isHpModified() {

@@ -19,7 +19,7 @@ public class Kiyohime extends AbstractKamiCard {
     public Kiyohime() {
         super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.RARE, CardTarget.SELF,
-                new com.github.paopaoyue.onmyojimod.object.kami.Kiyohime(), 4);
+                new com.github.paopaoyue.onmyojimod.object.kami.Kiyohime(), 6);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -30,7 +30,7 @@ public class Kiyohime extends AbstractKamiCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeHp(6);
+            this.upgradeHp(4);
         }
     }
 

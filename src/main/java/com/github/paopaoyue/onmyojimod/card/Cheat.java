@@ -33,7 +33,7 @@ public class Cheat extends CustomCard {
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn)));
         if (action.amount == 6) {
             this.addToBot(new GainEnergyAction(1));
-        } else if (action.amount >= (upgraded ? 3 : 4)) {
+        } else if (action.amount >= (upgraded ? 2 : 4)) {
             this.returnToHand = true;
         }
     }

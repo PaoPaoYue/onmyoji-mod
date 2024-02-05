@@ -2,7 +2,6 @@ package com.github.paopaoyue.onmyojimod.card;
 
 import basemod.abstracts.CustomCard;
 import com.github.paopaoyue.onmyojimod.character.Sanme;
-import com.github.paopaoyue.onmyojimod.object.kami.AbstractKami;
 import com.github.paopaoyue.onmyojimod.object.kami.KamiManager;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -14,8 +13,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
-import java.util.stream.Collectors;
 
 public class SevenSides extends CustomCard {
     public static final String ID = "Onmyoji:Seven Sides";
@@ -36,17 +33,16 @@ public class SevenSides extends CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
     }
 
     public void applyPowers() {
         if (AbstractDungeon.player instanceof Sanme) {
             KamiManager kamiManager = ((Sanme) AbstractDungeon.player).getKamiManager();
-            int kamiNum = kamiManager.getKamiSequenceInBattle().stream().filter(x -> x != AbstractKami.ONMYOJI_NONE && x.getId().startsWith(Menreiki.ID)).collect(Collectors.toSet()).size();
             if (this.upgraded) {
-                this.baseDamage = BASE_DAMAGE + (BASE_DAMAGE_ADD_ON + 1) * kamiNum;
+                this.baseDamage = BASE_DAMAGE + (BASE_DAMAGE_ADD_ON + 1) * kamiManager.getDiffFactionSwitchCountInBattle();
             } else {
-                this.baseDamage = BASE_DAMAGE + BASE_DAMAGE_ADD_ON * kamiNum;
+                this.baseDamage = BASE_DAMAGE + BASE_DAMAGE_ADD_ON * kamiManager.getDiffFactionSwitchCountInBattle();
             }
         }
         super.applyPowers();
