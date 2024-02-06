@@ -62,8 +62,7 @@
   },
   "Onmyoji:Butterfly": {
     "NAME": "一夜梦",
-    "DESCRIPTION": "造成 !D! 伤害, 使用手牌中一张费用小于等于1费牌的复制并 消耗 。 NL （不能使用式神牌和能力牌）",
-    "UPGRADE_DESCRIPTION": "造成 !D! 伤害, 使用手牌中一张费用小于等于2费牌的复制并 消耗 。 NL （不能使用式神牌和能力牌）"
+    "DESCRIPTION": "造成 !D! 伤害, 使用手牌中一张费用小于等于 !M! 费牌的复制并 消耗 。（不能使用式神牌和能力牌）"
   },
   "Onmyoji:Corrupted Punch": {
     "NAME": "腐败直拳",
@@ -134,7 +133,8 @@
   },
   "Onmyoji:Wind Of Dragon": {
     "NAME": "风符·龙",
-    "DESCRIPTION": " 倒计时 进场时也会触发效果。"
+    "DESCRIPTION": " 倒计时 进场时也会触发效果。",
+    "UPGRADE_DESCRIPTION": " 倒计时 进场时也会触发效果。 固有 。"
   },
   "Onmyoji:Goldfish": {
     "NAME": "荒川的金鱼姬",
@@ -158,8 +158,7 @@
   },
   "Onmyoji:Chord": {
     "NAME": "神乐歌",
-    "DESCRIPTION": "使用与开始时获得 倒计时 5 ：获得1 力量 与 1 敏捷。",
-    "UPGRADE_DESCRIPTION": "使用与回合开始时获得 倒计时 5 ：获得1 力量 与 1 敏捷。 固有 。"
+    "DESCRIPTION": "使用与回合开始时获得 倒计时 5 ：获得1 力量 与 1 敏捷。"
   },
   "Onmyoji:Dark Dream": {
     "NAME": "永眠之梦",
@@ -246,8 +245,8 @@
   },
   "Onmyoji:Bird": {
     "NAME": "鸩羽苏生",
-    "DESCRIPTION": "获得 !B! 格挡 ， 倒计时 3 ：获得最近的敌人获得 !M! 层 破甲 。",
-    "UPGRADE_DESCRIPTION": "获得 !B! 格挡 ， 倒计时 2 ：获得最近的敌人获得 !M! 层 破甲 。"
+    "DESCRIPTION": "获得 !B! 格挡 ， 倒计时 3 ：使最近的敌人获得 !M! 层 破甲 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 格挡 ， 倒计时 2 ：使最近的敌人获得 !M! 层 破甲 。"
   },
   "Onmyoji:Kiyohime": {
     "NAME": "式神·清姬",

@@ -242,7 +242,7 @@
     "NAMES": [
       "诅咒之眼"
     ],
-    "DESCRIPTION": "抽到此牌时额外选择并丢弃一张牌。"
+    "DESCRIPTION": "抽到此牌时额外选择并丢弃 #b2 张牌。"
   },
   {
     "ID": "Onmyoji:Curse",

@@ -17,7 +17,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 public class SevenSides extends CustomCard {
     public static final String ID = "Onmyoji:Seven Sides";
     private static final CardStrings cardStrings;
-    private static final int BASE_DAMAGE = 9;
+    private static final int BASE_DAMAGE = 8;
     private static final int BASE_DAMAGE_ADD_ON = 3;
 
     static {
@@ -52,7 +52,6 @@ public class SevenSides extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(1);
             this.upgradeMagicNumber(1);
         }
     }

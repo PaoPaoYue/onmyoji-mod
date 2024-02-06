@@ -26,7 +26,7 @@ public class Eye extends AbstractSpirit {
 
     @Override
     public void onDraw() {
-        AbstractDungeon.actionManager.addToBottom(new DiscardAction(AbstractDungeon.player, AbstractDungeon.player, 1, false));
+        AbstractDungeon.actionManager.addToBottom(new DiscardAction(AbstractDungeon.player, AbstractDungeon.player, 2, false));
     }
 
     @Override

@@ -16,7 +16,7 @@ public class CardCopy {
     }
 
     @SpireInsertPatch(
-            rloc = 1,
+            rloc = 8,
             localvars = {"card"}
     )
     public static void Insert(AbstractCard __instance, AbstractCard card) {

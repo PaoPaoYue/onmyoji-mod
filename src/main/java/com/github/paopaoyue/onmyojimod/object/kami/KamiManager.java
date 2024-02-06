@@ -122,7 +122,7 @@ public class KamiManager {
             AbstractCard discardCard = kamiCardGroup.getTopCard();
             kamiCardGroup.moveToDiscardPile(discardCard);
         }
-        if (!card.exhaust && !card.exhaustOnUseOnce) {
+        if (!card.exhaust && !card.exhaustOnUseOnce && !card.purgeOnUse && !card.exhaustOnFire) {
             kamiCardGroup.addToBottom(card);
             AbstractDungeon.player.hand.empower(card);
         }
