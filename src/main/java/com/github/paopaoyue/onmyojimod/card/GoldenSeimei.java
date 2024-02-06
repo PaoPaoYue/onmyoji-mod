@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 public class GoldenSeimei extends CustomCard {
     public static final String ID = "Onmyoji:Golden Seimei";
     private static final CardStrings cardStrings;
-    private static final int BASE_DAMAGE = 40;
+    private static final int BASE_DAMAGE = 30;
 
     static {
         cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
