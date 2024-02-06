@@ -1,6 +1,5 @@
 package com.github.paopaoyue.onmyojimod.patch.kami;
 
-import basemod.Pair;
 import com.evacipated.cardcrawl.mod.stslib.vfx.combat.TempDamageNumberEffect;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.github.paopaoyue.onmyojimod.card.Taiji;
@@ -39,7 +38,7 @@ public class PlayerDamage {
             localvars = {"damageAmount"}
     )
     public static void Insert(AbstractCreature __instance, DamageInfo info, @ByRef int[] damageAmount) {
-        Integer replacedDamage = Taiji.getDamageReplacement().get(new Pair<>(info.owner, info.base));
+        Integer replacedDamage = Taiji.getDamageReplacement().get(info.owner);
         if (replacedDamage != null) {
             damageAmount[0] = replacedDamage;
         }

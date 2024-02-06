@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 public class GoldenSeimei extends CustomCard {
     public static final String ID = "Onmyoji:Golden Seimei";
     private static final CardStrings cardStrings;
-    private static final int BASE_DAMAGE = 30;
+    private static final int BASE_DAMAGE = 40;
 
     static {
         cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -23,11 +23,12 @@ public class GoldenSeimei extends CustomCard {
     public GoldenSeimei() {
         super(ID, cardStrings.NAME, Util.getImagePath(ID), -2, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.SPECIAL, CardTarget.ENEMY);
-        this.baseDamage = BASE_DAMAGE;
+        this.baseMagicNumber = BASE_DAMAGE;
+        this.magicNumber = baseMagicNumber;
     }
 
     public void triggerWhenDrawn() {
-        this.addToBot(new ProjectileAction(this.baseDamage));
+        this.addToBot(new ProjectileAction(this.magicNumber));
         this.addToTop(new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand));
     }
 
@@ -42,7 +43,7 @@ public class GoldenSeimei extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(10);
+            this.upgradeMagicNumber(10);
         }
     }
 

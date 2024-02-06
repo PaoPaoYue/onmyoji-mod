@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 public class Exorcism extends CustomCard {
     public static final String ID = "Onmyoji:Exorcism";
     private static final CardStrings cardStrings;
-    private static final int BASE_DAMAGE = 7;
+    private static final int BASE_DAMAGE = 8;
 
     static {
         cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -25,6 +25,8 @@ public class Exorcism extends CustomCard {
         super(ID, cardStrings.NAME, Util.getImagePath(ID), 1, cardStrings.DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.COMMON, CardTarget.ENEMY);
         this.baseDamage = BASE_DAMAGE;
+        this.baseMagicNumber = BASE_DAMAGE;
+        this.magicNumber = baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -40,6 +42,7 @@ public class Exorcism extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeDamage(3);
+            this.upgradeMagicNumber(3);
         }
     }
 

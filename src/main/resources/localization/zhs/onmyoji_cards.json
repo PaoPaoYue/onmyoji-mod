@@ -62,7 +62,8 @@
   },
   "Onmyoji:Butterfly": {
     "NAME": "一夜梦",
-    "DESCRIPTION": "造成 !D! 伤害, 使用手牌中一张费用小于等于1费牌的复制并 消耗 。 NL （不能使用式神牌和能力牌）"
+    "DESCRIPTION": "造成 !D! 伤害, 使用手牌中一张费用小于等于1费牌的复制并 消耗 。 NL （不能使用式神牌和能力牌）",
+    "UPGRADE_DESCRIPTION": "造成 !D! 伤害, 使用手牌中一张费用小于等于2费牌的复制并 消耗 。 NL （不能使用式神牌和能力牌）"
   },
   "Onmyoji:Corrupted Punch": {
     "NAME": "腐败直拳",
@@ -206,8 +207,8 @@
   },
   "Onmyoji:Ghost Fire": {
     "NAME": "吸魂灯",
-    "DESCRIPTION": "投射 !D! 点伤害 x 次，将x张 *明灯 置入手牌。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "投射 !D! 点伤害x+1次，将x+1张 *明灯 置入手牌。 NL 消耗 。"
+    "DESCRIPTION": "投射 !M! 点伤害 x 次，将x张 *明灯 置入手牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "投射 !M! 点伤害x+1次，将x+1张 *明灯 置入手牌。 NL 消耗 。"
   },
   "Onmyoji:Peach Blossom": {
     "NAME": "桃花灼灼",
@@ -339,7 +340,7 @@
   },
   "Onmyoji:Golden Seimei": {
     "NAME": "金晴明",
-    "DESCRIPTION": " 不能被打出 。 NL 当你抽到这张牌时， 投射 !D! 伤害，然后 消耗 。"
+    "DESCRIPTION": " 不能被打出 。 NL 当你抽到这张牌时， 投射 !M! 伤害，然后 消耗 。"
   },
   "Onmyoji:Red Force": {
     "NAME": "红莲之力",

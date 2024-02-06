@@ -1,6 +1,5 @@
 package com.github.paopaoyue.onmyojimod.card;
 
-import basemod.Pair;
 import basemod.abstracts.CustomCard;
 import com.github.paopaoyue.onmyojimod.patch.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -21,7 +20,7 @@ public class Taiji extends CustomCard {
     public static final String ID = "Onmyoji:Tai Ji";
     private static final CardStrings cardStrings;
     private static final int BASE_DAMAGE = 6;
-    private static final HashMap<Pair<AbstractCreature, Integer>, Integer> damageReplacement = new HashMap<>();
+    private static final HashMap<AbstractCreature, Integer> damageReplacement = new HashMap<>();
 
     static {
         cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -34,11 +33,11 @@ public class Taiji extends CustomCard {
         this.exhaust = true;
     }
 
-    public static void putDamageReplacement(AbstractCreature mo, int baseAmount, int targetAmount) {
-        damageReplacement.put(new Pair<>(mo, baseAmount), targetAmount);
+    public static void putDamageReplacement(AbstractCreature mo, int targetAmount) {
+        damageReplacement.put(mo, targetAmount);
     }
 
-    public static HashMap<Pair<AbstractCreature, Integer>, Integer> getDamageReplacement() {
+    public static HashMap<AbstractCreature, Integer> getDamageReplacement() {
         return damageReplacement;
     }
 
@@ -48,10 +47,9 @@ public class Taiji extends CustomCard {
         if (mo != null && (mo.intent == AbstractMonster.Intent.ATTACK || mo.intent == AbstractMonster.Intent.ATTACK_BUFF || mo.intent == AbstractMonster.Intent.ATTACK_DEBUFF || mo.intent == AbstractMonster.Intent.ATTACK_DEFEND)) {
             EnemyMoveInfo move = getPrivate(AbstractMonster.class, mo, "move", EnemyMoveInfo.class);
             if (move != null) {
-                int realBaseDamage = move.baseDamage;
                 move.baseDamage = this.baseDamage;
                 mo.createIntent();
-                putDamageReplacement(mo, realBaseDamage, mo.getIntentDmg());
+                putDamageReplacement(mo, mo.getIntentDmg());
             }
         }
     }

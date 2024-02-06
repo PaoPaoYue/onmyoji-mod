@@ -50,6 +50,7 @@ public class ButterflyAction extends AbstractGameAction {
             if (tmpGroup.group.size() == 1) {
                 AbstractCard card = tmpGroup.getTopCard();
                 this.addToTop(new PlayTmpCardAction(card.makeStatEquivalentCopy(), target, true));
+                this.isDone = true;
                 return;
             }
 

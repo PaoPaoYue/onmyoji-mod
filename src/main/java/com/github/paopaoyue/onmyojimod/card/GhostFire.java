@@ -23,7 +23,8 @@ public class GhostFire extends CustomCard {
     public GhostFire() {
         super(ID, cardStrings.NAME, Util.getImagePath(ID), -1, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.UNCOMMON, CardTarget.SELF);
-        this.baseDamage = BASE_DAMAGE;
+        this.baseMagicNumber = BASE_DAMAGE;
+        this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
         this.cardsToPreview = new Light();
     }
@@ -42,7 +43,7 @@ public class GhostFire extends CustomCard {
         }
         if (effect > 0) {
             for (int i = 0; i < effect; i++) {
-                this.addToBot(new ProjectileAction(this.baseDamage));
+                this.addToBot(new ProjectileAction(this.magicNumber));
             }
             this.addToBot(new MakeTempCardInHandAction(new Light(), effect));
         }

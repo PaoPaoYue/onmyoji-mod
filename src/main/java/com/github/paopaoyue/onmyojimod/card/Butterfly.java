@@ -29,23 +29,15 @@ public class Butterfly extends CustomCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        this.addToBot(new ButterflyAction(card -> card.costForTurn <= 1 && card.costForTurn >= 0 && !(card instanceof AbstractKamiCard) && card.type != CardType.POWER && !card.cardID.equals(ID), m));
-    }
-
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        for (AbstractCard card : p.hand.group) {
-            if (card.costForTurn <= 1 && !(card instanceof AbstractKamiCard) && card.type != CardType.POWER) {
-                return true;
-            }
-        }
-        return false;
+        this.addToBot(new ButterflyAction(card -> card.costForTurn <= (upgraded ? 2 : 1) && card.costForTurn >= 0 && !(card instanceof AbstractKamiCard) && card.type != CardType.POWER && !card.cardID.equals(ID), m));
     }
 
 
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(3);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 
