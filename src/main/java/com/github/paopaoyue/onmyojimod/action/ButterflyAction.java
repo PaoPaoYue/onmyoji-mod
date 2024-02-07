@@ -49,7 +49,8 @@ public class ButterflyAction extends AbstractGameAction {
 
             if (tmpGroup.group.size() == 1) {
                 AbstractCard card = tmpGroup.getTopCard();
-                this.addToTop(new PlayTmpCardAction(card.makeStatEquivalentCopy(), target, true));
+                card = card.makeStatEquivalentCopy();
+                this.addToTop(new PlayTmpCardAction(card, target, true, true));
                 this.isDone = true;
                 return;
             }
@@ -59,7 +60,8 @@ public class ButterflyAction extends AbstractGameAction {
         }
         if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
             for (AbstractCard card : AbstractDungeon.gridSelectScreen.selectedCards) {
-                this.addToTop(new PlayTmpCardAction(card.makeStatEquivalentCopy(), target, true));
+                card = card.makeStatEquivalentCopy();
+                this.addToTop(new PlayTmpCardAction(card, target, true, true));
             }
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
         }

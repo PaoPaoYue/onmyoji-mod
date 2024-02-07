@@ -44,6 +44,7 @@ public class Nature extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeDamage(2);
+            this.upgradeMagicNumber(1);
         }
     }
 

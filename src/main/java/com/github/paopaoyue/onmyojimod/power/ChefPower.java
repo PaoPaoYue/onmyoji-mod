@@ -46,8 +46,14 @@ public class ChefPower extends AbstractPower {
         }
     }
 
+    @Override
+    public void stackPower(int stackAmount) {
+        super.stackPower(stackAmount);
+        this.encouragedCount += stackAmount;
+    }
+
     public void updateDescription() {
-        this.description = strings.DESCRIPTIONS[0] + this.amount + strings.DESCRIPTIONS[1] + strings.DESCRIPTIONS[2] + this.encouragedCount + strings.DESCRIPTIONS[3];
+        this.description = strings.DESCRIPTIONS[0] + strings.DESCRIPTIONS[1] + this.encouragedCount + strings.DESCRIPTIONS[2];
     }
 
 }

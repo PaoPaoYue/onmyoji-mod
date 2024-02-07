@@ -27,6 +27,7 @@ public class Exorcism extends CustomCard {
         this.baseDamage = BASE_DAMAGE;
         this.baseMagicNumber = BASE_DAMAGE;
         this.magicNumber = baseMagicNumber;
+        this.shuffleBackIntoDrawPile = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -34,15 +35,15 @@ public class Exorcism extends CustomCard {
     }
 
     public void onDivine() {
-        this.addToBot(new ProjectileAction(this.baseDamage));
+        this.addToBot(new ProjectileAction(this.magicNumber * (upgraded ? 2 : 1)));
     }
 
 
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(3);
-            this.upgradeMagicNumber(3);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 

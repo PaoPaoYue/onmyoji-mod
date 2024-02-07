@@ -41,8 +41,8 @@
   },
   "Onmyoji:Luck": {
     "NAME": "转运",
-    "DESCRIPTION": "造成 !D! 伤害。 运势 4：随机 消耗 1张牌，再次使用一张此牌的复制并 消耗 。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 伤害。 运势 4： 消耗 1张牌，再次使用一张此牌的复制并 消耗 。"
+    "DESCRIPTION": "造成 !D! 伤害。 运势 4：随机 消耗 1张牌，再次额外使用一张此牌的复制。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 伤害。 运势 4： 消耗 1张牌，再次额外使用一张此牌的复制。"
   },
   "Onmyoji:Poison Feather": {
     "NAME": "鸩羽",
@@ -62,7 +62,7 @@
   },
   "Onmyoji:Butterfly": {
     "NAME": "一夜梦",
-    "DESCRIPTION": "造成 !D! 伤害, 使用手牌中一张费用小于等于 !M! 费牌的复制并 消耗 。（不能使用式神牌和能力牌）"
+    "DESCRIPTION": "造成 !D! 伤害, 额外使用手牌中一张费用小于等于 !M! 费牌的复制。（不能使用式神牌和能力牌）"
   },
   "Onmyoji:Corrupted Punch": {
     "NAME": "腐败直拳",
@@ -78,7 +78,7 @@
   },
   "Onmyoji:Double Shoot": {
     "NAME": "文射",
-    "DESCRIPTION": "造成 !D! 伤害，然后不消耗费用自动使用一张此牌的复制并 消耗 。"
+    "DESCRIPTION": "造成 !D! 伤害，然后额外不消耗费用自动使用一张此牌的复制。"
   },
   "Onmyoji:Trick": {
     "NAME": "恶戏",
@@ -94,7 +94,8 @@
   },
   "Onmyoji:Exorcism": {
     "NAME": "驱邪祸",
-    "DESCRIPTION": "造成 !D! 伤害， 占卜 中置入牌库底时 投射 等量伤害。"
+    "DESCRIPTION": "造成 !D! 伤害，使用后洗入抽牌堆 。 占卜 中置入牌库底时 投射 等量伤害。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 伤害，使用后洗入抽牌堆 。 占卜 中置入牌库底时 投射 2倍伤害。"
   },
   "Onmyoji:Cheat": {
     "NAME": "出千",
@@ -138,7 +139,7 @@
   },
   "Onmyoji:Goldfish": {
     "NAME": "荒川的金鱼姬",
-    "DESCRIPTION": "回合开始时随机使用 !M! 张普通牌并 消耗 。 NL （不会使用式神牌和能力牌）"
+    "DESCRIPTION": "每回合 !M! 次，使用非罕见或稀有牌时有概率随机使用1张额外的普通牌。 NL （不会使用式神牌和能力牌）"
   },
   "Onmyoji:Divined Eye": {
     "NAME": "洞察之眼",
@@ -228,7 +229,7 @@
   },
   "Onmyoji:Ice Shield": {
     "NAME": "寒冰之盾",
-    "DESCRIPTION": "获得 !B! 格挡 ，下个回合开始前每格挡1次攻击给予伤害来源 !M! 层 虚弱 。"
+    "DESCRIPTION": "获得 !B! 格挡 ，下个回合开始前 格挡 每个敌人第一次攻击时使敌人获得 !M! 层 虚弱 。"
   },
   "Onmyoji:Snake Attack": {
     "NAME": "蛇形击",

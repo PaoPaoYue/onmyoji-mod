@@ -37,7 +37,7 @@ public class DoubleShoot extends CustomCard {
         if (!once) {
             DoubleShoot copy = (DoubleShoot) this.makeStatEquivalentCopy();
             copy.once = true;
-            this.addToBot(new PlayTmpCardAction(copy, m, true));
+            this.addToBot(new PlayTmpCardAction(copy, m, true, true));
         }
     }
 

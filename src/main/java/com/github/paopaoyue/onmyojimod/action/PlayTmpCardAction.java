@@ -12,19 +12,21 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 public class PlayTmpCardAction extends AbstractGameAction {
 
     private AbstractCard card;
-    private boolean exhaustCards;
+    private boolean purgeOnUse;
+    private boolean exhaust;
     private AbstractCreature target;
 
-    public PlayTmpCardAction(AbstractCard card, boolean exhausts) {
+    public PlayTmpCardAction(AbstractCard card, boolean purgeOnUse, boolean exhaust) {
         this.duration = Settings.ACTION_DUR_FAST;
         this.actionType = ActionType.WAIT;
         this.source = AbstractDungeon.player;
         this.card = card;
-        this.exhaustCards = exhausts;
+        this.purgeOnUse = purgeOnUse;
+        this.exhaust = exhaust;
     }
 
-    public PlayTmpCardAction(AbstractCard card, AbstractCreature target, boolean exhausts) {
-        this(card, exhausts);
+    public PlayTmpCardAction(AbstractCard card, AbstractCreature target, boolean purgeOnUse, boolean exhaust) {
+        this(card, purgeOnUse, exhaust);
         this.target = target;
     }
 
@@ -41,7 +43,11 @@ public class PlayTmpCardAction extends AbstractGameAction {
                 return;
             }
             if (!AbstractDungeon.player.drawPile.isEmpty()) {
-                card.exhaustOnUseOnce = this.exhaustCards;
+                if (purgeOnUse) {
+                    card.purgeOnUse = this.purgeOnUse;
+                } else {
+                    card.exhaustOnUseOnce = this.exhaust;
+                }
                 AbstractDungeon.player.limbo.group.add(card);
                 card.current_y = -200F;
                 card.current_x = -200F;

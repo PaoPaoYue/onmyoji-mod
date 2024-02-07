@@ -12,10 +12,13 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 
+import java.util.HashSet;
+
 public class IceShieldPower extends AbstractPower {
     public static final String POWER_ID = "Onmyoji:Ice Shield";
     private static final PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     private static final Texture IMG = ImageMaster.loadImage("image/icon/ice_shield.png");
+    private HashSet<AbstractCreature> enemySet;
 
     public IceShieldPower(AbstractCreature owner, int amount) {
         this.name = strings.NAME;
@@ -28,6 +31,8 @@ public class IceShieldPower extends AbstractPower {
         this.isTurnBased = true;
         this.canGoNegative = false;
 
+        this.enemySet = new HashSet<>();
+
         updateDescription();
     }
 
@@ -37,13 +42,15 @@ public class IceShieldPower extends AbstractPower {
     }
 
     public void onAttacked(float damage, DamageInfo info, boolean hadBlock) {
-        if (this.owner != null && info.type == DamageInfo.DamageType.NORMAL && hadBlock) {
+        if (this.owner != null && info.type == DamageInfo.DamageType.NORMAL && hadBlock && !enemySet.contains(info.owner)) {
+            enemySet.add(info.owner);
             AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(info.owner, this.owner, new WeakPower(info.owner, this.amount, false), this.amount, true));
         }
     }
 
     @Override
     public void atStartOfTurn() {
+        this.enemySet.clear();
         this.addToBot(new ReducePowerAction(this.owner, this.owner, this.ID, this.amount));
     }
 

@@ -36,7 +36,7 @@ public class Luck extends CustomCard {
             this.addToBot(action);
             if (action.amount >= 4) {
                 this.addToBot(new ExhaustAction(1, !upgraded, false, false));
-                this.addToBot(new PlayTmpCardAction(this.makeStatEquivalentCopy(), m, true));
+                this.addToBot(new PlayTmpCardAction(this.makeStatEquivalentCopy(), m, true, true));
             }
         }
     }
