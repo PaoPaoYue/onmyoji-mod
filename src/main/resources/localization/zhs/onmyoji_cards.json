@@ -41,8 +41,8 @@
   },
   "Onmyoji:Luck": {
     "NAME": "转运",
-    "DESCRIPTION": "造成 !D! 伤害。 运势 4：随机弃掉1张牌，再次使用一张此牌的复制并 消耗 。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 伤害。 运势 4：弃掉1张牌，再次使用一张此牌的复制并 消耗 。"
+    "DESCRIPTION": "造成 !D! 伤害。 运势 4：随机 消耗 1张牌，再次使用一张此牌的复制并 消耗 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 伤害。 运势 4： 消耗 1张牌，再次使用一张此牌的复制并 消耗 。"
   },
   "Onmyoji:Poison Feather": {
     "NAME": "鸩羽",

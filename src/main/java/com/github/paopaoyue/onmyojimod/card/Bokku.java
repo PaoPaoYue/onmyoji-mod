@@ -19,7 +19,7 @@ public class Bokku extends AbstractKamiCard {
     public Bokku() {
         super(ID, cardStrings.NAME, Util.getImagePath(ID), 2, cardStrings.DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.ONMYOJI_COLOR, CardRarity.RARE, CardTarget.SELF,
-                new com.github.paopaoyue.onmyojimod.object.kami.Bokku(), 10);
+                new com.github.paopaoyue.onmyojimod.object.kami.Bokku(), 8);
         this.cardsToPreview = new GoldenSeimei();
     }
 

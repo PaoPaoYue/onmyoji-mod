@@ -6,14 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a66948c5-5f94-452d-af22-4e9eb5a1d32c" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/AbstractKamiCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/AbstractKamiCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/Butterfly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/Butterfly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/CursedEye.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/CursedEye.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/SevenSides.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/SevenSides.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/Sachet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/Sachet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/SachetPlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/SachetPlus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/ShutenDoji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/card/ShutenDoji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/power/UnyieldingPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/power/UnyieldingPower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_cards.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_cards.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_relics.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_relics.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +277,8 @@
       <workItem from="1706528806901" duration="64234000" />
       <workItem from="1706798424013" duration="50326000" />
       <workItem from="1707033269594" duration="25653000" />
-      <workItem from="1707110001173" duration="42580000" />
+      <workItem from="1707110001173" duration="47167000" />
+      <workItem from="1707304626123" duration="550000" />
     </task>
     <servers />
   </component>
