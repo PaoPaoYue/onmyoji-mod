@@ -276,7 +276,8 @@ public class Sanme extends CustomPlayer {
             spirit.onUse();
         }
 
-        this.countdownOrb();
+        if (!c.dontTriggerOnUseCard)
+            this.countdownOrb();
 
         c.use(this, monster);
         AbstractDungeon.actionManager.addToBottom(new UseCardAction(c, monster));
