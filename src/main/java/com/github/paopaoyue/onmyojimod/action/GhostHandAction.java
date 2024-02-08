@@ -61,7 +61,7 @@ public class GhostHandAction extends AbstractGameAction {
 
             float minX = Float.POSITIVE_INFINITY;
             for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
-                if (m.isDead) {
+                if (m.isDeadOrEscaped()) {
                     continue;
                 }
                 if (m.hb.cX < minX) {

@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a66948c5-5f94-452d-af22-4e9eb5a1d32c" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/eng/onmyoji_orbs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/eng/onmyoji_powers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/eng/onmyoji_relics.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/eng/onmyoji_ui.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/ProjectileAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/ProjectileAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/localization/eng/onmyoji_cards.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/localization/eng/onmyoji_cards.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/localization/eng/onmyoji_keywords.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/localization/eng/onmyoji_keywords.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_characters.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_characters.json" afterDir="false" />
-    </list>
+    <list default="true" id="a66948c5-5f94-452d-af22-4e9eb5a1d32c" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -284,7 +274,7 @@
       <workItem from="1707033269594" duration="25653000" />
       <workItem from="1707110001173" duration="47167000" />
       <workItem from="1707304626123" duration="16912000" />
-      <workItem from="1707405026510" duration="3254000" />
+      <workItem from="1707405026510" duration="3585000" />
     </task>
     <servers />
   </component>

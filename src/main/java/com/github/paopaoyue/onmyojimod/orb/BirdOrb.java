@@ -2,17 +2,13 @@ package com.github.paopaoyue.onmyojimod.orb;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.github.paopaoyue.onmyojimod.power.PenetratedPower;
-import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.vfx.combat.PressurePointEffect;
 
 public class BirdOrb extends AbstractCountdownOrb {
 
@@ -42,7 +38,7 @@ public class BirdOrb extends AbstractCountdownOrb {
         float minX = Float.POSITIVE_INFINITY;
         AbstractMonster target = null;
         for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            if (m.isDead) {
+            if (m.isDeadOrEscaped()) {
                 continue;
             }
             if (m.hb.cX < minX) {
