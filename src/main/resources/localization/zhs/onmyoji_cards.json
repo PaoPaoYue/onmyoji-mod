@@ -54,7 +54,7 @@
   },
   "Onmyoji:Snow Slash": {
     "NAME": "胧月雪华斩",
-    "DESCRIPTION": "施加 !M! 层 脆弱 ，对所有有 脆弱 的敌人造成 !D! 伤害。"
+    "DESCRIPTION": "施加 !M! 层 虚弱 ，对所有有 虚弱 的敌人造成 !D! 伤害。"
   },
   "Onmyoji:Scary Dream": {
     "NAME": "惊梦",
