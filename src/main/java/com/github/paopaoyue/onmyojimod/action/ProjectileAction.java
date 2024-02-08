@@ -23,7 +23,7 @@ public class ProjectileAction extends AbstractGameAction {
         if (this.duration == 0) {
             float minX = Float.POSITIVE_INFINITY;
             for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
-                if (m.isDead) {
+                if (m.isDeadOrEscaped()) {
                     continue;
                 }
                 if (m.hb.cX < minX) {

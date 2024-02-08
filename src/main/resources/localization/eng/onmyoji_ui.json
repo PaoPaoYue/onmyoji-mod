@@ -1,0 +1,23 @@
+{
+  "DivineAction": {
+    "TEXT": [
+      "Choose Cards to Place at the bottom of Your Draw Pile."
+    ]
+  },
+  "Countdown": {
+    "TEXT": [
+      "I can't have NL any more countdown.",
+      "I can't have defect's orbs."
+    ]
+  },
+  "AllTogetherAction": {
+    "TEXT": [
+      "Choose Cards to attach Knot and Shuffle into Your Draw Pile."
+    ]
+  },
+  "PutOnRandomDeckAction": {
+    "TEXT": [
+      "Shuffle into Your Draw Pile."
+    ]
+  }
+}

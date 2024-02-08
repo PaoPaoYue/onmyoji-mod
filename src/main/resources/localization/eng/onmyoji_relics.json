@@ -1,0 +1,86 @@
+{
+  "Onmyoji:Sachet": {
+    "NAME": "Sachet·Genki",
+    "FLAVOR": "It may bring good luck to your spire journey!",
+    "DESCRIPTIONS": [
+      "At the start of each combat, attach #b2 #yEnhancement to random #yKami card in your draw pile."
+    ]
+  },
+  "Onmyoji:Sachet Plus": {
+    "NAME": "Sachet·Win",
+    "FLAVOR": "You are predestined to break the heart.",
+    "DESCRIPTIONS": [
+      "Replace #rSachet·Genki , at the start of your turn, attach #b2 #yEnhancement to random #yKami card in your draw pile."
+    ]
+  },
+  "Onmyoji:Cursed Hand": {
+    "NAME": "Cursed Hand",
+    "FLAVOR": "What form of power is this?",
+    "DESCRIPTIONS": [
+      "At the start of your turn gain [E] ; At the start of each combat, attach #b2 #yCurse to random card in your draw pile."
+    ]
+  },
+  "Onmyoji:Yuza": {
+    "NAME": "Yuza",
+    "FLAVOR": "Pay to win. ",
+    "DESCRIPTIONS": [
+      "拾起时，从所有式神牌中选择并获取 #b1 张，额外附送 #b",
+      " 金币。",
+      "选择并获取一张牌。"
+    ]
+  },
+  "Onmyoji:Dice": {
+    "NAME": "遥控色子",
+    "FLAVOR": "意~义~不~明的那位大人。",
+    "DESCRIPTIONS": [
+      "每次战斗前 #b",
+      " 次 #y运势 一定为6。"
+    ]
+  },
+  "Onmyoji:Tisane": {
+    "NAME": "孟婆的汤药",
+    "FLAVOR": "和孟婆汤的作用不一样，我保证。",
+    "DESCRIPTIONS": [
+      "每次 #y消耗 牌 恢复 #b",
+      " 在本场战斗中损失的生命值。"
+    ]
+  },
+  "Onmyoji:Talisman": {
+    "NAME": "除恶符咒",
+    "FLAVOR": "必杀技~盛盐之拳！",
+    "DESCRIPTIONS": [
+      "#y消耗 在 #y占卜 中置于牌库底的状态牌和诅咒牌。"
+    ]
+  },
+  "Onmyoji:Sushi": {
+    "NAME": "鱼子寿司",
+    "FLAVOR": "我更喜欢八爪鱼寿司。",
+    "DESCRIPTIONS": [
+      "回合结束时，获得等同于所有 #y倒计时 计数之和的 #y格挡 。"
+    ]
+  },
+  "Onmyoji:Big Drum": {
+    "NAME": "太郎大鼓",
+    "FLAVOR": "这个谱面太没有挑战性了。",
+    "DESCRIPTIONS": [
+      "战斗开始时，获得 #b",
+      " 层 #y鼓舞 。"
+    ]
+  },
+  "Onmyoji:Poison Feather": {
+    "NAME": "鸩羽",
+    "FLAVOR": "等我回调，狼鸩全杀了。",
+    "DESCRIPTIONS": [
+      "战斗开始时，使所有敌人获得 #b",
+      " 层 #y破甲 。"
+    ]
+  },
+  "Onmyoji:Golden Feather": {
+    "NAME": "黄金羽",
+    "FLAVOR": "以津真天永远的queen。",
+    "DESCRIPTIONS": [
+      "每个回合开始时，获得 #b",
+      " 张 #y黄金羽 。"
+    ]
+  }
+}

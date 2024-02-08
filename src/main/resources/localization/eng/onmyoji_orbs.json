@@ -1,0 +1,49 @@
+{
+  "Onmyoji:Chord": {
+    "DESCRIPTION": [
+      "#y倒计时 #b",
+      " ：获得 #b",
+      " #y力量 与 #b",
+      " #y敏捷"
+    ],
+    "NAME": "神乐歌"
+  },
+  "Onmyoji:Storm": {
+    "DESCRIPTION": [
+      "#y倒计时 #b",
+      " ：对所有敌人造成 #b",
+      " 伤害。"
+    ],
+    "NAME": "羽刃暴风"
+  },
+  "Onmyoji:Feather": {
+    "DESCRIPTION": [
+      "#y倒计时 #b",
+      " ：将2张 #y黄金羽 置入手牌。"
+    ],
+    "NAME": "黄金羽"
+  },
+  "Onmyoji:Wind": {
+    "DESCRIPTION": [
+      "#y倒计时 #b",
+      " ：获得 #b",
+      " #y格挡"
+    ],
+    "NAME": "风符·护"
+  },
+  "Onmyoji:Bird": {
+    "DESCRIPTION": [
+      "#y倒计时 #b",
+      " ：使最近的一个敌人获得 #b",
+      " #y破甲。"
+    ],
+    "NAME": "鸩羽新生"
+  },
+  "Onmyoji:Pinecone": {
+    "DESCRIPTION": [
+      "#y倒计时 #b",
+      " ：从弃牌堆将生成此倒计时的 #y小松丸 置入手牌。"
+    ],
+    "NAME": "小松丸"
+  }
+}
