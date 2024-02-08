@@ -126,7 +126,7 @@ public class Sanme extends CustomPlayer {
 
     @Override
     public Color getCardRenderColor() {
-        return Color.SKY;
+        return Color.SKY.cpy();
     }
 
     @Override
@@ -136,7 +136,7 @@ public class Sanme extends CustomPlayer {
 
     @Override
     public Color getCardTrailColor() {
-        return Color.SKY;
+        return Color.SKY.cpy();
     }
 
     @Override
@@ -177,7 +177,7 @@ public class Sanme extends CustomPlayer {
 
     @Override
     public Color getSlashAttackColor() {
-        return Color.SKY;
+        return Color.SKY.cpy();
     }
 
     @Override
