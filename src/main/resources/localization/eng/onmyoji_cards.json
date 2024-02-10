@@ -1,361 +1,357 @@
 {
   "Onmyoji:Strike": {
-    "NAME": "攻击",
-    "DESCRIPTION": "造成 !D! 伤害。"
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
   },
   "Onmyoji:Defend": {
-    "NAME": "防御",
-    "DESCRIPTION": "获得 !B! 格挡 。"
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block ."
   },
   "Onmyoji:Menreiki": {
-    "NAME": "式神·面灵气",
-    "DESCRIPTION": " 式神 拥有 !K! 点生命，进场时随机变换为四种 派系 之一。"
+    "NAME": "Shikigami·Menreiki",
+    "DESCRIPTION": "Shikigami has !K! HP. Upon summon Switch to a random Faction ."
   },
   "Onmyoji:Seven Sides": {
-    "NAME": "心生七面",
-    "DESCRIPTION": "造成 !D! 伤害，本场战斗切换的每个 派系 使伤害增加 !M! 。"
+    "NAME": "Seven Faces of the Heart",
+    "DESCRIPTION": "Deal !D! damage, increased by !M! for each different Faction you switch in this battle."
   },
   "Onmyoji:Reborn Of Phoenix": {
-    "NAME": "炎舞",
-    "DESCRIPTION": "对所有敌人造成 !D! 伤害，若本场战斗有式神死亡伤害翻倍 。"
+    "NAME": "Swaying Blaze",
+    "DESCRIPTION": "Deal !D! to all enemies, double the damage if a Shikigami died in this battle."
   },
   "Onmyoji:Righteousness": {
-    "NAME": "义道",
-    "DESCRIPTION": "造成 !D! 伤害，计算 破甲 时翻 !M! 倍。"
+    "NAME": "Righteousness",
+    "DESCRIPTION": "Deal !D! damage, count !M! times Penetrated."
   },
   "Onmyoji:The World": {
-    "NAME": "迢迢尘间",
-    "DESCRIPTION": "占卜 !M! 张牌 ，每有一张额外效果的牌造成 !D! 伤害。 NL 保留 ， 消耗 。"
+    "NAME": "The World",
+    "DESCRIPTION": "Divine !M! cards. Deal !D! damage for each card attached extra effect. NL Retain ,  Exhaust ."
   },
   "Onmyoji:Snake Fire": {
-    "NAME": "焚身之火",
-    "DESCRIPTION": "使所有敌人获得 !M! 层 破甲 并造成 !D! 伤害，重复X次。"
+    "NAME": "Sacrificial Fire",
+    "DESCRIPTION": "Apply !M! Penetrated and deal !D! damage to all enemies, repeat X times."
   },
   "Onmyoji:Hardworking": {
-    "NAME": "勤勉修行",
-    "DESCRIPTION": "造成 !D! 伤害，攻击后数值变为该次伤害最终值。"
+    "NAME": "Diligent Practice",
+    "DESCRIPTION": "Deal !D! damage, the base damage will be set to the damage after the attack."
   },
   "Onmyoji:Madness": {
-    "NAME": "狂气",
-    "DESCRIPTION": "造成 !D! 伤害， 消灭敌人时获得1层 不屈 。"
+    "NAME": "Madness",
+    "DESCRIPTION": "Deal !D! damage. Gain Unyielding if it kills a enemy."
   },
   "Onmyoji:Luck": {
-    "NAME": "转运",
-    "DESCRIPTION": "造成 !D! 伤害。 运势 4：随机 消耗 1张牌，再次额外使用一张此牌的复制。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 伤害。 运势 4： 消耗 1张牌，再次额外使用一张此牌的复制。"
+    "NAME": "Change of Luck",
+    "DESCRIPTION": "Deal !D! damage. Luck 4: randomly Exhaust 1 card, and use a temporary copy of this card again.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Luck 4: Exhaust 1 card, and use a temporary copy of this card again."
   },
   "Onmyoji:Poison Feather": {
-    "NAME": "鸩羽",
-    "DESCRIPTION": "造成 !D! 伤害，若敌人有 破甲 ，恢复等同于造成未被 格挡 伤害的本场战斗中损失的的生命值。"
+    "NAME": "Chin's Feather",
+    "DESCRIPTION": "Deal !D! damage. If the enemy is Penetrated , heal HP lost in this battle equal to unblocked damage dealt."
   },
   "Onmyoji:Storm": {
-    "NAME": "羽刃暴风",
-    "DESCRIPTION": "造成 !D! 伤害。 倒计时 3：对所有敌人造成 !M! 伤害。"
+    "NAME": "Featherblade Storm",
+    "DESCRIPTION": "Deal !D! damage. Countdown 3 : Deal !M! damage to all enemies."
   },
   "Onmyoji:Snow Slash": {
-    "NAME": "胧月雪华斩",
-    "DESCRIPTION": "施加 !M! 层 虚弱 ，对所有有 虚弱 的敌人造成 !D! 伤害。"
+    "NAME": "December Snow",
+    "DESCRIPTION": "Apply !M! Weak, and deal !D! damage to all enemies which are Weak ."
   },
   "Onmyoji:Scary Dream": {
-    "NAME": "惊梦",
-    "DESCRIPTION": "造成 !D! 伤害，每造成 !M! 未被 格挡 的伤害随机使一张抽牌堆内的牌附加 梦魇 。"
+    "NAME": "Shocking Dream",
+    "DESCRIPTION": "Deal !D! damage. For each !M! unblocked damage dealt attach Nightmare to a random card in your draw pile."
   },
   "Onmyoji:Butterfly": {
-    "NAME": "一夜梦",
-    "DESCRIPTION": "造成 !D! 伤害, 额外使用手牌中一张费用小于等于 !M! 费牌的复制。（不能使用式神牌和能力牌）"
+    "NAME": "One Night's Dream",
+    "DESCRIPTION": "Deal !D! damage, and use a temporary copy of a card (Cost <= !M! , excluding power or Shikigami card) in your hand."
   },
   "Onmyoji:Corrupted Punch": {
-    "NAME": "腐败直拳",
-    "DESCRIPTION": "获得 !M! 层 破甲 ，使敌人获得等同于自身的 破甲 ，然后造成 !D! 伤害。"
+    "NAME": "Decayed Punch",
+    "DESCRIPTION": "Gain !M! Penetrated , and apply Penetrated to enemy equal to the stack amount of yourself. NL Deal !D! damage."
   },
   "Onmyoji:Tai Ji": {
-    "NAME": "斗转",
-    "DESCRIPTION": "造成 !D! 伤害，若敌方意图为攻击，交换基础攻击伤害。 消耗 。"
+    "NAME": "Tai Ji",
+    "DESCRIPTION": "Deal !D! damage. if the enemy intent to attack, swap base damage with enemy. Exhaust ."
   },
   "Onmyoji:Phoenix Fire": {
-    "NAME": "凤火",
-    "DESCRIPTION": "造成 !D! 伤害， 投射 !M! 伤害。"
+    "NAME": "Phoenix Flame",
+    "DESCRIPTION": "Deal !D! damage, and Projectile !M! damage."
   },
   "Onmyoji:Double Shoot": {
-    "NAME": "文射",
-    "DESCRIPTION": "造成 !D! 伤害，然后额外不消耗费用自动使用一张此牌的复制。"
+    "NAME": "Perfect shot",
+    "DESCRIPTION": "Deal !D! damage, and use a temporary copy of this card."
   },
   "Onmyoji:Trick": {
-    "NAME": "恶戏",
-    "DESCRIPTION": "造成 !D! 伤害。使用攻击牌后若位于牌库顶，则不消耗费用对相同目标自动使用。"
+    "NAME": "Prank",
+    "DESCRIPTION": "Deal !D! damage. If it is on the top of your draw pile after you attack, auto use it with no cost."
   },
   "Onmyoji:Reckless": {
-    "NAME": "鲁莽",
-    "DESCRIPTION": "受到 !M! 伤害，造成 !D! 伤害。"
+    "NAME": "Reckless",
+    "DESCRIPTION": "Deal !M! damage to yourself, and then !D! to enemy."
   },
   "Onmyoji:Ghost Hand": {
-    "NAME": "鬼之手",
-    "DESCRIPTION": "造成 !D! 伤害，使攻击的敌人与最前方的敌人交换位置。"
+    "NAME": "Black Flame Hand",
+    "DESCRIPTION": "Deal !D! damage. Swap the enemy's position with the nearest enemy to you."
   },
   "Onmyoji:Exorcism": {
-    "NAME": "驱邪祸",
-    "DESCRIPTION": "造成 !D! 伤害，使用后洗入抽牌堆 。 占卜 中置入牌库底时 投射 等量伤害。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 伤害，使用后洗入抽牌堆 。 占卜 中置入牌库底时 投射 2倍伤害。"
+    "NAME": "Exorcism",
+    "DESCRIPTION": "Deal !D! damage and shuffle into draw pile. Projectile equal damage when place at the bottom in Divination .",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage and shuffle into draw pile. Projectile 2 times damage when place at the bottom in Divination ."
   },
   "Onmyoji:Cheat": {
-    "NAME": "出千",
-    "DESCRIPTION": "造成 !D! 伤害， NL 运势 6：获得 [E] ; 否则运势 4：回到手牌。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 伤害， NL 运势 6：获得 [E] ; 否则运势 2：回到手牌。"
+    "NAME": "Mahjong Cheat",
+    "DESCRIPTION": "Deal !D! damage, NL Luck 6: Gain [E] ; or Luck 4: return to hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage, NL Luck 6: Gain [E] ; or Luck 2: return to hand."
   },
   "Onmyoji:Dice Bomb": {
-    "NAME": "色子炸弹",
-    "DESCRIPTION": "运势 1：造成等同于色子的点数 !M! 倍的伤害。"
+    "NAME": "Dice Bomb",
+    "DESCRIPTION": "Luck 1: Deal damage equal to !M! times of the dice."
   },
   "Onmyoji:Nature": {
-    "NAME": "晓万物",
-    "DESCRIPTION": "对所有敌人造成 !D! 伤害, 占卜 !M! 张牌。"
+    "NAME": "Nature of Time",
+    "DESCRIPTION": "Deal !D! damage to all enemies, and Divine !M! cards."
   },
   "Onmyoji:Cuteness": {
-    "NAME": "萌即正义",
-    "DESCRIPTION": "回合开始时获得 !M! 张随机式神牌，此牌本回合费用为0, 且 运势 6 ：此牌式神生命值翻倍。"
+    "NAME": "Cute is Justice",
+    "DESCRIPTION": "At the start of your turn obtain !M! random Shikigami card(s) which cost 0 in this turn, and Luck 6 : double the Shikigami HP."
   },
   "Onmyoji:Moonlight Night": {
-    "NAME": "胧月夜",
-    "DESCRIPTION": "回合开始时根据当前式神的 派系 获得1张强大的派系之力，每种限一次。",
-    "UPGRADE_DESCRIPTION": "回合开始时根据当前式神的 派系 获得1张强大的派系之力，每种限一次。 NL 固有 。"
+    "NAME": "Misty Moonlight",
+    "DESCRIPTION": "At the start of your turn obtain a Faction power according to your current Faction. Each power can only be obtained once.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn obtain a Faction power according to your current Faction. Each power can only be obtained once. NL Innate ."
   },
   "Onmyoji:Cursed Eye": {
-    "NAME": "诅咒之眼",
-    "DESCRIPTION": "随机使牌库中 !M! 张牌附加 诅咒之眼 ，当抽到附加额外效果的牌时，多抽1张牌。"
+    "NAME": "Cursed Eye",
+    "DESCRIPTION": "Attach !M! Cursed to random card in your draw pile. Whenever you draw a card attached extra effect draw 1 more card."
   },
   "Onmyoji:Maze Of Mind": {
-    "NAME": "心灵迷宫",
-    "DESCRIPTION": "式神牌费用随机 ，且使用时随机使另1张手牌本回合费用变为0。 NL 虚无 。",
-    "UPGRADE_DESCRIPTION": "式神牌费用随机 ，且使用时随机使另1张手牌本回合费用变为0。"
+    "NAME": "Mind Maze",
+    "DESCRIPTION": "The costs of Shikigami cards are random, and whenever you use a Shikigami card make a card in your hand cost 0 this turn. NL Ethereal .",
+    "UPGRADE_DESCRIPTION": "The costs of Shikigami cards are random, and whenever you use a Shikigami card make a card in your hand cost 0 this turn."
   },
   "Onmyoji:Cat Wuwan": {
-    "NAME": "猫咪日和",
-    "DESCRIPTION": " 消耗 1张衍生牌，回合开始时获得 !M! 张其复制。"
+    "NAME": "Kitten Hiyoribou",
+    "DESCRIPTION": "Exhaust a derivative card, make !M! copy of it at the start of your turn."
   },
   "Onmyoji:Wind Of Dragon": {
-    "NAME": "风符·龙",
-    "DESCRIPTION": " 倒计时 进场时也会触发效果。",
-    "UPGRADE_DESCRIPTION": " 倒计时 进场时也会触发效果。 固有 。"
+    "NAME": "Wind Charm:Dragon",
+    "DESCRIPTION": "Countdown will also be activated when channel.",
+    "UPGRADE_DESCRIPTION": "Countdown will also be activated when channel. Innate ."
   },
   "Onmyoji:Goldfish": {
-    "NAME": "荒川的金鱼姬",
-    "DESCRIPTION": "每回合 !M! 次，使用非罕见或稀有牌时有概率随机使用1张额外的普通牌。 NL （不会使用式神牌和能力牌）"
+    "NAME": "Kingyo of Arakawa",
+    "DESCRIPTION": "Whenever you use a card(excluding uncommon/rare card) there is a probability of autoplaying a common card(excluding power/Shikigami card) with no cost. NL !M! times per turn."
   },
   "Onmyoji:Divined Eye": {
-    "NAME": "洞察之眼",
-    "DESCRIPTION": " 占卜 时多展示 !M! 张牌。"
+    "NAME": "Eye of Insight",
+    "DESCRIPTION": "Whenever you Divine show !M! more cards."
   },
   "Onmyoji:Fragile Sound": {
-    "NAME": "破碎之音",
-    "DESCRIPTION": "施加 破甲 时额外增加 !M! 。"
+    "NAME": "Sound of Destruction",
+    "DESCRIPTION": "Whenever you apply Penetrated apply !M! more amount."
   },
   "Onmyoji:Chef": {
-    "NAME": "热血主厨",
-    "DESCRIPTION": "每回合 !M! 次，使用衍生牌时获得1 鼓舞 。"
+    "NAME": "Hardcore Chef",
+    "DESCRIPTION": "Whenever you use a derivative card gain 1 Rally . NL !M! times per turn."
   },
   "Onmyoji:News": {
-    "NAME": "百闻一得",
-    "DESCRIPTION": "获得 !M! 张 *明灯 。使用 *明灯 时，升级所有手牌。"
+    "NAME": "Enlightenment",
+    "DESCRIPTION": "Obtain !M! *Lantern . Whenever you use *Lantern upgrade all cards in your hand."
   },
   "Onmyoji:Chord": {
-    "NAME": "神乐歌",
-    "DESCRIPTION": "使用与回合开始时获得 倒计时 5 ：获得1 力量 与 1 敏捷。"
+    "NAME": "Evolved Kagura",
+    "DESCRIPTION": "When use and at the start of your turn, Countdown 5: gain 1 Strength and 1 Dexterity."
   },
   "Onmyoji:Dark Dream": {
-    "NAME": "永眠之梦",
-    "DESCRIPTION": " 回合结束时随机使抽牌堆中 !M! 张牌附加 梦魇 。"
+    "NAME": "Eternal Slumber",
+    "DESCRIPTION": "At the end of your turn attach !M! Nightmare to random card in your draw pile."
   },
   "Onmyoji:Good And Evil": {
-    "NAME": "善恶无则",
-    "DESCRIPTION": "消灭当前式神，用 *八岐大蛇 填满手牌。"
+    "NAME": "Between Good and Evil",
+    "DESCRIPTION": "Kill the current Kami, fill your hand with *Yamata ."
   },
   "Onmyoji:God's Hand": {
-    "NAME": "神之一手",
-    "DESCRIPTION": "从牌库将 !M! 张式神牌置入手牌。 NL 消耗 。"
+    "NAME": "Godly Move",
+    "DESCRIPTION": "Put !M! Shikigami card(s) into your hand. NL Exhaust ."
   },
   "Onmyoji:Netherworld": {
-    "NAME": "花开彼岸",
-    "DESCRIPTION": "获得 !M! 鼓舞 ，下次式神受到伤害时改为由角色承担。 NL 虚无 。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 鼓舞 ，下次式神受到伤害时改为由角色承担。"
+    "NAME": "Crimson Flowers",
+    "DESCRIPTION": "Gain !M! Rally , the next time your Shikigami gets damage, transfer the damage to your character instead. NL Ethereal .",
+    "UPGRADE_DESCRIPTION": "Gain !M! Rally , the next time your Shikigami gets damage, transfer the damage to your character instead."
   },
   "Onmyoji:Contemplate": {
-    "NAME": "长考",
-    "DESCRIPTION": "将1张牌洗入牌库， 占卜 !M! 张牌 ，抽2张牌。"
+    "NAME": "Long Contemplate",
+    "DESCRIPTION": "Shuffle 1 card into your draw pile. Diviation !M! card(s). Draw 2 cards."
   },
   "Onmyoji:All Together": {
-    "NAME": "都要在一起",
-    "DESCRIPTION": "随机将 !M! 张牌附加 缘结 并洗入牌库，抽 !M! 张牌。 NL 消耗 。"
+    "NAME": "Be Together!",
+    "DESCRIPTION": "Attach !M! Enmusubi to random card in your draw pile. Draw !M! cards. NL Exhaust ."
   },
   "Onmyoji:Book": {
-    "NAME": "万卷书",
-    "DESCRIPTION": "从3张式神牌中选择并获得1张。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "从3张式神牌中选择并获得1张，本回合此牌费用为0。 NL 消耗 。"
+    "NAME": "Scroll of Everything",
+    "DESCRIPTION": "Select and obtain 1 from 3 Shikigami card. NL Exhaust .",
+    "UPGRADE_DESCRIPTION": "Select and obtain 1 from 3 Shikigami card which cost 0 this turn. NL Exhaust ."
   },
   "Onmyoji:Moon": {
-    "NAME": "清辉月华",
-    "DESCRIPTION": "占卜 !M! 张牌 ，使牌库顶的牌本回合费用为0。"
+    "NAME": "Luminating Moonlight",
+    "DESCRIPTION": "Divine !M! cards. Make the card on top of your draw pile cost 0 this turn."
   },
   "Onmyoji:Puppet": {
-    "NAME": "木偶商人",
-    "DESCRIPTION": "占卜 2 张牌 ，抽1张牌，若此牌有附加额外效果获得 [E] [E] 。",
-    "UPGRADE_DESCRIPTION": "占卜 2 张牌 ，抽1张牌，若此牌有附加额外效果获得 [E] [E] [E] 。"
+    "NAME": "Puppet Merchant",
+    "DESCRIPTION": "Divine 2 cards. Draw 1 card, and gain [E] [E] if the card attached extra effect.",
+    "UPGRADE_DESCRIPTION": "Divine 2 cards. Draw 1 card, and gain [E] [E] [E] if the card attached extra effect."
   },
   "Onmyoji:Lethe Water": {
-    "NAME": "孟婆汤",
-    "DESCRIPTION": "占卜 3张牌， 消耗 抽牌堆底部3张牌。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "占卜 3张牌， 消耗 抽牌堆底部3张牌。"
+    "NAME": "Mouba's Soup",
+    "DESCRIPTION": "Divine 3 cards, and Exhaust 3 cards at the bottom of your draw pile. NL Exhaust .",
+    "UPGRADE_DESCRIPTION": "Divine 3 cards, and Exhaust 3 cards at the bottom of your draw pile."
   },
   "Onmyoji:Ghost Fire": {
-    "NAME": "吸魂灯",
-    "DESCRIPTION": "投射 !M! 点伤害 x 次，将x张 *明灯 置入手牌。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "投射 !M! 点伤害x+1次，将x+1张 *明灯 置入手牌。 NL 消耗 。"
+    "NAME": "Lantern Drain",
+    "DESCRIPTION": "Projectile !M! damage X times. Obtain X *Lantern in your hand. NL Exhaust .",
+    "UPGRADE_DESCRIPTION": "Projectile !M! damage X+1 times. Obtain X+1 *Lantern in your hand. NL Exhaust ."
   },
   "Onmyoji:Peach Blossom": {
-    "NAME": "桃花灼灼",
-    "DESCRIPTION": "从弃牌堆选择1张式神牌置入手牌，其费用本回合-1。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "从弃牌堆选择1张式神牌置入手牌，其费用本回合-1。"
+    "NAME": "Revival Blossom",
+    "DESCRIPTION": "Put 1 Shikigami card from discard pile back to your hand and cost -1 this turn. NL Exhaust .",
+    "UPGRADE_DESCRIPTION": "Put 1 Shikigami card from discard pile back to your hand and cost -1 this turn. "
   },
   "Onmyoji:Buddhist": {
-    "NAME": "佛光",
-    "DESCRIPTION": "恢复所有角色5生命， NL 每个过量治疗使角色获得 !M! 点生命上限。 NL 消耗 。"
+    "NAME": "Buddha's Light",
+    "DESCRIPTION": "Heal you and all enemies 5 HP. NL Increase your max HP by !M! for each over healing. NL Exhaust ."
   },
   "Onmyoji:Ensemble": {
-    "NAME": "大合奏",
-    "DESCRIPTION": "生成 !M! 个生成过的 倒计时 。"
+    "NAME": "ensemble",
+    "DESCRIPTION": "Channel !M! Countdown that you have channeled in this battle ."
   },
   "Onmyoji:Lotus": {
-    "NAME": "诸善奉行",
-    "DESCRIPTION": "使一个敌人本回合获得 !M! 力量 。每一次使用所有同名卡效果+2。"
+    "NAME": "Do Good Deeds",
+    "DESCRIPTION": "apply !M! Strength to an enemy this turn. Increase effect by 2 whenever you use cards with the same name."
   },
   "Onmyoji:Ice Shield": {
-    "NAME": "寒冰之盾",
-    "DESCRIPTION": "获得 !B! 格挡 ，下个回合开始前 格挡 每个敌人第一次攻击时使敌人获得 !M! 层 虚弱 。"
+    "NAME": "Frost Core",
+    "DESCRIPTION": "Gain !B! Block , before your next turn Block the first attack from every enemy will apply !M! weak to the enemy."
   },
   "Onmyoji:Snake Attack": {
-    "NAME": "蛇形击",
-    "DESCRIPTION": "使一个敌人获得 !M! 层 破甲 。当切换式神时返回手牌。"
+    "NAME": "Serpent Lash",
+    "DESCRIPTION": "Apply !M! Penetrated to an enemy. Return to hand when you switch to a Shikigami ."
   },
   "Onmyoji:Wind Shield": {
-    "NAME": "风符·护",
-    "DESCRIPTION": "获得 !B! 格挡 ， 倒计时 2 ：获得 !M! 格挡 。"
+    "NAME": "Wind Charm:Shield",
+    "DESCRIPTION": "Gain !B! Block , Countdown 2: Gain !M! Block."
   },
   "Onmyoji:Knowledge": {
-    "NAME": "达知",
-    "DESCRIPTION": " 占卜 !M! 张牌 ，抽1张牌。将一张此牌的复制加入弃牌堆。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": " 占卜 !M! 张牌 ，抽1张牌。将一张此牌的复制加入弃牌堆。"
+    "NAME": "Wisdom",
+    "DESCRIPTION": "Divine !M! cards. Draw 1 card. Shuffle a copy into the discard pile. NL Exhaust .",
+    "UPGRADE_DESCRIPTION": "Divine !M! cards. Draw 1 card. Shuffle a copy into the discard pile."
   },
   "Onmyoji:Bird": {
-    "NAME": "鸩羽苏生",
-    "DESCRIPTION": "获得 !B! 格挡 ， 倒计时 3 ：使最近的敌人获得 !M! 层 破甲 。",
-    "UPGRADE_DESCRIPTION": "获得 !B! 格挡 ， 倒计时 2 ：使最近的敌人获得 !M! 层 破甲 。"
+    "NAME": "Feather Regrow",
+    "DESCRIPTION": "Gain !B! Block , Countdown 3: apply !M! Penetrated to the nearest enemy.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block , Countdown 2: apply !M! Penetrated to the nearest enemy."
   },
   "Onmyoji:Kiyohime": {
-    "NAME": "式神·清姬",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，攻击无法造成伤害，但会使敌人获得伤害数量的 破甲 。"
+    "NAME": "Shikigami·Kiyohime",
+    "DESCRIPTION": "Shikigami has !K! HP. Apply Penetrated to enemy instead of damage when attack."
   },
   "Onmyoji:Hitotsume": {
-    "NAME": "式神·独眼小僧",
-    "DESCRIPTION": "式神 拥有 !K! 点生命。"
+    "NAME": "Shikigami·Hitotsume",
+    "DESCRIPTION": "Shikigami has !K! HP. "
   },
   "Onmyoji:Akaname": {
-    "NAME": "式神·垢尝",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，受到伤害时会获得等量的 格挡 。"
+    "NAME": "Shikigami·Akaname",
+    "DESCRIPTION": "Shikigami has !K! HP. Gain Block equal to the damage Shikigami received."
   },
   "Onmyoji:Enmusubi": {
-    "NAME": "式神·缘结神",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，回合结束时随机使抽牌堆1张牌附加 缘结 。",
-    "UPGRADE_DESCRIPTION": "式神 拥有 !K! 点生命，进场与回合结束时随机使抽牌堆1张牌附加 缘结 。"
+    "NAME": "Shikigami·Enmusubi",
+    "DESCRIPTION": "Shikigami has !K! HP. Attach Enmusubi to a random card in draw pile when turn ends.",
+    "UPGRADE_DESCRIPTION": "Shikigami has !K! HP. Attach Enmusubi to a random card in draw pile when summon and turn ends."
   },
   "Onmyoji:Yamausagi": {
-    "NAME": "式神·山兔",
-    "DESCRIPTION": "式神 拥有 !K! 点生命， 运势 始终为6，每次投出6此牌生命值加 !M! 。"
+    "NAME": "Shikigami·Yamausagi",
+    "DESCRIPTION": "Shikigami has !K! HP. Luck is always 6. Increase Shikigami HP by !M! every time you roll a 6."
   },
   "Onmyoji:Kusa": {
-    "NAME": "式神·萤草",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，离场时获得 [E] 并抽 !M! 张牌。"
+    "NAME": "Shikigami·Kusa",
+    "DESCRIPTION": "Shikigami has !K! HP. Upon exit gain [E] and draw !M! cards."
   },
   "Onmyoji:Komatsu": {
-    "NAME": "式神·小松丸",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，被不同式神替换离场时 倒计时 1：将式神卡牌从弃牌堆置入手牌。"
+    "NAME": "Shikigami·Komatsu",
+    "DESCRIPTION": "Shikigami has !K! HP. When replaced by another Shikigami, Countdown 1: put the card from discard pile back to your hand."
   },
   "Onmyoji:Itsumade": {
-    "NAME": "式神·以津真天",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时 倒计时 4：将2张 *黄金羽 置入手牌。",
-    "UPGRADE_DESCRIPTION": "式神 拥有 !K! 点生命，进场与离场时 倒计时 4：将2张 *黄金羽 置入手牌。"
+    "NAME": "Shikigami·Itsumade",
+    "DESCRIPTION": "Shikigami has !K! HP. Upon summon Countdown 4: put 2 *Golden *Feather into your hand.",
+    "UPGRADE_DESCRIPTION": "Shikigami has !K! HP. Upon summon and exit Countdown 4: put 2 *Golden *Feather into your hand."
   },
   "Onmyoji:Shuten Doji": {
-    "NAME": "式神·酒吞童子",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时获得1层 不屈 ，每次受到3点或以上未被格挡的伤害获得 !M! 力量。"
+    "NAME": "Shikigami·Shuten Doji",
+    "DESCRIPTION": "Shikigami has !K! HP. Upon summon gain 1 Unyeilding . Every time Shikigami received damage >= 3 gain !M! Strength ."
   },
   "Onmyoji:Yoto Hime": {
-    "NAME": "式神·妖刀姬",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时造成 !D! 伤害，且本回合每切换一次式神额外重复一次。",
+    "NAME": "Shikigami·Yoto Hime",
+    "DESCRIPTION": "Shikigami has !K! HP. Upon summon deal !D! damage, and repeat extra times for each Shikigami you summon in this turn.",
     "EXTENDED_DESCRIPTION": [
-      "（额外重复",
-      "次）"
+      "（repeat extra",
+      "times）"
     ]
   },
   "Onmyoji:Momo": {
-    "NAME": "式神·桃花妖",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时恢复本场战斗中损失的 !M! 点生命值，每当你恢复生命时获得1 力量 。"
+    "NAME": "Shikigami·Momo",
+    "DESCRIPTION": "Shikigami has !K! HP. Upon summon heal !M! HP lost in this battle. Whenever you heal HP gain 1 Strength ."
   },
   "Onmyoji:Shiranui": {
-    "NAME": "式神·不知火",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，离场时获得 !M! 层鼓舞 。"
+    "NAME": "Shikigami·Shiranui",
+    "DESCRIPTION": "Shikigami has !K! HP. Upon exit gain !M! Rally . "
   },
   "Onmyoji:Yamata": {
-    "NAME": "式神·八岐大蛇",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时损失1点生命，抽1张牌。 消耗 。"
+    "NAME": "Shikigami·Yamata",
+    "DESCRIPTION": "Shikigami has !K! HP. Upon summon lose 1 HP, draw 1 card. Exhaust ."
   },
   "Onmyoji:Bokku": {
-    "NAME": "式神·书翁",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时将1张 *金晴明 置入抽牌堆底部。",
-    "UPGRADE_DESCRIPTION": "式神 拥有 !K! 点生命，进场时将1张 *金晴明+ 置入抽牌堆底部。"
+    "NAME": "Shikigami·Bokkuman",
+    "DESCRIPTION": "Shikigami has !K! HP. Upon summon place 1 *Golden *Seimei at the bottom of your draw pile.",
+    "UPGRADE_DESCRIPTION": "Shikigami has !K! HP. Upon summon place 1 *Golden *Seimei+ at the bottom of your draw pile."
   },
   "Onmyoji:Onikiri": {
-    "NAME": "式神·鬼切",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，离场时使所有敌人获得 !M! 层 虚弱 , 若是敌方回合，额外使所有敌人获得 !M! 层 易伤 。"
+    "NAME": "Shikigami·Onikiri",
+    "DESCRIPTION": "Shikigami has !K! HP. Upon exit apply !M! Weak to all enemies; If it is enemies' turn, apply additional !M! Vulnerable ."
   },
   "Onmyoji:Hangan": {
-    "NAME": "式神·判官",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时消灭一个生命值小于等于当前式神生命的敌人。"
+    "NAME": "Shikigami·Hangan",
+    "DESCRIPTION": "Shikigami has !K! HP. Upon summon kill an enemy whose HP <= Shikigami HP."
   },
   "Onmyoji:Dodomeki": {
-    "NAME": "式神·百目鬼",
-    "DESCRIPTION": "式神 拥有 !K! 点生命， 占卜 时 投射 等同于占卜牌数量的伤害。",
-    "UPGRADE_DESCRIPTION": "式神 拥有 !K! 点生命， 占卜 时 投射 等同于占卜牌数量2倍的伤害。"
-  },
-  "Onmyoji:Food": {
-    "NAME": "食材",
-    "DESCRIPTION": "本回合获得 !M! 力量 。"
+    "NAME": "Shikigami·Dodomeki",
+    "DESCRIPTION": "Shikigami has !K! HP. Projectile damage equal to the number of cards in Divination .",
+    "UPGRADE_DESCRIPTION": "Shikigami has !K! HP. Projectile damage 2 times of the number of cards in Divination ."
   },
   "Onmyoji:Light": {
-    "NAME": "明灯",
-    "DESCRIPTION": "获得 [E] 。 NL 保留 , 消耗 。",
-    "UPGRADE_DESCRIPTION": "获得 [E] [E] 。 NL 保留 , 消耗 。"
+    "NAME": "Lantern",
+    "DESCRIPTION": "Gain [E] . NL Retain , Exhaust .",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] 。 NL Retain , Exhaust ."
   },
   "Onmyoji:Golden Feather": {
-    "NAME": "黄金羽",
-    "DESCRIPTION": "造成 !D! 伤害。 NL 消耗 。"
+    "NAME": "Golden Feather",
+    "DESCRIPTION": "Deal !D! Damage. NL Exhaust ."
   },
   "Onmyoji:Golden Seimei": {
-    "NAME": "金晴明",
-    "DESCRIPTION": " 不能被打出 。 NL 当你抽到这张牌时， 投射 !M! 伤害，然后 消耗 。"
+    "NAME": "Golden Seimei",
+    "DESCRIPTION": "Unplayable . NL When you draw this card, Projectile !M! damage, then Exhaust ."
   },
   "Onmyoji:Red Force": {
-    "NAME": "红莲之力",
-    "DESCRIPTION": "获得 !M! 力量和 1 不屈。 NL 消耗 。"
+    "NAME": "Power of Red Lotus",
+    "DESCRIPTION": "Gain !M! Strength and 1 Unyielding . NL Exhaust ."
   },
   "Onmyoji:Green Force": {
-    "NAME": "苍叶之力",
-    "DESCRIPTION": "造成 !D! 伤害 !M! 次。 NL 消耗 。"
+    "NAME": "Power of Green Leaf",
+    "DESCRIPTION": "Deal !D! Damage !M! times. NL Exhaust ."
   },
   "Onmyoji:Blue Force": {
-    "NAME": "青岚之力",
-    "DESCRIPTION": "获得一个额外的回合。 NL 消耗 。"
+    "NAME": "Power of Blue Mist",
+    "DESCRIPTION": "Gain an extra turn. NL Exhaust ."
   },
   "Onmyoji:Purple Force": {
-    "NAME": "紫岩之力",
-    "DESCRIPTION": "将生命值变为上限的70%。 NL 消耗 。"
+    "NAME": "Power of Violet Rock",
+    "DESCRIPTION": "Set your HP to 70% of max HP. NL Exhaust ."
   }
 }

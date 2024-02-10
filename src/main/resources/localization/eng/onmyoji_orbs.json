@@ -1,49 +1,49 @@
 {
   "Onmyoji:Chord": {
     "DESCRIPTION": [
-      "#y倒计时 #b",
-      " ：获得 #b",
-      " #y力量 与 #b",
-      " #y敏捷"
+      "#yCountdown #b",
+      " : gain #b",
+      " #yStrength and #b",
+      " #yDexterity"
     ],
-    "NAME": "神乐歌"
+    "NAME": "Evolved Kagura"
   },
   "Onmyoji:Storm": {
     "DESCRIPTION": [
-      "#y倒计时 #b",
-      " ：对所有敌人造成 #b",
-      " 伤害。"
+      "#yCountdown #b",
+      " : deal #b",
+      " damage to all enemies."
     ],
-    "NAME": "羽刃暴风"
+    "NAME": "Featherblade Storm"
   },
   "Onmyoji:Feather": {
     "DESCRIPTION": [
-      "#y倒计时 #b",
-      " ：将2张 #y黄金羽 置入手牌。"
+      "#yCountdown #b",
+      " : obtain 2 #yGolden #yFeather in your hand."
     ],
-    "NAME": "黄金羽"
+    "NAME": "Golden Feather"
   },
   "Onmyoji:Wind": {
     "DESCRIPTION": [
-      "#y倒计时 #b",
-      " ：获得 #b",
-      " #y格挡"
+      "#yCountdown #b",
+      " : gain #b",
+      " #yBlock"
     ],
-    "NAME": "风符·护"
+    "NAME": "Wind Charm:Shield"
   },
   "Onmyoji:Bird": {
     "DESCRIPTION": [
-      "#y倒计时 #b",
-      " ：使最近的一个敌人获得 #b",
-      " #y破甲。"
+      "#yCountdown #b",
+      " : apply #b",
+      " #yPenetrated to the nearest enemy."
     ],
-    "NAME": "鸩羽新生"
+    "NAME": "Feather Regrow"
   },
   "Onmyoji:Pinecone": {
     "DESCRIPTION": [
-      "#y倒计时 #b",
-      " ：从弃牌堆将生成此倒计时的 #y小松丸 置入手牌。"
+      "#yCountdown #b",
+      " : put the card channel this orb into your hand."
     ],
-    "NAME": "小松丸"
+    "NAME": "Komatsu"
   }
 }

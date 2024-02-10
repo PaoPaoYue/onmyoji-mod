@@ -1,125 +1,125 @@
 {
   "Onmyoji:Penetrated": {
-    "NAME": "破甲",
+    "NAME": "Penetrated",
     "DESCRIPTIONS": [
-      "受到的攻击或 #y投射 伤害增加 #b",
-      " ，回合开始时移除。"
+      "Recieve #b",
+      " extra damage when begin attacked or #yProjectile . Removed at the start of the owner's turn."
     ]
   },
   "Onmyoji:Encouraged": {
-    "NAME": "鼓舞",
+    "NAME": "Rally",
     "DESCRIPTIONS": [
-      "下次攻击的最终伤害翻倍，造成伤害后减少 #b1 层。"
+      "Double the final damage in the next attack. Reduced by #b1 unless no damage is made."
     ]
   },
   "Onmyoji:Unyielding": {
-    "NAME": "不屈",
+    "NAME": "Unyielding",
     "DESCRIPTIONS": [
-      "下次式神受到致命伤害时减少 #b1 层，若式神生命值大于1则将伤害减少为式神生命值-1。"
+      "Reduced by #b1 when your #yShikigami receive critical damage, If #yShikigami temp HP > 1, reduce the damage to temp HP - 1 ."
     ]
   },
   "Onmyoji:Breakthrough": {
-    "NAME": "花开彼岸",
+    "NAME": "Crimson Flowers",
     "DESCRIPTIONS": [
-      "下次式神受到伤害时减少 #b1 层，此伤害改为由角色承担。"
+      "Reduced by #b1 when your #yShikigami receive damage, and transfer the damage to your character instead."
     ]
   },
   "Onmyoji:Ice Shield": {
-    "NAME": "寒冰之盾",
+    "NAME": "Frost Core",
     "DESCRIPTIONS": [
-      "#y格挡 每个敌人第一次攻击时使敌人获得 #b",
-      "层 #y虚弱, 回合开始时移除。"
+      "#yBlock the first attack from every enemy in a turn will apply #b",
+      " #yWeak to the enemy. Removed at the start of the owner's turn."
     ]
   },
   "Onmyoji:Divined Eye": {
-    "NAME": "洞察之眼",
+    "NAME": "Eye of Insight",
     "DESCRIPTIONS": [
-      " #y占卜 时额外多展示 #b",
-      " 张牌。"
+      "Whenever you #yDivine show #b",
+      " more cards."
     ]
   },
   "Onmyoji:Fragile Sound": {
-    "NAME": "破碎之音",
+    "NAME": "Sound of Destruction",
     "DESCRIPTIONS": [
-      "施加 #y破甲 时额外增加 #b",
-      " 。"
+      "Whenever you apply #yPenetrated apply #b",
+      " more amount."
     ]
   },
   "Onmyoji:Chef": {
-    "NAME": "热血主厨",
+    "NAME": "Hardcore Chef",
     "DESCRIPTIONS": [
-      "使用衍生牌时获得 #b1 #y鼓舞 。",
-      "(剩余 #b",
-      " 次)"
+      "Whenever you use a derivative card gain #b1 #yRally.",
+      "(#b",
+      " times left)"
     ]
   },
   "Onmyoji:Dark Dream": {
-    "NAME": "永眠之梦",
+    "NAME": "Eternal Slumber",
     "DESCRIPTIONS": [
-      "回合结束时随机使抽牌堆中 #b",
-      " 张牌附加梦魇"
+      "At the end of your turn attach #b",
+      " #yNightmare to random card in your draw pile."
     ]
   },
   "Onmyoji:News": {
-    "NAME": "百闻一得",
+    "NAME": "Enlightenment",
     "DESCRIPTIONS": [
-      "使用 #y明灯 时，升级所有手牌。"
+      "Whenever you use #yLantern upgrade all cards in your hand."
     ]
   },
   "Onmyoji:Chord": {
-    "NAME": "神乐歌",
+    "NAME": "Evolved Kagura",
     "DESCRIPTIONS": [
-      "回合开始时获得 #b",
-      " 个 #y倒计时 #b5 :获得 #b1 #y力量 与 #b1 #y鼓舞 。"
+      "At the start of your turn, channel #b",
+      " #yCountdown #b5 :gain #b1 #yStrength and #b1 #yDexterity ."
     ]
   },
   "Onmyoji:Cuteness": {
-    "NAME": "萌即正义",
+    "NAME": "Cute is Justice",
     "DESCRIPTIONS": [
-      "回合开始时获得 #b",
-      " 张随机式神牌，此牌本回合费用为0, 且 #y运势 #b6 ：此牌式神生命值翻倍。"
+      "At the start of your turn obtain #b",
+      " random Shikigami card(s) which cost 0 in this turn, and Luck 6 : double the Shikigami HP."
     ]
   },
   "Onmyoji:Moonlight Night": {
-    "NAME": "胧月夜",
+    "NAME": "Misty Moonlight",
     "DESCRIPTIONS": [
-      "回合开始时，根据当前式神获得一种强大的派系之力，每种限一次。"
+      "At the start of your turn obtain a Faction power according to your current Faction. Each power can only be obtained once."
     ]
   },
   "Onmyoji:Cursed Eye": {
-    "NAME": "诅咒之眼",
+    "NAME": "Cursed Eye",
     "DESCRIPTIONS": [
-      "当抽到附加额外效果的牌时，额外多抽 #b",
-      " 张牌。"
+      "Whenever you draw a card attached extra effect draw #b",
+      " more card."
     ]
   },
   "Onmyoji:Maze of Mind": {
-    "NAME": "心灵迷宫",
+    "NAME": "Mind Maze",
     "DESCRIPTIONS": [
-      "式神牌需要额外消耗 [E] ，使用时随机使另1张手牌本回合费用变为0。"
+      "The costs of Shikigami cards are random, and whenever you use a Shikigami card make a card in your hand cost 0 this turn."
     ]
   },
   "Onmyoji:Cat Wuwan": {
-    "NAME": "猫咪日和",
+    "NAME": "Kitten Hiyoribou",
     "DESCRIPTIONS": [
-      "回合开始时获得 #b",
-      " 张",
-      "选定衍生牌",
-      "的复制。"
+      "At the start of your turn, obtain #b",
+      " copy of ",
+      "selected derivative card",
+      "in your hand."
     ]
   },
   "Onmyoji:Wind of Dragon": {
-    "NAME": "风符·龙",
+    "NAME": "Wind Charm:Dragon",
     "DESCRIPTIONS": [
-      " #y倒计时 进场时也会触发效果。"
+      "#yCountdown will also be activated when channel."
     ]
   },
   "Onmyoji:Goldfish": {
-    "NAME": "荒川的金鱼姬",
+    "NAME": "Kingyo of Arakawa",
     "DESCRIPTIONS": [
-      "使用非罕见或稀有牌时有概率随机使用1张额外的普通牌",
-      "(剩余 #b",
-      " 次)"
+      "Whenever you use a card(excluding uncommon/rare card) there is a probability of autoplaying a common card(excluding power/Shikigami card) with no cost.",
+      "(#b",
+      " times left)"
     ]
   }
 }

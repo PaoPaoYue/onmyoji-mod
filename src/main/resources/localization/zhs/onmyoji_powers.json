@@ -57,7 +57,7 @@
     "NAME": "永眠之梦",
     "DESCRIPTIONS": [
       "回合结束时随机使抽牌堆中 #b",
-      " 张牌附加梦魇"
+      " 张牌附加 #y梦魇 。"
     ]
   },
   "Onmyoji:News": {
@@ -96,7 +96,7 @@
   "Onmyoji:Maze of Mind": {
     "NAME": "心灵迷宫",
     "DESCRIPTIONS": [
-      "式神牌需要额外消耗 [E] ，使用时随机使另1张手牌本回合费用变为0。"
+      "式神牌费用随机，使用时随机使另1张手牌本回合费用变为0。"
     ]
   },
   "Onmyoji:Cat Wuwan": {

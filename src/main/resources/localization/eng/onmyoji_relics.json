@@ -22,65 +22,65 @@
   },
   "Onmyoji:Yuza": {
     "NAME": "Yuza",
-    "FLAVOR": "Pay to win. ",
+    "FLAVOR": "Pay to win. (Not the case in card game)",
     "DESCRIPTIONS": [
-      "拾起时，从所有式神牌中选择并获取 #b1 张，额外附送 #b",
-      " 金币。",
-      "选择并获取一张牌。"
+      "Upon pickup，select #b1 card from all the #yKami cards，and obtain #b",
+      " #yGold .",
+      "Select and Obtain One Card."
     ]
   },
   "Onmyoji:Dice": {
-    "NAME": "遥控色子",
-    "FLAVOR": "意~义~不~明的那位大人。",
+    "NAME": "Telecontrol Dice",
+    "FLAVOR": "This is not cheating.",
     "DESCRIPTIONS": [
-      "每次战斗前 #b",
-      " 次 #y运势 一定为6。"
+      "The first #b",
+      " #yRolls in a battle must be 6."
     ]
   },
   "Onmyoji:Tisane": {
-    "NAME": "孟婆的汤药",
-    "FLAVOR": "和孟婆汤的作用不一样，我保证。",
+    "NAME": "Mouba's Tisane",
+    "FLAVOR": "You will not forget anything. I promise.",
     "DESCRIPTIONS": [
-      "每次 #y消耗 牌 恢复 #b",
-      " 在本场战斗中损失的生命值。"
+      "Every time you #yExhaust your card heal #b",
+      " HP you lose in the battle。"
     ]
   },
   "Onmyoji:Talisman": {
-    "NAME": "除恶符咒",
-    "FLAVOR": "必杀技~盛盐之拳！",
+    "NAME": "Talisman",
+    "FLAVOR": "Purifying Salt Punch!",
     "DESCRIPTIONS": [
-      "#y消耗 在 #y占卜 中置于牌库底的状态牌和诅咒牌。"
+      "#yExhaust status and curse cards placed at the bottom of your draw pile when #yDivine ."
     ]
   },
   "Onmyoji:Sushi": {
-    "NAME": "鱼子寿司",
-    "FLAVOR": "我更喜欢八爪鱼寿司。",
+    "NAME": "Ikura Sushi",
+    "FLAVOR": "I prefer bento box. (running out of meme...)",
     "DESCRIPTIONS": [
-      "回合结束时，获得等同于所有 #y倒计时 计数之和的 #y格挡 。"
+      "At the end of your turn, gain #yBlock equal to the sum of all your #yCountdowns ."
     ]
   },
   "Onmyoji:Big Drum": {
-    "NAME": "太郎大鼓",
-    "FLAVOR": "这个谱面太没有挑战性了。",
+    "NAME": "Taiko",
+    "FLAVOR": "This beatmap is not challenging at all.",
     "DESCRIPTIONS": [
-      "战斗开始时，获得 #b",
-      " 层 #y鼓舞 。"
+      "At the start of each combat, gain #b",
+      " #Encouraged ."
     ]
   },
   "Onmyoji:Poison Feather": {
-    "NAME": "鸩羽",
-    "FLAVOR": "等我回调，狼鸩全杀了。",
+    "NAME": "Poison Feather",
+    "FLAVOR": "Drink this if you are thirsty.",
     "DESCRIPTIONS": [
-      "战斗开始时，使所有敌人获得 #b",
-      " 层 #y破甲 。"
+      "At the start of each combat, apply #b",
+      " #yPenetrated to all enemies."
     ]
   },
   "Onmyoji:Golden Feather": {
-    "NAME": "黄金羽",
-    "FLAVOR": "以津真天永远的queen。",
+    "NAME": "Golden Feather",
+    "FLAVOR": "You are my queen, Itsumade.",
     "DESCRIPTIONS": [
-      "每个回合开始时，获得 #b",
-      " 张 #y黄金羽 。"
+      "At the start of each combat, obtain #b",
+      " #yGolden #yFeather 。"
     ]
   }
 }

@@ -62,7 +62,7 @@
   },
   "Onmyoji:Butterfly": {
     "NAME": "一夜梦",
-    "DESCRIPTION": "造成 !D! 伤害, 额外使用手牌中一张费用小于等于 !M! 费牌的复制。（不能使用式神牌和能力牌）"
+    "DESCRIPTION": "造成 !D! 伤害，额外使用手牌中一张费用小于等于 !M! 费牌的复制。（不能使用式神牌和能力牌）"
   },
   "Onmyoji:Corrupted Punch": {
     "NAME": "腐败直拳",
@@ -125,8 +125,8 @@
   },
   "Onmyoji:Maze Of Mind": {
     "NAME": "心灵迷宫",
-    "DESCRIPTION": "式神牌费用随机 ，且使用时随机使另1张手牌本回合费用变为0。 NL 虚无 。",
-    "UPGRADE_DESCRIPTION": "式神牌费用随机 ，且使用时随机使另1张手牌本回合费用变为0。"
+    "DESCRIPTION": "式神牌费用随机，且使用时随机使另1张手牌本回合费用变为0。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "式神牌费用随机，且使用时随机使另1张手牌本回合费用变为0。"
   },
   "Onmyoji:Cat Wuwan": {
     "NAME": "猫咪日和",
@@ -163,7 +163,7 @@
   },
   "Onmyoji:Dark Dream": {
     "NAME": "永眠之梦",
-    "DESCRIPTION": " 回合结束时随机使抽牌堆中 !M! 张牌附加 梦魇 。"
+    "DESCRIPTION": "回合结束时随机使抽牌堆中 !M! 张牌附加 梦魇 。"
   },
   "Onmyoji:Good And Evil": {
     "NAME": "善恶无则",
@@ -285,7 +285,7 @@
   },
   "Onmyoji:Shuten Doji": {
     "NAME": "式神·酒吞童子",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时获得1层 不屈 ，每次受到3点或以上未被格挡的伤害获得 !M! 力量。"
+    "DESCRIPTION": "式神 拥有 !K! 点生命，进场时获得1层 不屈 ，每次受到3点或以上未被格挡的伤害获得 !M! 力量 。"
   },
   "Onmyoji:Yoto Hime": {
     "NAME": "式神·妖刀姬",
@@ -301,7 +301,7 @@
   },
   "Onmyoji:Shiranui": {
     "NAME": "式神·不知火",
-    "DESCRIPTION": "式神 拥有 !K! 点生命，离场时获得 !M! 层鼓舞 。"
+    "DESCRIPTION": "式神 拥有 !K! 点生命，离场时获得 !M! 层 鼓舞 。"
   },
   "Onmyoji:Yamata": {
     "NAME": "式神·八岐大蛇",
@@ -324,10 +324,6 @@
     "NAME": "式神·百目鬼",
     "DESCRIPTION": "式神 拥有 !K! 点生命， 占卜 时 投射 等同于占卜牌数量的伤害。",
     "UPGRADE_DESCRIPTION": "式神 拥有 !K! 点生命， 占卜 时 投射 等同于占卜牌数量2倍的伤害。"
-  },
-  "Onmyoji:Food": {
-    "NAME": "食材",
-    "DESCRIPTION": "本回合获得 !M! 力量 。"
   },
   "Onmyoji:Light": {
     "NAME": "明灯",

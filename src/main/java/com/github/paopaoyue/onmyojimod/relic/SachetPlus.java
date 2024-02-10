@@ -31,7 +31,7 @@ public class SachetPlus extends CustomRelic {
 
     @Override
     public boolean canSpawn() {
-        return AbstractDungeon.player.hasRelic("Burning Blood");
+        return AbstractDungeon.player.hasRelic("Onmyoji:Sachet");
     }
 
     @Override

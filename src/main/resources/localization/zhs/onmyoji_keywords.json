@@ -158,7 +158,7 @@
     "NAMES": [
       "酒吞童子"
     ],
-    "DESCRIPTION": "进场时获得 不屈 ，每次式神受到 #b3 点或以上未被格挡的伤害获得 #b1 力量。|进场时获得 不屈 ，每次式神受到 #b3 点或以上未被格挡的伤害获得 #b2 力量。"
+    "DESCRIPTION": "进场时获得 #y不屈 ，每次式神受到 #b3 点或以上未被格挡的伤害获得 #b1 #y力量。|进场时获得 #y不屈 ，每次式神受到 #b3 点或以上未被格挡的伤害获得 #b2 #y力量。"
   },
   {
     "ID": "Onmyoji:Yoto Hime",
@@ -179,7 +179,7 @@
     "NAMES": [
       "不知火"
     ],
-    "DESCRIPTION": "离场时获得 #b1 层鼓舞 。|离场时获得 #b2 层鼓舞 。"
+    "DESCRIPTION": "离场时获得 #b1 层 #y鼓舞 。|离场时获得 #b2 层 #y鼓舞 。"
   },
   {
     "ID": "Onmyoji:Yamata",
@@ -214,41 +214,41 @@
     "NAMES": [
       "百目鬼"
     ],
-    "DESCRIPTION": " 占卜 时 投射 等同于占卜牌数量的伤害。| 占卜 时 投射 等同于占卜牌数量2倍的伤害。"
+    "DESCRIPTION": "#y占卜 时 #y投射 等同于占卜牌数量的伤害。|#y占卜 时 #y投射 等同于占卜牌数量2倍的伤害。"
   },
   {
     "ID": "Onmyoji:Knot",
     "NAMES": [
       "缘结"
     ],
-    "DESCRIPTION": "抽到此牌时额外恢复本场战斗中损失的 #b2 点生命值。"
+    "DESCRIPTION": "抽到此牌时额外恢复本场战斗中损失的 #b2 点生命值。NL 效果每张牌唯一且不可替换。"
   },
   {
     "ID": "Onmyoji:Enhancement",
     "NAMES": [
       "加护"
     ],
-    "DESCRIPTION": "使用此牌时额外使此牌的式神生命值增加 #b2 点。"
+    "DESCRIPTION": "使用此牌时额外使此牌的式神生命值增加 #b2 点。NL 效果每张牌唯一且不可替换。"
   },
   {
     "ID": "Onmyoji:Dream",
     "NAMES": [
       "梦魇"
     ],
-    "DESCRIPTION": "抽到此牌时额外对随机敌人造成 #b6 点伤害。"
+    "DESCRIPTION": "抽到此牌时额外对随机敌人造成 #b6 点伤害。NL 效果每张牌唯一且不可替换。"
   },
   {
     "ID": "Onmyoji:Eye",
     "NAMES": [
       "诅咒之眼"
     ],
-    "DESCRIPTION": "抽到此牌时额外选择并丢弃 #b2 张牌。"
+    "DESCRIPTION": "抽到此牌时额外选择并丢弃 #b2 张牌。NL 效果每张牌唯一且不可替换。"
   },
   {
     "ID": "Onmyoji:Curse",
     "NAMES": [
       "蚀印"
     ],
-    "DESCRIPTION": "使用此牌时额外受到 #b3 点伤害。"
+    "DESCRIPTION": "使用此牌时额外受到 #b3 点伤害。NL 效果每张牌唯一且不可替换。"
   }
 ]
