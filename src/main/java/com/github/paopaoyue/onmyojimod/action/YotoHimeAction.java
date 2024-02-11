@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class YotoHimeAction extends AbstractGameAction {
     private static final float DURATION = 0.0F;
@@ -28,9 +27,7 @@ public class YotoHimeAction extends AbstractGameAction {
             this.isDone = true;
             return;
         }
-        if (this.duration == DURATION && this.target != null) {
-            if (this.target == null || this.card == null) return;
-            card.calculateCardDamage((AbstractMonster) target);
+        if (this.duration == DURATION && this.target != null && this.card != null) {
             int count = 0;
             if (AbstractDungeon.player instanceof Sanme) {
                 count += ((Sanme) AbstractDungeon.player).getKamiManager().getKamiSwitchCountInTurn();

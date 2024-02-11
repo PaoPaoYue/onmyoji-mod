@@ -69,7 +69,7 @@ public class GhostHandAction extends AbstractGameAction {
                     this.swapTarget = m;
                 }
             }
-            if (this.target != this.swapTarget) {
+            if (this.target != this.swapTarget && this.target != null && this.swapTarget != null) {
                 a_draw_X = target.drawX;
                 a_draw_Y = target.drawY;
                 b_draw_X = swapTarget.drawX;

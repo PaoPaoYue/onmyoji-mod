@@ -90,25 +90,11 @@ public class PlayerDamage {
                     kamiManager.getCurrentKami().onDamaged(damageAmount[0], info.type);
                     damageAmount[0] = 0;
                 } else {
-                    int damage = tempHp;
-                    for (AbstractPower power : __instance.powers) {
-                        if (power instanceof UnyieldingPower) {
-                            if (tempHp > 1) {
-                                damage = tempHp - 1;
-                                damageAmount[0] = 0;
-                            }
-                            AbstractDungeon.actionManager.addToTop(new ReducePowerAction(__instance, __instance, power.ID, 1));
-                            break;
-                        }
-                    }
-
-                    AbstractDungeon.effectsQueue.add(new TempDamageNumberEffect(__instance, __instance.hb.cX, __instance.hb.cY, damage));
-                    kamiManager.setHp(tempHp - damage);
-                    kamiManager.getCurrentKami().onDamaged(damage, info.type);
-                    if (tempHp == damage) {
-                        kamiManager.onDead();
-                        damageAmount[0] -= damage;
-                    }
+                    AbstractDungeon.effectsQueue.add(new TempDamageNumberEffect(__instance, __instance.hb.cX, __instance.hb.cY, tempHp));
+                    kamiManager.setHp(0);
+                    kamiManager.getCurrentKami().onDamaged(tempHp, info.type);
+                    kamiManager.onDead();
+                    damageAmount[0] -= tempHp;
                 }
             }
         }

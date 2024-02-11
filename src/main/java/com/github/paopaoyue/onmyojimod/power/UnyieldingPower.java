@@ -31,9 +31,9 @@ public class UnyieldingPower extends AbstractPower {
     public int onKamiDamaged(int damage, DamageInfo.DamageType damageType) {
         if (this.owner instanceof Sanme) {
             KamiManager kamiManager = ((Sanme) this.owner).getKamiManager();
-            if (kamiManager.getHp() <= damage && kamiManager.getHp() > 1) {
-                this.addToBot(new ReducePowerAction(this.owner, this.owner, this.ID, 1));
-                return kamiManager.getHp() - 1;
+            if (kamiManager.getHp() <= damage) {
+                this.addToTop(new ReducePowerAction(this.owner, this.owner, this.ID, 1));
+                return kamiManager.getHp() > 1 ? kamiManager.getHp() - 1 : damage;
             }
         }
         return damage;
