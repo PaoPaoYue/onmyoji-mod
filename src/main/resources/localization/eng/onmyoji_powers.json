@@ -2,124 +2,124 @@
   "Onmyoji:Penetrated": {
     "NAME": "Penetrated",
     "DESCRIPTIONS": [
-      "Recieve #b",
-      " extra damage when begin attacked or #yProjectile . Removed at the start of the owner's turn."
+      "This creature receives #b",
+      " additional damage when it would take direct or #yProjectile damage. Removed at the start of this creature's turn."
     ]
   },
   "Onmyoji:Encouraged": {
     "NAME": "Rally",
     "DESCRIPTIONS": [
-      "Double the final damage in the next attack. Reduced by #b1 unless no damage is made."
+      "Your next attack deals double damage. Reduced by #b1 unless no damage is made."
     ]
   },
   "Onmyoji:Unyielding": {
     "NAME": "Unyielding",
     "DESCRIPTIONS": [
-      "Reduced by #b1 when your #yShikigami receive critical damage, If #yShikigami temp HP > 1, reduce the damage to temp HP - 1 ."
+      "If your currently active #yShikigami would take #rlethal damage with more than #b1 #ytemporary #yHP, set the incoming damage to #ytemporary #yHP - #b1 and reduce this by #b1."
     ]
   },
   "Onmyoji:Breakthrough": {
     "NAME": "Crimson Flowers",
     "DESCRIPTIONS": [
-      "Reduced by #b1 when your #yShikigami receive damage, and transfer the damage to your character instead."
+      "Whenever your currently active #yShikigami would take damage, YOU take damage instead. Reduced by #b1 on each incoming hit."
     ]
   },
   "Onmyoji:Ice Shield": {
     "NAME": "Frost Core",
     "DESCRIPTIONS": [
-      "#yBlock the first attack from every enemy in a turn will apply #b",
-      " #yWeak to the enemy. Removed at the start of the owner's turn."
+      "Whenever you are attacked, apply #b",
+      " #yWeak once to the attacker. Removed at the start of your turn."
     ]
   },
   "Onmyoji:Divined Eye": {
     "NAME": "Eye of Insight",
     "DESCRIPTIONS": [
-      "Whenever you #yDivine show #b",
+      "Whenever you #yDivine, #yDivine #b",
       " more cards."
     ]
   },
   "Onmyoji:Fragile Sound": {
     "NAME": "Sound of Destruction",
     "DESCRIPTIONS": [
-      "Whenever you apply #yPenetrated apply #b",
-      " more amount."
+      "Whenever you apply #yPenetrated, apply #b",
+      " more."
     ]
   },
   "Onmyoji:Chef": {
     "NAME": "Hardcore Chef",
     "DESCRIPTIONS": [
-      "Whenever you use a derivative card gain #b1 #yRally.",
-      "(#b",
-      " times left)"
+      "Whenever you play a card created this combat, gain #b1 #yRally.",
+      "( #b",
+      " activations left this turn.)"
     ]
   },
   "Onmyoji:Dark Dream": {
     "NAME": "Eternal Slumber",
     "DESCRIPTIONS": [
-      "At the end of your turn attach #b",
-      " #yNightmare to random card in your draw pile."
+      "At the end of your turn, attach #yNightmare to #b",
+      " random card(s) in your draw pile."
     ]
   },
   "Onmyoji:News": {
     "NAME": "Enlightenment",
     "DESCRIPTIONS": [
-      "Whenever you use #yLantern upgrade all cards in your hand."
+      "Whenever you play a #yLantern, upgrade all cards in your hand."
     ]
   },
   "Onmyoji:Chord": {
     "NAME": "Evolved Kagura",
     "DESCRIPTIONS": [
       "At the start of your turn, channel #b",
-      " #yCountdown #b5 :gain #b1 #yStrength and #b1 #yDexterity ."
+      " Orb(s) with the following effect - #yCountdown #b5 : Gain #b1 #yStrength and #b1 #yDexterity."
     ]
   },
   "Onmyoji:Cuteness": {
-    "NAME": "Cute is Justice",
+    "NAME": "Cute Justice",
     "DESCRIPTIONS": [
-      "At the start of your turn obtain #b",
-      " random Shikigami card(s) which cost 0 in this turn, and Luck 6 : double the Shikigami HP."
+      "At the start of your turn, put #b",
+      " random Shikigami card(s) into your hand. They cost #b0 this turn. #yLuck #b6: double the HP of all #yShikigami cards created this way."
     ]
   },
   "Onmyoji:Moonlight Night": {
-    "NAME": "Misty Moonlight",
+    "NAME": "Clouded Moonlight",
     "DESCRIPTIONS": [
-      "At the start of your turn obtain a Faction power according to your current Faction. Each power can only be obtained once."
+      "At the start of your turn, gain a #yFaction power corresponding to your current #yFaction. Each power can only be obtained once per combat."
     ]
   },
   "Onmyoji:Cursed Eye": {
     "NAME": "Cursed Eye",
     "DESCRIPTIONS": [
-      "Whenever you draw a card attached extra effect draw #b",
-      " more card."
+      "Whenever you draw a card with an additional effect attached, draw #b",
+      " more card(s)."
     ]
   },
   "Onmyoji:Maze of Mind": {
     "NAME": "Mind Maze",
     "DESCRIPTIONS": [
-      "The costs of Shikigami cards are random, and whenever you use a Shikigami card make a card in your hand cost 0 this turn."
+      "Randomize the cost of all #yShikigami cards. Whenever you play a #yShikigami card, a card in your hand costs #b0 this turn."
     ]
   },
   "Onmyoji:Cat Wuwan": {
     "NAME": "Kitten Hiyoribou",
     "DESCRIPTIONS": [
-      "At the start of your turn, obtain #b",
+      "At the start of your turn, put #b",
       " copy of ",
-      "selected derivative card",
-      "in your hand."
+      " selected #yToken card",
+      " into your hand."
     ]
   },
   "Onmyoji:Wind of Dragon": {
-    "NAME": "Wind Charm:Dragon",
+    "NAME": "Wind Charm: Dragon",
     "DESCRIPTIONS": [
-      "#yCountdown will also be activated when channel."
+      "#yCountdown effects will also be triggered whenever the corresponding Orb is Channeled."
     ]
   },
   "Onmyoji:Goldfish": {
     "NAME": "Kingyo of Arakawa",
     "DESCRIPTIONS": [
-      "Whenever you use a card(excluding uncommon/rare card) there is a probability of autoplaying a common card(excluding power/Shikigami card) with no cost.",
-      "(#b",
-      " times left)"
+      "Whenever you play a card that isn't Uncommon or Rare, you have a #b20% chance to play a copy of a random Common card, excluding Power or #yShikigami cards. This chance increases by #b30% whenever it fails to activate.",
+      "( #b",
+      " activations left this turn.)"
     ]
   }
 }

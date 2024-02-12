@@ -5,353 +5,353 @@
   },
   "Onmyoji:Defend": {
     "NAME": "Defend",
-    "DESCRIPTION": "Gain !B! Block ."
+    "DESCRIPTION": "Gain !B! Block."
   },
   "Onmyoji:Menreiki": {
-    "NAME": "Shikigami·Menreiki",
-    "DESCRIPTION": "Shikigami has !K! HP. Upon summon Switch to a random Faction ."
+    "NAME": "Shikigami: Menreiki",
+    "DESCRIPTION": "Summon a Shikigami with !K! HP. NL Upon being summoned, Switch to a random Faction."
   },
   "Onmyoji:Seven Sides": {
     "NAME": "Seven Faces of the Heart",
-    "DESCRIPTION": "Deal !D! damage, increased by !M! for each different Faction you switch in this battle."
+    "DESCRIPTION": "Deal !D! damage, increased by !M! for each different Faction you have switched to this combat."
   },
   "Onmyoji:Reborn Of Phoenix": {
     "NAME": "Swaying Blaze",
-    "DESCRIPTION": "Deal !D! to all enemies, double the damage if a Shikigami died in this battle."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Deals 2x damage if a Shikigami has died this combat."
   },
   "Onmyoji:Righteousness": {
     "NAME": "Righteousness",
-    "DESCRIPTION": "Deal !D! damage, count !M! times Penetrated."
+    "DESCRIPTION": "Deal !D! damage. NL Penetrated affects this card !M! times."
   },
   "Onmyoji:The World": {
-    "NAME": "The World",
-    "DESCRIPTION": "Divine !M! cards. Deal !D! damage for each card attached extra effect. NL Retain ,  Exhaust ."
+    "NAME": "Fleeting Life",
+    "DESCRIPTION": "Retain. NL Divine !M! cards. Deal !D! damage for each Divined card with an additional effect attached. NL Exhaust."
   },
   "Onmyoji:Snake Fire": {
     "NAME": "Sacrificial Fire",
-    "DESCRIPTION": "Apply !M! Penetrated and deal !D! damage to all enemies, repeat X times."
+    "DESCRIPTION": "Apply !M! Penetrated and deal !D! damage to ALL enemies X times."
   },
   "Onmyoji:Hardworking": {
     "NAME": "Diligent Practice",
-    "DESCRIPTION": "Deal !D! damage, the base damage will be set to the damage after the attack."
+    "DESCRIPTION": "Deal !D! damage. NL Set this card's base damage to the amount of damage dealt."
   },
   "Onmyoji:Madness": {
     "NAME": "Madness",
-    "DESCRIPTION": "Deal !D! damage. Gain Unyielding if it kills a enemy."
+    "DESCRIPTION": "Deal !D! damage. If this kills an enemy, gain Unyielding."
   },
   "Onmyoji:Luck": {
     "NAME": "Change of Luck",
-    "DESCRIPTION": "Deal !D! damage. Luck 4: randomly Exhaust 1 card, and use a temporary copy of this card again.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Luck 4: Exhaust 1 card, and use a temporary copy of this card again."
+    "DESCRIPTION": "Deal !D! damage. NL Luck 4: Exhaust a random card and play a copy of this card.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Luck 4: Exhaust a card and play a copy of this card."
   },
   "Onmyoji:Poison Feather": {
     "NAME": "Chin's Feather",
-    "DESCRIPTION": "Deal !D! damage. If the enemy is Penetrated , heal HP lost in this battle equal to unblocked damage dealt."
+    "DESCRIPTION": "Deal !D! damage. If the enemy is Penetrated, heal HP lost in this combat equal to unblocked damage dealt."
   },
   "Onmyoji:Storm": {
     "NAME": "Featherblade Storm",
-    "DESCRIPTION": "Deal !D! damage. Countdown 3 : Deal !M! damage to all enemies."
+    "DESCRIPTION": "Deal !D! damage. NL Countdown 3: Deal !M! damage to ALL enemies."
   },
   "Onmyoji:Snow Slash": {
-    "NAME": "December Snow",
-    "DESCRIPTION": "Apply !M! Weak, and deal !D! damage to all enemies which are Weak ."
+    "NAME": "December's Snow",
+    "DESCRIPTION": "Apply !M! Weak. NL Deal !D! damage to ALL enemies that already were Weak."
   },
   "Onmyoji:Scary Dream": {
     "NAME": "Shocking Dream",
-    "DESCRIPTION": "Deal !D! damage. For each !M! unblocked damage dealt attach Nightmare to a random card in your draw pile."
+    "DESCRIPTION": "Deal !D! damage. For every !M! unblocked damage dealt, attach Nightmare to a random card in your draw pile."
   },
   "Onmyoji:Butterfly": {
     "NAME": "One Night's Dream",
-    "DESCRIPTION": "Deal !D! damage, and use a temporary copy of a card (Cost <= !M! , excluding power or Shikigami card) in your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Play a copy of a card in your hand that costs less than or equal to !M!, excluding Power or Shikigami cards."
   },
   "Onmyoji:Corrupted Punch": {
     "NAME": "Decayed Punch",
-    "DESCRIPTION": "Gain !M! Penetrated , and apply Penetrated to enemy equal to the stack amount of yourself. NL Deal !D! damage."
+    "DESCRIPTION": "Gain !M! Penetrated, then apply Penetrated equal to the amount of Penetrated on you. NL Deal !D! damage."
   },
   "Onmyoji:Tai Ji": {
-    "NAME": "Tai Ji",
-    "DESCRIPTION": "Deal !D! damage. if the enemy intent to attack, swap base damage with enemy. Exhaust ."
+    "NAME": "Alternation",
+    "DESCRIPTION": "Deal !D! damage. If the enemy intends to attack, swap the attack intent's base damage with this card's base damage. NL Exhaust."
   },
   "Onmyoji:Phoenix Fire": {
     "NAME": "Phoenix Flame",
-    "DESCRIPTION": "Deal !D! damage, and Projectile !M! damage."
+    "DESCRIPTION": "Deal !D! damage. NL Deal !M! Projectile damage."
   },
   "Onmyoji:Double Shoot": {
-    "NAME": "Perfect shot",
-    "DESCRIPTION": "Deal !D! damage, and use a temporary copy of this card."
+    "NAME": "Perfect Shot",
+    "DESCRIPTION": "Deal !D! damage. NL Play a copy of this card."
   },
   "Onmyoji:Trick": {
     "NAME": "Prank",
-    "DESCRIPTION": "Deal !D! damage. If it is on the top of your draw pile after you attack, auto use it with no cost."
+    "DESCRIPTION": "Deal !D! damage. NL Whenever you play an Attack, if this card is on top of your draw pile, also play it at no [E] cost."
   },
   "Onmyoji:Reckless": {
-    "NAME": "Reckless",
-    "DESCRIPTION": "Deal !M! damage to yourself, and then !D! to enemy."
+    "NAME": "Reckless Rush",
+    "DESCRIPTION": "Take !M! damage. NL Deal !D! damage."
   },
   "Onmyoji:Ghost Hand": {
     "NAME": "Black Flame Hand",
-    "DESCRIPTION": "Deal !D! damage. Swap the enemy's position with the nearest enemy to you."
+    "DESCRIPTION": "Deal !D! damage. NL Swap the enemy's position with the frontmost enemy."
   },
   "Onmyoji:Exorcism": {
-    "NAME": "Exorcism",
-    "DESCRIPTION": "Deal !D! damage and shuffle into draw pile. Projectile equal damage when place at the bottom in Divination .",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage and shuffle into draw pile. Projectile 2 times damage when place at the bottom in Divination ."
+    "NAME": "Disaster Expel",
+    "DESCRIPTION": "Deal !D! damage. Shuffle this card into your draw pile. NL Deal the same amount of Projectile damage whenever you place this card at the bottom of your draw pile through Divination.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Shuffle this card into your draw pile. NL Deal twice the amount of Projectile damage whenever you place this card at the bottom of your draw pile through Divination."
   },
   "Onmyoji:Cheat": {
-    "NAME": "Mahjong Cheat",
-    "DESCRIPTION": "Deal !D! damage, NL Luck 6: Gain [E] ; or Luck 4: return to hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage, NL Luck 6: Gain [E] ; or Luck 2: return to hand."
+    "NAME": "Mahjong Cheater",
+    "DESCRIPTION": "Deal !D! damage. NL Luck 6: Gain [E] . NL otherwise Luck 4: Return this card to your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Luck 6: Gain [E] . NL otherwise Luck 2: Return this card to your hand."
   },
   "Onmyoji:Dice Bomb": {
     "NAME": "Dice Bomb",
-    "DESCRIPTION": "Luck 1: Deal damage equal to !M! times of the dice."
+    "DESCRIPTION": "Luck 1: Deal damage equal to !M! times the result of your dice roll."
   },
   "Onmyoji:Nature": {
-    "NAME": "Nature of Time",
-    "DESCRIPTION": "Deal !D! damage to all enemies, and Divine !M! cards."
+    "NAME": "All Knowing",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Divine !M! cards."
   },
   "Onmyoji:Cuteness": {
     "NAME": "Cute is Justice",
-    "DESCRIPTION": "At the start of your turn obtain !M! random Shikigami card(s) which cost 0 in this turn, and Luck 6 : double the Shikigami HP."
+    "DESCRIPTION": "At the start of your turn, add !M! random Shikigami card(s) to your hand. They cost 0 this turn. NL Luck 6: Shikigami cards created this way have double HP."
   },
   "Onmyoji:Moonlight Night": {
     "NAME": "Misty Moonlight",
-    "DESCRIPTION": "At the start of your turn obtain a Faction power according to your current Faction. Each power can only be obtained once.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn obtain a Faction power according to your current Faction. Each power can only be obtained once. NL Innate ."
+    "DESCRIPTION": "At the start of your turn, gain a strong Faction power corresponding to your current Faction. Each power can only be obtained once per combat.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, gain a strong Faction power corresponding to your current Faction. Each power can only be obtained once per combat."
   },
   "Onmyoji:Cursed Eye": {
     "NAME": "Cursed Eye",
-    "DESCRIPTION": "Attach !M! Cursed to random card in your draw pile. Whenever you draw a card attached extra effect draw 1 more card."
+    "DESCRIPTION": "Attach Cursed to !M! random cards in your draw pile. NL Whenever you draw a card with an additional effect attached, draw 1 card."
   },
   "Onmyoji:Maze Of Mind": {
     "NAME": "Mind Maze",
-    "DESCRIPTION": "The costs of Shikigami cards are random, and whenever you use a Shikigami card make a card in your hand cost 0 this turn. NL Ethereal .",
-    "UPGRADE_DESCRIPTION": "The costs of Shikigami cards are random, and whenever you use a Shikigami card make a card in your hand cost 0 this turn."
+    "DESCRIPTION": "Ethereal. NL Randomize the cost of all Shikigami cards. Whenever you play a Shikigami card, a card in your hand costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "Randomize the cost of all Shikigami cards. Whenever you play a Shikigami card, a card in your hand costs 0 this turn."
   },
   "Onmyoji:Cat Wuwan": {
     "NAME": "Kitten Hiyoribou",
-    "DESCRIPTION": "Exhaust a derivative card, make !M! copy of it at the start of your turn."
+    "DESCRIPTION": "Exhaust a token card. At the start of your turn, add !M! copy of it to your hand."
   },
   "Onmyoji:Wind Of Dragon": {
-    "NAME": "Wind Charm:Dragon",
-    "DESCRIPTION": "Countdown will also be activated when channel.",
-    "UPGRADE_DESCRIPTION": "Countdown will also be activated when channel. Innate ."
+    "NAME": "Wind Charm: Dragon",
+    "DESCRIPTION": "Countdown effects will be triggered whenever the corresponding Orb is Channeled.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Countdown effects will be triggered whenever the corresponding Orb is Channeled."
   },
   "Onmyoji:Goldfish": {
     "NAME": "Kingyo of Arakawa",
-    "DESCRIPTION": "Whenever you use a card(excluding uncommon/rare card) there is a probability of autoplaying a common card(excluding power/Shikigami card) with no cost. NL !M! times per turn."
+    "DESCRIPTION": "Whenever you play a card that isn't Uncommon or Rare, you have growing chance to play a copy of a random Common card, excluding Power or Shikigami cards. NL This effect can be triggered !M! time(s) per turn."
   },
   "Onmyoji:Divined Eye": {
     "NAME": "Eye of Insight",
-    "DESCRIPTION": "Whenever you Divine show !M! more cards."
+    "DESCRIPTION": "Whenever you Divine, Divine !M! additional cards."
   },
   "Onmyoji:Fragile Sound": {
     "NAME": "Sound of Destruction",
-    "DESCRIPTION": "Whenever you apply Penetrated apply !M! more amount."
+    "DESCRIPTION": "Whenever you apply Penetrated, apply !M! more."
   },
   "Onmyoji:Chef": {
     "NAME": "Hardcore Chef",
-    "DESCRIPTION": "Whenever you use a derivative card gain 1 Rally . NL !M! times per turn."
+    "DESCRIPTION": "Whenever you use a token card, gain 1 Rally. NL This effect can be triggered !M! time(s) per turn."
   },
   "Onmyoji:News": {
     "NAME": "Enlightenment",
-    "DESCRIPTION": "Obtain !M! *Lantern . Whenever you use *Lantern upgrade all cards in your hand."
+    "DESCRIPTION": "Add !M! *Lantern to your hand. Whenever you play a *Lantern, upgrade all cards in your hand."
   },
   "Onmyoji:Chord": {
     "NAME": "Evolved Kagura",
-    "DESCRIPTION": "When use and at the start of your turn, Countdown 5: gain 1 Strength and 1 Dexterity."
+    "DESCRIPTION": "On being played and at the start of your turn, Countdown 5: gain 1 Strength and 1 Dexterity."
   },
   "Onmyoji:Dark Dream": {
     "NAME": "Eternal Slumber",
-    "DESCRIPTION": "At the end of your turn attach !M! Nightmare to random card in your draw pile."
+    "DESCRIPTION": "At the end of your turn, attach Nightmare to !M! random cards in your draw pile."
   },
   "Onmyoji:Good And Evil": {
     "NAME": "Between Good and Evil",
-    "DESCRIPTION": "Kill the current Kami, fill your hand with *Yamata ."
+    "DESCRIPTION": "Kill the current active Shikigami. NL Fill your hand with *Yamata."
   },
   "Onmyoji:God's Hand": {
     "NAME": "Godly Move",
-    "DESCRIPTION": "Put !M! Shikigami card(s) into your hand. NL Exhaust ."
+    "DESCRIPTION": "Add !M! random Shikigami card(s) into your hand. NL Exhaust."
   },
   "Onmyoji:Netherworld": {
     "NAME": "Crimson Flowers",
-    "DESCRIPTION": "Gain !M! Rally , the next time your Shikigami gets damage, transfer the damage to your character instead. NL Ethereal .",
-    "UPGRADE_DESCRIPTION": "Gain !M! Rally , the next time your Shikigami gets damage, transfer the damage to your character instead."
+    "DESCRIPTION": "Ethereal. NL Gain !M! Rally. NL The next time your Shikigami would take damage, YOU take damage instead.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Rally. NL The next time your Shikigami would take damage, YOU take damage instead."
   },
   "Onmyoji:Contemplate": {
-    "NAME": "Long Contemplate",
-    "DESCRIPTION": "Shuffle 1 card into your draw pile. Diviation !M! card(s). Draw 2 cards."
+    "NAME": "Long Contemplation",
+    "DESCRIPTION": "Shuffle a card into your draw pile. Divine !M! card(s). NL Draw 2 cards."
   },
   "Onmyoji:All Together": {
     "NAME": "Be Together!",
-    "DESCRIPTION": "Attach !M! Enmusubi to random card in your draw pile. Draw !M! cards. NL Exhaust ."
+    "DESCRIPTION": "Attach Enmusubi to !M! random cards in your draw pile. Draw !M! cards. NL Exhaust."
   },
   "Onmyoji:Book": {
     "NAME": "Scroll of Everything",
-    "DESCRIPTION": "Select and obtain 1 from 3 Shikigami card. NL Exhaust .",
-    "UPGRADE_DESCRIPTION": "Select and obtain 1 from 3 Shikigami card which cost 0 this turn. NL Exhaust ."
+    "DESCRIPTION": "Choose 1 of 3 Shikigami cards to add into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose 1 of 3 Shikigami cards to add into your hand. It costs 0 this turn. NL Exhaust."
   },
   "Onmyoji:Moon": {
     "NAME": "Luminating Moonlight",
-    "DESCRIPTION": "Divine !M! cards. Make the card on top of your draw pile cost 0 this turn."
+    "DESCRIPTION": "Divine !M! cards. Set the cost of the top card in your draw pile to 0 this turn."
   },
   "Onmyoji:Puppet": {
     "NAME": "Puppet Merchant",
-    "DESCRIPTION": "Divine 2 cards. Draw 1 card, and gain [E] [E] if the card attached extra effect.",
-    "UPGRADE_DESCRIPTION": "Divine 2 cards. Draw 1 card, and gain [E] [E] [E] if the card attached extra effect."
+    "DESCRIPTION": "Divine 2 cards. NL Draw 1 card. If it has an additional effect attached, gain [E] [E] .",
+    "UPGRADE_DESCRIPTION": "Divine 2 cards. NL Draw 1 card. If it has an additional effect attached, gain [E] [E] [E] ."
   },
   "Onmyoji:Lethe Water": {
     "NAME": "Mouba's Soup",
-    "DESCRIPTION": "Divine 3 cards, and Exhaust 3 cards at the bottom of your draw pile. NL Exhaust .",
-    "UPGRADE_DESCRIPTION": "Divine 3 cards, and Exhaust 3 cards at the bottom of your draw pile."
+    "DESCRIPTION": "Divine 3 cards. Exhaust 3 cards at the bottom of your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Divine 3 cards. Exhaust 3 cards at the bottom of your draw pile."
   },
   "Onmyoji:Ghost Fire": {
     "NAME": "Lantern Drain",
-    "DESCRIPTION": "Projectile !M! damage X times. Obtain X *Lantern in your hand. NL Exhaust .",
-    "UPGRADE_DESCRIPTION": "Projectile !M! damage X+1 times. Obtain X+1 *Lantern in your hand. NL Exhaust ."
+    "DESCRIPTION": "Deal !M! Projectile damage X times. Put X *Lanterns into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !M! Projectile damage X+1 times. Put X+1 *Lanterns into your hand. NL Exhaust."
   },
   "Onmyoji:Peach Blossom": {
     "NAME": "Revival Blossom",
-    "DESCRIPTION": "Put 1 Shikigami card from discard pile back to your hand and cost -1 this turn. NL Exhaust .",
-    "UPGRADE_DESCRIPTION": "Put 1 Shikigami card from discard pile back to your hand and cost -1 this turn. "
+    "DESCRIPTION": "Return 1 Shikigami card from your discard pile to your hand. It costs 1 less [E] this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Return 1 Shikigami card from your discard pile to your hand. It costs 1 less [E] this turn."
   },
   "Onmyoji:Buddhist": {
     "NAME": "Buddha's Light",
-    "DESCRIPTION": "Heal you and all enemies 5 HP. NL Increase your max HP by !M! for each over healing. NL Exhaust ."
+    "DESCRIPTION": "You and ALL enemies heal 5 HP. NL Increase your maximum HP by !M! for each HP overhealed this way. NL Exhaust."
   },
   "Onmyoji:Ensemble": {
-    "NAME": "ensemble",
-    "DESCRIPTION": "Channel !M! Countdown that you have channeled in this battle ."
+    "NAME": "Ensemble",
+    "DESCRIPTION": "Channel !M! Countdown orbs that have been Channeled this combat."
   },
   "Onmyoji:Lotus": {
     "NAME": "Do Good Deeds",
-    "DESCRIPTION": "apply !M! Strength to an enemy this turn. Increase effect by 2 whenever you use cards with the same name."
+    "DESCRIPTION": "Apply !M! Strength to the enemy this turn. Effect increased by 2 whenever you play another copy of this card."
   },
   "Onmyoji:Ice Shield": {
     "NAME": "Frost Core",
-    "DESCRIPTION": "Gain !B! Block , before your next turn Block the first attack from every enemy will apply !M! weak to the enemy."
+    "DESCRIPTION": "Gain !B! Block. NL This turn, whenever you are attacked, apply !M! Weak once to the attacker."
   },
   "Onmyoji:Snake Attack": {
     "NAME": "Serpent Lash",
-    "DESCRIPTION": "Apply !M! Penetrated to an enemy. Return to hand when you switch to a Shikigami ."
+    "DESCRIPTION": "Apply !M! Penetrated. Whenever you summon a Shikigami, return this from the discard pile to your hand."
   },
   "Onmyoji:Wind Shield": {
-    "NAME": "Wind Charm:Shield",
-    "DESCRIPTION": "Gain !B! Block , Countdown 2: Gain !M! Block."
+    "NAME": "Wind Charm: Shield",
+    "DESCRIPTION": "Gain !B! Block. NL Countdown 2: Gain !M! Block."
   },
   "Onmyoji:Knowledge": {
     "NAME": "Wisdom",
-    "DESCRIPTION": "Divine !M! cards. Draw 1 card. Shuffle a copy into the discard pile. NL Exhaust .",
-    "UPGRADE_DESCRIPTION": "Divine !M! cards. Draw 1 card. Shuffle a copy into the discard pile."
+    "DESCRIPTION": "Divine !M! cards. Draw 1 card. Shuffle a copy of this card into the discard pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Divine !M! cards. Draw 1 card. Shuffle a copy of this card into the discard pile."
   },
   "Onmyoji:Bird": {
-    "NAME": "Feather Regrow",
-    "DESCRIPTION": "Gain !B! Block , Countdown 3: apply !M! Penetrated to the nearest enemy.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block , Countdown 2: apply !M! Penetrated to the nearest enemy."
+    "NAME": "Regrow Feathers",
+    "DESCRIPTION": "Gain !B! Block. Countdown 3: Apply !M! Penetrated to the frontmost enemy.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Countdown 2: Apply !M! Penetrated to the frontmost enemy."
   },
   "Onmyoji:Kiyohime": {
-    "NAME": "Shikigami·Kiyohime",
-    "DESCRIPTION": "Shikigami has !K! HP. Apply Penetrated to enemy instead of damage when attack."
+    "NAME": "Shikigami: Kiyohime",
+    "DESCRIPTION": "Summon a Shikigami with !K! HP. Whenever you play an Attack, apply an equal amount of Penetrated instead of dealing damage."
   },
   "Onmyoji:Hitotsume": {
-    "NAME": "Shikigami·Hitotsume",
-    "DESCRIPTION": "Shikigami has !K! HP. "
+    "NAME": "Shikigami: Hitotsume",
+    "DESCRIPTION": "Summon a Shikigami with !K! HP."
   },
   "Onmyoji:Akaname": {
-    "NAME": "Shikigami·Akaname",
-    "DESCRIPTION": "Shikigami has !K! HP. Gain Block equal to the damage Shikigami received."
+    "NAME": "Shikigami: Akaname",
+    "DESCRIPTION": "Summon a Shikigami with !K! HP. Whenever this Shikigami takes damage, gain an equal amount of Block."
   },
   "Onmyoji:Enmusubi": {
-    "NAME": "Shikigami·Enmusubi",
-    "DESCRIPTION": "Shikigami has !K! HP. Attach Enmusubi to a random card in draw pile when turn ends.",
-    "UPGRADE_DESCRIPTION": "Shikigami has !K! HP. Attach Enmusubi to a random card in draw pile when summon and turn ends."
+    "NAME": "Shikigami: Enmusubi",
+    "DESCRIPTION": "Summon a Shikigami with !K! HP. At the end of your turn, attach Enmusubi to a random card in your draw pile.",
+    "UPGRADE_DESCRIPTION": "Summon a Shikigami with !K! HP. Upon being summoned and at the end of your turn, attach Enmusubi to a random card in your draw pile."
   },
   "Onmyoji:Yamausagi": {
-    "NAME": "Shikigami·Yamausagi",
-    "DESCRIPTION": "Shikigami has !K! HP. Luck is always 6. Increase Shikigami HP by !M! every time you roll a 6."
+    "NAME": "Shikigami: Yamausagi",
+    "DESCRIPTION": "Summon a Shikigami with !K! HP. Your Luck dice rolls always result in a 6. Increase Shikigami HP by !M! every time you roll a 6."
   },
   "Onmyoji:Kusa": {
-    "NAME": "Shikigami·Kusa",
-    "DESCRIPTION": "Shikigami has !K! HP. Upon exit gain [E] and draw !M! cards."
+    "NAME": "Shikigami: Kusa",
+    "DESCRIPTION": "Summon a Shikigami with !K! HP. Upon exiting this Shikigami form, gain [E] and draw !M! cards."
   },
   "Onmyoji:Komatsu": {
-    "NAME": "Shikigami·Komatsu",
-    "DESCRIPTION": "Shikigami has !K! HP. When replaced by another Shikigami, Countdown 1: put the card from discard pile back to your hand."
+    "NAME": "Shikigami: Komatsu",
+    "DESCRIPTION": "Summon a Shikigami with !K! HP. When replaced by another Shikigami, Countdown 1: Return this card from your discard pile to your hand."
   },
   "Onmyoji:Itsumade": {
-    "NAME": "Shikigami·Itsumade",
-    "DESCRIPTION": "Shikigami has !K! HP. Upon summon Countdown 4: put 2 *Golden *Feather into your hand.",
-    "UPGRADE_DESCRIPTION": "Shikigami has !K! HP. Upon summon and exit Countdown 4: put 2 *Golden *Feather into your hand."
+    "NAME": "Shikigami: Itsumade",
+    "DESCRIPTION": "Summon a Shikigami with !K! HP. Upon being summoned, Countdown 4: Add 2 *Golden *Feathers into your hand.",
+    "UPGRADE_DESCRIPTION": "Summon a Shikigami with !K! HP. Upon being summoned and upon exiting this Shikigami form, Countdown 4: Add 2 *Golden *Feathers into your hand."
   },
   "Onmyoji:Shuten Doji": {
-    "NAME": "Shikigami·Shuten Doji",
-    "DESCRIPTION": "Shikigami has !K! HP. Upon summon gain 1 Unyeilding . Every time Shikigami received damage >= 3 gain !M! Strength ."
+    "NAME": "Shikigami: Shuten-doji",
+    "DESCRIPTION": "Summon a Shikigami with !K! HP. Upon being summoned, gain 1 Unyielding. Whenever this Shikigami takes 3 or more damage, gain !M! Strength."
   },
   "Onmyoji:Yoto Hime": {
-    "NAME": "Shikigami·Yoto Hime",
-    "DESCRIPTION": "Shikigami has !K! HP. Upon summon deal !D! damage, and repeat extra times for each Shikigami you summon in this turn.",
+    "NAME": "Shikigami: Yoto-hime",
+    "DESCRIPTION": "Summon a Shikigami with !K! HP. Upon being summoned, deal !D! damage, repeated for each Shikigami you have summoned this turn.",
     "EXTENDED_DESCRIPTION": [
-      "（repeat extra",
-      "times）"
+      "(Effect will repeat ",
+      " additional times.)"
     ]
   },
   "Onmyoji:Momo": {
-    "NAME": "Shikigami·Momo",
-    "DESCRIPTION": "Shikigami has !K! HP. Upon summon heal !M! HP lost in this battle. Whenever you heal HP gain 1 Strength ."
+    "NAME": "Shikigami: Momo",
+    "DESCRIPTION": "Summon a Shikigami with !K! HP. Upon being summoned, heal !M! HP lost in this combat. Whenever you heal HP, gain 1 Strength."
   },
   "Onmyoji:Shiranui": {
-    "NAME": "Shikigami·Shiranui",
-    "DESCRIPTION": "Shikigami has !K! HP. Upon exit gain !M! Rally . "
+    "NAME": "Shikigami: Shiranui",
+    "DESCRIPTION": "Summon a Shikigami with !K! HP. Upon exiting this Shikigami form, gain !M! Rally. "
   },
   "Onmyoji:Yamata": {
-    "NAME": "Shikigami·Yamata",
-    "DESCRIPTION": "Shikigami has !K! HP. Upon summon lose 1 HP, draw 1 card. Exhaust ."
+    "NAME": "Shikigami: Yamata",
+    "DESCRIPTION": "Summon a Shikigami with !K! HP. Upon being summoned, lose 1 HP and draw 1 card. NL Exhaust."
   },
   "Onmyoji:Bokku": {
-    "NAME": "Shikigami·Bokkuman",
-    "DESCRIPTION": "Shikigami has !K! HP. Upon summon place 1 *Golden *Seimei at the bottom of your draw pile.",
-    "UPGRADE_DESCRIPTION": "Shikigami has !K! HP. Upon summon place 1 *Golden *Seimei+ at the bottom of your draw pile."
+    "NAME": "Shikigami: Bokkuman",
+    "DESCRIPTION": "Summon a Shikigami with !K! HP. Upon being summoned, put 1 *Golden *Seimei at the bottom of your draw pile.",
+    "UPGRADE_DESCRIPTION": "Summon a Shikigami with !K! HP. Upon being summoned, put 1 *Golden *Seimei+ at the bottom of your draw pile."
   },
   "Onmyoji:Onikiri": {
-    "NAME": "Shikigami·Onikiri",
-    "DESCRIPTION": "Shikigami has !K! HP. Upon exit apply !M! Weak to all enemies; If it is enemies' turn, apply additional !M! Vulnerable ."
+    "NAME": "Shikigami: Onikiri",
+    "DESCRIPTION": "Summon a Shikigami with !K! HP. Upon exiting this Shikigami form, apply !M! Weak to ALL enemies. If it is the enemy's turn, also apply !M! Vulnerable to ALL enemies."
   },
   "Onmyoji:Hangan": {
-    "NAME": "Shikigami·Hangan",
-    "DESCRIPTION": "Shikigami has !K! HP. Upon summon kill an enemy whose HP <= Shikigami HP."
+    "NAME": "Shikigami: Hangan",
+    "DESCRIPTION": "Summon a Shikigami with !K! HP. Upon being summoned, if the enemy's HP is equal to or less than this Shikigami's HP, kill it."
   },
   "Onmyoji:Dodomeki": {
-    "NAME": "Shikigami·Dodomeki",
-    "DESCRIPTION": "Shikigami has !K! HP. Projectile damage equal to the number of cards in Divination .",
-    "UPGRADE_DESCRIPTION": "Shikigami has !K! HP. Projectile damage 2 times of the number of cards in Divination ."
+    "NAME": "Shikigami: Dodomeki",
+    "DESCRIPTION": "Summon a Shikigami with !K! HP. While in this Shikigami form, whenever you Divine, deal Projectile damage equal to the amount of cards Divined.",
+    "UPGRADE_DESCRIPTION": "Summon a Shikigami with !K! HP. While in this Shikigami form, whenever you Divine, deal Projectile damage equal to 2x the amount of cards Divined."
   },
   "Onmyoji:Light": {
     "NAME": "Lantern",
-    "DESCRIPTION": "Gain [E] . NL Retain , Exhaust .",
-    "UPGRADE_DESCRIPTION": "Gain [E] [E] 。 NL Retain , Exhaust ."
+    "DESCRIPTION": "Retain. NL Gain [E] . NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain [E] [E] . NL Exhaust."
   },
   "Onmyoji:Golden Feather": {
     "NAME": "Golden Feather",
-    "DESCRIPTION": "Deal !D! Damage. NL Exhaust ."
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust."
   },
   "Onmyoji:Golden Seimei": {
     "NAME": "Golden Seimei",
-    "DESCRIPTION": "Unplayable . NL When you draw this card, Projectile !M! damage, then Exhaust ."
+    "DESCRIPTION": "Unplayable. NL Whenever you draw this card, deal !M! Projectile damage, then Exhaust this card."
   },
   "Onmyoji:Red Force": {
     "NAME": "Power of Red Lotus",
-    "DESCRIPTION": "Gain !M! Strength and 1 Unyielding . NL Exhaust ."
+    "DESCRIPTION": "Gain !M! Strength and 1 Unyielding. NL Exhaust."
   },
   "Onmyoji:Green Force": {
     "NAME": "Power of Green Leaf",
-    "DESCRIPTION": "Deal !D! Damage !M! times. NL Exhaust ."
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Exhaust."
   },
   "Onmyoji:Blue Force": {
     "NAME": "Power of Blue Mist",
-    "DESCRIPTION": "Gain an extra turn. NL Exhaust ."
+    "DESCRIPTION": "Take an extra turn. NL Exhaust."
   },
   "Onmyoji:Purple Force": {
     "NAME": "Power of Violet Rock",
-    "DESCRIPTION": "Set your HP to 70% of max HP. NL Exhaust ."
+    "DESCRIPTION": "Set your HP to 70% of your maximum HP. NL Exhaust."
   }
 }

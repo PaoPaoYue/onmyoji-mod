@@ -4,7 +4,7 @@
       "#yCountdown #b",
       " : gain #b",
       " #yStrength and #b",
-      " #yDexterity"
+      " #yDexterity."
     ],
     "NAME": "Evolved Kagura"
   },
@@ -12,14 +12,14 @@
     "DESCRIPTION": [
       "#yCountdown #b",
       " : deal #b",
-      " damage to all enemies."
+      " damage to ALL enemies."
     ],
     "NAME": "Featherblade Storm"
   },
   "Onmyoji:Feather": {
     "DESCRIPTION": [
       "#yCountdown #b",
-      " : obtain 2 #yGolden #yFeather in your hand."
+      " : put #b2 #yGolden #yFeather into your hand."
     ],
     "NAME": "Golden Feather"
   },
@@ -27,22 +27,22 @@
     "DESCRIPTION": [
       "#yCountdown #b",
       " : gain #b",
-      " #yBlock"
+      " #yBlock."
     ],
-    "NAME": "Wind Charm:Shield"
+    "NAME": "Wind Charm: Shield"
   },
   "Onmyoji:Bird": {
     "DESCRIPTION": [
       "#yCountdown #b",
       " : apply #b",
-      " #yPenetrated to the nearest enemy."
+      " #yPenetrated to the frontmost enemy."
     ],
     "NAME": "Feather Regrow"
   },
   "Onmyoji:Pinecone": {
     "DESCRIPTION": [
       "#yCountdown #b",
-      " : put the card channel this orb into your hand."
+      " : return #yKomatsu to your hand."
     ],
     "NAME": "Komatsu"
   }

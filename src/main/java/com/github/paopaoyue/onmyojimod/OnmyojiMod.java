@@ -115,6 +115,7 @@ public class OnmyojiMod implements EditCharactersSubscriber, EditStringsSubscrib
     @Override
     public void receiveAddAudio() {
         BaseMod.addAudio("ONMYOJI:ROLL_DICE", "audio/roll_dice.mp3");
+        BaseMod.addAudio("ONMYOJI:TRUE_END", "audio/true_end.mp3");
     }
 
     @Override

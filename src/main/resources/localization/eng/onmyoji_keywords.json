@@ -4,42 +4,42 @@
     "NAMES": [
       "shikigami"
     ],
-    "DESCRIPTION": "The card turn into Shikigami which gives you certain number of temp HP and powers to protect you. NL When the temp HP is depleted or you switch to another Shikigami, you will lose the previous Shikigami's power and the card will enter your discard pile."
+    "DESCRIPTION": "When summoned (played), #yShikigami cards grant #ytemporary #yHP. Certain #yShikigami also grant unique powers to help your or hinder the enemy. Whenever your #ytemporary #yHP is depleted or you summon another #yShikigami, you will lose the previous #yShikigami's powers and their corresponding card will enter your discard pile."
   },
   {
     "ID": "Onmyoji:Faction",
     "NAMES": [
       "faction"
     ],
-    "DESCRIPTION": "Shikigami all belongs to certain Faction which will display its mark on your temp HP bar."
+    "DESCRIPTION": "Each #yShikigami belongs to a certain #yFaction, denoted on your #ytemporary #yHP counter."
   },
   {
     "ID": "Onmyoji:Penetrated",
     "NAMES": [
       "penetrated"
     ],
-    "DESCRIPTION": "Receive extra damage equal to the stack amount when being attacked or #yProjectile . Removed at the start of the owner's turn."
+    "DESCRIPTION": "A creature with this debuff receives extra damage equal to the amount of stacks whenever it takes direct or or #yProjectile damage. Removed at the start of the creature's turn."
   },
   {
     "ID": "Onmyoji:Encouraged",
     "NAMES": [
       "rally"
     ],
-    "DESCRIPTION": "Double the final damage in the next attack. Reduced by #b1 unless no damage is made."
+    "DESCRIPTION": "Your next Attack deals double damage. This power is then reduced by #b1 unless no damage is dealt."
   },
   {
     "ID": "Onmyoji:Unyielding",
     "NAMES": [
       "unyielding"
     ],
-    "DESCRIPTION": "Reduced by #b1 when your #yShikigami receive critical damage，If #yShikigami temp HP > 1, reduce the damage to temp HP - 1 ."
+    "DESCRIPTION": "Whenever your #yShikigami would receive #rlethal damage reduce this power by #b1. If it has more than #b1 #ytemporary #yHP, set incoming damage to #ytemporary #yHP - 1."
   },
   {
     "ID": "Onmyoji:Countdown",
     "NAMES": [
       "countdown"
     ],
-    "DESCRIPTION": "Countdown by #b1 when you use card or move to next turn. Activated when the countdown is 0."
+    "DESCRIPTION": "Channel an Orb that will activate the listed effect when the counter ticks down to #b0. Reduce the counter by #b1 at the start of your turn or whenever you play a card."
   },
   {
     "ID": "Onmyoji:Divine",
@@ -47,209 +47,216 @@
       "divination",
       "divine"
     ],
-    "DESCRIPTION": "Look at the top X cards of your draw pile. You may place any of them at the bottom of your draw pile."
+    "DESCRIPTION": "Look at the top #bX cards of your draw pile. You may place any of them at the bottom of your draw pile."
   },
   {
     "ID": "Onmyoji:Roll",
     "NAMES": [
       "luck"
     ],
-    "DESCRIPTION": "Roll a dice. Activated when the dice number >= X."
+    "DESCRIPTION": "Roll a #bsix-sided dice. The listed effect is activated when your dice roll result is equal to or greater than #bX."
   },
   {
     "ID": "Onmyoji:Projectile",
     "NAMES": [
       "projectile"
     ],
-    "DESCRIPTION": "Deal damage to the nearest enemy."
+    "DESCRIPTION": "Deal damage to the frontmost enemy."
   },
   {
     "ID": "Onmyoji:Menreiki",
     "NAMES": [
       "Menreiki"
     ],
-    "DESCRIPTION": "No special power."
+    "DESCRIPTION": "This #yShikigami has no special power."
   },
   {
     "ID": "Onmyoji:Menreiki Red",
     "NAMES": [
-      "Menreiki·Red Lotus"
+      "Menreiki: Red Lotus"
     ],
-    "DESCRIPTION": "No special power."
+    "DESCRIPTION": "This #yShikigami has no special power."
   },
   {
     "ID": "Onmyoji:Menreiki Green",
     "NAMES": [
-      "Menreiki·Green Leaf"
+      "Menreiki: Green Leaf"
     ],
-    "DESCRIPTION": "No special power."
+    "DESCRIPTION": "This #yShikigami has no special power."
   },
   {
     "ID": "Onmyoji:Menreiki Blue",
     "NAMES": [
-      "Menreiki·Blue Mist"
+      "Menreiki: Blue Mist"
     ],
-    "DESCRIPTION": "No special power."
+    "DESCRIPTION": "This #yShikigami has no special power."
   },
   {
     "ID": "Onmyoji:Menreiki Purple",
     "NAMES": [
-      "Menreiki·Violet Rock"
+      "Menreiki: Violet Rock"
     ],
-    "DESCRIPTION": "No special power."
+    "DESCRIPTION": "This #yShikigami has no special power."
   },
   {
     "ID": "Onmyoji:Kiyohime",
     "NAMES": [
       "Kiyohime"
     ],
-    "DESCRIPTION": "Apply #Penetrated to enemy instead of damage when attack."
+    "DESCRIPTION": "While this #yShikigami is active, whenever you play an Attack, apply an equal amount of #yPenetrated instead of dealing damage."
   },
   {
     "ID": "Onmyoji:Hitotsume",
     "NAMES": [
       "Hitotsume"
     ],
-    "DESCRIPTION": "No special power."
+    "DESCRIPTION": "This #yShikigami has no special power."
   },
   {
     "ID": "Onmyoji:Akaname",
     "NAMES": [
       "Akaname"
     ],
-    "DESCRIPTION": "Gain #yBlock equal to the damage Shikigami received."
+    "DESCRIPTION": "While this #yShikigami is active, whenever this #yShikigami takes damage, gain an equal amount of Block."
   },
   {
     "ID": "Onmyoji:Enmusubi",
     "NAMES": [
       "Enmusubi"
     ],
-    "DESCRIPTION": "Attach #yEnmusubi to a random card in draw pile when turn ends. |Attach #yEnmusubi to a random card in draw pile when summon and turn ends."
+    "DESCRIPTION": "While this #yShikigami is active, attach #yEnmusubi to a random card in your draw pile at the end of your turn. |While this #yShikigami is active, attach #yEnmusubi to a random card in your draw pile upon being summoned and at the end of your turn."
   },
   {
     "ID": "Onmyoji:Yamausagi",
     "NAMES": [
       "Yamausagi"
     ],
-    "DESCRIPTION": "#yLuck is always 6."
+    "DESCRIPTION": "While this #yShikigami is active, your #yLuck dice roll results is always fixed at #b6."
   },
   {
     "ID": "Onmyoji:Kusa",
     "NAMES": [
       "Kusa"
     ],
-    "DESCRIPTION": "Upon exit gain [E] and draw #b3 cards.|Upon exit gain [E] and draw #b4 cards."
+    "DESCRIPTION": "Upon exiting this #yShikigami form, gain [E] and draw #b3 cards.|Upon exiting this #yShikigami form, gain [E] and draw #b4 cards."
   },
   {
     "ID": "Onmyoji:Komatsu",
     "NAMES": [
       "Komatsu"
     ],
-    "DESCRIPTION": "When replaced by another #yShikigami, #yCountdown #b1 : put the card from discard pile back to your hand."
+    "DESCRIPTION": "When replaced by another #yShikigami, #yCountdown #b1 : return this #yShikigami's card from the discard pile to your hand."
   },
   {
     "ID": "Onmyoji:Itsumade",
     "NAMES": [
       "Itsumade"
     ],
-    "DESCRIPTION": "Upon summon #yCountdown #b4 : put #b2 #yGolden #yFeather into your hand.|Upon summon and exit #yCountdown #b4 : put #b2 #yGolden #yFeather into your hand."
+    "DESCRIPTION": "Upon being summoned, #yCountdown #b4 : put #b2 #yGolden #yFeather into your hand.|Upon being summoned, and exit #yCountdown #b4 : put #b2 #yGolden #yFeather into your hand."
   },
   {
     "ID": "Onmyoji:Shuten Doji",
     "NAMES": [
-      "Shuten Doji"
+      "Shuten-doji"
     ],
-    "DESCRIPTION": "Upon summon gain 1 #yUnyeilding . Every time Shikigami received damage >= 3 gain #b1 #yStrength .|Upon summon gain #yUnyeilding . Every time Shikigami received damage >= 3 gain #b2 #yStrength ."
+    "DESCRIPTION": "Upon being summoned, gain #b1 #yUnyielding. While this #yShikigami is active, whenever it takes #b3 or more unblocked damage, gain #b1 #yStrength. |Upon being summoned, gain #b1 #yUnyielding. While this #yShikigami is active, whenever it takes #b3 or more unblocked damage, gain #b2 #yStrength. "
   },
   {
     "ID": "Onmyoji:Yoto Hime",
     "NAMES": [
-      "Yoto Hime"
+      "Yoto-hime"
     ],
-    "DESCRIPTION": "Upon summon deal multiple times of damage."
+    "DESCRIPTION": "Upon being summoned, deal damage proportional to the amount of times you have summoned #yShikigami this turn."
   },
   {
     "ID": "Onmyoji:Momo",
     "NAMES": [
       "Momo"
     ],
-    "DESCRIPTION": "Upon summon heal #b2 HP lost in this battle. Whenever you heal HP gain #b1 #yStrength . |Upon summon heal #b3 HP lost in this battle. Whenever you heal HP gain #b1 #yStrength ."
+    "DESCRIPTION": "Upon being summoned, heal #b2 HP. While this #yShikigami is active, whenever you heal HP, gain #b1 #yStrength. |Upon being summoned, heal #b3 HP. While this #yShikigami is active, whenever you heal HP, gain #b1 #yStrength."
   },
   {
     "ID": "Onmyoji:Shiranui",
     "NAMES": [
       "Shiranui"
     ],
-    "DESCRIPTION": "Upon exit gain #b1 #yRally . |Upon exit gain #b2 #yRally . "
+    "DESCRIPTION": "Upon exiting this #yShikigami form, gain #b1 #yRally. |Upon exiting this #yShikigami form, gain #b2 #yRally. "
   },
   {
     "ID": "Onmyoji:Yamata",
     "NAMES": [
       "Yamata"
     ],
-    "DESCRIPTION": "Upon summon lose #b1 HP, draw #b1 card."
+    "DESCRIPTION": "Upon being summoned, lose #b1 HP and draw #b1 card."
   },
   {
     "ID": "Onmyoji:Bokku",
     "NAMES": [
       "Bokkuman"
     ],
-    "DESCRIPTION": "Upon summon place #b1 #yGolden #ySeimei at the bottom of your draw pile.|Upon summon place #b1 #yGolden #ySeimei+ at the bottom of your draw pile."
+    "DESCRIPTION": "Upon being summoned, place #b1 #yGolden #ySeimei at the bottom of your draw pile.|Upon being summoned, place #b1 #yGolden #ySeimei+ at the bottom of your draw pile."
   },
   {
     "ID": "Onmyoji:Onikiri",
     "NAMES": [
       "Onikiri"
     ],
-    "DESCRIPTION": "Upon exit apply #b2 #yWeak to all enemies; If it is enemies' turn, apply additional #b2 #yVulnerable .|Upon exit apply #b3 #yWeak to all enemies; If it is enemies' turn, apply additional #b3 #yVulnerable ."
+    "DESCRIPTION": "Upon exiting this #yShikigami form, apply #b2 #yWeak to ALL enemies. If it is the enemy's turn, also apply #b2 #yVulnerable to ALL enemies.|Upon exiting this #yShikigami form, apply #b3 #yWeak to ALL enemies. If it is the enemy's turn, also apply #b3 #yVulnerable to ALL enemies."
   },
   {
     "ID": "Onmyoji:Hangan",
     "NAMES": [
       "Hangan"
     ],
-    "DESCRIPTION": "Upon summon kill an enemy whose HP <= Shikigami temp HP."
+    "DESCRIPTION": "Upon being summoned, an enemy whose current HP is equal to or less than this #yShikigami's #ytemporary #yHP dies."
   },
   {
     "ID": "Onmyoji:Dodomeki",
     "NAMES": [
       "Dodomeki"
     ],
-    "DESCRIPTION": "#yProjectile damage equal to the number of cards in #yDivination .|#yProjectile damage 2 times of the number of cards in #yDivination ."
+    "DESCRIPTION": "While this #yShikigami is active, whenever you #yDivine, deal #yProjectile damage equal to the amount of cards #yDivined.|While this #yShikigami is active, whenever you #yDivine, deal #yProjectile damage equal to #b2x the amount of cards #yDivined."
   },
   {
     "ID": "Onmyoji:Knot",
     "NAMES": [
       "enmusubi"
     ],
-    "DESCRIPTION": "Heal #b2 HP lost in this battle upon draw. NL The effect is unique to each card and cannot be replaced."
+    "DESCRIPTION": "When this card is drawn, heal #b2 HP. NL This cannot be overwritten by another card which \"attach\" an additional effect."
   },
   {
     "ID": "Onmyoji:Enhancement",
     "NAMES": [
       "shelter"
     ],
-    "DESCRIPTION": "Gain extra #b2 #yShikigami HP when being used. NL The effect is unique to each card and cannot be replaced."
+    "DESCRIPTION": "When this card is played, your currently active #yShikigami gains #b2 #ytemporary #yHP. NL This cannot be overwritten by another card which \"attach\" an additional effect."
   },
   {
     "ID": "Onmyoji:Dream",
     "NAMES": [
       "nightmare"
     ],
-    "DESCRIPTION": "Deal #b6 damage to random enemy upon draw. NL The effect is unique to each card and cannot be replaced."
+    "DESCRIPTION": "When this card is drawn, deal #b6 damage to a random enemy. NL This cannot be overwritten by another card which \"attach\" an additional effect."
   },
   {
     "ID": "Onmyoji:Eye",
     "NAMES": [
       "cursed"
     ],
-    "DESCRIPTION": "Discard #b2 cards upon draw. NL The effect is unique to each card and cannot be replaced."
+    "DESCRIPTION": "When this card is drawn, discard #b2 cards. NL This cannot be overwritten by another card which \"attach\" an additional effect."
   },
   {
     "ID": "Onmyoji:Curse",
     "NAMES": [
       "etch"
     ],
-    "DESCRIPTION": "Receive #b3 damage when being used. NL The effect is unique to each card and cannot be replaced."
+    "DESCRIPTION": "When this card is drawn, take #b3 damage. NL This cannot be overwritten by another card which \"attach\" an additional effect."
+  },
+    {
+    "ID": "Onmyoji:Token",
+    "NAMES": [
+      "token"
+    ],
+    "DESCRIPTION": "Cards that can only be created during combat. e.g. Shiv, Miracle"
   }
 ]

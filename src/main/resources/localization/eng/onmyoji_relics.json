@@ -1,86 +1,86 @@
 {
   "Onmyoji:Sachet": {
-    "NAME": "Sachet·Genki",
-    "FLAVOR": "It may bring good luck to your spire journey!",
+    "NAME": "Genki Sachet",
+    "FLAVOR": "A little gift that may bring good luck to your journey in the Spire!",
     "DESCRIPTIONS": [
-      "At the start of each combat, attach #b2 #yEnhancement to random #yKami card in your draw pile."
+      "At the start of each combat, attach a random additional effect to #b2 random #yShikigami cards in your draw pile."
     ]
   },
   "Onmyoji:Sachet Plus": {
-    "NAME": "Sachet·Win",
-    "FLAVOR": "You are predestined to break the heart.",
+    "NAME": "Win Sachet",
+    "FLAVOR": "It reads: 'You are predestined to slay the dark heart of the Spire...'",
     "DESCRIPTIONS": [
-      "Replace #rSachet·Genki , at the start of your turn, attach #b2 #yEnhancement to random #yKami card in your draw pile."
+      "Replaces #yGenki #ySachet. At the start of your turn, attach a random additional effect to #b2 random #yShikigami cards in your draw pile."
     ]
   },
   "Onmyoji:Cursed Hand": {
     "NAME": "Cursed Hand",
-    "FLAVOR": "What form of power is this?",
+    "FLAVOR": "What vile power emanates from this trinket?",
     "DESCRIPTIONS": [
-      "At the start of your turn gain [E] ; At the start of each combat, attach #b2 #yCurse to random card in your draw pile."
+      "At the start of your turn, gain [E] . At the start of each combat, attach #yCurse to #b2 random cards in your draw pile."
     ]
   },
   "Onmyoji:Yuza": {
     "NAME": "Yuza",
-    "FLAVOR": "Pay to win. (Not the case in card game)",
+    "FLAVOR": "Pay to win? No, not in this game of cards. 'Paid to win' is more accurate.",
     "DESCRIPTIONS": [
-      "Upon pickup，select #b1 card from all the #yKami cards，and obtain #b",
-      " #yGold .",
-      "Select and Obtain One Card."
+      "Upon pickup，choose #b1 #yShikigami card to add to your deck. In addition, gain #b",
+      " #yGold.",
+      "Select a Card to Add to Your Master Deck."
     ]
   },
   "Onmyoji:Dice": {
     "NAME": "Telecontrol Dice",
-    "FLAVOR": "This is not cheating.",
+    "FLAVOR": "Luck problems require modern solutions, right?",
     "DESCRIPTIONS": [
       "The first #b",
-      " #yRolls in a battle must be 6."
+      " #yLuck rolls you activate each combat always results in a #b6."
     ]
   },
   "Onmyoji:Tisane": {
     "NAME": "Mouba's Tisane",
     "FLAVOR": "You will not forget anything. I promise.",
     "DESCRIPTIONS": [
-      "Every time you #yExhaust your card heal #b",
-      " HP you lose in the battle。"
+      "Whenever you #yExhaust a card, heal #b",
+      " HP lost in this combat."
     ]
   },
   "Onmyoji:Talisman": {
     "NAME": "Talisman",
-    "FLAVOR": "Purifying Salt Punch!",
+    "FLAVOR": "This will help you banish evil spirits, but only when combined with copious amount of salts and excessive blunt force.",
     "DESCRIPTIONS": [
       "#yExhaust status and curse cards placed at the bottom of your draw pile when #yDivine ."
     ]
   },
   "Onmyoji:Sushi": {
     "NAME": "Ikura Sushi",
-    "FLAVOR": "I prefer bento box. (running out of meme...)",
+    "FLAVOR": "Fish eggs and rice make for a surprisingly appetizing meal. A bento box would still be more preferable, however.",
     "DESCRIPTIONS": [
-      "At the end of your turn, gain #yBlock equal to the sum of all your #yCountdowns ."
+      "At the end of your turn, gain #yBlock equal to the total sum of all your #yCountdown orbs' counters."
     ]
   },
   "Onmyoji:Big Drum": {
     "NAME": "Taiko",
-    "FLAVOR": "This beatmap is not challenging at all.",
+    "FLAVOR": "A percussive musical instrument. It surprisingly isn't challenging to play well.",
     "DESCRIPTIONS": [
       "At the start of each combat, gain #b",
-      " #Encouraged ."
+      " #yRally."
     ]
   },
   "Onmyoji:Poison Feather": {
-    "NAME": "Poison Feather",
-    "FLAVOR": "Drink this if you are thirsty.",
+    "NAME": "Blighted Feather",
+    "FLAVOR": "It's so tempting to ingest, somehow...especially if you're feeling thirsty.",
     "DESCRIPTIONS": [
       "At the start of each combat, apply #b",
-      " #yPenetrated to all enemies."
+      " #yPenetrated to ALL enemies."
     ]
   },
   "Onmyoji:Golden Feather": {
-    "NAME": "Golden Feather",
+    "NAME": "Auric Feather",
     "FLAVOR": "You are my queen, Itsumade.",
     "DESCRIPTIONS": [
-      "At the start of each combat, obtain #b",
-      " #yGolden #yFeather 。"
+      "At the start of each combat, put #b",
+      " #yGolden #yFeather into your hand."
     ]
   }
 }

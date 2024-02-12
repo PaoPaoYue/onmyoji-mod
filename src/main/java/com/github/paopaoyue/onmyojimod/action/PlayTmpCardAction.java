@@ -42,33 +42,31 @@ public class PlayTmpCardAction extends AbstractGameAction {
                 this.isDone = true;
                 return;
             }
-            if (!AbstractDungeon.player.drawPile.isEmpty()) {
-                if (purgeOnUse) {
-                    card.purgeOnUse = this.purgeOnUse;
-                } else {
-                    card.exhaustOnUseOnce = this.exhaust;
-                }
-                AbstractDungeon.player.limbo.group.add(card);
-                card.current_y = -200F;
-                card.current_x = -200F;
-                card.target_x = card.current_x;
-                card.target_y = card.current_y;
-                card.targetAngle = 0.0f;
-                card.drawScale = 0.12F;
-                card.targetDrawScale = 0.75F;
-                card.lighten(false);
-                card.applyPowers();
-                if (this.target != null && !this.target.isDying) {
-                    this.addToTop(new NewQueueCardAction(card, target, true, true));
-                } else {
-                    this.addToTop(new NewQueueCardAction(card, true, true, true));
-                }
-                this.addToTop(new UnlimboAction(card));
-                if (!Settings.FAST_MODE) {
-                    this.addToTop(new WaitAction(Settings.ACTION_DUR_MED));
-                } else {
-                    this.addToTop(new WaitAction(Settings.ACTION_DUR_FASTER));
-                }
+            if (purgeOnUse) {
+                card.purgeOnUse = this.purgeOnUse;
+            } else {
+                card.exhaustOnUseOnce = this.exhaust;
+            }
+            AbstractDungeon.player.limbo.group.add(card);
+            card.current_y = -200F;
+            card.current_x = -200F;
+            card.target_x = card.current_x;
+            card.target_y = card.current_y;
+            card.targetAngle = 0.0f;
+            card.drawScale = 0.12F;
+            card.targetDrawScale = 0.75F;
+            card.lighten(false);
+            card.applyPowers();
+            if (this.target != null && !this.target.isDying) {
+                this.addToTop(new NewQueueCardAction(card, target, true, true));
+            } else {
+                this.addToTop(new NewQueueCardAction(card, true, true, true));
+            }
+            this.addToTop(new UnlimboAction(card));
+            if (!Settings.FAST_MODE) {
+                this.addToTop(new WaitAction(Settings.ACTION_DUR_MED));
+            } else {
+                this.addToTop(new WaitAction(Settings.ACTION_DUR_FASTER));
             }
             this.isDone = true;
         }

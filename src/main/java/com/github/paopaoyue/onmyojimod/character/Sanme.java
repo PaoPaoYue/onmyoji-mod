@@ -25,7 +25,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.*;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
@@ -46,6 +45,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class Sanme extends CustomPlayer {
 
@@ -187,7 +187,16 @@ public class Sanme extends CustomPlayer {
 
     @Override
     public String getVampireText() {
-        return Vampires.DESCRIPTIONS[1];
+        return characterStrings.TEXT[2];
+    }
+
+    @Override
+    public List<com.megacrit.cardcrawl.cutscenes.CutscenePanel> getCutscenePanels() {
+        List<com.megacrit.cardcrawl.cutscenes.CutscenePanel> panels = new ArrayList<>();
+        panels.add(new CutscenePanel("image/scene/true_ending_1.png", "ONMYOJI:TRUE_END"));
+        panels.add(new CutscenePanel("image/scene/true_ending_2.png"));
+        panels.add(new CutscenePanel("image/scene/true_ending_3.png"));
+        return panels;
     }
 
 
