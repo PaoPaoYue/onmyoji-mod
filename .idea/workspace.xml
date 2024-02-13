@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a66948c5-5f94-452d-af22-4e9eb5a1d32c" name="更改" comment="bug fix">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/option/Hardcore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/patch/ModeSelection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/relic/Hardcore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/OnmyojiMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/OnmyojiMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/SwitchKamiAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/SwitchKamiAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/character/Sanme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/character/Sanme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/object/kami/KamiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/object/kami/KamiManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/localization/eng/onmyoji_characters.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/localization/eng/onmyoji_characters.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/localization/eng/onmyoji_relics.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/localization/eng/onmyoji_relics.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/localization/eng/onmyoji_ui.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/localization/eng/onmyoji_ui.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_relics.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_relics.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_ui.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/localization/zhs/onmyoji_ui.json" afterDir="false" />
-    </list>
+    <list default="true" id="a66948c5-5f94-452d-af22-4e9eb5a1d32c" name="更改" comment="bug fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -292,7 +278,7 @@
       <workItem from="1707584768918" duration="625000" />
       <workItem from="1707665962071" duration="14505000" />
       <workItem from="1707804771825" duration="3826000" />
-      <workItem from="1707827327349" duration="12799000" />
+      <workItem from="1707827327349" duration="13172000" />
     </task>
     <servers />
   </component>
