@@ -66,7 +66,7 @@ public class PlayTmpCardAction extends AbstractGameAction {
             if (!Settings.FAST_MODE) {
                 this.addToTop(new WaitAction(Settings.ACTION_DUR_MED));
             } else {
-                this.addToTop(new WaitAction(Settings.ACTION_DUR_FASTER));
+                this.addToTop(new WaitAction(Settings.ACTION_DUR_FAST));
             }
             this.isDone = true;
         }

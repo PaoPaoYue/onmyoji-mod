@@ -51,7 +51,7 @@ public class GoldfishPower extends AbstractPower {
             this.cardUseCount = 0;
             updateDescription();
             AbstractCard c = getRandomCard().makeStatEquivalentCopy();
-            this.addToBot(new PlayTmpCardAction(c, false, true));
+            this.addToBot(new PlayTmpCardAction(c, true, true));
         } else {
             this.cardUseCount = (cardUseCount + 1) % probArray.length;
         }
