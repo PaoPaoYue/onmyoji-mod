@@ -171,7 +171,7 @@
   },
   "Onmyoji:God's Hand": {
     "NAME": "Godly Move",
-    "DESCRIPTION": "Add !M! random Shikigami card(s) into your hand. NL Exhaust."
+    "DESCRIPTION": "Put !M! Shikigami card(s) from your deck into your hand. NL Exhaust."
   },
   "Onmyoji:Netherworld": {
     "NAME": "Crimson Flowers",
