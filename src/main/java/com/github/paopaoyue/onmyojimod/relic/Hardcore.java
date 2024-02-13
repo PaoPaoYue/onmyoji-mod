@@ -29,7 +29,7 @@ public class Hardcore extends CustomRelic {
         if (AbstractDungeon.player instanceof Sanme) {
             KamiManager kamiManager = ((Sanme) AbstractDungeon.player).getKamiManager();
             if (kamiManager.isHasKami()) {
-                kamiManager.setHp(kamiManager.getBaseHp());
+                kamiManager.setHp(Math.min(kamiManager.getHp(), kamiManager.getBaseHp()));
             }
         }
     }

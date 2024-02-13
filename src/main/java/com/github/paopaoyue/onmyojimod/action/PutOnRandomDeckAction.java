@@ -12,7 +12,7 @@ public class PutOnRandomDeckAction extends AbstractGameAction {
     private static final UIStrings uiStrings;
 
     static {
-        uiStrings = CardCrawlGame.languagePack.getUIString("PutOnRandomDeckAction");
+        uiStrings = CardCrawlGame.languagePack.getUIString("Onmyoji:PutOnRandomDeckAction");
         TEXT = PutOnRandomDeckAction.uiStrings.TEXT;
     }
 

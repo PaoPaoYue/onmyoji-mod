@@ -16,7 +16,7 @@ public class AllTogetherAction extends AbstractGameAction {
     public static int numPlaced;
 
     static {
-        uiStrings = CardCrawlGame.languagePack.getUIString("AllTogetherAction");
+        uiStrings = CardCrawlGame.languagePack.getUIString("Onmyoji:AllTogetherAction");
         TEXT = uiStrings.TEXT;
     }
 

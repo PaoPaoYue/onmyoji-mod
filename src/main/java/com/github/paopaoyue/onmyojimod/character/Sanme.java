@@ -64,7 +64,7 @@ public class Sanme extends CustomPlayer {
     private static final float CHARACTER_IMAG_SWITCH_MAX_DURATION = 0.2f;
     public static String CHARACTER_IMG = "image/character/sanme.png";
     public static CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString("Onmyoji:Sanme");
-    public static UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("Countdown");
+    public static UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("Onmyoji:Countdown");
     private final KamiManager kamiManager;
     private int preBattleHP = 0;
     private float characterImgSwitchDuration = 0f;

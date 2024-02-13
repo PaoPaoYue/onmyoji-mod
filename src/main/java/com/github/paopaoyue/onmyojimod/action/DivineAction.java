@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class DivineAction extends AbstractGameAction {
-    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("DivineAction");
+    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("Onmyoji:DivineAction");
 
     private Consumer<DivineAction> callback;
     private List<AbstractCard> divinedCards;
