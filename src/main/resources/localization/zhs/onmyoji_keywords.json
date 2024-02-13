@@ -221,34 +221,34 @@
     "NAMES": [
       "缘结"
     ],
-    "DESCRIPTION": "抽到此牌时额外恢复本场战斗中损失的 #b2 点生命值。NL 效果每张牌唯一且不可替换。"
+    "DESCRIPTION": "抽到此牌时额外恢复本场战斗中损失的 #b2 点生命值。 NL 效果每张牌唯一且不可替换。"
   },
   {
     "ID": "Onmyoji:Enhancement",
     "NAMES": [
       "加护"
     ],
-    "DESCRIPTION": "使用此牌时额外使此牌的式神生命值增加 #b2 点。NL 效果每张牌唯一且不可替换。"
+    "DESCRIPTION": "使用此牌时额外使此牌的式神生命值增加 #b2 点。 NL 效果每张牌唯一且不可替换。"
   },
   {
     "ID": "Onmyoji:Dream",
     "NAMES": [
       "梦魇"
     ],
-    "DESCRIPTION": "抽到此牌时额外对随机敌人造成 #b6 点伤害。NL 效果每张牌唯一且不可替换。"
+    "DESCRIPTION": "抽到此牌时额外对随机敌人造成 #b6 点伤害。 NL 效果每张牌唯一且不可替换。"
   },
   {
     "ID": "Onmyoji:Eye",
     "NAMES": [
       "诅咒之眼"
     ],
-    "DESCRIPTION": "抽到此牌时额外选择并丢弃 #b2 张牌。NL 效果每张牌唯一且不可替换。"
+    "DESCRIPTION": "抽到此牌时额外选择并丢弃 #b2 张牌。 NL 效果每张牌唯一且不可替换。"
   },
   {
     "ID": "Onmyoji:Curse",
     "NAMES": [
       "蚀印"
     ],
-    "DESCRIPTION": "使用此牌时额外受到 #b3 点伤害。NL 效果每张牌唯一且不可替换。"
+    "DESCRIPTION": "使用此牌时额外受到 #b3 点伤害。 NL 效果每张牌唯一且不可替换。"
   }
 ]

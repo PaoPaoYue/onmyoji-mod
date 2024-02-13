@@ -99,8 +99,8 @@
   },
   "Onmyoji:Cheat": {
     "NAME": "出千",
-    "DESCRIPTION": "造成 !D! 伤害， NL 运势 6：获得 [E] ; 否则运势 4：回到手牌。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 伤害， NL 运势 6：获得 [E] ; 否则运势 2：回到手牌。"
+    "DESCRIPTION": "造成 !D! 伤害， NL 运势 6：获得 [E] ; 否则 运势 4：回到手牌。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 伤害， NL 运势 6：获得 [E] ; 否则 运势 2：回到手牌。"
   },
   "Onmyoji:Dice Bomb": {
     "NAME": "色子炸弹",
