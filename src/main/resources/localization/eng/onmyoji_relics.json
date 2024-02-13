@@ -6,6 +6,13 @@
       "At the start of each combat, attach a random additional effect to #b2 random #yShikigami cards in your draw pile."
     ]
   },
+  "Onmyoji:Hardcore": {
+    "NAME": "Hardcore Mode",
+    "FLAVOR": "The author has not make a decision on the reward of hardcore mode yet.",
+    "DESCRIPTIONS": [
+      "Keep Shikigami's temporary HP up to the temporary HP of the current Shikigami itself at the start of your turn."
+    ]
+  },
   "Onmyoji:Sachet Plus": {
     "NAME": "Win Sachet",
     "FLAVOR": "It reads: 'You are predestined to slay the dark heart of the Spire...'",

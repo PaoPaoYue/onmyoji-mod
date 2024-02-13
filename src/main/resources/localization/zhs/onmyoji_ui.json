@@ -1,23 +1,40 @@
 {
-  "DivineAction": {
+  "Onmyoji:DivineAction": {
     "TEXT": [
       "选择任意张牌置入抽牌堆底部。"
     ]
   },
-  "Countdown": {
+  "Onmyoji:Countdown": {
     "TEXT": [
       "我无法拥有更多的倒计时。",
       "我无法拥有机煲的能量球。"
     ]
   },
-  "AllTogetherAction": {
+  "Onmyoji:AllTogetherAction": {
     "TEXT": [
       "结附缘结并洗入抽牌堆"
     ]
   },
-  "PutOnRandomDeckAction": {
+  "Onmyoji:PutOnRandomDeckAction": {
     "TEXT": [
       "洗入抽牌堆"
+    ]
+  },
+  "ModeSelectionPrompt": {
+    "TEXT": [
+      "选择模式"
+    ]
+  },
+  "NormalMode": {
+    "TEXT": [
+      "基础模式",
+      "回合开始时式神临时生命值会正常保留。"
+    ]
+  },
+  "HardcoreMode": {
+    "TEXT": [
+      "硬核模式",
+      "回合开始时，式神临时生命值最多保留至当前式神进场的生命值。"
     ]
   }
 }

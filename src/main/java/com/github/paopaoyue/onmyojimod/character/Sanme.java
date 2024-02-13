@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
+import com.github.paopaoyue.onmyojimod.OnmyojiMod;
 import com.github.paopaoyue.onmyojimod.card.SevenSides;
 import com.github.paopaoyue.onmyojimod.object.kami.AbstractKami;
 import com.github.paopaoyue.onmyojimod.object.kami.KamiManager;
@@ -105,6 +106,7 @@ public class Sanme extends CustomPlayer {
     public ArrayList<String> getStartingRelics() { // starting relics - also simple
         ArrayList<String> retVal = new ArrayList<>();
         retVal.add("Onmyoji:Sachet");
+        if (OnmyojiMod.mode == OnmyojiMod.Mode.HARDCORE) retVal.add("Onmyoji:Hardcore");
         return retVal;
     }
 

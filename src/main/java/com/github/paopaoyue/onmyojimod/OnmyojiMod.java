@@ -32,7 +32,7 @@ public class OnmyojiMod implements EditCharactersSubscriber, EditStringsSubscrib
     public static final String MOD_ID = "Onmyoji";
     public static final HashMap<String, Keyword> MOD_DICTIONARY = new HashMap<>();
     private static final Logger logger = LogManager.getLogger(OnmyojiMod.class);
-
+    public static Mode mode = Mode.STANDARD;
 
     public OnmyojiMod() {
         logger.info("instantiating OnmyojiMod");
@@ -47,7 +47,6 @@ public class OnmyojiMod implements EditCharactersSubscriber, EditStringsSubscrib
     public static void initialize() {
         new OnmyojiMod();
     }
-
 
     @Override
     public void receiveEditCards() {
@@ -126,5 +125,9 @@ public class OnmyojiMod implements EditCharactersSubscriber, EditStringsSubscrib
     @Override
     public void receiveOnPlayerTurnStart() {
         Taiji.getDamageReplacement().clear();
+    }
+
+    public static enum Mode {
+        STANDARD, HARDCORE
     }
 }

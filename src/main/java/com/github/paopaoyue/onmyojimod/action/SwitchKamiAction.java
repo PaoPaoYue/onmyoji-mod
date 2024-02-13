@@ -28,6 +28,7 @@ public class SwitchKamiAction extends AbstractGameAction {
         if (this.duration == Settings.ACTION_DUR_MED) {
             KamiManager kamiManager = ((Sanme) AbstractDungeon.player).getKamiManager();
             kamiManager.setHp(amount + kamiManager.getHp());
+            kamiManager.setBaseHp(amount);
             kamiManager.onSwitch(card, newKami);
             if (this.amount > 0) {
                 this.target.healthBarUpdatedEvent();

@@ -25,6 +25,8 @@ public class KamiManager {
 
     private int hp;
 
+    private int baseHp;
+
     public KamiManager() {
         kamiSequenceInBattle = new ArrayList<>();
         kamiSequenceInTurn = new ArrayList<>();
@@ -45,6 +47,14 @@ public class KamiManager {
 
     public void setHp(int hp) {
         this.hp = hp;
+    }
+
+    public int getBaseHp() {
+        return baseHp;
+    }
+
+    public void setBaseHp(int baseHp) {
+        this.baseHp = baseHp;
     }
 
     public AbstractKami getCurrentKami() {
@@ -137,6 +147,7 @@ public class KamiManager {
         }
 
         hasKami = false;
+        baseHp = 0;
 
         kamiSequenceInBattle.add(AbstractKami.ONMYOJI_NONE);
         kamiSequenceInTurn.add(AbstractKami.ONMYOJI_NONE);
@@ -163,6 +174,7 @@ public class KamiManager {
 
         hasKami = false;
         hp = 0;
+        baseHp = 0;
 
         Sanme player = (Sanme) AbstractDungeon.player;
         player.SwitchCharacterImage(Sanme.CHARACTER_IMG);
