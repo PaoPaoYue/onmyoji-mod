@@ -21,10 +21,10 @@ public class BuddhistAction extends AbstractGameAction {
     public void update() {
         if (this.duration == DURATION) {
             this.addToTop(new HealAction(target, target, this.amount));
-            int fullHpNum = target.currentHealth == target.maxHealth ? 1 : 0;
+            int fullHpNum = (target.currentHealth + amount >= target.maxHealth) ? 1 : 0;
             for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
                 if (mo.isDead) continue;
-                fullHpNum += mo.currentHealth == mo.maxHealth ? 1 : 0;
+                fullHpNum += (mo.currentHealth + amount >= mo.maxHealth) ? 1 : 0;
                 this.addToTop(new HealAction(mo, target, this.amount));
             }
             AbstractDungeon.player.increaseMaxHp(fullHpNum * maxHpIncrAmount, true);
