@@ -20,18 +20,18 @@
       "洗入抽牌堆"
     ]
   },
-  "ModeSelectionPrompt": {
+  "Onmyoji:ModeSelectionPrompt": {
     "TEXT": [
       "选择模式"
     ]
   },
-  "NormalMode": {
+  "Onmyoji:NormalMode": {
     "TEXT": [
       "基础模式",
       "回合开始时式神临时生命值会正常保留。"
     ]
   },
-  "HardcoreMode": {
+  "Onmyoji:HardcoreMode": {
     "TEXT": [
       "硬核模式",
       "回合开始时，式神临时生命值最多保留至当前式神进场的生命值。"
