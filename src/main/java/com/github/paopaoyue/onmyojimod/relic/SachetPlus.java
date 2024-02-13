@@ -30,6 +30,11 @@ public class SachetPlus extends CustomRelic {
     }
 
     @Override
+    public void bossObtainLogic() {
+        this.isObtained = true;
+    }
+
+    @Override
     public boolean canSpawn() {
         return AbstractDungeon.player.hasRelic("Onmyoji:Sachet");
     }
