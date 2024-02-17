@@ -453,6 +453,11 @@ public class Sanme extends CustomPlayer {
         orbToSet.applyFocus();
     }
 
+    public void increaseMaxOrbSlots(int amount, boolean playSfx) {
+        AbstractDungeon.effectList.add(new ThoughtBubble(this.dialogX, this.dialogY, 3.0F, uiStrings.TEXT[1], true));
+        return;
+    }
+
     public void applyPreCombatLogic() {
         this.preBattleHP = this.currentHealth;
         orbs.removeIf(abstractOrb -> abstractOrb instanceof EmptyOrbSlot);

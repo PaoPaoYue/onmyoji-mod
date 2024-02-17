@@ -184,7 +184,7 @@
   },
   "Onmyoji:All Together": {
     "NAME": "Be Together!",
-    "DESCRIPTION": "Attach Enmusubi to !M! random cards in your draw pile. Draw !M! cards. NL Exhaust."
+    "DESCRIPTION": "Attach Enmusubi to !M! random cards in your hand and shuffle them into your draw pile. Draw !M! cards. NL Exhaust."
   },
   "Onmyoji:Book": {
     "NAME": "Scroll of Everything",
