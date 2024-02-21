@@ -39,7 +39,7 @@ public class PlayerDamage {
     )
     public static void Insert(AbstractCreature __instance, DamageInfo info, @ByRef int[] damageAmount) {
         Integer replacedDamage = Taiji.getDamageReplacement().get(info.owner);
-        if (replacedDamage != null) {
+        if (replacedDamage != null && info.type == DamageInfo.DamageType.NORMAL) {
             damageAmount[0] = replacedDamage;
         }
         if (damageAmount[0] > 0 && __instance.hasPower("IntangiblePlayer")) {
