@@ -35,7 +35,7 @@ public class Buddhist extends CustomCard {
         int fullHpNum = AbstractDungeon.player.currentHealth == AbstractDungeon.player.maxHealth ? 1 : 0;
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
             if (mo.isDead) continue;
-            fullHpNum += mo.currentHealth == mo.maxHealth ? 1 : 0;
+            fullHpNum += (mo.currentHealth + this.magicNumber) >= mo.maxHealth ? 1 : 0;
         }
         if (fullHpNum > 0) {
             this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();

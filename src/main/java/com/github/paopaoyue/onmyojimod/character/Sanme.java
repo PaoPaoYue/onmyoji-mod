@@ -454,7 +454,8 @@ public class Sanme extends CustomPlayer {
     }
 
     public void increaseMaxOrbSlots(int amount, boolean playSfx) {
-        AbstractDungeon.effectList.add(new ThoughtBubble(this.dialogX, this.dialogY, 3.0F, uiStrings.TEXT[1], true));
+        if (amount > 0)
+            AbstractDungeon.effectList.add(new ThoughtBubble(this.dialogX, this.dialogY, 3.0F, uiStrings.TEXT[1], true));
         return;
     }
 
