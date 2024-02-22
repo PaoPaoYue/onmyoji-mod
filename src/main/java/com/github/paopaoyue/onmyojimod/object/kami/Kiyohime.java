@@ -26,8 +26,9 @@ public class Kiyohime extends AbstractKami {
     public int onAttackPreDecrementBlock(DamageInfo info, int damageAmount, AbstractCreature target) {
         if (target != null && info.type == DamageInfo.DamageType.NORMAL) {
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(target, AbstractDungeon.player, new PenetratedPower(target, damageAmount)));
+            return 0;
         }
-        return 0;
+        return damageAmount;
     }
 
     @Override
