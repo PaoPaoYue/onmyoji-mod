@@ -250,9 +250,9 @@
     "NAMES": [
       "etch"
     ],
-    "DESCRIPTION": "When this card is drawn, take #b3 damage. NL This cannot be overwritten by another card which \"attach\" an additional effect."
+    "DESCRIPTION": "When this card is used, take #b3 damage. NL This cannot be overwritten by another card which \"attach\" an additional effect."
   },
-    {
+  {
     "ID": "Onmyoji:Token",
     "NAMES": [
       "token"

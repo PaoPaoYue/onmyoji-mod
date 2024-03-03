@@ -24,7 +24,7 @@
     "NAME": "Cursed Hand",
     "FLAVOR": "What vile power emanates from this trinket?",
     "DESCRIPTIONS": [
-      "At the start of your turn, gain [E] . At the start of each combat, attach #yCurse to #b2 random cards in your draw pile."
+      "At the start of your turn, gain [E] . At the start of each combat, attach #yEtch to #b2 random cards in your draw pile."
     ]
   },
   "Onmyoji:Yuza": {
