@@ -388,7 +388,6 @@ public class Sanme extends CustomPlayer {
     public void countdownOrb() {
         int orbToEvoke = 0;
         for (AbstractOrb orb : this.orbs) {
-            orb.onStartOfTurn();
             if (orb instanceof AbstractCountdownOrb) {
                 ((AbstractCountdownOrb) orb).countdown();
                 orbToEvoke += ((AbstractCountdownOrb) orb).isTimeout() ? 1 : 0;

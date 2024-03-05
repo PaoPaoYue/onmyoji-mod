@@ -1,7 +1,7 @@
 package com.github.paopaoyue.onmyojimod.orb;
 
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.defect.LightningOrbEvokeAction;
+import com.github.paopaoyue.onmyojimod.action.StormAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -33,7 +33,7 @@ public class StormOrb extends AbstractCountdownOrb {
 
     @Override
     public void onEvoke() {
-        AbstractDungeon.actionManager.addToTop(new LightningOrbEvokeAction(new DamageInfo(AbstractDungeon.player, this.damage, DamageInfo.DamageType.THORNS), true));
+        AbstractDungeon.actionManager.addToTop(new StormAction(new DamageInfo(AbstractDungeon.player, this.damage, DamageInfo.DamageType.THORNS)));
     }
 
     @Override

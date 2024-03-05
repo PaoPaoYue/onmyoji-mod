@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a66948c5-5f94-452d-af22-4e9eb5a1d32c" name="更改" comment="bug fix">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/action/StormAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/object/kami/Kiyohime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/object/kami/Kiyohime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/character/Sanme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/paopaoyue/onmyojimod/character/Sanme.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +70,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="action_queue_log" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
@@ -135,8 +141,8 @@
       <recent name="C:\Users\LENOVO\Desktop\onmyoji-mod\src\main\resources\image\1024" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.github.paopaoyue.onmyojimod.relic" />
       <recent name="com.github.paopaoyue.onmyojimod.action" />
+      <recent name="com.github.paopaoyue.onmyojimod.relic" />
       <recent name="com.github.paopaoyue.onmyojimod.power" />
       <recent name="com.github.paopaoyue.onmyojimod.card" />
       <recent name="com.github.paopaoyue.onmyojimod.patch" />
@@ -312,7 +318,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>jar://$PROJECT_DIR$/../mtsLib/desktop-1.0.jar!/com/megacrit/cardcrawl/stances/NeutralStance.class</url>
           <line>29</line>
-          <properties class="com.megacrit.cardcrawl.stances.NeutralStance">
+          <properties class="com.megacrit.cardcrawl.stances.NeutralStance" method="render">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
